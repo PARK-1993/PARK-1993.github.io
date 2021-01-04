@@ -1,0 +1,90 @@
+<p>JDK에서 가장 많이 쓰이는 패턴중 하나로 무언가 실시간으로 정보를 보낼 수 있고,
+동적으로 실시간정보를 받을지 말지를 결정 할 수 있다.
+<em>한 객체의 상태가 바뀌면 그 객체에 의존하는 다른 객체들한테 연락이 가고 자동으로 내용이 갱신되는
+일대다 의존성을 정의합니다.</em>
+여기서 한 객체를 subject라고 부르고 다른 여러객체들을 observer라고 한다.</p>
+
+<h2 id="구조">구조</h2>
+
+<p><img src="/assets/image/post/20200826/Observer.png" alt="Activity" /></p>
+
+<h2 id="예">예</h2>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
+</span><span class="k">typedef</span> <span class="k">struct</span> <span class="n">newProduct</span>
+<span class="p">{</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">productName</span><span class="p">;</span>
+	<span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">price</span><span class="p">;</span>
+	<span class="kt">float</span> <span class="n">discountRate</span><span class="p">;</span>
+<span class="p">}</span><span class="n">NewProduct</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">CObserver</span> <span class="p">{</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="n">update</span><span class="p">(</span><span class="n">NewProduct</span><span class="o">&amp;</span><span class="p">)</span><span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="k">class</span> <span class="nc">CConcreateObserver</span> <span class="o">:</span> <span class="n">CObserver</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="kt">void</span> <span class="n">update</span><span class="p">(</span><span class="n">NewProduct</span><span class="o">&amp;</span> <span class="n">newProduct</span><span class="p">)</span> <span class="k">override</span> <span class="p">{</span>
+		<span class="n">showNewProductSpec</span><span class="p">(</span><span class="n">newProduct</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="k">private</span><span class="o">:</span>
+	<span class="kt">void</span> <span class="n">showNewProductSpec</span><span class="p">(</span><span class="n">NewProduct</span><span class="o">&amp;</span> <span class="n">newPD</span><span class="p">){</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"&lt;New Product&gt;</span><span class="se">\n</span><span class="s">Name = "</span> <span class="o">&lt;&lt;</span> <span class="n">newPD</span><span class="p">.</span><span class="n">productName</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"price = "</span> <span class="o">&lt;&lt;</span> <span class="n">newPD</span><span class="p">.</span><span class="n">price</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"discount rate = "</span> <span class="o">&lt;&lt;</span> <span class="n">newPD</span><span class="p">.</span><span class="n">discountRate</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="p">}</span>
+
+<span class="p">};</span>
+
+
+<span class="k">class</span> <span class="nc">CSubject</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="n">registerObserver</span><span class="p">(</span><span class="n">CConcreateObserver</span><span class="o">*</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="n">removeObserver</span><span class="p">(</span><span class="n">CConcreateObserver</span><span class="o">*</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="n">notifyObserver</span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span>
+
+
+<span class="k">class</span> <span class="nc">CConcreateSubject</span> <span class="o">:</span> <span class="n">CSubject</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="kt">void</span> <span class="n">registerObserver</span><span class="p">(</span><span class="n">CConcreateObserver</span> <span class="o">*</span> <span class="n">o</span><span class="p">)</span> <span class="k">override</span> <span class="p">{</span>
+		<span class="n">lstObserver</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">o</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="kt">void</span> <span class="n">removeObserver</span><span class="p">(</span><span class="n">CConcreateObserver</span><span class="o">*</span>  <span class="n">o</span><span class="p">)</span> <span class="k">override</span> <span class="p">{</span>
+		<span class="k">auto</span> <span class="n">iter</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">find</span><span class="p">(</span><span class="n">lstObserver</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">lstObserver</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">o</span><span class="p">);</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">iter</span> <span class="o">!=</span> <span class="n">lstObserver</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+			<span class="n">lstObserver</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">iter</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="n">notifyObserver</span><span class="p">()</span> <span class="k">override</span> <span class="p">{</span>
+		<span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">iter</span> <span class="o">=</span> <span class="n">lstObserver</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span> <span class="n">iter</span> <span class="o">&lt;</span> <span class="n">lstObserver</span><span class="p">.</span><span class="n">end</span><span class="p">();</span> <span class="n">iter</span><span class="o">++</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="p">(</span><span class="o">*</span><span class="n">iter</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">update</span><span class="p">(</span><span class="n">m_NewProduct</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="n">setNewProduct</span><span class="p">(</span><span class="k">const</span> <span class="n">NewProduct</span><span class="o">&amp;</span> <span class="n">newProduct</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">m_NewProduct</span> <span class="o">=</span> <span class="n">newProduct</span><span class="p">;</span>
+	<span class="p">}</span>
+
+<span class="k">private</span><span class="o">:</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">CConcreateObserver</span> <span class="o">*&gt;</span> <span class="n">lstObserver</span><span class="p">;</span>
+	<span class="n">NewProduct</span> <span class="n">m_NewProduct</span><span class="p">;</span>
+
+
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="n">NewProduct</span> <span class="n">nPD</span> <span class="o">=</span> <span class="p">{</span> <span class="s">"CrazyBubbleBath"</span><span class="p">,</span> <span class="mi">500000</span><span class="p">,</span> <span class="mf">0.5</span> <span class="p">};</span>
+	<span class="n">CConcreateObserver</span><span class="o">*</span> <span class="n">objObserver</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CConcreateObserver</span><span class="p">;</span>
+	<span class="n">CConcreateSubject</span> <span class="n">objSubject</span><span class="p">;</span>
+	<span class="n">objSubject</span><span class="p">.</span><span class="n">setNewProduct</span><span class="p">(</span><span class="n">nPD</span><span class="p">);</span>
+	<span class="n">objSubject</span><span class="p">.</span><span class="n">registerObserver</span><span class="p">(</span><span class="n">objObserver</span><span class="p">);</span>
+	<span class="n">objSubject</span><span class="p">.</span><span class="n">notifyObserver</span><span class="p">();</span>
+
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>

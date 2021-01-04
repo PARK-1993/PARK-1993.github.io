@@ -1,0 +1,52 @@
+<p>팩토리패턴의 마지막 추상팩토리패턴이다.
+먼저 정의를 보자</p>
+<h2 id="정의">정의</h2>
+<p><em>추상팩토리패턴 에서는 인터페이스를 이용하여 서로 연관된,또는 의존하는 객체를 구상 클래스를 지정하지 않고도 생성할 수 있다.</em>
+정의만 보면 무슨말인지 잘 모르겠다. 일단 관련이있는 객체들을(제품군) 모아 생성,관리 하는 패턴이라고 생각하면 된다. 팩토리 메소드 패턴에서는 하나의 객체를 생성하기 위한 패턴이였지만(Pizza) 추상팩토리패턴은 연관이있는 여러 객체들을(제품군) 생성, 관리한다는 것이다.</p>
+
+<h2 id="구성">구성</h2>
+
+<p><img src="/assets/image/post/20200907/AbstractFactoryPattern.png" alt="Activity" /></p>
+
+<h2 id="소스코드팩토리메소드와-비교">소스코드(팩토리메소드와 비교)</h2>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//Factory Method
+</span><span class="k">class</span> <span class="nc">Client</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="kt">void</span> <span class="n">anOperation</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">Product</span> <span class="n">p</span> <span class="o">=</span> <span class="n">factoryMethod</span><span class="p">();</span>
+        <span class="n">p</span><span class="p">.</span><span class="n">doSomething</span><span class="p">();</span>
+   <span class="p">}</span>
+<span class="k">protected</span><span class="o">:</span>
+    <span class="n">Product</span> <span class="n">factoryMethod</span><span class="p">()</span> <span class="p">{</span><span class="c1">//or it can be abstract as well
+</span>        <span class="k">return</span> <span class="k">new</span> <span class="n">DefaultProduct</span><span class="p">();</span>
+   <span class="p">}</span>
+ <span class="p">}</span>
+<span class="c1">// 팩토리패턴에서는 상속을 이용한다.
+</span><span class="k">class</span> <span class="nc">NewClient</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Client</span> <span class="p">{</span>
+<span class="k">protected</span><span class="o">:</span>
+    <span class="n">Product</span> <span class="n">factoryMethod</span><span class="p">()</span> <span class="p">{</span><span class="c1">//overriding
+</span>        <span class="k">return</span> <span class="k">new</span> <span class="n">SpecificProduct</span><span class="p">();</span>
+   <span class="p">}</span>
+ <span class="p">}</span>
+
+ <span class="c1">//Abstract Factory
+</span><span class="k">class</span> <span class="nc">Client</span> <span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+<span class="c1">// 추상팩토리 패턴에서는 구성을 사용한다.
+</span>    <span class="n">Factory</span> <span class="n">factory</span><span class="p">;</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="n">Client</span> <span class="p">(</span><span class="n">Factory</span> <span class="n">factory</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">factory</span> <span class="o">=</span> <span class="n">factory</span><span class="p">;</span>
+    <span class="p">}</span> 
+<span class="k">public</span><span class="o">:</span>
+    <span class="kt">void</span> <span class="n">anOperation</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">ProductA</span> <span class="n">p</span> <span class="o">=</span> <span class="n">factory</span><span class="p">.</span><span class="n">createProductA</span><span class="p">();</span>
+        <span class="n">p</span><span class="p">.</span><span class="n">doSomething</span><span class="p">();</span><span class="c1">//other products and operations as well
+</span>    <span class="p">}</span>
+ <span class="p">}</span>
+<span class="k">class</span> <span class="nc">Factory</span> <span class="p">{</span>
+   <span class="k">virtual</span> <span class="n">ProductA</span> <span class="n">createProductA</span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+   <span class="k">virtual</span> <span class="n">ProductB</span> <span class="n">createProductB</span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+ <span class="p">}</span>
+ <span class="c1">//concrete factories also, implementing Factory interface
+</span></code></pre></div></div>

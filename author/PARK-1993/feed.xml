@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="http://localhost:4000/author/PARK-1993/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2021-01-04T22:31:25+09:00</updated>
+  <id>http://localhost:4000/author/PARK-1993/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">푸바 프로그래밍 | </title>
+  
+
+  
+    <subtitle>TIL</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Activity Diagram에서 Activity VS Action</title>
+      <link href="http://localhost:4000/ActivityVsActioin" rel="alternate" type="text/html" title="Activity Diagram에서  Activity VS Action" />
+      <published>2020-08-20T05:00:00+09:00</published>
+      <updated>2020-08-20T05:00:00+09:00</updated>
+      <id>http://localhost:4000/ActivityVsActioin</id>
+      <content type="html" xml:base="http://localhost:4000/ActivityVsActioin">&lt;p&gt;이번에 회사에서 상세설계를 하는 업무를 맡게되어 진행 중인데,
+Activity Diagram과 Class Diagram을 사용 하고있다.
+지금 다른사람들이 만든 Activity Diagram을 보면서 UML을 작성중인데,
+다들 Activity와 Action을 구분없이 쓰고있는 것을 알게되었다.&lt;/p&gt;
+
+&lt;p&gt;처음에는 아무거나 써서 그리면 된다고 생각하고 그냥 작성 중 이였는데, 
+어떤 한 예제에 Activity와 Action을 구분해서 사용하고 있는 것을 보고 
+구글에 검색해보게 되었다.&lt;/p&gt;
+
+&lt;p&gt;여러 게시글들을 보니 Activity와 Action을 구분없이 그냥 쓰고있는 곳도 있었고,
+확실히 구분해 놓은 곳도 있었는데, 확실히 구분해 놓은 곳이 많지 않아 사람들이
+사용 방법을 모르는건가?라고 생각이 들었다.&lt;/p&gt;
+
+&lt;h2 id=&quot;activity-vs-action&quot;&gt;Activity Vs Action&lt;/h2&gt;
+&lt;p&gt;Sparx시스템(Enterprise Architect만든회사)에서 UML2튜토리얼 내용을 가져와보면&lt;/p&gt;
+
+&lt;h4 id=&quot;activity&quot;&gt;Activity&lt;/h4&gt;
+&lt;p&gt;An activity is the specification of a parameterized sequence of behaviour. An activity is shown as a round-cornered rectangle enclosing all the actions, control flows and other elements that make up the activity.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/image/post/20200819/Activity.jpg&quot; alt=&quot;Activity&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;즉 제어흐름 및 여러 요소들을 구성하는 하나의 큰 활동을 의미한다. 액션과 오브젝트, 조건등이 모여 하나의 액티비티를 구성한다는 것이다.&lt;/p&gt;
+
+&lt;h4 id=&quot;action&quot;&gt;Action&lt;/h4&gt;
+&lt;p&gt;An action represents a single step within an activity. Actions are denoted by round-cornered rectangles.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/image/post/20200819/Action.jpg&quot; alt=&quot;Action&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Action은 단일의 스텝을 의미한다고 한다. 즉 Atomic한 최소 단위의 처리?라고 생각하면 된다.&lt;/p&gt;
+
+&lt;p&gt;여담이지만 다른사람들이 만든 Activity Diagram을 봤을때, Action을 Activity처럼 control Flow로 연결해서 최소단위로 사용하는 사람들이 있었는데, 기본적으로 EA소프트웨어 에서는 그러한 행동을 제한하고 있다. 
+굳이 그런식으로 쓰려고 하려면, EA소프트웨어에서 “strict connector syntax”의 체크를 해제해주어야한다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">이번에 회사에서 상세설계를 하는 업무를 맡게되어 진행 중인데, Activity Diagram과 Class Diagram을 사용 하고있다. 지금 다른사람들이 만든 Activity Diagram을 보면서 UML을 작성중인데, 다들 Activity와 Action을 구분없이 쓰고있는 것을 알게되었다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">TIL - 메모장은 어떻게 문자를 판별할까?</title>
+      <link href="http://localhost:4000/HowNoteoadJudgeCodepage" rel="alternate" type="text/html" title="TIL - 메모장은 어떻게 문자를 판별할까?" />
+      <published>2020-08-18T01:40:00+09:00</published>
+      <updated>2020-08-18T01:40:00+09:00</updated>
+      <id>http://localhost:4000/HowNoteoadJudgeCodepage</id>
+      <content type="html" xml:base="http://localhost:4000/HowNoteoadJudgeCodepage">&lt;p&gt;이전에 납품한 프로그램에서 출력한 아웃풋이 문자가 깨져서 나온다는 연락을 받았다.&lt;/p&gt;
+
+&lt;p&gt;일본에서는 모지바케(文字化け)라고하는데, 메모장으로 아웃풋을 열었을 경우 깨져서 보인다는 것이다.&lt;/p&gt;
+
+&lt;p&gt;연락을 받고 바로 시험해봤는데, 메모장으로 열었을 경우에는 문자가 깨지고, 다른에디터(사쿠라에디터)&lt;/p&gt;
+
+&lt;p&gt;를 이용했을 경우에는 문자가 깨지지 않고 제대로 나왔다.&lt;/p&gt;
+
+&lt;p&gt;즉 메모장이 내용물의 문자를 잘 못 인식해서, UTF16LE형식으로 파일을 열어서 문자가 깨져보인것이다.&lt;/p&gt;
+
+&lt;p&gt;내용물에는 문제가 없어서 다행이였지만, 왜 메모장이 제대로 인식을 못하는지 거래처에 설명해야 했기때문에&lt;/p&gt;
+
+&lt;p&gt;메모장이 어떻게 문자를 판별하는지에 대해서 조사를 해보았다.&lt;/p&gt;
+
+&lt;h2 id=&quot;istextunicode&quot;&gt;IsTextUnicode&lt;/h2&gt;
+
+&lt;p&gt;구글에서 열심히 찾아본 결과, 메모장은 IsTextUnicode라는 windows API를 사용해서 ANSI인코딩문자인지,&lt;/p&gt;
+
+&lt;p&gt;유니코드인지 판별하고 있다는 걸 알게되었다.&lt;/p&gt;
+
+&lt;p&gt;그리고 IsTextUnicode는 MSDN에서 완벽하게 문자를 판별할 수 없다고 설명이 적혀있었다.&lt;/p&gt;
+
+&lt;p&gt;일단 이 내용을 거래처에 전달하고 문제는 다행이 해결되었다.&lt;/p&gt;
+
+&lt;h2 id=&quot;bush-hid-the-facts&quot;&gt;Bush hid the facts&lt;/h2&gt;
+
+&lt;p&gt;좀 더 찾아보니 이러한 메모장버그(?)에 관련해 꽤 유명한 얘기가 있었다.&lt;/p&gt;
+
+&lt;p&gt;2007년인가 스펀지에도 나왔다고하는데, 메모장에 “Bush hid the facts”라고 입력 후 ANSI인코딩으로 저장한 다음&lt;/p&gt;
+
+&lt;p&gt;다시 파일을 열었을때, 이상한 중국어가 나온다는 것이였다.  그리고 이 내용이 9/11테러나 이라크전쟁 음모론과 연관이 있지않나라는&lt;/p&gt;
+
+&lt;p&gt;루머가 있었다. “Bush hid the facts”의 뜻을 해석하면 부시는 진실을 감췄다라는 의미이고, 메모장에 나오는 중국어의 의미가&lt;/p&gt;
+
+&lt;p&gt;진실은 언젠가 밝혀진다 라는 의미를 가지고 있었기 때문이다.&lt;/p&gt;
+
+&lt;p&gt;하지만 이것은 딱히 음모론과는 관련 없고, 그저 IsTextUnicode가 “Bush hid the facts”문자코드를 잘 못 인식해&lt;/p&gt;
+
+&lt;p&gt;Unicode로 표현했다는것 뿐이다. 그리고 알파벳 배열을 4-3-3-5로 해서 아무 알파벳이나 저장해도(예: xxxx xxx xxx xxxxx) Unicode로 인식했다고한다.&lt;/p&gt;
+
+&lt;p&gt;여하튼 문제가 해결되서 다행이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;지금은-버그가-해결되서-재현은-안된다&quot;&gt;지금은 버그가 해결되서 재현은 안된다.&lt;/h3&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">이전에 납품한 프로그램에서 출력한 아웃풋이 문자가 깨져서 나온다는 연락을 받았다.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

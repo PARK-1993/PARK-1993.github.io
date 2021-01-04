@@ -1,0 +1,198 @@
+<h2 id="command-pattern이란">Command Pattern이란</h2>
+<p><em>커맨드패턴을 이용하면 요구 사항을 객체로 캡슐화 할 수 있으며, 매개변수를 써서 여러가지 다른 요구 사항을 집어넣을 수도 있습니다. 또한 요청 내역을 큐에 저장하거나 로그로 기록할 수도 있으며, 작업취소 기능도 지원가능합니다.</em>
+헤드퍼스트에서 나온 정의이다. 어떠한 요구 사항, 명령을 각각 클래스로 만들어 캡슐화 하며, OCP를 준거한다. 
+요구나 명령을 프로그래밍할 경우가 있다면 CommandPattern을 사용하여 의존성은 낮추고 확장성을 높인 설계가 가능하다.</p>
+
+<h2 id="구조">구조</h2>
+
+<p><img src="/assets/image/post/20200908/CommandPattern.png" alt="CommandPattern" /></p>
+
+<p>커맨드 패턴에는 명령(command), 수신자(receiver), 발동자(invoker), 클라이언트(client)의 네개의 용어를 사용한다.</p>
+<ul>
+  <li>Command : 말그대로 명령이며, 인터페이스로서 execute라는 커맨드를 실행시키는 추상 메소드를 가지고 있다.</li>
+  <li>Invoker : 인보커란 호출자라고도 하며, Command를 가지고 있고, 여기서 execute 메소드를 호출하여 커맨드 객체에게 특정 작업을 수행해달라는 요구를 하게된다.</li>
+  <li>Receiver : 수신자이며, 요구 사항을 수행하기 위해 어떤 일을 처리해야 하는지 알고 있는 객체, 실제 요구의 대상이되는 객체이다. 예를들어 불을 켜다라는 명령에서는 전등이 요구, 명령의 대상인 리시버가 된다.</li>
+  <li>Client : 클라이언트는 Command를 생성하고, Receiver를 설정한다.</li>
+</ul>
+
+<h2 id="소스코드">소스코드</h2>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include&lt;iostream&gt;
+#include&lt;vector&gt;
+</span><span class="k">class</span> <span class="nc">Command</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="n">execute</span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="n">undo</span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">RemoteController</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Command</span><span class="o">*&gt;</span> <span class="n">ONcommand</span><span class="p">;</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Command</span><span class="o">*&gt;</span> <span class="n">OFFcommand</span><span class="p">;</span>
+	<span class="n">Command</span><span class="o">*</span> <span class="n">recentCommand</span><span class="p">;</span>
+	<span class="n">RemoteController</span><span class="p">()</span>
+	<span class="p">{</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="n">setOnCommand</span><span class="p">(</span><span class="n">Command</span><span class="o">*</span> <span class="n">command</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">ONcommand</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">command</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="kt">void</span> <span class="n">setOffCommand</span><span class="p">(</span><span class="n">Command</span><span class="o">*</span> <span class="n">command</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">OFFcommand</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">command</span><span class="p">);</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="n">runON</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">index</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">ONcommand</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">execute</span><span class="p">();</span>
+		<span class="n">recentCommand</span> <span class="o">=</span> <span class="n">ONcommand</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="n">runOFF</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">index</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">OFFcommand</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">execute</span><span class="p">();</span>
+		<span class="n">recentCommand</span> <span class="o">=</span> <span class="n">OFFcommand</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
+	<span class="p">}</span>
+
+	<span class="kt">void</span> <span class="n">undo</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="n">recentCommand</span><span class="o">-&gt;</span><span class="n">undo</span><span class="p">();</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+<span class="k">class</span> <span class="nc">Light</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="kt">void</span> <span class="n">turnOn</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Turn On the light"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="n">turnOff</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Turn Off the light"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+<span class="k">class</span> <span class="nc">Radio</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="kt">void</span> <span class="n">turnOn</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Turn On the radio"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="n">turnOff</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Turn Off the radio"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+
+
+<span class="k">class</span> <span class="nc">LightOnCommand</span> <span class="o">:</span><span class="k">public</span> <span class="n">Command</span>
+<span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+	<span class="n">Light</span><span class="o">*</span> <span class="n">light</span><span class="p">;</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="n">LightOnCommand</span><span class="p">(</span><span class="n">Light</span><span class="o">*</span> <span class="n">light</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">this</span><span class="o">-&gt;</span><span class="n">light</span> <span class="o">=</span> <span class="n">light</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="n">execute</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="n">light</span><span class="o">-&gt;</span><span class="n">turnOn</span><span class="p">();</span>
+	<span class="p">}</span>
+
+	<span class="kt">void</span> <span class="n">undo</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="n">light</span><span class="o">-&gt;</span><span class="n">turnOff</span><span class="p">();</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">LightOffCommand</span> <span class="o">:</span><span class="k">public</span> <span class="n">Command</span>
+<span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+	<span class="n">Light</span><span class="o">*</span> <span class="n">light</span><span class="p">;</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="n">LightOffCommand</span><span class="p">(</span><span class="n">Light</span><span class="o">*</span> <span class="n">light</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">this</span><span class="o">-&gt;</span><span class="n">light</span> <span class="o">=</span> <span class="n">light</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="n">execute</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="n">light</span><span class="o">-&gt;</span><span class="n">turnOff</span><span class="p">();</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="n">undo</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="n">light</span><span class="o">-&gt;</span><span class="n">turnOn</span><span class="p">();</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">RadioOnCommand</span> <span class="o">:</span><span class="k">public</span> <span class="n">Command</span>
+<span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+	<span class="n">Radio</span><span class="o">*</span> <span class="n">radio</span><span class="p">;</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="n">RadioOnCommand</span><span class="p">(</span><span class="n">Radio</span><span class="o">*</span> <span class="n">radio</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">this</span><span class="o">-&gt;</span><span class="n">radio</span> <span class="o">=</span> <span class="n">radio</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="n">execute</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="n">radio</span><span class="o">-&gt;</span><span class="n">turnOn</span><span class="p">();</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="n">undo</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="n">radio</span><span class="o">-&gt;</span><span class="n">turnOff</span><span class="p">();</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">RadioOffCommand</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Command</span>
+<span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+	<span class="n">Radio</span><span class="o">*</span> <span class="n">radio</span><span class="p">;</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="n">RadioOffCommand</span><span class="p">(</span><span class="n">Radio</span><span class="o">*</span> <span class="n">radio</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">this</span><span class="o">-&gt;</span><span class="n">radio</span> <span class="o">=</span> <span class="n">radio</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="n">execute</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="n">radio</span><span class="o">-&gt;</span><span class="n">turnOff</span><span class="p">();</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="n">undo</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="n">radio</span><span class="o">-&gt;</span><span class="n">turnOn</span><span class="p">();</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="c1">// 리시버 객체생성
+</span>	<span class="n">Light</span><span class="o">*</span> <span class="n">objLight</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Light</span><span class="p">;</span>
+	<span class="n">Radio</span><span class="o">*</span> <span class="n">objRadio</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Radio</span><span class="p">;</span>
+
+	<span class="c1">// 커맨드 객체에 리시버 설정
+</span>	<span class="n">LightOnCommand</span><span class="o">*</span> <span class="n">objLightOnCommand</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LightOnCommand</span><span class="p">(</span><span class="n">objLight</span><span class="p">);</span>
+	<span class="n">LightOffCommand</span><span class="o">*</span> <span class="n">objLightOffCommand</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LightOffCommand</span><span class="p">(</span><span class="n">objLight</span><span class="p">);</span>
+	<span class="n">RadioOnCommand</span><span class="o">*</span> <span class="n">objRadioOnCommand</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RadioOnCommand</span><span class="p">(</span><span class="n">objRadio</span><span class="p">);</span>
+	<span class="n">RadioOffCommand</span><span class="o">*</span> <span class="n">objRadioOffCommand</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RadioOffCommand</span><span class="p">(</span><span class="n">objRadio</span><span class="p">);</span>
+
+	<span class="c1">// 인보커(리모컨) 객체 생성
+</span>	<span class="n">RemoteController</span><span class="o">*</span> <span class="n">objRemoteController</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RemoteController</span><span class="p">();</span>
+	
+	<span class="c1">// 리모컨 버튼등록
+</span>	<span class="n">objRemoteController</span><span class="o">-&gt;</span><span class="n">setOnCommand</span><span class="p">(</span><span class="n">objLightOnCommand</span><span class="p">);</span>
+	<span class="n">objRemoteController</span><span class="o">-&gt;</span><span class="n">setOffCommand</span><span class="p">(</span><span class="n">objLightOffCommand</span><span class="p">);</span>
+	<span class="n">objRemoteController</span><span class="o">-&gt;</span><span class="n">setOnCommand</span><span class="p">(</span><span class="n">objRadioOnCommand</span><span class="p">);</span>
+	<span class="n">objRemoteController</span><span class="o">-&gt;</span><span class="n">setOffCommand</span><span class="p">(</span><span class="n">objRadioOffCommand</span><span class="p">);</span>
+
+	<span class="c1">// 동작
+</span>	<span class="n">objRemoteController</span><span class="o">-&gt;</span><span class="n">runON</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+	<span class="n">objRemoteController</span><span class="o">-&gt;</span><span class="n">runOFF</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+	<span class="n">objRemoteController</span><span class="o">-&gt;</span><span class="n">runON</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+	<span class="n">objRemoteController</span><span class="o">-&gt;</span><span class="n">runOFF</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+
+	<span class="n">objRemoteController</span><span class="o">-&gt;</span><span class="n">undo</span><span class="p">();</span>
+
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>위에 소스코드는 헤드퍼스트의 소스코드를 참고하였다.</p>

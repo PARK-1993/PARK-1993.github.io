@@ -1,0 +1,148 @@
+<h2 id="정의">정의</h2>
+<p><em>팩토리 메소드 패턴에서는 객체를 생성하기 위한 인터페이스를 저의하는데, 어떤 클래스의 인스턴스를 만들지는 서브클래스에서 결정하게 만듭니다. 팩토리ㅣ메소드패턴을 이용하면 클래스의 인스턴스를 만드는
+일을 서브클래스의 맡기는 것입니다.</em></p>
+
+<p>Factory Method Pattern은 Simple Factory에서 확장되었다고 생각하면된다.
+한 피자가게에 대해서 피자생성부분을 Factory로 만들어서 관리하고 싶다면
+Simple Factory로 가능하다.</p>
+
+<p>하지만 한 피자가게가 있고, 그 피자가게의 체인점으로 특색이있는 피자가게들이 문을 열게된다면
+Simple Factory에서 확장을 할 필요가 있습니다.</p>
+
+<h2 id="구조">구조</h2>
+
+<p><img src="/assets/image/post/20200906/FactoryMethodPattern.jpg" alt="Activity" /></p>
+
+<ul>
+  <li>Creator : Product를 가지고 원하는 일 을 하기위한 모든 메소드들이 구현되어있다. PizzaStore에 상응</li>
+  <li>ConcreteCreator : 실제로 Product를 생산한다. 즉 각각의자 가게의 피자 인스턴스를 생성한다.</li>
+  <li>Product : Pizza클래스에 해당하며, 이 클래스를 상속하여 여러 종류의 피자를 정의한다.</li>
+  <li>ConcreteProduct : Pizza클래스를 상속하여 BbqPizza, PotatoPizza등 여러 피자들을 정의한다.</li>
+</ul>
+
+<h2 id="장점">장점</h2>
+<ul>
+  <li>객체 생성코드를 한 객체에 집어넣어 중복을 없앰</li>
+  <li>관리시 Factory객체만 신경쓰면됌</li>
+  <li>유저입장에서는 인터페이스만 신경써서 사용가능</li>
+</ul>
+
+<h2 id="소스코드">소스코드</h2>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include&lt;iostream&gt;
+#include&lt;string&gt;
+</span>
+<span class="c1">// Product
+</span><span class="k">class</span> <span class="nc">Pizza</span>
+<span class="p">{</span>
+<span class="k">public</span> <span class="o">:</span> 
+	<span class="n">Pizza</span><span class="p">()</span> <span class="p">{</span> <span class="n">pizzaName</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span> <span class="p">};</span>
+	<span class="n">Pizza</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">pizzaName</span><span class="p">)</span> <span class="p">{</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">pizzaName</span> <span class="o">=</span> <span class="n">pizzaName</span><span class="p">;</span> <span class="p">};</span>
+
+	<span class="kt">void</span> <span class="nf">cook</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">pizzaName</span> <span class="o">&lt;&lt;</span> <span class="s">" is cooked"</span><span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="nf">cut</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">pizzaName</span> <span class="o">&lt;&lt;</span> <span class="s">" is cut"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="kt">void</span> <span class="nf">pack</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">pizzaName</span> <span class="o">&lt;&lt;</span> <span class="s">" is packed"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">pizzaName</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="c1">// ConcreateProduct
+</span><span class="k">class</span> <span class="nc">ChicagoCheesePizza</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Pizza</span><span class="p">{</span><span class="k">public</span><span class="o">:</span><span class="n">ChicagoCheesePizza</span><span class="p">()</span> <span class="o">:</span><span class="n">Pizza</span><span class="p">(</span><span class="s">"ChicagoCheesePizza"</span><span class="p">)</span> <span class="p">{};};</span>
+<span class="k">class</span> <span class="nc">ChicagoPotatoPizza</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Pizza</span><span class="p">{</span><span class="k">public</span><span class="o">:</span><span class="n">ChicagoPotatoPizza</span><span class="p">()</span> <span class="o">:</span><span class="n">Pizza</span><span class="p">(</span><span class="s">"ChicagoPotatoPizza"</span><span class="p">)</span> <span class="p">{};};</span>
+<span class="k">class</span> <span class="nc">ChicagoBbqPizza</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Pizza</span><span class="p">{</span><span class="k">public</span><span class="o">:</span><span class="n">ChicagoBbqPizza</span><span class="p">()</span> <span class="o">:</span><span class="n">Pizza</span><span class="p">(</span><span class="s">"ChicagoBbqPizza"</span><span class="p">)</span> <span class="p">{};};</span>
+<span class="k">class</span> <span class="nc">ThinCheesePizza</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Pizza</span> <span class="p">{</span> <span class="k">public</span><span class="o">:</span><span class="n">ThinCheesePizza</span><span class="p">()</span> <span class="o">:</span><span class="n">Pizza</span><span class="p">(</span><span class="s">"ThinCheesePizza"</span><span class="p">)</span> <span class="p">{};</span> <span class="p">};</span>
+<span class="k">class</span> <span class="nc">ThinPotatoPizza</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Pizza</span> <span class="p">{</span> <span class="k">public</span><span class="o">:</span><span class="n">ThinPotatoPizza</span><span class="p">()</span> <span class="o">:</span><span class="n">Pizza</span><span class="p">(</span><span class="s">"ThinPotatoPizza"</span><span class="p">)</span> <span class="p">{};</span> <span class="p">};</span>
+<span class="k">class</span> <span class="nc">ThinBbqPizza</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Pizza</span> <span class="p">{</span> <span class="k">public</span><span class="o">:</span><span class="n">ThinBbqPizza</span><span class="p">()</span> <span class="o">:</span><span class="n">Pizza</span><span class="p">(</span><span class="s">"ThinBbqPizza"</span><span class="p">)</span> <span class="p">{};</span> <span class="p">};</span>
+
+
+<span class="c1">// Creator
+</span><span class="k">class</span> <span class="nc">PizzaStore</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="n">Pizza</span><span class="o">*</span> <span class="n">pizza</span><span class="p">;</span>
+
+	<span class="n">Pizza</span><span class="o">*</span> <span class="nf">orderPizza</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">pizzaName</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">this</span><span class="o">-&gt;</span><span class="n">pizza</span><span class="o">=</span> <span class="n">createPizza</span><span class="p">(</span><span class="n">pizzaName</span><span class="p">);</span>
+		
+		<span class="k">this</span><span class="o">-&gt;</span><span class="n">pizza</span><span class="o">-&gt;</span><span class="n">cook</span><span class="p">();</span>
+		<span class="k">this</span><span class="o">-&gt;</span><span class="n">pizza</span><span class="o">-&gt;</span><span class="n">cut</span><span class="p">();</span>
+		<span class="k">this</span><span class="o">-&gt;</span><span class="n">pizza</span><span class="o">-&gt;</span><span class="n">pack</span><span class="p">();</span>
+
+		<span class="k">return</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">pizza</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="k">virtual</span> <span class="n">Pizza</span><span class="o">*</span> <span class="n">createPizza</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	
+<span class="p">};</span>
+
+<span class="c1">// ConcreateCreator
+</span><span class="k">class</span> <span class="nc">ChicagoPizzaStore</span> <span class="o">:</span> <span class="k">public</span> <span class="n">PizzaStore</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="n">Pizza</span><span class="o">*</span> <span class="n">createPizza</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">pizzaName</span><span class="p">)</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">pizzaName</span><span class="p">.</span><span class="n">compare</span><span class="p">(</span><span class="s">"Cheese"</span><span class="p">))</span>
+		<span class="p">{</span>
+			<span class="k">return</span> <span class="k">new</span> <span class="n">ChicagoCheesePizza</span><span class="p">;</span>
+		<span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">pizzaName</span><span class="p">.</span><span class="n">compare</span><span class="p">(</span><span class="s">"Bbq"</span><span class="p">))</span>
+		<span class="p">{</span>
+			<span class="k">return</span> <span class="k">new</span> <span class="n">ChicagoBbqPizza</span><span class="p">;</span>
+		<span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">pizzaName</span><span class="p">.</span><span class="n">compare</span><span class="p">(</span><span class="s">"Potato"</span><span class="p">))</span>
+		<span class="p">{</span>
+			<span class="k">return</span> <span class="k">new</span> <span class="n">ChicagoPotatoPizza</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">else</span>
+		<span class="p">{</span>
+			<span class="k">return</span> <span class="k">new</span> <span class="n">Pizza</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">ThinPizzaStore</span> <span class="o">:</span> <span class="k">public</span> <span class="n">PizzaStore</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="n">Pizza</span><span class="o">*</span> <span class="n">createPizza</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">pizzaName</span><span class="p">)</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">pizzaName</span><span class="p">.</span><span class="n">compare</span><span class="p">(</span><span class="s">"Cheese"</span><span class="p">))</span>
+		<span class="p">{</span>
+			<span class="k">return</span> <span class="k">new</span> <span class="n">ThinCheesePizza</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">pizzaName</span><span class="p">.</span><span class="n">compare</span><span class="p">(</span><span class="s">"Bbq"</span><span class="p">))</span>
+		<span class="p">{</span>
+			<span class="k">return</span> <span class="k">new</span> <span class="n">ThinBbqPizza</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">pizzaName</span><span class="p">.</span><span class="n">compare</span><span class="p">(</span><span class="s">"Potato"</span><span class="p">))</span>
+		<span class="p">{</span>
+			<span class="k">return</span> <span class="k">new</span> <span class="n">ThinPotatoPizza</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">else</span>
+		<span class="p">{</span>
+			<span class="k">return</span> <span class="k">new</span> <span class="n">Pizza</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">PizzaStore</span><span class="o">*</span> <span class="n">chicagoPizzaStore</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ChicagoPizzaStore</span><span class="p">;</span>
+	<span class="n">Pizza</span><span class="o">*</span> <span class="n">orderedPizza1</span><span class="p">;</span>
+	<span class="n">orderedPizza1</span> <span class="o">=</span> <span class="n">chicagoPizzaStore</span><span class="o">-&gt;</span><span class="n">orderPizza</span><span class="p">(</span><span class="s">"Cheese"</span><span class="p">);</span>
+	
+	<span class="n">PizzaStore</span><span class="o">*</span> <span class="n">thinPizzaStore</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ThinPizzaStore</span><span class="p">;</span>
+	<span class="n">Pizza</span><span class="o">*</span> <span class="n">orderedPizza2</span><span class="p">;</span>
+	<span class="n">orderedPizza2</span> <span class="o">=</span> <span class="n">thinPizzaStore</span><span class="o">-&gt;</span><span class="n">orderPizza</span><span class="p">(</span><span class="s">"Potato"</span><span class="p">);</span>
+
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>SimpleFactory와의 차이점은 피자를 만드는 처리가(createPizza)추상 메소드로 정의되어
+각각의 자식클래스(ChicagoPizzaStore, ThinPizzaStore)에서 구현하고 있다는 점이다.</p>

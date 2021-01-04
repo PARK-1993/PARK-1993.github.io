@@ -1,0 +1,145 @@
+<p>위키피디아 정의는 아래와 같다.
+<em>데코레이터 패턴(Decorator pattern)이란 주어진 상황 및 용도에 따라 어떤 객체에 책임을 덧붙이는 패턴으로, 기능확장이 필요할 때 서브클래싱 대신 쓸 수 있는 유연한 대안이 될 수 있다.</em>
+Head First Design Pattern책에서의 정의는 다음과 같다.
+<em>데코레이터 패턴에서는 객체에 추가적인 요건을 동적으로 첨가한다. 데코레이터는 서브클래스를 만드는 것을 통해서 기능을 유현하게 확장할 수 있는 방법을 제공한다.</em></p>
+
+<p>솔직히 정의를 봐도 전혀 모르겠다. 동적으로 객체를 추가 가능하고, 서브클래스 즉 상속을 이용해서 기능확장을 한다는 것은 알겠다.</p>
+
+<p>구조를 한번 보자.</p>
+<h2 id="구조">구조</h2>
+
+<p><img src="/assets/image/post/20200830/DecoratorPattern.png" alt="Activity" /></p>
+
+<ul>
+  <li>
+    <dl>
+      <dt>Component</dt>
+      <dd>상속받는 ConcreateComponent와 Decorator의 공통기능을 정의하고, 
+실제 클라이언트가 사용하는 클래스이다.</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt>ConcreateComponent</dt>
+      <dd>기본적인 기능, 이기능에 장식이 붙는 형식</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt>Decorator</dt>
+      <dd>추가적인 기능의 공통기능을 정의한다.</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt>ConcreateDecorator</dt>
+      <dd>추가적인 기능, 기본적인 기능에 장식으로 추가적인 기능을 붙인다.</dd>
+    </dl>
+  </li>
+</ul>
+
+<h2 id="예">예</h2>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Decorator</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Product</span> 
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="n">Decorator</span><span class="p">(</span><span class="n">Product</span><span class="o">*</span> <span class="n">pd</span><span class="p">)</span> <span class="o">:</span><span class="n">product</span><span class="p">(</span><span class="n">pd</span><span class="p">)</span> <span class="p">{};</span>
+	<span class="k">virtual</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">description</span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="n">Product</span><span class="o">*</span> <span class="n">product</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">PartsA</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Decorator</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="n">PartsA</span><span class="p">(</span><span class="n">Product</span><span class="o">*</span> <span class="n">pd</span><span class="p">)</span><span class="o">:</span> <span class="n">Decorator</span><span class="p">(</span><span class="n">pd</span><span class="p">){</span>
+		
+	<span class="p">}</span>
+	<span class="o">~</span><span class="n">PartsA</span><span class="p">()</span> <span class="p">{};</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">description</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="n">product</span><span class="o">-&gt;</span><span class="n">description</span><span class="p">()</span> <span class="o">+</span> <span class="s">" + PartsA"</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="kt">int</span> <span class="n">getLeadTime</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="n">product</span><span class="o">-&gt;</span><span class="n">getLeadTime</span><span class="p">()</span> <span class="o">+</span> <span class="mi">4</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">PartsB</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Decorator</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="n">PartsB</span><span class="p">(</span><span class="n">Product</span><span class="o">*</span> <span class="n">pd</span><span class="p">)</span> <span class="o">:</span><span class="n">Decorator</span><span class="p">(</span><span class="n">pd</span><span class="p">)</span> <span class="p">{</span>
+
+	<span class="p">}</span>
+	<span class="o">~</span><span class="n">PartsB</span><span class="p">()</span> <span class="p">{};</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">description</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="n">product</span><span class="o">-&gt;</span><span class="n">description</span><span class="p">()</span> <span class="o">+</span> <span class="s">" + PartsB"</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="kt">int</span> <span class="n">getLeadTime</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="n">product</span><span class="o">-&gt;</span><span class="n">getLeadTime</span><span class="p">()</span> <span class="o">+</span> <span class="mi">2</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">PartsC</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Decorator</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="n">PartsC</span><span class="p">(</span><span class="n">Product</span><span class="o">*</span> <span class="n">pd</span><span class="p">)</span> <span class="o">:</span> <span class="n">Decorator</span><span class="p">(</span><span class="n">pd</span><span class="p">)</span> <span class="p">{</span>
+
+	<span class="p">}</span>
+	<span class="o">~</span><span class="n">PartsC</span><span class="p">()</span> <span class="p">{};</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">description</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="n">product</span><span class="o">-&gt;</span><span class="n">description</span><span class="p">()</span> <span class="o">+</span> <span class="s">" + PartsC"</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="kt">int</span> <span class="n">getLeadTime</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="n">product</span><span class="o">-&gt;</span><span class="n">getLeadTime</span><span class="p">()</span> <span class="o">+</span> <span class="mi">6</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">ProductA</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Product</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">description</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="s">"ProductA = "</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="kt">int</span> <span class="n">getLeadTime</span><span class="p">()</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+<span class="k">class</span> <span class="nc">ProductB</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Product</span>
+<span class="p">{</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">description</span><span class="p">()</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="s">"ProductB = "</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="kt">int</span> <span class="n">getLeadTime</span><span class="p">()</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="mi">3</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">Product</span><span class="o">*</span> <span class="n">Aproduct</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ProductA</span><span class="p">;</span>
+	<span class="n">Aproduct</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PartsA</span><span class="p">(</span><span class="n">Aproduct</span><span class="p">);</span>
+	<span class="n">Aproduct</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PartsB</span><span class="p">(</span><span class="n">Aproduct</span><span class="p">);</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Product : "</span> <span class="o">&lt;&lt;</span>  <span class="n">Aproduct</span><span class="o">-&gt;</span><span class="n">description</span><span class="p">().</span><span class="n">c_str</span><span class="p">()</span> <span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"LeadTiem : "</span> <span class="o">&lt;&lt;</span>  <span class="n">Aproduct</span><span class="o">-&gt;</span><span class="n">getLeadTime</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+	<span class="n">Product</span><span class="o">*</span> <span class="n">Bproduct</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ProductB</span><span class="p">;</span>
+	<span class="n">Bproduct</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PartsA</span><span class="p">(</span><span class="n">Bproduct</span><span class="p">);</span>
+	<span class="n">Bproduct</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PartsB</span><span class="p">(</span><span class="n">Bproduct</span><span class="p">);</span>
+	<span class="n">Bproduct</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PartsC</span><span class="p">(</span><span class="n">Bproduct</span><span class="p">);</span>
+
+	<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Product : "</span> <span class="o">&lt;&lt;</span> <span class="n">Bproduct</span><span class="o">-&gt;</span><span class="n">description</span><span class="p">().</span><span class="n">c_str</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"LeadTiem : "</span> <span class="o">&lt;&lt;</span> <span class="n">Bproduct</span><span class="o">-&gt;</span><span class="n">getLeadTime</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>

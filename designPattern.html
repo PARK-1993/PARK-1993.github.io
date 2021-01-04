@@ -1,0 +1,78 @@
+<h2 id="strategy-pattern">strategy pattern</h2>
+<p>행위 소프트웨어 디자인패턴이며, 알고리즘을 캡슐화하여 상호 교체가 가능하게만든다.
+이 패턴을 사용하면 클라이언트와는 독립적으로 알고리즘을 변경할 수 있다.
+그리고 동적으로 알고리즘을 교체할 수 있는 구조로 되어있다.</p>
+
+<h2 id="구조">구조</h2>
+<p><img src="/assets/image/post/20200825/strategyPattern.png" alt="Activity" /></p>
+
+<h2 id="실제-예">실제 예</h2>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Logger</span> <span class="p">{</span>
+
+    <span class="kd">enum</span> <span class="kt">LogStyle</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="n">lowercase</span>
+        <span class="k">case</span> <span class="n">uppercase</span>
+        <span class="k">case</span> <span class="n">capitalized</span>
+    <span class="p">}</span>
+
+    <span class="k">let</span> <span class="nv">style</span><span class="p">:</span> <span class="kt">LogStyle</span>
+
+    <span class="kd">func</span> <span class="nf">log</span><span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">switch</span> <span class="n">style</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">lowercase</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="nf">lowercased</span><span class="p">())</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">uppercase</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="nf">uppercased</span><span class="p">())</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">capitalized</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="n">capitalized</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>여기서 style을 10개이상으로 추가하려면 logger를 직접건드려 enum과 log함수를 수정해야한다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// What</span>
+<span class="kd">protocol</span> <span class="kt">LoggerStrategy</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">log</span><span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// Who</span>
+<span class="kd">struct</span> <span class="kt">Logger</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">strategy</span><span class="p">:</span> <span class="kt">LoggerStrategy</span>
+
+    <span class="kd">func</span> <span class="nf">log</span><span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">strategy</span><span class="o">.</span><span class="nf">log</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// How</span>
+<span class="kd">struct</span> <span class="kt">LowercaseStrategy</span><span class="p">:</span> <span class="kt">LoggerStrategy</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">log</span><span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="nf">lowercased</span><span class="p">())</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">struct</span> <span class="kt">UppercaseStratgy</span><span class="p">:</span> <span class="kt">LoggerStrategy</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">log</span><span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="nf">uppercased</span><span class="p">())</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">struct</span> <span class="kt">CapitalizedStrategy</span><span class="p">:</span> <span class="kt">LoggerStrategy</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">log</span><span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="n">capitalized</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+ 
+
+<span class="k">var</span> <span class="nv">logger</span> <span class="o">=</span> <span class="kt">Logger</span><span class="p">(</span><span class="nv">strategy</span><span class="p">:</span> <span class="kt">CapitalizedStrategy</span><span class="p">())</span>
+<span class="n">logger</span><span class="o">.</span><span class="nf">log</span><span class="p">(</span><span class="s">"my first strategy"</span><span class="p">)</span>  <span class="c1">// My First Strategy</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="kt">Logger</span><span class="p">(</span><span class="nv">strategy</span><span class="p">:</span> <span class="kt">UppercaseStrategy</span><span class="p">())</span>
+<span class="n">logger</span><span class="o">.</span><span class="nf">log</span><span class="p">(</span><span class="s">"my first strategy"</span><span class="p">)</span>  <span class="c1">// MY FIRST STRATEGY</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="kt">Logger</span><span class="p">(</span><span class="nv">strategy</span><span class="p">:</span> <span class="kt">LowercaseStrategy</span><span class="p">())</span>
+<span class="n">logger</span><span class="o">.</span><span class="nf">log</span><span class="p">(</span><span class="s">"my first strategy"</span><span class="p">)</span>  <span class="c1">// my first strategy</span>
+ 
+</code></pre></div></div>
+<p>하지만 strategy pattern을 사용한다면 logger와 log는 직접 건드리지 않고 LoggerStrategy을 준거하는
+구조체를 만들어주면 된다.</p>

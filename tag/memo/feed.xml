@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="http://localhost:4000/tag/memo/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2021-01-04T22:31:25+09:00</updated>
+  <id>http://localhost:4000/tag/memo/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">푸바 프로그래밍 | </title>
+  
+
+  
+    <subtitle>TIL</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">간단한 FTP 클라이언트 프로그램 만들기 - 계획</title>
+      <link href="http://localhost:4000/SimpleFTPClientPlan" rel="alternate" type="text/html" title="간단한 FTP 클라이언트 프로그램 만들기 - 계획" />
+      <published>2020-08-20T00:00:00+09:00</published>
+      <updated>2020-08-20T00:00:00+09:00</updated>
+      <id>http://localhost:4000/SimpleFTPClientPlan</id>
+      <content type="html" xml:base="http://localhost:4000/SimpleFTPClientPlan">&lt;p&gt;이전 프로젝트에서 FTP를 이용해서 결과파일을 다른 서버로 보내는 부분이 있어서,
+처음으로 네트워크 관련해서 조금 건드려보게 되었다.&lt;/p&gt;
+
+&lt;p&gt;이번에 조사하고 알게 된 것을 토대로 간단한 프로그램을 만들어보고자 한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;기능-요건&quot;&gt;기능 요건&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;GUI프로그래밍일것     -&amp;gt;     C++/CLI&lt;/li&gt;
+  &lt;li&gt;파일전송 기능이 있을것&lt;/li&gt;
+  &lt;li&gt;파일전송 위치 변경 가능할 것&lt;/li&gt;
+  &lt;li&gt;주고 받는 로그를 실시간으로 표시할 것&lt;/li&gt;
+  &lt;li&gt;로그를 파일로도 남길 것&lt;/li&gt;
+  &lt;li&gt;ACTIVE MODE / PASSIVE MODE 변경 가능할 것&lt;/li&gt;
+  &lt;li&gt;상대 파일 List와 내 파일 List를 확인 가능할 것 -&amp;gt; optional or Version 2.0&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;비기능-요건&quot;&gt;비기능 요건&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;기본설계는 sequence diagram으로 만들 것&lt;/li&gt;
+  &lt;li&gt;상세설계는 class diagram과 Activity diagram으로 만들것&lt;/li&gt;
+  &lt;li&gt;테스트는 운용테스트 수준으로 할것이나, 시간이 된다면 google test를 사용하여 unit test를 진행할 것&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;이렇게 요건을 정의해도 되는지는 아직 잘 모르겠지만, 이정도로 프로그램을 만들어 보려고 한다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+        <category term="memo" />
+      
+        <category term="FTP" />
+      
+        <category term="C++" />
+      
+        <category term="C++/CLI" />
+      
+        <category term="요건" />
+      
+
+      
+        <summary type="html">이전 프로젝트에서 FTP를 이용해서 결과파일을 다른 서버로 보내는 부분이 있어서, 처음으로 네트워크 관련해서 조금 건드려보게 되었다.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

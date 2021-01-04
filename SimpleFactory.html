@@ -1,0 +1,65 @@
+<p>팩토리 패턴은 생성 패턴으로 객체를 생성할때 사용 되는 디자인패턴이다.
+객체를 생성하는 부분을 팩토리 클래스로 따로 빼서 관리하는 것이다.</p>
+
+<h2 id="simple-factory">simple Factory</h2>
+<p>Simple Factory는 디자인패턴이라고는 할 수 없다고한다. 프로그래밍에서 자주쓰이는 용법..? 그정도라고 보면된다.
+그러면 simple Factory는 뭔가?</p>
+
+<h2 id="구조">구조</h2>
+
+<p><img src="/assets/image/post/20200831/SimpleFactory.jpg" alt="Activity" /></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include&lt;iostream&gt;
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">Pizza</span> <span class="n">objPizza</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">order</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">order</span> <span class="o">==</span> <span class="s">"cheesePizza"</span><span class="p">)</span>
+        <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CheesePizza</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">order</span> <span class="o">==</span><span class="s">"bbqPizza"</span><span class="p">)</span>
+        <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BbqPizza</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">order</span> <span class="o">==</span><span class="s">"potatoPizza"</span><span class="p">)</span>
+        <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PotatoPizza</span><span class="p">;</span>
+    <span class="k">else</span>
+        <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">OriginalPizza</span><span class="p">;</span>
+
+    <span class="n">Pizza</span><span class="p">.</span><span class="n">cook</span><span class="p">();</span>    
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Pizza클래스가 있다고 가정하고, Pizza클래스를 상속하는 cheesePizza, bbqPizza, potatoPizza가 있다고 하자.
+다형성을 이용하여 만든 클래스를 동적으로 바꿀 수 있도록 코드를 짰다.
+하지만 이코드는 피자메뉴가 추가될 경우 계속해서 main()을 바꿔줘야하고 테스트도 다시 해야된다.
+여기서 Simple Factory를 사용하면 유지보수성이 좋아지고 캡슐화가 되어 객체지향적인 코딩이 가능하다.</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include&lt;iostream&gt;
+</span><span class="k">class</span> <span class="nc">PizzaFactory</span>
+<span class="p">{</span>
+    <span class="n">Pizza</span> <span class="n">createPizza</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">order</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Pizza</span> <span class="n">objPizza</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">order</span> <span class="o">==</span> <span class="s">"cheesePizza"</span><span class="p">)</span>
+            <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CheesePizza</span><span class="p">;</span>
+        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">order</span> <span class="o">==</span><span class="s">"bbqPizza"</span><span class="p">)</span>
+            <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BbqPizza</span><span class="p">;</span>
+        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">order</span> <span class="o">==</span><span class="s">"potatoPizza"</span><span class="p">)</span>
+            <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PotatoPizza</span><span class="p">;</span>
+        <span class="k">else</span>
+            <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">OriginalPizza</span><span class="p">;</span> 
+        <span class="k">return</span> <span class="n">objPizza</span><span class="p">;</span> 
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">Pizza</span> <span class="n">objPizza</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">order</span> <span class="o">=</span> <span class="s">"cheesePizza"</span><span class="p">;</span>
+    <span class="n">PizzaFactory</span> <span class="n">objPizzaFactory</span><span class="p">;</span>
+    <span class="n">objPizzaFactory</span><span class="p">.</span><span class="n">createPizza</span><span class="p">(</span><span class="n">order</span><span class="p">);</span>
+
+    <span class="n">Pizza</span><span class="p">.</span><span class="n">cook</span><span class="p">();</span>    
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>위같은 형식이 Simple Factory를 적용한 예이다. 이렇게 코딩을 할 경우
+혹시 피자메뉴가 추가되거나하면 PizzaFactory클래스만 변경하면 되기 때문에
+main은 건드릴 필요가 없게된다.</p>

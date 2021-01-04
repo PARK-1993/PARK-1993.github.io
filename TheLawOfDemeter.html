@@ -1,0 +1,40 @@
+<p>최소지식원칙(Principle of least knowledge)혹은 데메테르의법칙(The law of Demeter)라고 불리는 원칙은 객체 지향 디자인원칙중의 하나다.
+결합도가 낮은 설계를 목적으로한다. 왜 결합도가 낮을 필요가 있을까? 
+만약 한 클래스를 여러 클래스들이 상속하고있고, 그 클래스안에서 여러클래스들의 메소드를 불러오고 있다고 한다면, 그 클래스를 수정하게 되었을 경우 관계되는 클래스들의 수정이 필요로 하게된다.</p>
+
+<p>이원칙에서는 한메소드에서 다음과같은 종류의 객체에있는 메소드들을 실행하라는 가이드라인을 제시한다.</p>
+<ul>
+  <li>자기자신의 메소드</li>
+  <li>메소드에 매개변수로 전달된 객체</li>
+  <li>그 메소드에서 생성하거나 인스턴스를 만든 객체</li>
+  <li>그 객체에 속하는 구성요소</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Car</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">//이 클래스의 구성요소. 메소드 호출가능
+</span>    <span class="n">Engine</span> <span class="n">engine</span><span class="p">;</span>
+    <span class="n">Car</span><span class="p">(){};</span>
+    <span class="kt">void</span> <span class="nf">start</span><span class="p">(</span><span class="n">Key</span> <span class="n">key</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">// 메소드내의 새로운객체. 메소드 호출가능
+</span>        <span class="n">Doors</span> <span class="n">doors</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Doors</span><span class="p">;</span>
+
+        <span class="c1">// 메소드의 매개변수. 메소드 호출가능
+</span>        <span class="kt">bool</span> <span class="n">authorized</span> <span class="o">=</span> <span class="n">key</span><span class="p">.</span><span class="n">turns</span><span class="p">();</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">authorized</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">engine</span><span class="p">.</span><span class="n">start</span><span class="p">();</span>
+            <span class="c1">// 객체의 구성요소. 메소드 호출가능
+</span>            <span class="n">updateDashboardDisplay</span><span class="p">();</span>
+            <span class="n">doors</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="kt">void</span> <span class="n">updateDashboardDisplay</span><span class="p">(){};</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>위의 소스코드는 헤드퍼스트의 예제이다.</p>
+
+<h2 id="단점">단점</h2>
+<p>객체들간의 의존성과 유지보수가 용이해지나, 메소드호출을 처리하기 위한 래퍼클래스의 필요성과 시스템의 복잡도 증가, 성능저하가 있을 수 있다.</p>
