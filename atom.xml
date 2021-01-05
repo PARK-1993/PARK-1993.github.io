@@ -10,13 +10,14 @@
       <item>
         <title>최소지식원칙 - Principle of Least Knowledge</title>
         
-          <description>&lt;p&gt;최소지식원칙(Principle of least knowledge)혹은 데메테르의법칙(The law of Demeter)라고 불리는 원칙은 객체 지향 디자인원칙중의 하나다.
+          <description>&lt;h2 id=&quot;최소지식원칙&quot;&gt;최소지식원칙&lt;/h2&gt;
+&lt;p&gt;최소지식원칙(Principle of least knowledge)혹은 데메테르의법칙(The law of Demeter)라고 불리는 원칙은 객체 지향 디자인원칙중의 하나다.
 결합도가 낮은 설계를 목적으로한다. 왜 결합도가 낮을 필요가 있을까? 
 만약 한 클래스를 여러 클래스들이 상속하고있고, 그 클래스안에서 여러클래스들의 메소드를 불러오고 있다고 한다면, 그 클래스를 수정하게 되었을 경우 관계되는 클래스들의 수정이 필요로 하게된다.&lt;/p&gt;
 
 </description>
         
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0900</pubDate>
+        <pubDate>Thu, 10 Sep 2020 04:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/TheLawOfDemeter</link>
         <guid isPermaLink="true">http://localhost:4000/TheLawOfDemeter</guid>
@@ -33,7 +34,7 @@
 
 </description>
         
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0900</pubDate>
+        <pubDate>Thu, 10 Sep 2020 04:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/FacadePattern</link>
         <guid isPermaLink="true">http://localhost:4000/FacadePattern</guid>
@@ -51,7 +52,7 @@
 
 </description>
         
-        <pubDate>Tue, 08 Sep 2020 00:00:00 +0900</pubDate>
+        <pubDate>Wed, 09 Sep 2020 04:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/CommandPattern</link>
         <guid isPermaLink="true">http://localhost:4000/CommandPattern</guid>
@@ -70,7 +71,7 @@
 
 </description>
         
-        <pubDate>Mon, 07 Sep 2020 00:00:00 +0900</pubDate>
+        <pubDate>Tue, 08 Sep 2020 04:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/AbstractFactoryPattern</link>
         <guid isPermaLink="true">http://localhost:4000/AbstractFactoryPattern</guid>
@@ -87,7 +88,7 @@
 
 </description>
         
-        <pubDate>Sun, 06 Sep 2020 00:00:00 +0900</pubDate>
+        <pubDate>Mon, 07 Sep 2020 04:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/FactoryMethodPattern</link>
         <guid isPermaLink="true">http://localhost:4000/FactoryMethodPattern</guid>
@@ -103,7 +104,7 @@
 
 </description>
         
-        <pubDate>Mon, 31 Aug 2020 00:00:00 +0900</pubDate>
+        <pubDate>Tue, 01 Sep 2020 04:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/SimpleFactory</link>
         <guid isPermaLink="true">http://localhost:4000/SimpleFactory</guid>
@@ -112,7 +113,7 @@
     
       
       <item>
-        <title>Decorationpattern</title>
+        <title>Decoration Pattern (C++)</title>
         
           <description>&lt;p&gt;위키피디아 정의는 아래와 같다.
 &lt;em&gt;데코레이터 패턴(Decorator pattern)이란 주어진 상황 및 용도에 따라 어떤 객체에 책임을 덧붙이는 패턴으로, 기능확장이 필요할 때 서브클래싱 대신 쓸 수 있는 유연한 대안이 될 수 있다.&lt;/em&gt;
@@ -121,7 +122,7 @@ Head First Design Pattern책에서의 정의는 다음과 같다.
 
 </description>
         
-        <pubDate>Sun, 30 Aug 2020 00:00:00 +0900</pubDate>
+        <pubDate>Mon, 31 Aug 2020 04:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/DecorationPattern</link>
         <guid isPermaLink="true">http://localhost:4000/DecorationPattern</guid>
@@ -140,7 +141,7 @@ Head First Design Pattern책에서의 정의는 다음과 같다.
 
 </description>
         
-        <pubDate>Wed, 26 Aug 2020 00:00:00 +0900</pubDate>
+        <pubDate>Thu, 27 Aug 2020 05:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/observer</link>
         <guid isPermaLink="true">http://localhost:4000/observer</guid>
@@ -158,7 +159,7 @@ Head First Design Pattern책에서의 정의는 다음과 같다.
 
 </description>
         
-        <pubDate>Tue, 25 Aug 2020 00:00:00 +0900</pubDate>
+        <pubDate>Wed, 26 Aug 2020 05:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/designPattern</link>
         <guid isPermaLink="true">http://localhost:4000/designPattern</guid>
@@ -167,7 +168,7 @@ Head First Design Pattern책에서의 정의는 다음과 같다.
     
       
       <item>
-        <title>rvalue vs lvalue (feat.value categories)</title>
+        <title>TIL - rvalue vs lvalue (feat.value categories)</title>
         
           <description>&lt;h2 id=&quot;rvalue-vs-lvalue&quot;&gt;rvalue VS lvalue&lt;/h2&gt;
 &lt;p&gt;사실 이전부터 다음에 제대로 공부해봐야지라고 생각했었던 주제이다.
@@ -177,7 +178,7 @@ Head First Design Pattern책에서의 정의는 다음과 같다.
 
 </description>
         
-        <pubDate>Mon, 24 Aug 2020 00:00:00 +0900</pubDate>
+        <pubDate>Tue, 25 Aug 2020 02:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/Valuecategories</link>
         <guid isPermaLink="true">http://localhost:4000/Valuecategories</guid>
@@ -204,22 +205,6 @@ Activity Diagram과 Class Diagram을 사용 하고있다.
     
       
       <item>
-        <title>간단한 FTP 클라이언트 프로그램 만들기 - 계획</title>
-        
-          <description>&lt;p&gt;이전 프로젝트에서 FTP를 이용해서 결과파일을 다른 서버로 보내는 부분이 있어서,
-처음으로 네트워크 관련해서 조금 건드려보게 되었다.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Thu, 20 Aug 2020 00:00:00 +0900</pubDate>
-        <link>
-        http://localhost:4000/SimpleFTPClientPlan</link>
-        <guid isPermaLink="true">http://localhost:4000/SimpleFTPClientPlan</guid>
-      </item>
-      
-    
-      
-      <item>
         <title>TIL - 메모장은 어떻게 문자를 판별할까?</title>
         
           <description>&lt;p&gt;이전에 납품한 프로그램에서 출력한 아웃풋이 문자가 깨져서 나온다는 연락을 받았다.&lt;/p&gt;
@@ -230,21 +215,6 @@ Activity Diagram과 Class Diagram을 사용 하고있다.
         <link>
         http://localhost:4000/HowNoteoadJudgeCodepage</link>
         <guid isPermaLink="true">http://localhost:4000/HowNoteoadJudgeCodepage</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Gettysburg Address</title>
-        
-          <description>&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Thu, 19 Nov 1863 19:18:00 +0900</pubDate>
-        <link>
-        http://localhost:4000/gettysburg-address</link>
-        <guid isPermaLink="true">http://localhost:4000/gettysburg-address</guid>
       </item>
       
     
