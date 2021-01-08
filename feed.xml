@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-07T23:39:20+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">최소지식원칙 - Principle of Least Knowledge</title><link href="http://localhost:4000/TheLawOfDemeter" rel="alternate" type="text/html" title="최소지식원칙 - Principle of Least Knowledge" /><published>2020-09-10T04:00:00+09:00</published><updated>2020-09-10T04:00:00+09:00</updated><id>http://localhost:4000/TheLawOfDemeter</id><content type="html" xml:base="http://localhost:4000/TheLawOfDemeter">&lt;h2 id=&quot;최소지식원칙&quot;&gt;최소지식원칙&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-08T23:38:01+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - RAID란?</title><link href="http://localhost:4000/WhatIsRAID" rel="alternate" type="text/html" title="TIL - RAID란?" /><published>2021-01-08T07:00:00+09:00</published><updated>2021-01-08T07:00:00+09:00</updated><id>http://localhost:4000/WhatIsRAID</id><content type="html" xml:base="http://localhost:4000/WhatIsRAID">&lt;h2 id=&quot;raid란&quot;&gt;RAID란?&lt;/h2&gt;
+&lt;p&gt;일본 기본정보처리시험을 준비하면서 문제에 나와서 정리해 두려고 한다.
+RAID란 Redundant Array of Independent Disk의 약자로 데이터의 안정성을 향상 시킬 수 있는 방식의 구조를 얘기한다.&lt;/p&gt;
+
+&lt;p&gt;서버를 사용할 경우 하드디크스 소무품이기때문에 언젠가 데이터 손실이 생길 수 있다.
+이를 대비해서 여유분의 디스크를 연결하여 백업해 놓고 안정성뿐만아니라 성능향상도 기대할 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;레이드의-종류&quot;&gt;레이드의 종류&lt;/h2&gt;
+&lt;h3 id=&quot;raid0---데이터분산처리striping&quot;&gt;RAID0 - 데이터분산처리(Striping)&lt;/h3&gt;
+&lt;p&gt;RAID0의 경우 안정성보다는 성능에 초첨을 둔 구성이다. 
+여러개의 디스크를 이용하여 데이터를 분산해서 처리한다.
+하지만 하나의 디스크의 데이터가 유실될 경우 모든 데이터가 유실되는 단점이 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;raid1---데이터-복제mirroring&quot;&gt;RAID1 - 데이터 복제(Mirroring)&lt;/h3&gt;
+&lt;p&gt;안정성에 초점을 두고, 여러개의 디스크를 사용하지만 모두 똑같은 데이터를 저장한다.
+한 디스크의 데이터가 유실되더라도 다른 디스크에 미러링되어있기 때문에 데이터 유실의 걱정이없다.
+하지만 사용가능 용량이 절반으로 줄어든다는 문제가 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;raid02---hamming-code&quot;&gt;RAID02 - Hamming code&lt;/h3&gt;
+&lt;p&gt;RAID0처럼 striping형식을 이용해 데이터를 저장하지만, “해밍코드”를 이용하여 복구용 디스크를 추가로 둔다.
+해밍코드란 복구용 디스크를 p, 사용할 디스크 d로 뒀을때, 디스크사용시 필요한 복구용 디스크수를 구하는 식이라고 보면 된다.
+‘’’  2^p &amp;gt;=  d + p + 1 ‘’’&lt;/p&gt;
+
+&lt;p&gt;하지만 복구용디스크중 하나라도 데이터가 유실되면 복구가 불가능해 현재는 거의 사용되지않는다.&lt;/p&gt;
+
+&lt;h3 id=&quot;raid03---패리티비트parity-bit&quot;&gt;RAID03 - 패리티비트(parity bit)&lt;/h3&gt;
+&lt;p&gt;RAID처럼 Striping형식으로 데아터를 처리하지만, 하나의 디스크는 Parity용으로 두는 구성이다.
+Parity란 에러를 검출할 경우 사용되는 용어인데, 기존의 데이터랑 동일한지 검사용으로 쓰이는 용어이다.&lt;/p&gt;
+
+&lt;p&gt;RAID에서의 Parity는 복구용도로 사용되는데, 1개의 디스크의 오류를 복구 가능하다.
+그리고 RAID3의 경우 데이터를 바이트 단위로 저장한다.
+하지만 데이터 복구용 디스크가 고장날 경우 복구가 어렵다.&lt;/p&gt;
+&lt;h3 id=&quot;raid04---패리티비트parity-bit&quot;&gt;RAID04 - 패리티비트(parity bit)&lt;/h3&gt;
+&lt;p&gt;RAID3과 거의 같지만, 데이터 저장단위가 블록이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;raid05---패리티비트parity-bit&quot;&gt;RAID05 - 패리티비트(parity bit)&lt;/h3&gt;
+&lt;p&gt;RAID03,04와 같이 패리티비트를 사용하지만, 하나의 디스크에만 패리티정보를 넣는 것이아니라,
+각 디스크에 패리티비트를 번갈아가며 저장해 데이터 분산처리로 성능향상과 안정성 둘 다 챙길 수 있는 구성이다.
+현재 가장 많이 사용되는 방식이며, 3개이상의 디스크가 있어야 사용가능하고 5개이상의 디스크를 보통사용한다.
+실제 사용가능한 디스크는 사용디스크 - 1개다(각 패리티정보를 모으면 하나의 디스크분량이된다.)&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">RAID란? 일본 기본정보처리시험을 준비하면서 문제에 나와서 정리해 두려고 한다. RAID란 Redundant Array of Independent Disk의 약자로 데이터의 안정성을 향상 시킬 수 있는 방식의 구조를 얘기한다.</summary></entry><entry><title type="html">최소지식원칙 - Principle of Least Knowledge</title><link href="http://localhost:4000/TheLawOfDemeter" rel="alternate" type="text/html" title="최소지식원칙 - Principle of Least Knowledge" /><published>2020-09-10T04:00:00+09:00</published><updated>2020-09-10T04:00:00+09:00</updated><id>http://localhost:4000/TheLawOfDemeter</id><content type="html" xml:base="http://localhost:4000/TheLawOfDemeter">&lt;h2 id=&quot;최소지식원칙&quot;&gt;최소지식원칙&lt;/h2&gt;
 &lt;p&gt;최소지식원칙(Principle of least knowledge)혹은 데메테르의법칙(The law of Demeter)라고 불리는 원칙은 객체 지향 디자인원칙중의 하나다.
 결합도가 낮은 설계를 목적으로한다. 왜 결합도가 낮을 필요가 있을까? 
 만약 한 클래스를 여러 클래스들이 상속하고있고, 그 클래스안에서 여러클래스들의 메소드를 불러오고 있다고 한다면, 그 클래스를 수정하게 되었을 경우 관계되는 클래스들의 수정이 필요로 하게된다.&lt;/p&gt;
@@ -818,69 +857,4 @@ Head First Design Pattern책에서의 정의는 다음과 같다.
  
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;하지만 strategy pattern을 사용한다면 logger와 log는 직접 건드리지 않고 LoggerStrategy을 준거하는
-구조체를 만들어주면 된다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="DesignPattern" /><summary type="html">strategy pattern 행위 소프트웨어 디자인패턴이며, 알고리즘을 캡슐화하여 상호 교체가 가능하게만든다. 이 패턴을 사용하면 클라이언트와는 독립적으로 알고리즘을 변경할 수 있다. 그리고 동적으로 알고리즘을 교체할 수 있는 구조로 되어있다.</summary></entry><entry><title type="html">TIL - rvalue vs lvalue (feat.value categories)</title><link href="http://localhost:4000/Valuecategories" rel="alternate" type="text/html" title="TIL - rvalue vs lvalue (feat.value categories)" /><published>2020-08-25T02:00:00+09:00</published><updated>2020-08-25T02:00:00+09:00</updated><id>http://localhost:4000/Valuecategories</id><content type="html" xml:base="http://localhost:4000/Valuecategories">&lt;h2 id=&quot;rvalue-vs-lvalue&quot;&gt;rvalue VS lvalue&lt;/h2&gt;
-&lt;p&gt;사실 이전부터 다음에 제대로 공부해봐야지라고 생각했었던 주제이다.
-막연하게 rvalue는 오른쪽에 올수있는 표현식, lvalue는 왼쪽에 올 수 있는 표현식이라고 생각하고
-구체적으로는 공부하지않았다.
-이번에 boost::move에 대해 조사하던중 rvalue, lvalue가 언급되어 공부를 해보려한다.&lt;/p&gt;
-
-&lt;p&gt;먼저 내가알던 rvalue lvalue는 C언어 관점에서의 정의이다.
-정확히는 assign operator(=)왼쪽 혹은 오른쪽에 오는 표현식이 lvalue이고, rvalue는 오른쪽에 오는표현식이다.
-현재의 C++은 꽤나 복잡한 Value Categories(표현식 범주)를 가지고 있다. 
-C++11 이전과 후로 Value Categories가 다른데, 이전을 먼저 설명하자면&lt;/p&gt;
-&lt;h2 id=&quot;c11-이전-value-categories&quot;&gt;C++11 이전 Value Categories&lt;/h2&gt;
-&lt;p&gt;내가 알고 있던대로(?) rvalue와 lvalue두가지로 이루어져있었다. 하지만 C언어와는 다르게
-lvalue는 어떠한 메모리의 위치를 가리키는 표현식이며 참조연산자를 이용해 위치를 참조할 수 있다.
-rvalue는 lvalue가 아닌 표현식이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;c11-이후의-value-categories&quot;&gt;C++11 이후의 Value Categories&lt;/h2&gt;
-
-&lt;p&gt;C++11이후에는 Value Categories가 꽤 복잡하게 바뀌었는데,
-identity라는 식별자를 LValue가 가지거나 가지지않거나에 따라 lvalue인지 rvalue인지 나뉜다.
-그리고 move semantic이라는 것이 도입되어, move가 가능한 표현식인지 아닌지에 따라서도 Value가 나뉜다.
-즉 identity를 가지고있고 move가 가능한 표현식
-identity를 가지지않고 move가 가능한 표현식
-identity를 가지지않고 move가 불가능한 표현식
-identity를 가지고 move가 가능한 표현식
-이렇게 네가지로 Value를 나눌 수 있다.
-하지만 identity도 가지지않고 move가 불가능한 표현식은 있을 수 없기에 세가지로 나눌 수있다.
-그리고 identity를 가지는 표현식, move가 가능한 표현식 이렇게 다시 나눠서 총 5가지로 나눌 수 있다.
-표로 표현하자면 아래와 같다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/image/post/20200824/ValueCategories.JPG&quot; alt=&quot;Activity&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;하나하나 알아보자.&lt;/p&gt;
-
-&lt;h3 id=&quot;lvalue&quot;&gt;lvalue&lt;/h3&gt;
-&lt;p&gt;lvalue는 identity를 가지지만 move가 불가능한 표현식이다. lvalue의 특징은 참조연산자(&amp;amp;)의 피연산자로
-사용이 가능한 것이다.&lt;/p&gt;
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;예를 들면 lvalue는 이러한 것들이 있다.&lt;/p&gt;
-
-&lt;h3 id=&quot;xvalue&quot;&gt;xvalue&lt;/h3&gt;
-&lt;p&gt;xvalue는 identity를 가지고 move가 가능한 표현식이다. xvalue는 eXpiring values에서 따와 만료되는 표현식을 뜻한다고 한다.&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static_cast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;여기서 표현식 f()와 f().m, static_cast&amp;lt;A&amp;amp;&amp;amp;&amp;gt;(a) 그리고 a + a가 xvalues라고 한다.&lt;/p&gt;
-
-&lt;h3 id=&quot;prvalue&quot;&gt;prvalue&lt;/h3&gt;
-&lt;p&gt;prvalue는 identity을 가지지않고 이동이 가능한 표현식이다. pure rvalue라는 의미에서 prvalue이다. 
-C++11이전의 rvalue 같다고 보면된다. 후위 증감연산자, 문자열리터럴을 제외한 모든 리터럴이 prvalue에 속한다.&lt;/p&gt;
-
-&lt;h3 id=&quot;glvalue&quot;&gt;glvalue&lt;/h3&gt;
-&lt;p&gt;glvalue는 identity를 가지고있기때문에, 데이터를 저장 할 수 있는 메모리의 위치정보를 가진다.&lt;/p&gt;
-
-&lt;h3 id=&quot;rvalue&quot;&gt;rvalue&lt;/h3&gt;
-&lt;p&gt;rvalue는 move가 가능한 모든 표현식을 나타낸다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">rvalue VS lvalue 사실 이전부터 다음에 제대로 공부해봐야지라고 생각했었던 주제이다. 막연하게 rvalue는 오른쪽에 올수있는 표현식, lvalue는 왼쪽에 올 수 있는 표현식이라고 생각하고 구체적으로는 공부하지않았다. 이번에 boost::move에 대해 조사하던중 rvalue, lvalue가 언급되어 공부를 해보려한다.</summary></entry></feed>
+구조체를 만들어주면 된다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="DesignPattern" /><summary type="html">strategy pattern 행위 소프트웨어 디자인패턴이며, 알고리즘을 캡슐화하여 상호 교체가 가능하게만든다. 이 패턴을 사용하면 클라이언트와는 독립적으로 알고리즘을 변경할 수 있다. 그리고 동적으로 알고리즘을 교체할 수 있는 구조로 되어있다.</summary></entry></feed>

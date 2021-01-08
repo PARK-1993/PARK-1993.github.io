@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/til/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-01-07T23:39:20+09:00</updated>
+  <updated>2021-01-08T23:38:01+09:00</updated>
   <id>http://localhost:4000/tag/til/feed.xml</id>
 
   
@@ -30,6 +30,79 @@
   
   
 
+  
+    <entry>
+      <title type="html">TIL - RAID란?</title>
+      <link href="http://localhost:4000/WhatIsRAID" rel="alternate" type="text/html" title="TIL - RAID란?" />
+      <published>2021-01-08T07:00:00+09:00</published>
+      <updated>2021-01-08T07:00:00+09:00</updated>
+      <id>http://localhost:4000/WhatIsRAID</id>
+      <content type="html" xml:base="http://localhost:4000/WhatIsRAID">&lt;h2 id=&quot;raid란&quot;&gt;RAID란?&lt;/h2&gt;
+&lt;p&gt;일본 기본정보처리시험을 준비하면서 문제에 나와서 정리해 두려고 한다.
+RAID란 Redundant Array of Independent Disk의 약자로 데이터의 안정성을 향상 시킬 수 있는 방식의 구조를 얘기한다.&lt;/p&gt;
+
+&lt;p&gt;서버를 사용할 경우 하드디크스 소무품이기때문에 언젠가 데이터 손실이 생길 수 있다.
+이를 대비해서 여유분의 디스크를 연결하여 백업해 놓고 안정성뿐만아니라 성능향상도 기대할 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;레이드의-종류&quot;&gt;레이드의 종류&lt;/h2&gt;
+&lt;h3 id=&quot;raid0---데이터분산처리striping&quot;&gt;RAID0 - 데이터분산처리(Striping)&lt;/h3&gt;
+&lt;p&gt;RAID0의 경우 안정성보다는 성능에 초첨을 둔 구성이다. 
+여러개의 디스크를 이용하여 데이터를 분산해서 처리한다.
+하지만 하나의 디스크의 데이터가 유실될 경우 모든 데이터가 유실되는 단점이 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;raid1---데이터-복제mirroring&quot;&gt;RAID1 - 데이터 복제(Mirroring)&lt;/h3&gt;
+&lt;p&gt;안정성에 초점을 두고, 여러개의 디스크를 사용하지만 모두 똑같은 데이터를 저장한다.
+한 디스크의 데이터가 유실되더라도 다른 디스크에 미러링되어있기 때문에 데이터 유실의 걱정이없다.
+하지만 사용가능 용량이 절반으로 줄어든다는 문제가 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;raid02---hamming-code&quot;&gt;RAID02 - Hamming code&lt;/h3&gt;
+&lt;p&gt;RAID0처럼 striping형식을 이용해 데이터를 저장하지만, “해밍코드”를 이용하여 복구용 디스크를 추가로 둔다.
+해밍코드란 복구용 디스크를 p, 사용할 디스크 d로 뒀을때, 디스크사용시 필요한 복구용 디스크수를 구하는 식이라고 보면 된다.
+‘’’  2^p &amp;gt;=  d + p + 1 ‘’’&lt;/p&gt;
+
+&lt;p&gt;하지만 복구용디스크중 하나라도 데이터가 유실되면 복구가 불가능해 현재는 거의 사용되지않는다.&lt;/p&gt;
+
+&lt;h3 id=&quot;raid03---패리티비트parity-bit&quot;&gt;RAID03 - 패리티비트(parity bit)&lt;/h3&gt;
+&lt;p&gt;RAID처럼 Striping형식으로 데아터를 처리하지만, 하나의 디스크는 Parity용으로 두는 구성이다.
+Parity란 에러를 검출할 경우 사용되는 용어인데, 기존의 데이터랑 동일한지 검사용으로 쓰이는 용어이다.&lt;/p&gt;
+
+&lt;p&gt;RAID에서의 Parity는 복구용도로 사용되는데, 1개의 디스크의 오류를 복구 가능하다.
+그리고 RAID3의 경우 데이터를 바이트 단위로 저장한다.
+하지만 데이터 복구용 디스크가 고장날 경우 복구가 어렵다.&lt;/p&gt;
+&lt;h3 id=&quot;raid04---패리티비트parity-bit&quot;&gt;RAID04 - 패리티비트(parity bit)&lt;/h3&gt;
+&lt;p&gt;RAID3과 거의 같지만, 데이터 저장단위가 블록이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;raid05---패리티비트parity-bit&quot;&gt;RAID05 - 패리티비트(parity bit)&lt;/h3&gt;
+&lt;p&gt;RAID03,04와 같이 패리티비트를 사용하지만, 하나의 디스크에만 패리티정보를 넣는 것이아니라,
+각 디스크에 패리티비트를 번갈아가며 저장해 데이터 분산처리로 성능향상과 안정성 둘 다 챙길 수 있는 구성이다.
+현재 가장 많이 사용되는 방식이며, 3개이상의 디스크가 있어야 사용가능하고 5개이상의 디스크를 보통사용한다.
+실제 사용가능한 디스크는 사용디스크 - 1개다(각 패리티정보를 모으면 하나의 디스크분량이된다.)&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">RAID란? 일본 기본정보처리시험을 준비하면서 문제에 나와서 정리해 두려고 한다. RAID란 Redundant Array of Independent Disk의 약자로 데이터의 안정성을 향상 시킬 수 있는 방식의 구조를 얘기한다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">TIL - rvalue vs lvalue (feat.value categories)</title>
