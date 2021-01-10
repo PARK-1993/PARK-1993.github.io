@@ -11,7 +11,7 @@
 
 
 
-    <title>최소지식원칙 - Principle of Least Knowledge</title>
+    <title>TIL - 스케쥴링(Scheduling)</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -36,30 +36,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="TIL" />
     <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/favicon.jpg" type="image/png" />
-    <link rel="canonical" href="http://localhost:4000/TheLawOfDemeter" />
+    <link rel="canonical" href="http://localhost:4000/Scheduling" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="푸바 프로그래밍" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="최소지식원칙 - Principle of Least Knowledge" />
-    <meta property="og:description" content="최소지식원칙 최소지식원칙(Principle of least knowledge)혹은 데메테르의법칙(The law of Demeter)라고 불리는 원칙은 객체 지향 디자인원칙중의 하나다. 결합도가 낮은 설계를 목적으로한다. 왜 결합도가 낮을 필요가 있을까? 만약 한 클래스를 여러 클래스들이 상속하고있고, 그 클래스안에서 여러클래스들의 메소드를 불러오고 있다고 한다면, 그 클래스를 수정하게 되었을 경우 관계되는 클래스들의 수정이 필요로 하게된다. 이원칙에서는 한메소드에서 다음과같은" />
-    <meta property="og:url" content="http://localhost:4000/TheLawOfDemeter" />
+    <meta property="og:title" content="TIL - 스케쥴링(Scheduling)" />
+    <meta property="og:description" content="스케쥴링이란? OS가 CPU의 한정된 자원을 이용하여 고효율을 내기위해서 실행 대기중인 프로세스에게 자원배정을 하는 방식을 얘기한다. 크게 선점방식과 비선점방식 두가지로 나뉜다. 선점 스케쥴링(Preemptive Scheduling) OS가 CPU를 선점해 실행중인 프로세스에서 다른 프로세스의 전환이 가능하고, 회수도 가능하다. 유연한 스케쥴링이 가능하다. 비선점 스케쥴링(Non-Preemptive Scheduling) OS가 CPU를 선점하지않고, 한 프로세스에 CPU가 할당되면 그 프로세스가 종료될때까지" />
+    <meta property="og:url" content="http://localhost:4000/Scheduling" />
     <meta property="og:image" content="http://localhost:4000/assets/built/images/python-logo.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2020-09-10T04:00:00+09:00" />
-    <meta property="article:modified_time" content="2020-09-10T04:00:00+09:00" />
-    <meta property="article:tag" content="Designpattern" />
+    <meta property="article:published_time" content="2021-01-10T01:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-01-10T01:00:00+09:00" />
+    <meta property="article:tag" content="Til" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="최소지식원칙 - Principle of Least Knowledge" />
-    <meta name="twitter:description" content="최소지식원칙 최소지식원칙(Principle of least knowledge)혹은 데메테르의법칙(The law of Demeter)라고 불리는 원칙은 객체 지향 디자인원칙중의 하나다. 결합도가 낮은 설계를 목적으로한다. 왜 결합도가 낮을 필요가 있을까? 만약 한 클래스를 여러 클래스들이 상속하고있고, 그 클래스안에서 여러클래스들의 메소드를 불러오고 있다고 한다면, 그 클래스를 수정하게 되었을 경우 관계되는 클래스들의 수정이 필요로 하게된다. 이원칙에서는 한메소드에서 다음과같은" />
+    <meta name="twitter:title" content="TIL - 스케쥴링(Scheduling)" />
+    <meta name="twitter:description" content="스케쥴링이란? OS가 CPU의 한정된 자원을 이용하여 고효율을 내기위해서 실행 대기중인 프로세스에게 자원배정을 하는 방식을 얘기한다. 크게 선점방식과 비선점방식 두가지로 나뉜다. 선점 스케쥴링(Preemptive Scheduling) OS가 CPU를 선점해 실행중인 프로세스에서 다른 프로세스의 전환이 가능하고, 회수도 가능하다. 유연한 스케쥴링이 가능하다. 비선점 스케쥴링(Non-Preemptive Scheduling) OS가 CPU를 선점하지않고, 한 프로세스에 CPU가 할당되면 그 프로세스가 종료될때까지" />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/built/images/python-logo.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="푸바 프로그래밍" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Designpattern" />
+    <meta name="twitter:data2" content="Til" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="1400" />
@@ -74,7 +74,7 @@
         "name": "푸바 프로그래밍",
         "logo": "http://localhost:4000/"
     },
-    "url": "http://localhost:4000/TheLawOfDemeter",
+    "url": "http://localhost:4000/Scheduling",
     "image": {
         "@type": "ImageObject",
         "url": "http://localhost:4000/assets/built/images/python-logo.png",
@@ -83,9 +83,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/TheLawOfDemeter"
+        "@id": "http://localhost:4000/Scheduling"
     },
-    "description": "최소지식원칙 최소지식원칙(Principle of least knowledge)혹은 데메테르의법칙(The law of Demeter)라고 불리는 원칙은 객체 지향 디자인원칙중의 하나다. 결합도가 낮은 설계를 목적으로한다. 왜 결합도가 낮을 필요가 있을까? 만약 한 클래스를 여러 클래스들이 상속하고있고, 그 클래스안에서 여러클래스들의 메소드를 불러오고 있다고 한다면, 그 클래스를 수정하게 되었을 경우 관계되는 클래스들의 수정이 필요로 하게된다. 이원칙에서는 한메소드에서 다음과같은"
+    "description": "스케쥴링이란? OS가 CPU의 한정된 자원을 이용하여 고효율을 내기위해서 실행 대기중인 프로세스에게 자원배정을 하는 방식을 얘기한다. 크게 선점방식과 비선점방식 두가지로 나뉜다. 선점 스케쥴링(Preemptive Scheduling) OS가 CPU를 선점해 실행중인 프로세스에서 다른 프로세스의 전환이 가능하고, 회수도 가능하다. 유연한 스케쥴링이 가능하다. 비선점 스케쥴링(Non-Preemptive Scheduling) OS가 CPU를 선점하지않고, 한 프로세스에 CPU가 할당되면 그 프로세스가 종료될때까지"
 }
     </script>
 
@@ -98,7 +98,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="최소지식원칙 - Principle of Least Knowledge" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="TIL - 스케쥴링(Scheduling)" href="/feed.xml" />
 
 
 </head>
@@ -156,21 +156,21 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  tag-designpattern post tag-DesignPattern ">
+        <article class="post-full  tag-til post tag-TIL ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="10 September 2020">10 September 2020</time>
+                    <time class="post-full-meta-date" datetime="10 January 2021">10 January 2021</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/designpattern/'>DESIGNPATTERN</a>
+                               <a href='/tag/til/'>TIL</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">최소지식원칙 - Principle of Least Knowledge</h1>
+                <h1 class="post-full-title">TIL - 스케쥴링(Scheduling)</h1>
             </header>
 
             
@@ -180,47 +180,52 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <h2 id="최소지식원칙">최소지식원칙</h2>
-<p>최소지식원칙(Principle of least knowledge)혹은 데메테르의법칙(The law of Demeter)라고 불리는 원칙은 객체 지향 디자인원칙중의 하나다.
-결합도가 낮은 설계를 목적으로한다. 왜 결합도가 낮을 필요가 있을까? 
-만약 한 클래스를 여러 클래스들이 상속하고있고, 그 클래스안에서 여러클래스들의 메소드를 불러오고 있다고 한다면, 그 클래스를 수정하게 되었을 경우 관계되는 클래스들의 수정이 필요로 하게된다.</p>
+                    <h1 id="스케쥴링이란">스케쥴링이란?</h1>
+<p>OS가 CPU의 한정된 자원을 이용하여 고효율을 내기위해서 실행 대기중인 프로세스에게 자원배정을 하는 방식을 얘기한다.
+크게 선점방식과 비선점방식 두가지로 나뉜다.</p>
+<h2 id="선점-스케쥴링preemptive-scheduling">선점 스케쥴링(Preemptive Scheduling)</h2>
+<p>OS가 CPU를 선점해 실행중인 프로세스에서 다른 프로세스의 전환이 가능하고, 회수도 가능하다. 유연한 스케쥴링이 가능하다.</p>
 
-<p>이원칙에서는 한메소드에서 다음과같은 종류의 객체에있는 메소드들을 실행하라는 가이드라인을 제시한다.</p>
+<h2 id="비선점-스케쥴링non-preemptive-scheduling">비선점 스케쥴링(Non-Preemptive Scheduling)</h2>
+<p>OS가 CPU를 선점하지않고, 한 프로세스에  CPU가 할당되면 그 프로세스가 종료될때까지 실행되도록 보장되는 스케쥴링이다.</p>
+
+<h2 id="프로세스-스케쥴링-시점">프로세스 스케쥴링 시점</h2>
+<ol>
+  <li>프로세스가 실행 상태(running)에서 대기 상태(waiting)으로 전환될 때</li>
+  <li>프로세스가 실행 상태(running)에서 준비 상태(ready)로 전환될 때</li>
+  <li>프로세스가 대기 상태(waiting)에서 준비 상태(ready)로 전환될 때</li>
+  <li>프로세스가 종료되었을 때(terminated)
+1,4의 경우만 일어난다고하면 비선점스케쥴링에 해당하고, 1~4 모두 일어난다면 선점 스케쥴링에 해당한다.</li>
+</ol>
+
+<h2 id="디스패처dispatcher">디스패처(dispatcher)</h2>
+<p>스케쥴러가 선택한 프로세스가 작업을 수행할 수 있도록 환경 설정을 하는 커널 모듈이다.
+디스패처가 하나의 프로세스를 중단하고 다른 프로세스를 실행하기까지 소요되는 시간을 디스패치 지연(dispatch latency)라고 한다.</p>
+
+<h2 id="스케쥴링-알고리즘">스케쥴링 알고리즘</h2>
+<h3 id="평가기준">평가기준</h3>
 <ul>
-  <li>자기자신의 메소드</li>
-  <li>메소드에 매개변수로 전달된 객체</li>
-  <li>그 메소드에서 생성하거나 인스턴스를 만든 객체</li>
-  <li>그 객체에 속하는 구성요소</li>
+  <li>CPU 이용률(CPU utilization) : CPU를 얼마나 바쁘게 하는가. 높을수록 좋다.[단위 : %]</li>
+  <li>처리율(Throughput) : 단위시간당 얼마나 많은 프로세스들이 완료되는가. 클 수록 좋다.[단위 : 개]</li>
+  <li>소요시간(Turnaround time) : 프로세스가 요청된 후 완료하기까지 얼마나 걸리는가. 메모리 접근 시간, 대기 큐에서의 대기 시간, CPU에서의 실행 시간, I/O 시간 등의 합으로 계산한다. 짧을수록 좋다. [단위 : 초]</li>
+  <li>대기시간(Waiting time) : 프로세스가 대기 큐에서 기다리는 시간의 합. 짧을수록 좋다. [단위 : 초]</li>
+  <li>반응시간(Response time) : 프로세스가 요청된 후 첫 번째 응답을 받기까지 걸리는 시간. 주로 상호교환 시스템(interactive system)에서 사용된다. 짧을수록 좋다. [단위 : 초]
+    <h3 id="fcfs스케쥴링first-come-first-serve-scheduling">FCFS스케쥴링(First Come First Serve Scheduling)</h3>
+    <p>말그대로 먼저들어온 프로세스를 먼저 실행하는 알고리즘이다. 가장 간단하며, 비선점 스케쥴링에 해당한다.
+한 커다란 프로세스가 먼저 들어올경우 대기시간이 길어지기때문에 지양해야 한다.</p>
+    <h3 id="우선순위-스케쥴링priority-scheduling">우선순위 스케쥴링(Priority Scheduling)</h3>
+    <p>말그대로 프로세스마다 우선순위를 매겨서 우선순위가 높은 프로세스부터 처리하는 스케쥴링 알고리즘이다.
+가끔 우선순위가 낮은 프로세스가 계속해서 실행이 되지않는 현상이 발생하는데 이것을 기아(Starvation)이라고 부른다. 이를 막기위해 노화(Aging)기법을 사용해 각 분기마다 남은 프로세스의 우선순위를 증가시켜주는 방법이다.</p>
+  </li>
 </ul>
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Car</span>
-<span class="p">{</span>
-<span class="k">public</span><span class="o">:</span>
-    <span class="c1">//이 클래스의 구성요소. 메소드 호출가능
-</span>    <span class="n">Engine</span> <span class="n">engine</span><span class="p">;</span>
-    <span class="n">Car</span><span class="p">(){};</span>
-    <span class="kt">void</span> <span class="nf">start</span><span class="p">(</span><span class="n">Key</span> <span class="n">key</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="c1">// 메소드내의 새로운객체. 메소드 호출가능
-</span>        <span class="n">Doors</span> <span class="n">doors</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Doors</span><span class="p">;</span>
+<h3 id="sjf-스케쥴링shorted-job-first">SJF 스케쥴링(Shorted Job First)</h3>
+<p>이것도 말그대로 CPU버스트타임이 가장 짧은 프로세스부터 먼저 실행시키는 알고리즘이다.
+CPU버스트타임이란 프로세스가 CPU를 사용할때의 시간을 말한다. 프로세스가 I/O를 사용할때의 시간은 I/O버스트타임이라 한다.</p>
 
-        <span class="c1">// 메소드의 매개변수. 메소드 호출가능
-</span>        <span class="kt">bool</span> <span class="n">authorized</span> <span class="o">=</span> <span class="n">key</span><span class="p">.</span><span class="n">turns</span><span class="p">();</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">authorized</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="n">engine</span><span class="p">.</span><span class="n">start</span><span class="p">();</span>
-            <span class="c1">// 객체의 구성요소. 메소드 호출가능
-</span>            <span class="n">updateDashboardDisplay</span><span class="p">();</span>
-            <span class="n">doors</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="kt">void</span> <span class="n">updateDashboardDisplay</span><span class="p">(){};</span>
-<span class="p">}</span>
-</code></pre></div></div>
-<p>위의 소스코드는 헤드퍼스트의 예제이다.</p>
-
-<h2 id="단점">단점</h2>
-<p>객체들간의 의존성과 유지보수가 용이해지나, 메소드호출을 처리하기 위한 래퍼클래스의 필요성과 시스템의 복잡도 증가, 성능저하가 있을 수 있다.</p>
+<h3 id="라운드로빈-스케쥴링">라운드로빈 스케쥴링</h3>
+<p>windows의 경우 라운드로빈과 우선순위스케쥴링 알고리즘을 채택하고있다.
+라운드로빈은 우선순위가 같은경우 일정시간(타임슬라이스)동안 프로세스를 수행하고 다음 프로세스에 넘겨주는 형식이다.</p>
 
                 </div>
             </section>
@@ -260,9 +265,9 @@ into the {body} of the default.hbs template -->
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            this.page.url = 'http://localhost:4000/TheLawOfDemeter';
-                            this.page.identifier = '/TheLawOfDemeter';
-                            this.page.title = '최소지식원칙 - Principle of Least Knowledge';
+                            this.page.url = 'http://localhost:4000/Scheduling';
+                            this.page.identifier = '/Scheduling';
+                            this.page.title = 'TIL - 스케쥴링(Scheduling)';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -296,7 +301,7 @@ into the {body} of the default.hbs template -->
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; 푸바 프로그래밍 &mdash;</small>
                             
-                                <h3 class="read-next-card-header-title"><a href="/tag/designpattern/">Designpattern</a></h3>
+                                <h3 class="read-next-card-header-title"><a href="/tag/til/">Til</a></h3>
                             
                         </header>
                         <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
@@ -306,26 +311,10 @@ into the {body} of the default.hbs template -->
                                 
                                 
                                   
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                    
-                                  
-                                
-                                  
                                     
                                         
                                         
-                                            <li><a href="/FacadePattern">Facade Pattern</a></li>
+                                            <li><a href="/Code">TIL - 코드체계</a></li>
                                         
                                     
                                   
@@ -334,8 +323,12 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/CommandPattern">Command Pattern (c++)</a></li>
+                                            <li><a href="/BackUp">TIL - 백업</a></li>
                                         
+                                    
+                                  
+                                
+                                  
                                     
                                   
                                 
@@ -343,28 +336,7 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/AbstractFactoryPattern">Abstract Factory Pattern (c++)</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
+                                            <li><a href="/ITWords">TIL - IT관련용어</a></li>
                                         
                                     
                                   
@@ -387,12 +359,45 @@ into the {body} of the default.hbs template -->
                                 
                                   
                                 
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
                                   
                                 
                             </ul>
                         </div>
                         <footer class="read-next-card-footer">
-                            <a href="/tag/designpattern/">
+                            <a href="/tag/til/">
                                 
                                     See all 8 posts  →
                                 
@@ -408,12 +413,12 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/WhatIsRAID">
+            <a class="post-card-image-link" href="/BackUp">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/python-logo.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/WhatIsRAID">
+            <a class="post-card-content-link" href="/BackUp">
                 <header class="post-card-header">
                     
                         
@@ -423,7 +428,7 @@ into the {body} of the default.hbs template -->
                         
                     
 
-                    <h2 class="post-card-title">TIL - RAID란?</h2>
+                    <h2 class="post-card-title">TIL - 백업</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -453,22 +458,22 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/FacadePattern">
+            <a class="post-card-image-link" href="/ITWords">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/python-logo.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/FacadePattern">
+            <a class="post-card-content-link" href="/ITWords">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Designpattern</span>
+                                <span class="post-card-tags">Til</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Facade Pattern</h2>
+                    <h2 class="post-card-title">TIL - IT관련용어</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -505,18 +510,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">최소지식원칙 - Principle of Least Knowledge</div>
+    <div class="floating-header-title">TIL - 스케쥴링(Scheduling)</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=%EC%B5%9C%EC%86%8C%EC%A7%80%EC%8B%9D%EC%9B%90%EC%B9%99+-+Principle+of+Least+Knowledge&amp;url=https://PARK-1993.github.ioTheLawOfDemeter"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=TIL+-+%EC%8A%A4%EC%BC%80%EC%A5%B4%EB%A7%81%28Scheduling%29&amp;url=https://PARK-1993.github.ioScheduling"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://PARK-1993.github.ioTheLawOfDemeter"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://PARK-1993.github.ioScheduling"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

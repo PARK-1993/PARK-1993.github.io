@@ -8,6 +8,99 @@
     
       
       <item>
+        <title>TIL - 코드체계</title>
+        
+          <description>&lt;h2 id=&quot;코드란&quot;&gt;코드란&lt;/h2&gt;
+&lt;p&gt;이 포스트에서 말하는 코드란 데이터를 식별, 분류, 배열하기위해 사용되어지는 숫자또는 문자로서 컴퓨터처리에 효율적인 구성을 가진다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 10 Jan 2021 05:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/Code</link>
+        <guid isPermaLink="true">http://localhost:4000/Code</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - 백업</title>
+        
+          <description>&lt;h1 id=&quot;백업&quot;&gt;백업&lt;/h1&gt;
+&lt;h2 id=&quot;백업의-종류&quot;&gt;백업의 종류&lt;/h2&gt;
+&lt;h3 id=&quot;1-전체-백업full-backup&quot;&gt;1. 전체 백업(Full Backup)&lt;/h3&gt;
+&lt;p&gt;선택한 모든 파일과 폴더를 백업하는 형식이다.
+복원하기가 쉽지만, 백업에 오래걸린다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 10 Jan 2021 03:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/BackUp</link>
+        <guid isPermaLink="true">http://localhost:4000/BackUp</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - 스케쥴링(Scheduling)</title>
+        
+          <description>&lt;h1 id=&quot;스케쥴링이란&quot;&gt;스케쥴링이란?&lt;/h1&gt;
+&lt;p&gt;OS가 CPU의 한정된 자원을 이용하여 고효율을 내기위해서 실행 대기중인 프로세스에게 자원배정을 하는 방식을 얘기한다.
+크게 선점방식과 비선점방식 두가지로 나뉜다.&lt;/p&gt;
+&lt;h2 id=&quot;선점-스케쥴링preemptive-scheduling&quot;&gt;선점 스케쥴링(Preemptive Scheduling)&lt;/h2&gt;
+&lt;p&gt;OS가 CPU를 선점해 실행중인 프로세스에서 다른 프로세스의 전환이 가능하고, 회수도 가능하다. 유연한 스케쥴링이 가능하다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 10 Jan 2021 01:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/Scheduling</link>
+        <guid isPermaLink="true">http://localhost:4000/Scheduling</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - IT관련용어</title>
+        
+          <description>&lt;h2 id=&quot;daisy-chain&quot;&gt;Daisy-Chain&lt;/h2&gt;
+&lt;p&gt;다중 화면 연결이라고도 하며 여러대의 모니터를 A-B-C의 형식으로 연결해 사용할 수 있는 기능이다.
+Daisy Chain은 원래 데이지라는 꽃을 연결해서 팔찌나 목걸이를 만드는 것인데, 이러한 형식이 비슷하다는 점에서 이 용어를 쓰는 듯 하다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 10 Jan 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/ITWords</link>
+        <guid isPermaLink="true">http://localhost:4000/ITWords</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - H.26x/MPEG</title>
+        
+          <description>&lt;p&gt;가끔 기본정보시험에서 MPEG에관련해서 묻는 문제가나와서 정리해보려한다.&lt;/p&gt;
+&lt;h2 id=&quot;h26x와-mpeg이란&quot;&gt;H.26x와 MPEG이란?&lt;/h2&gt;
+&lt;p&gt;동영상에 관련된 압축 규격인데, H.26x(x는 숫자)는 VCEG라는ITU내부 그룹에서 정한 규격이다. 참고로 ITU는 International Telecommunication Union 국제전기통신연합이다.
+그리고 MPEG의경우 ISO(International Organization for Standardization)라는 국제표준화기구에서 정한 규격이다.
+MPEG은 Moving Picture Experts Group의 약자이다.&lt;/p&gt;
+&lt;h2 id=&quot;왜-같이-거론되는-경우가-많나&quot;&gt;왜 같이 거론되는 경우가 많나?&lt;/h2&gt;
+&lt;p&gt;H.26x는 동영상규격이고, MPEG는 영상과 음성,시스템을 포함한 폭넓은 규격을 이야기하는데,
+보통 양 단체에서 공동으로 표준화를 진행하는 경우가 많기 때문이다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 10 Jan 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/H.26x_MPEG</link>
+        <guid isPermaLink="true">http://localhost:4000/H.26x_MPEG</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>TIL - RAID란?</title>
         
           <description>&lt;h2 id=&quot;raid란&quot;&gt;RAID란?&lt;/h2&gt;

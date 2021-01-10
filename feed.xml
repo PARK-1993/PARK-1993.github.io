@@ -1,4 +1,189 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-09T22:28:39+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - RAID란?</title><link href="http://localhost:4000/WhatIsRAID" rel="alternate" type="text/html" title="TIL - RAID란?" /><published>2021-01-08T07:00:00+09:00</published><updated>2021-01-08T07:00:00+09:00</updated><id>http://localhost:4000/WhatIsRAID</id><content type="html" xml:base="http://localhost:4000/WhatIsRAID">&lt;h2 id=&quot;raid란&quot;&gt;RAID란?&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-10T22:41:08+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - 코드체계</title><link href="http://localhost:4000/Code" rel="alternate" type="text/html" title="TIL - 코드체계" /><published>2021-01-10T05:00:00+09:00</published><updated>2021-01-10T05:00:00+09:00</updated><id>http://localhost:4000/Code</id><content type="html" xml:base="http://localhost:4000/Code">&lt;h2 id=&quot;코드란&quot;&gt;코드란&lt;/h2&gt;
+&lt;p&gt;이 포스트에서 말하는 코드란 데이터를 식별, 분류, 배열하기위해 사용되어지는 숫자또는 문자로서 컴퓨터처리에 효율적인 구성을 가진다.&lt;/p&gt;
+
+&lt;h2 id=&quot;코드의-기능&quot;&gt;코드의 기능&lt;/h2&gt;
+&lt;p&gt;코드의 기능은 식별 분류 배열 이외에도 여러가지가 있다.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;식별 : 다른 것과 구별가능&lt;/li&gt;
+  &lt;li&gt;분류 : 동일한 특성을 가지는 데이터는 그룹화가능&lt;/li&gt;
+  &lt;li&gt;배열 : 일련의 순서로 나열 가능&lt;/li&gt;
+  &lt;li&gt;간소화 : 데이터를 간소화시키는 것이 가능&lt;/li&gt;
+  &lt;li&gt;표준화 : 데이터의 종류, 크기등 표준화해서 통일적으로 표현가능&lt;/li&gt;
+  &lt;li&gt;연상 : 표현하고자하는 의미를 코드에 내포&lt;/li&gt;
+  &lt;li&gt;암호화 : 정보의 암호화가능&lt;/li&gt;
+  &lt;li&gt;오류검출 : 데이터입력시 에러 검출 가능&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;설계순서&quot;&gt;설계순서&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;코드화 항목 선정&lt;/li&gt;
+  &lt;li&gt;코드화 목적 설정&lt;/li&gt;
+  &lt;li&gt;코드화 대상 확인&lt;/li&gt;
+  &lt;li&gt;코드화 범위 결정&lt;/li&gt;
+  &lt;li&gt;코드 사용기간 설정&lt;/li&gt;
+  &lt;li&gt;코드화 항목의 특성 분석&lt;/li&gt;
+  &lt;li&gt;코드화 방식 결정&lt;/li&gt;
+  &lt;li&gt;문서화&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;종류&quot;&gt;종류&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;순차코드(Sequence Code):자료의 발생순, 크기순, 가나다순 등 일정 순서대로 코드를 부여하는 가장 단순한 방법&lt;/li&gt;
+  &lt;li&gt;구분 코드(Block Code):코드화 대상을 미리 파악하여 블록으로 구분한 후 그 안에서 순서대로 코드를 부여하는 방법&lt;/li&gt;
+  &lt;li&gt;십진 코드(Decimal Code):코드화 대상물을 일정한 소속으로 구분하여 십진수 한 자리씩 구분하여 대분류하고, 같은 방법으로 중분류, 소분류한 코드&lt;/li&gt;
+  &lt;li&gt;표의 숫자 코드(Significant Digit Code):표현하려는 대상의 의미는 제외하고 수치만을 모아 만든 것으로 대상이 되는 물체의 중량, 면적, 크기 등을 직접 코드에 적용시키는 방법&lt;/li&gt;
+  &lt;li&gt;연상코드(Mnemonic Code):코드를 보면 정보를 연상할 수 있도록하는 방법&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">코드란 이 포스트에서 말하는 코드란 데이터를 식별, 분류, 배열하기위해 사용되어지는 숫자또는 문자로서 컴퓨터처리에 효율적인 구성을 가진다.</summary></entry><entry><title type="html">TIL - 백업</title><link href="http://localhost:4000/BackUp" rel="alternate" type="text/html" title="TIL - 백업" /><published>2021-01-10T03:00:00+09:00</published><updated>2021-01-10T03:00:00+09:00</updated><id>http://localhost:4000/BackUp</id><content type="html" xml:base="http://localhost:4000/BackUp">&lt;h1 id=&quot;백업&quot;&gt;백업&lt;/h1&gt;
+&lt;h2 id=&quot;백업의-종류&quot;&gt;백업의 종류&lt;/h2&gt;
+&lt;h3 id=&quot;1-전체-백업full-backup&quot;&gt;1. 전체 백업(Full Backup)&lt;/h3&gt;
+&lt;p&gt;선택한 모든 파일과 폴더를 백업하는 형식이다.
+복원하기가 쉽지만, 백업에 오래걸린다.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-증분-백업incremental-backup&quot;&gt;2. 증분 백업(Incremental Backup)&lt;/h3&gt;
+&lt;p&gt;정해진 시간을 기준으로 변경된 파일만 백업하는 형식이다.
+가장 속도가 빠르지만 복원이 가장 느리다.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-차등-백업differential-backup&quot;&gt;3. 차등 백업(Differential Backup)&lt;/h3&gt;
+&lt;p&gt;전체 백업이후 변경된 모든 파일을 백업하는 형식이다. 
+증분 백업의 경우 이전 백업과 비교하여 변경된 파일을 백업하는 형식이지만,
+차등 백업의 경우 전체 백업이후에 변경된 파일을 계속해서 백업한다.
+전체백업보다는 빠르지만 복원에 전체백업보다는 느리다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">백업 백업의 종류 1. 전체 백업(Full Backup) 선택한 모든 파일과 폴더를 백업하는 형식이다. 복원하기가 쉽지만, 백업에 오래걸린다.</summary></entry><entry><title type="html">TIL - 스케쥴링(Scheduling)</title><link href="http://localhost:4000/Scheduling" rel="alternate" type="text/html" title="TIL - 스케쥴링(Scheduling)" /><published>2021-01-10T01:00:00+09:00</published><updated>2021-01-10T01:00:00+09:00</updated><id>http://localhost:4000/Scheduling</id><content type="html" xml:base="http://localhost:4000/Scheduling">&lt;h1 id=&quot;스케쥴링이란&quot;&gt;스케쥴링이란?&lt;/h1&gt;
+&lt;p&gt;OS가 CPU의 한정된 자원을 이용하여 고효율을 내기위해서 실행 대기중인 프로세스에게 자원배정을 하는 방식을 얘기한다.
+크게 선점방식과 비선점방식 두가지로 나뉜다.&lt;/p&gt;
+&lt;h2 id=&quot;선점-스케쥴링preemptive-scheduling&quot;&gt;선점 스케쥴링(Preemptive Scheduling)&lt;/h2&gt;
+&lt;p&gt;OS가 CPU를 선점해 실행중인 프로세스에서 다른 프로세스의 전환이 가능하고, 회수도 가능하다. 유연한 스케쥴링이 가능하다.&lt;/p&gt;
+
+&lt;h2 id=&quot;비선점-스케쥴링non-preemptive-scheduling&quot;&gt;비선점 스케쥴링(Non-Preemptive Scheduling)&lt;/h2&gt;
+&lt;p&gt;OS가 CPU를 선점하지않고, 한 프로세스에  CPU가 할당되면 그 프로세스가 종료될때까지 실행되도록 보장되는 스케쥴링이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;프로세스-스케쥴링-시점&quot;&gt;프로세스 스케쥴링 시점&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;프로세스가 실행 상태(running)에서 대기 상태(waiting)으로 전환될 때&lt;/li&gt;
+  &lt;li&gt;프로세스가 실행 상태(running)에서 준비 상태(ready)로 전환될 때&lt;/li&gt;
+  &lt;li&gt;프로세스가 대기 상태(waiting)에서 준비 상태(ready)로 전환될 때&lt;/li&gt;
+  &lt;li&gt;프로세스가 종료되었을 때(terminated)
+1,4의 경우만 일어난다고하면 비선점스케쥴링에 해당하고, 1~4 모두 일어난다면 선점 스케쥴링에 해당한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;디스패처dispatcher&quot;&gt;디스패처(dispatcher)&lt;/h2&gt;
+&lt;p&gt;스케쥴러가 선택한 프로세스가 작업을 수행할 수 있도록 환경 설정을 하는 커널 모듈이다.
+디스패처가 하나의 프로세스를 중단하고 다른 프로세스를 실행하기까지 소요되는 시간을 디스패치 지연(dispatch latency)라고 한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;스케쥴링-알고리즘&quot;&gt;스케쥴링 알고리즘&lt;/h2&gt;
+&lt;h3 id=&quot;평가기준&quot;&gt;평가기준&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;CPU 이용률(CPU utilization) : CPU를 얼마나 바쁘게 하는가. 높을수록 좋다.[단위 : %]&lt;/li&gt;
+  &lt;li&gt;처리율(Throughput) : 단위시간당 얼마나 많은 프로세스들이 완료되는가. 클 수록 좋다.[단위 : 개]&lt;/li&gt;
+  &lt;li&gt;소요시간(Turnaround time) : 프로세스가 요청된 후 완료하기까지 얼마나 걸리는가. 메모리 접근 시간, 대기 큐에서의 대기 시간, CPU에서의 실행 시간, I/O 시간 등의 합으로 계산한다. 짧을수록 좋다. [단위 : 초]&lt;/li&gt;
+  &lt;li&gt;대기시간(Waiting time) : 프로세스가 대기 큐에서 기다리는 시간의 합. 짧을수록 좋다. [단위 : 초]&lt;/li&gt;
+  &lt;li&gt;반응시간(Response time) : 프로세스가 요청된 후 첫 번째 응답을 받기까지 걸리는 시간. 주로 상호교환 시스템(interactive system)에서 사용된다. 짧을수록 좋다. [단위 : 초]
+    &lt;h3 id=&quot;fcfs스케쥴링first-come-first-serve-scheduling&quot;&gt;FCFS스케쥴링(First Come First Serve Scheduling)&lt;/h3&gt;
+    &lt;p&gt;말그대로 먼저들어온 프로세스를 먼저 실행하는 알고리즘이다. 가장 간단하며, 비선점 스케쥴링에 해당한다.
+한 커다란 프로세스가 먼저 들어올경우 대기시간이 길어지기때문에 지양해야 한다.&lt;/p&gt;
+    &lt;h3 id=&quot;우선순위-스케쥴링priority-scheduling&quot;&gt;우선순위 스케쥴링(Priority Scheduling)&lt;/h3&gt;
+    &lt;p&gt;말그대로 프로세스마다 우선순위를 매겨서 우선순위가 높은 프로세스부터 처리하는 스케쥴링 알고리즘이다.
+가끔 우선순위가 낮은 프로세스가 계속해서 실행이 되지않는 현상이 발생하는데 이것을 기아(Starvation)이라고 부른다. 이를 막기위해 노화(Aging)기법을 사용해 각 분기마다 남은 프로세스의 우선순위를 증가시켜주는 방법이다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;sjf-스케쥴링shorted-job-first&quot;&gt;SJF 스케쥴링(Shorted Job First)&lt;/h3&gt;
+&lt;p&gt;이것도 말그대로 CPU버스트타임이 가장 짧은 프로세스부터 먼저 실행시키는 알고리즘이다.
+CPU버스트타임이란 프로세스가 CPU를 사용할때의 시간을 말한다. 프로세스가 I/O를 사용할때의 시간은 I/O버스트타임이라 한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;라운드로빈-스케쥴링&quot;&gt;라운드로빈 스케쥴링&lt;/h3&gt;
+&lt;p&gt;windows의 경우 라운드로빈과 우선순위스케쥴링 알고리즘을 채택하고있다.
+라운드로빈은 우선순위가 같은경우 일정시간(타임슬라이스)동안 프로세스를 수행하고 다음 프로세스에 넘겨주는 형식이다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">스케쥴링이란? OS가 CPU의 한정된 자원을 이용하여 고효율을 내기위해서 실행 대기중인 프로세스에게 자원배정을 하는 방식을 얘기한다. 크게 선점방식과 비선점방식 두가지로 나뉜다. 선점 스케쥴링(Preemptive Scheduling) OS가 CPU를 선점해 실행중인 프로세스에서 다른 프로세스의 전환이 가능하고, 회수도 가능하다. 유연한 스케쥴링이 가능하다.</summary></entry><entry><title type="html">TIL - IT관련용어</title><link href="http://localhost:4000/ITWords" rel="alternate" type="text/html" title="TIL - IT관련용어" /><published>2021-01-10T00:00:00+09:00</published><updated>2021-01-10T00:00:00+09:00</updated><id>http://localhost:4000/ITWords</id><content type="html" xml:base="http://localhost:4000/ITWords">&lt;h2 id=&quot;daisy-chain&quot;&gt;Daisy-Chain&lt;/h2&gt;
+&lt;p&gt;다중 화면 연결이라고도 하며 여러대의 모니터를 A-B-C의 형식으로 연결해 사용할 수 있는 기능이다.
+Daisy Chain은 원래 데이지라는 꽃을 연결해서 팔찌나 목걸이를 만드는 것인데, 이러한 형식이 비슷하다는 점에서 이 용어를 쓰는 듯 하다.&lt;/p&gt;
+
+&lt;h2 id=&quot;ide&quot;&gt;IDE&lt;/h2&gt;
+&lt;p&gt;Integrated Device Eletronics
+여기서 말하고자하는 IDE는 인터페이스를 의미한다(통합개발환경X)
+IDE는 EIDE, PATA라고도 불리며, 병렬형식이며 CD-ROM, HDD를 연결하는 인터페이스 규격이다. 
+전송 속도는 약 최소 3.3MB/s 최대 16.7MB/s 정도로 SATA와는 비교도 안될 정도로 느리다.&lt;/p&gt;
+
+&lt;h2 id=&quot;sata&quot;&gt;SATA&lt;/h2&gt;
+&lt;p&gt;Serial Advanced Technology Attatchment
+직렬형식의 인터페이스이며 현재 보통 사용되는 인터페이스가 바로 이것이다.
+SATA1,2,3가 있고 버전별로 속도가 150,300,600MB/s까지 지원한다고 한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;scsi&quot;&gt;SCSI&lt;/h2&gt;
+&lt;p&gt;Small Computer System Interface로 스커지라고 부르며 한국에서는 스카시라고 부른다고한다. 
+병렬 전송이 특징이며, 고성능과 안정성을 보장하는 인터페이스이다. 예전에는 서버 쪽에서 많이 사용하던 인터페이스이나, 현재는 SAS라는 직렬형태로 넘어간 편이다.
+전송속도는 10MB/s정도 이지만, CPU와는 독립적이라 멀티태스킹할 경우 성능이 발휘된다고한다.
+메인보드에서 SCSI를 지원하는 경우는 없고, 따로 컨트롤러가 필요하다.&lt;/p&gt;
+
+&lt;h2 id=&quot;sas&quot;&gt;SAS&lt;/h2&gt;
+&lt;p&gt;Serial Attached SCSI
+스카시의 직렬버전이고, 보통 서버쪽에서 사용하는 인터페이스이다.
+SCSI처럼 따로 컨트롤러가 필요하다.&lt;/p&gt;
+
+&lt;h2 id=&quot;토폴로지&quot;&gt;토폴로지&lt;/h2&gt;
+&lt;p&gt;일반적인 의미는 물리적인 배치의 형태로 이루어진 어떤 현장의 종류를 설명하는 것이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;napt-network-address-port-translation&quot;&gt;NAPT (Network Address Port Translation)&lt;/h2&gt;
+&lt;p&gt;NAT(Network Address Translation)의 기능과 같이 OSI 3계층 네트워크 계층에서 사설 IP 주소를 공인 IP 주소로 변환하는 기능을 가진다.
+하지만 NAPT의경우 공인IP를 이용하여 다수의 사설IP로 변환가능하다. 이름에서 알 수 있듯이 포트번호를 이용하여 가능케한다.
+ICMP와같은 패킷들은 port정보를 포함하지않지만 TCP/UDP의경우 port정보를 포함하기때문에 사용이 가능하다.&lt;/p&gt;
+
+&lt;h2 id=&quot;icmpinternet-control-message-protocol&quot;&gt;ICMP(Internet Control Message Protocol)&lt;/h2&gt;
+&lt;p&gt;ICMP는 TCP/IP에서 IP 패킷을 처리할 때 발생되는 문제를 알려주는 프로토콜이다.
+ping이 이프로토콜을 사용하고있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;dhcpdynamic-host-configuration-protocol&quot;&gt;DHCP(Dynamic Host Configuration Protocol)&lt;/h2&gt;
+&lt;p&gt;DHCP란 호스트의 IP주소와 각종 TCP/IP 프로토콜의 기본 설정을 클라이언트에게 자동적으로 제공해주는 프로토콜을 말합니다&lt;/p&gt;
+
+&lt;h2 id=&quot;pppoepoint-to-point-protocol-over-ethernet&quot;&gt;PPPoE(Point to Point Protocol Over Ethernet)&lt;/h2&gt;
+&lt;p&gt;PPPoE는 이더넷을 통한 지점 간 프로토콜의 약자입니다. PPPoE는 PPP라고하는 다른 오래된 프로토콜에서 파생 된 네트워킹 프로토콜로, 지점 간 프로토콜을 나타냅니다.
+이더넷 프레임의 데이터 부분에  PPP 프레임이 캡슐화되어 전송됨&lt;/p&gt;
+
+&lt;h2 id=&quot;패킷필터링&quot;&gt;패킷필터링&lt;/h2&gt;
+&lt;p&gt;네트워크에서는 IP 패킷이라는 단위로 데이터를 송수신하고 있는데, IP 패킷에는 송신하는 데이터 외에 보내는 측과 받는 측의 주소나 통신 절차 등과 같은 정보가 들어 있다.
+패킷 필터링에서는 이러한 정보에 대해 조건을 설정하여 통신 가능 여부를 제어한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;통신계층별-데이터-단위&quot;&gt;통신계층별 데이터 단위&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Layer 5 ~ Layer 7 : 메세지,데이터&lt;/li&gt;
+  &lt;li&gt;Layer 4 : 세그먼트&lt;/li&gt;
+  &lt;li&gt;Layer 3 : 패킷,데이터그램&lt;/li&gt;
+  &lt;li&gt;Layer 2 : 프레임&lt;/li&gt;
+  &lt;li&gt;Layer 1 : 비트&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;## FQDN(Fully Qualified Domain Name)
+FQDN은 명확한 도메인 표기법을 칭한다. 예로 소프트웨어 설치 중 도메인명을 요구하면, YAHOO.COM. 을 입력할지, WWW.YAHOO.COM. 을 입력할지 모호하다. 그래서 이러한 모호성을 피하기 위해 FQDN이란 단어를 사용하며, 이는 Namespace 계층상에서 최종 호스트명을 포함하는 도메인명을 뜻한다.
+www(호스트명), yahoo.com.(도메인명), www.yahoo.com.(FQDN)&lt;/p&gt;
+
+&lt;h2 id=&quot;malware분석방법&quot;&gt;Malware분석방법&lt;/h2&gt;
+&lt;p&gt;악성코드를 분석하는 방법이며 상세,동적,정적,자동화분석이 있다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;상세분석 : 디스어셈블을 통해 어셈블리어로 바꿔 상세분석한다.&lt;/li&gt;
+  &lt;li&gt;동적분석 : 해당파일을 직접 실행하여 나타나는 변화를 모니터링하며 악성코드를 판별하는 방법이다. 가상환경에서 독립된 네트워크를 형성하여 분석도구등을 통해 분석한다.&lt;/li&gt;
+  &lt;li&gt;정적분석 : 파일을 실행하지않고 그 파일자체가 가지고 있는 내용들로 악성코드를 판별하는 방법이다. 파일의 해시나, 사용되는 API,문자열등으로 확인한다.&lt;/li&gt;
+  &lt;li&gt;자동화분석 : 말그대로 자동으로 분석해주는 방법이다. 빠르지만 완벽하지않다.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">Daisy-Chain 다중 화면 연결이라고도 하며 여러대의 모니터를 A-B-C의 형식으로 연결해 사용할 수 있는 기능이다. Daisy Chain은 원래 데이지라는 꽃을 연결해서 팔찌나 목걸이를 만드는 것인데, 이러한 형식이 비슷하다는 점에서 이 용어를 쓰는 듯 하다.</summary></entry><entry><title type="html">TIL - H.26x/MPEG</title><link href="http://localhost:4000/H.26x_MPEG" rel="alternate" type="text/html" title="TIL - H.26x/MPEG" /><published>2021-01-10T00:00:00+09:00</published><updated>2021-01-10T00:00:00+09:00</updated><id>http://localhost:4000/H.26x_MPEG</id><content type="html" xml:base="http://localhost:4000/H.26x_MPEG">&lt;p&gt;가끔 기본정보시험에서 MPEG에관련해서 묻는 문제가나와서 정리해보려한다.&lt;/p&gt;
+&lt;h2 id=&quot;h26x와-mpeg이란&quot;&gt;H.26x와 MPEG이란?&lt;/h2&gt;
+&lt;p&gt;동영상에 관련된 압축 규격인데, H.26x(x는 숫자)는 VCEG라는ITU내부 그룹에서 정한 규격이다. 참고로 ITU는 International Telecommunication Union 국제전기통신연합이다.
+그리고 MPEG의경우 ISO(International Organization for Standardization)라는 국제표준화기구에서 정한 규격이다.
+MPEG은 Moving Picture Experts Group의 약자이다.&lt;/p&gt;
+&lt;h2 id=&quot;왜-같이-거론되는-경우가-많나&quot;&gt;왜 같이 거론되는 경우가 많나?&lt;/h2&gt;
+&lt;p&gt;H.26x는 동영상규격이고, MPEG는 영상과 음성,시스템을 포함한 폭넓은 규격을 이야기하는데,
+보통 양 단체에서 공동으로 표준화를 진행하는 경우가 많기 때문이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;h261--mpeg-1&quot;&gt;H.261 &amp;amp; MPEG-1&lt;/h2&gt;
+&lt;p&gt;MPEG-1 비디오의 목적은 저사양 환경의 스트리밍이었기 때문에 고해상도 및 고비트레이트일수록 MPEG-2 비디오 화질 대비 큰 이득이 없거나 오히려 떨어지는 편이다.
+VCD(VideoCD)동영상매체, MP3의 압축기술로 사용되었다.&lt;/p&gt;
+
+&lt;h2 id=&quot;h262--mpeg-2-part-2&quot;&gt;H.262 &amp;amp; MPEG-2 Part 2&lt;/h2&gt;
+&lt;p&gt;저장매체(DVD), 방송매체(HDTV, 디지털 위성방송, Skylife등) 그리고 통신매체(LAN, ATM,ISDN)에서 영상 및 음향 압축에 사용하기 위해 표준화 한 것입니다. 
+MPEG-2 규격은 MPEG-1에 비해 더 높은 데이터 전송 속도를 가지고 있기 때문에 더 큰 해상도에서도 고화질과 고음질의 영상을 즐길 수 있게 합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;h264--mpeg-4-avc&quot;&gt;H.264 &amp;amp; MPEG-4 AVC&lt;/h2&gt;
+&lt;p&gt;MPEG2,4보다 2배에 가까운 압축률을 보여준 규격이다. 인터넷방송 규격으로 많이 사용되고 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;mpeg-7&quot;&gt;MPEG-7&lt;/h2&gt;
+&lt;p&gt;일제 인코딩하는 표준은아니다.
+멜로디 일부 입력으로 음성 검색, 그래픽의 도형 입력으로 그래픽검색, 영상의 물체 색깔, 재질, 동작 입력 및 시나리오 일부 묘사로 영상검색등에 활용가능하다고한다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">가끔 기본정보시험에서 MPEG에관련해서 묻는 문제가나와서 정리해보려한다. H.26x와 MPEG이란? 동영상에 관련된 압축 규격인데, H.26x(x는 숫자)는 VCEG라는ITU내부 그룹에서 정한 규격이다. 참고로 ITU는 International Telecommunication Union 국제전기통신연합이다. 그리고 MPEG의경우 ISO(International Organization for Standardization)라는 국제표준화기구에서 정한 규격이다. MPEG은 Moving Picture Experts Group의 약자이다. 왜 같이 거론되는 경우가 많나? H.26x는 동영상규격이고, MPEG는 영상과 음성,시스템을 포함한 폭넓은 규격을 이야기하는데, 보통 양 단체에서 공동으로 표준화를 진행하는 경우가 많기 때문이다.</summary></entry><entry><title type="html">TIL - RAID란?</title><link href="http://localhost:4000/WhatIsRAID" rel="alternate" type="text/html" title="TIL - RAID란?" /><published>2021-01-08T07:00:00+09:00</published><updated>2021-01-08T07:00:00+09:00</updated><id>http://localhost:4000/WhatIsRAID</id><content type="html" xml:base="http://localhost:4000/WhatIsRAID">&lt;h2 id=&quot;raid란&quot;&gt;RAID란?&lt;/h2&gt;
 &lt;p&gt;일본 기본정보처리시험을 준비하면서 문제에 나와서 정리해 두려고 한다.
 RAID란 Redundant Array of Independent Disk의 약자로 데이터의 안정성을 향상 시킬 수 있는 방식의 구조를 얘기한다.&lt;/p&gt;
 
@@ -336,525 +521,4 @@ Parity란 에러를 검출할 경우 사용되는 용어인데, 기존의 데이
    &lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProductB&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;createProductB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
  &lt;span class=&quot;c1&quot;&gt;//concrete factories also, implementing Factory interface
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>JoonHyun Park</name></author><category term="DesignPattern" /><summary type="html">팩토리패턴의 마지막 추상팩토리패턴이다. 먼저 정의를 보자 정의 추상팩토리패턴 에서는 인터페이스를 이용하여 서로 연관된,또는 의존하는 객체를 구상 클래스를 지정하지 않고도 생성할 수 있다. 정의만 보면 무슨말인지 잘 모르겠다. 일단 관련이있는 객체들을(제품군) 모아 생성,관리 하는 패턴이라고 생각하면 된다. 팩토리 메소드 패턴에서는 하나의 객체를 생성하기 위한 패턴이였지만(Pizza) 추상팩토리패턴은 연관이있는 여러 객체들을(제품군) 생성, 관리한다는 것이다.</summary></entry><entry><title type="html">Factory Method Pattern (c++)</title><link href="http://localhost:4000/FactoryMethodPattern" rel="alternate" type="text/html" title="Factory Method Pattern (c++)" /><published>2020-09-07T04:00:00+09:00</published><updated>2020-09-07T04:00:00+09:00</updated><id>http://localhost:4000/FactoryMethodPattern</id><content type="html" xml:base="http://localhost:4000/FactoryMethodPattern">&lt;h2 id=&quot;정의&quot;&gt;정의&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;팩토리 메소드 패턴에서는 객체를 생성하기 위한 인터페이스를 저의하는데, 어떤 클래스의 인스턴스를 만들지는 서브클래스에서 결정하게 만듭니다. 팩토리ㅣ메소드패턴을 이용하면 클래스의 인스턴스를 만드는
-일을 서브클래스의 맡기는 것입니다.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Factory Method Pattern은 Simple Factory에서 확장되었다고 생각하면된다.
-한 피자가게에 대해서 피자생성부분을 Factory로 만들어서 관리하고 싶다면
-Simple Factory로 가능하다.&lt;/p&gt;
-
-&lt;p&gt;하지만 한 피자가게가 있고, 그 피자가게의 체인점으로 특색이있는 피자가게들이 문을 열게된다면
-Simple Factory에서 확장을 할 필요가 있습니다.&lt;/p&gt;
-
-&lt;h2 id=&quot;구조&quot;&gt;구조&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/image/post/20200906/FactoryMethodPattern.jpg&quot; alt=&quot;Activity&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Creator : Product를 가지고 원하는 일 을 하기위한 모든 메소드들이 구현되어있다. PizzaStore에 상응&lt;/li&gt;
-  &lt;li&gt;ConcreteCreator : 실제로 Product를 생산한다. 즉 각각의자 가게의 피자 인스턴스를 생성한다.&lt;/li&gt;
-  &lt;li&gt;Product : Pizza클래스에 해당하며, 이 클래스를 상속하여 여러 종류의 피자를 정의한다.&lt;/li&gt;
-  &lt;li&gt;ConcreteProduct : Pizza클래스를 상속하여 BbqPizza, PotatoPizza등 여러 피자들을 정의한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;장점&quot;&gt;장점&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;객체 생성코드를 한 객체에 집어넣어 중복을 없앰&lt;/li&gt;
-  &lt;li&gt;관리시 Factory객체만 신경쓰면됌&lt;/li&gt;
-  &lt;li&gt;유저입장에서는 인터페이스만 신경써서 사용가능&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;소스코드&quot;&gt;소스코드&lt;/h2&gt;
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include&amp;lt;iostream&amp;gt;
-#include&amp;lt;string&amp;gt;
-&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// Product
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pizza&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; 
-	&lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-	&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;cook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; is cooked&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;cut&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; is cut&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;pack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; is packed&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// ConcreateProduct
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ChicagoCheesePizza&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ChicagoCheesePizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ChicagoCheesePizza&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};};&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ChicagoPotatoPizza&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ChicagoPotatoPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ChicagoPotatoPizza&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};};&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ChicagoBbqPizza&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ChicagoBbqPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ChicagoBbqPizza&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};};&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ThinCheesePizza&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ThinCheesePizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ThinCheesePizza&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ThinPotatoPizza&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ThinPotatoPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ThinPotatoPizza&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ThinBbqPizza&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ThinBbqPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ThinBbqPizza&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-
-&lt;span class=&quot;c1&quot;&gt;// Creator
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PizzaStore&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;orderPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pizza&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;createPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		
-		&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pizza&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pizza&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cut&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pizza&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;createPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// ConcreateCreator
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ChicagoPizzaStore&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PizzaStore&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;createPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Cheese&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ChicagoCheesePizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Bbq&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ChicagoBbqPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Potato&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ChicagoPotatoPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ThinPizzaStore&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PizzaStore&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;createPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Cheese&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ThinCheesePizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Bbq&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ThinBbqPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pizzaName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Potato&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ThinPotatoPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;PizzaStore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chicagoPizzaStore&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ChicagoPizzaStore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;orderedPizza1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;orderedPizza1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chicagoPizzaStore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;orderPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Cheese&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	
-	&lt;span class=&quot;n&quot;&gt;PizzaStore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thinPizzaStore&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ThinPizzaStore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;orderedPizza2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;orderedPizza2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thinPizzaStore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;orderPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Potato&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;SimpleFactory와의 차이점은 피자를 만드는 처리가(createPizza)추상 메소드로 정의되어
-각각의 자식클래스(ChicagoPizzaStore, ThinPizzaStore)에서 구현하고 있다는 점이다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="DesignPattern" /><summary type="html">정의 팩토리 메소드 패턴에서는 객체를 생성하기 위한 인터페이스를 저의하는데, 어떤 클래스의 인스턴스를 만들지는 서브클래스에서 결정하게 만듭니다. 팩토리ㅣ메소드패턴을 이용하면 클래스의 인스턴스를 만드는 일을 서브클래스의 맡기는 것입니다.</summary></entry><entry><title type="html">Simple Factory Pattern (c++)</title><link href="http://localhost:4000/SimpleFactory" rel="alternate" type="text/html" title="Simple Factory Pattern (c++)" /><published>2020-09-01T04:00:00+09:00</published><updated>2020-09-01T04:00:00+09:00</updated><id>http://localhost:4000/SimpleFactory</id><content type="html" xml:base="http://localhost:4000/SimpleFactory">&lt;p&gt;팩토리 패턴은 생성 패턴으로 객체를 생성할때 사용 되는 디자인패턴이다.
-객체를 생성하는 부분을 팩토리 클래스로 따로 빼서 관리하는 것이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;simple-factory&quot;&gt;simple Factory&lt;/h2&gt;
-&lt;p&gt;Simple Factory는 디자인패턴이라고는 할 수 없다고한다. 프로그래밍에서 자주쓰이는 용법..? 그정도라고 보면된다.
-그러면 simple Factory는 뭔가?&lt;/p&gt;
-
-&lt;h2 id=&quot;구조&quot;&gt;구조&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/image/post/20200831/SimpleFactory.jpg&quot; alt=&quot;Activity&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include&amp;lt;iostream&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;cheesePizza&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;objPizza&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CheesePizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bbqPizza&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;objPizza&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BbqPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;potatoPizza&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;objPizza&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PotatoPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;objPizza&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OriginalPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;    
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Pizza클래스가 있다고 가정하고, Pizza클래스를 상속하는 cheesePizza, bbqPizza, potatoPizza가 있다고 하자.
-다형성을 이용하여 만든 클래스를 동적으로 바꿀 수 있도록 코드를 짰다.
-하지만 이코드는 피자메뉴가 추가될 경우 계속해서 main()을 바꿔줘야하고 테스트도 다시 해야된다.
-여기서 Simple Factory를 사용하면 유지보수성이 좋아지고 캡슐화가 되어 객체지향적인 코딩이 가능하다.&lt;/p&gt;
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include&amp;lt;iostream&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PizzaFactory&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;createPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;cheesePizza&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;objPizza&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CheesePizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bbqPizza&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;objPizza&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BbqPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;potatoPizza&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;objPizza&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PotatoPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;objPizza&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OriginalPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;cheesePizza&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;PizzaFactory&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objPizzaFactory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;objPizzaFactory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;createPizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-    &lt;span class=&quot;n&quot;&gt;Pizza&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;    
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위같은 형식이 Simple Factory를 적용한 예이다. 이렇게 코딩을 할 경우
-혹시 피자메뉴가 추가되거나하면 PizzaFactory클래스만 변경하면 되기 때문에
-main은 건드릴 필요가 없게된다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="DesignPattern" /><summary type="html">팩토리 패턴은 생성 패턴으로 객체를 생성할때 사용 되는 디자인패턴이다. 객체를 생성하는 부분을 팩토리 클래스로 따로 빼서 관리하는 것이다.</summary></entry><entry><title type="html">Decoration Pattern (C++)</title><link href="http://localhost:4000/DecorationPattern" rel="alternate" type="text/html" title="Decoration Pattern (C++)" /><published>2020-08-31T04:00:00+09:00</published><updated>2020-08-31T04:00:00+09:00</updated><id>http://localhost:4000/DecorationPattern</id><content type="html" xml:base="http://localhost:4000/DecorationPattern">&lt;p&gt;위키피디아 정의는 아래와 같다.
-&lt;em&gt;데코레이터 패턴(Decorator pattern)이란 주어진 상황 및 용도에 따라 어떤 객체에 책임을 덧붙이는 패턴으로, 기능확장이 필요할 때 서브클래싱 대신 쓸 수 있는 유연한 대안이 될 수 있다.&lt;/em&gt;
-Head First Design Pattern책에서의 정의는 다음과 같다.
-&lt;em&gt;데코레이터 패턴에서는 객체에 추가적인 요건을 동적으로 첨가한다. 데코레이터는 서브클래스를 만드는 것을 통해서 기능을 유현하게 확장할 수 있는 방법을 제공한다.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;솔직히 정의를 봐도 전혀 모르겠다. 동적으로 객체를 추가 가능하고, 서브클래스 즉 상속을 이용해서 기능확장을 한다는 것은 알겠다.&lt;/p&gt;
-
-&lt;p&gt;구조를 한번 보자.&lt;/p&gt;
-&lt;h2 id=&quot;구조&quot;&gt;구조&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/image/post/20200830/DecoratorPattern.png&quot; alt=&quot;Activity&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;Component&lt;/dt&gt;
-      &lt;dd&gt;상속받는 ConcreateComponent와 Decorator의 공통기능을 정의하고, 
-실제 클라이언트가 사용하는 클래스이다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;ConcreateComponent&lt;/dt&gt;
-      &lt;dd&gt;기본적인 기능, 이기능에 장식이 붙는 형식&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;Decorator&lt;/dt&gt;
-      &lt;dd&gt;추가적인 기능의 공통기능을 정의한다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;ConcreateDecorator&lt;/dt&gt;
-      &lt;dd&gt;추가적인 기능, 기본적인 기능에 장식으로 추가적인 기능을 붙인다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;예&quot;&gt;예&lt;/h2&gt;
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Decorator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Product&lt;/span&gt; 
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Decorator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Product&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;product&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Product&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;product&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PartsA&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Decorator&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;PartsA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Product&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Decorator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-		
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PartsA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;product&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; + PartsA&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getLeadTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;product&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getLeadTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PartsB&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Decorator&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;PartsB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Product&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Decorator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PartsB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;product&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; + PartsB&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getLeadTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;product&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getLeadTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PartsC&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Decorator&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;PartsC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Product&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Decorator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PartsC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;product&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; + PartsC&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getLeadTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;product&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getLeadTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ProductA&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Product&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;ProductA = &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getLeadTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ProductB&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Product&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;ProductB = &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getLeadTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Product&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Aproduct&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProductA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Aproduct&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PartsA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Aproduct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Aproduct&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PartsB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Aproduct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Product : &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;Aproduct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c_str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;LeadTiem : &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;Aproduct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getLeadTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;Product&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bproduct&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProductB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Bproduct&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PartsA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Bproduct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Bproduct&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PartsB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Bproduct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Bproduct&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PartsC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Bproduct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Product : &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bproduct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c_str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;LeadTiem : &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bproduct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getLeadTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>JoonHyun Park</name></author><category term="DesignPattern" /><summary type="html">위키피디아 정의는 아래와 같다. 데코레이터 패턴(Decorator pattern)이란 주어진 상황 및 용도에 따라 어떤 객체에 책임을 덧붙이는 패턴으로, 기능확장이 필요할 때 서브클래싱 대신 쓸 수 있는 유연한 대안이 될 수 있다. Head First Design Pattern책에서의 정의는 다음과 같다. 데코레이터 패턴에서는 객체에 추가적인 요건을 동적으로 첨가한다. 데코레이터는 서브클래스를 만드는 것을 통해서 기능을 유현하게 확장할 수 있는 방법을 제공한다.</summary></entry><entry><title type="html">Observer Pattern (C++)</title><link href="http://localhost:4000/observer" rel="alternate" type="text/html" title="Observer Pattern (C++)" /><published>2020-08-27T05:00:00+09:00</published><updated>2020-08-27T05:00:00+09:00</updated><id>http://localhost:4000/observer</id><content type="html" xml:base="http://localhost:4000/observer">&lt;p&gt;JDK에서 가장 많이 쓰이는 패턴중 하나로 무언가 실시간으로 정보를 보낼 수 있고,
-동적으로 실시간정보를 받을지 말지를 결정 할 수 있다.
-&lt;em&gt;한 객체의 상태가 바뀌면 그 객체에 의존하는 다른 객체들한테 연락이 가고 자동으로 내용이 갱신되는
-일대다 의존성을 정의합니다.&lt;/em&gt;
-여기서 한 객체를 subject라고 부르고 다른 여러객체들을 observer라고 한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;구조&quot;&gt;구조&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/image/post/20200826/Observer.png&quot; alt=&quot;Activity&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;예&quot;&gt;예&lt;/h2&gt;
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iostream&amp;gt;
-#include &amp;lt;string&amp;gt;
-#include &amp;lt;vector&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newProduct&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;productName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discountRate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NewProduct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CObserver&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NewProduct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CConcreateObserver&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CObserver&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NewProduct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newProduct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;showNewProductSpec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newProduct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;showNewProductSpec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NewProduct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newPD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;New Product&amp;gt;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Name = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newPD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;productName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;price = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newPD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;discount rate = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newPD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;discountRate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CSubject&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;registerObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CConcreateObserver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;removeObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CConcreateObserver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;notifyObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CConcreateSubject&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CSubject&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;registerObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CConcreateObserver&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;lstObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push_back&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;removeObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CConcreateObserver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lstObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lstObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lstObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;lstObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;erase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;notifyObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lstObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lstObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m_NewProduct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setNewProduct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NewProduct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newProduct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;m_NewProduct&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newProduct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CConcreateObserver&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lstObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;NewProduct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_NewProduct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;NewProduct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nPD&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;CrazyBubbleBath&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;500000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;CConcreateObserver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objObserver&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CConcreateObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;CConcreateSubject&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objSubject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;objSubject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setNewProduct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nPD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;objSubject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;registerObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;objObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;objSubject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;notifyObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>JoonHyun Park</name></author><category term="DesignPattern" /><summary type="html">JDK에서 가장 많이 쓰이는 패턴중 하나로 무언가 실시간으로 정보를 보낼 수 있고, 동적으로 실시간정보를 받을지 말지를 결정 할 수 있다. 한 객체의 상태가 바뀌면 그 객체에 의존하는 다른 객체들한테 연락이 가고 자동으로 내용이 갱신되는 일대다 의존성을 정의합니다. 여기서 한 객체를 subject라고 부르고 다른 여러객체들을 observer라고 한다.</summary></entry><entry><title type="html">strategy pattern (Swift)</title><link href="http://localhost:4000/designPattern" rel="alternate" type="text/html" title="strategy pattern (Swift)" /><published>2020-08-26T05:00:00+09:00</published><updated>2020-08-26T05:00:00+09:00</updated><id>http://localhost:4000/designPattern</id><content type="html" xml:base="http://localhost:4000/designPattern">&lt;h2 id=&quot;strategy-pattern&quot;&gt;strategy pattern&lt;/h2&gt;
-&lt;p&gt;행위 소프트웨어 디자인패턴이며, 알고리즘을 캡슐화하여 상호 교체가 가능하게만든다.
-이 패턴을 사용하면 클라이언트와는 독립적으로 알고리즘을 변경할 수 있다.
-그리고 동적으로 알고리즘을 교체할 수 있는 구조로 되어있다.&lt;/p&gt;
-
-&lt;h2 id=&quot;구조&quot;&gt;구조&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/image/post/20200825/strategyPattern.png&quot; alt=&quot;Activity&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;실제-예&quot;&gt;실제 예&lt;/h2&gt;
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Logger&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;LogStyle&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lowercase&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uppercase&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;capitalized&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;LogStyle&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;lowercase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;lowercased&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uppercase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;uppercased&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;capitalized&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;capitalized&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;여기서 style을 10개이상으로 추가하려면 logger를 직접건드려 enum과 log함수를 수정해야한다.&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// What&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;protocol&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;LoggerStrategy&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Who&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Logger&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;strategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;LoggerStrategy&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;strategy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// How&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;LowercaseStrategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;LoggerStrategy&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;lowercased&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UppercaseStratgy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;LoggerStrategy&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;uppercased&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CapitalizedStrategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;LoggerStrategy&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;capitalized&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
- 
-
-&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;logger&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Logger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;strategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CapitalizedStrategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;logger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;my first strategy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// My First Strategy&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;logger&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Logger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;strategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UppercaseStrategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;logger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;my first strategy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// MY FIRST STRATEGY&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;logger&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Logger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;strategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;LowercaseStrategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;logger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;my first strategy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// my first strategy&lt;/span&gt;
- 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;하지만 strategy pattern을 사용한다면 logger와 log는 직접 건드리지 않고 LoggerStrategy을 준거하는
-구조체를 만들어주면 된다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="DesignPattern" /><summary type="html">strategy pattern 행위 소프트웨어 디자인패턴이며, 알고리즘을 캡슐화하여 상호 교체가 가능하게만든다. 이 패턴을 사용하면 클라이언트와는 독립적으로 알고리즘을 변경할 수 있다. 그리고 동적으로 알고리즘을 교체할 수 있는 구조로 되어있다.</summary></entry></feed>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>JoonHyun Park</name></author><category term="DesignPattern" /><summary type="html">팩토리패턴의 마지막 추상팩토리패턴이다. 먼저 정의를 보자 정의 추상팩토리패턴 에서는 인터페이스를 이용하여 서로 연관된,또는 의존하는 객체를 구상 클래스를 지정하지 않고도 생성할 수 있다. 정의만 보면 무슨말인지 잘 모르겠다. 일단 관련이있는 객체들을(제품군) 모아 생성,관리 하는 패턴이라고 생각하면 된다. 팩토리 메소드 패턴에서는 하나의 객체를 생성하기 위한 패턴이였지만(Pizza) 추상팩토리패턴은 연관이있는 여러 객체들을(제품군) 생성, 관리한다는 것이다.</summary></entry></feed>
