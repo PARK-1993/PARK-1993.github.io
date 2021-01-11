@@ -251,6 +251,115 @@ www(호스트명), yahoo.com.(도메인명), www.yahoo.com.(FQDN)</p>
   <li>자동화분석 : 말그대로 자동으로 분석해주는 방법이다. 빠르지만 완벽하지않다.</li>
 </ul>
 
+<h2 id="arp">ARP</h2>
+<p>ARP(Address Resolution Protocol)의 약자로서 IP주소를 MAC(Media Access Control)주소로 변환해주는 프로토콜이라고 합니다.</p>
+
+<h2 id="공개키-암호화방식">공개키 암호화방식</h2>
+<p>공개키와 개인키를 이용하여 암호화하는 방식.
+공개키는 암호화하는데 사용되며, 개인키는 복호화하는데 사용된다.
+디지털서명에 이 방식이 사용된다.
+개인키가 노출되거나 잃어버릴 경우 암호화된 메세지가 위험에 노출되며, 
+암호화 및 해독에관련된 복잡한 수학적 계산때문에 대량의 데이터를 처리해야할 경우
+매우 느려지게됩니다.
+SSL(Secure Sockets Layer) 프로토콜도 비대칭 암호화 기능을 사용합니다.
+공개 키 암호 방식은 또한 블록체인 및 암호 화폐 기술에서도 두드러지는 특징입니다.</p>
+
+<h2 id="디지털서명">디지털서명</h2>
+<p>디지털 서명은 디지털 데이터의 진위성과 무결성을 검증하는 데 사용되는 암호 메커니즘입니다. 
+해싱, 서명, 검증 세 가지 기본 단계로 이뤄지는 경우가 많습니다.</p>
+<ol>
+  <li>해싱 : 해싱 알고리즘을 통해 데이터를 제출하여 해시값이 생성(예를 들면 메시지 다이제스트)</li>
+  <li>서명 : 메시지 발신자의 개인키를 이용하여 서명</li>
+  <li>검증 : 수신자가 공개키를 받아 그 공개키를 이용하여 유효성을 검증</li>
+</ol>
+
+<p>데이터 무결성, 진위성, 부인 방지</p>
+
+<h2 id="dmzdemilitarized-zone">DMZ(DeMilitarized Zone)</h2>
+<p>내부세그먼트와 외부세그먼트로부터 격리된 영역</p>
+
+<h2 id="siemsecurity-information-and-event-management">SIEM(Security Information and Event Management)</h2>
+<p>네트워크내의 다양한기기나 소프트웨어로부터 로그를 수집해 일괄관리하는 통합로그관리시스템이다.
+자동으로 로그 수집,분석을 하며, 사전에 이상을 감지하는것이 가능하다.</p>
+
+<h2 id="cc서버">C&amp;C서버</h2>
+<p>봇에 감염된 컴퓨터에 대해서 다른 컴퓨터로의 공격이나 부정한조작을 하도록 외부로부터 지시해 원격조작하는 역할을 맡는 서버이다.</p>
+
+<h2 id="sdnsoftware-defined-networking">SDN(Software-Defined Networking)</h2>
+<p>소프트웨어 애플리케이션을 사용하여 네트워크를 지능화하고 중앙에서 제어하거나 ‘프로그래밍’할 수 있는 네트워크 아키텍처 접근법이다.
+네트워크상의 다양한 통신기기를 집중적으로 제어하고 네트워크 구성이나 보안설정등을 변경한다.</p>
+
+<h2 id="wafweb-application-firewall">WAF(Web Application Firewall)</h2>
+<p>패킷의헤더정보를 검사하는것 뿐만아니라 통신처의 어플리케이션프로그램을 식별해서 통신을 제어한다.</p>
+
+<h2 id="apopauthenticated-post-office-protocol">APOP(Authenticated Post Office Protocol)</h2>
+<p>POP은 메일서버의 메일박스로부터 전자메일을 꺼낼때 사용하는 프로토콜이다. 유저명과 비밀번호에따른 인증을 수행하나, 패스워드를 평문으로 보내는 결점이있다.
+이 점을 대처해 해쉬함수등을 사용하여 패스워드송신을 암호화해 안정성을 높인 것이 APOP이다.</p>
+
+<h2 id="pop3spop3-over-ssltls">POP3S(POP3 over SSL/TLS)</h2>
+<p>APOP은 패스워드만 암호화하지만, 전송로를 암호화하는 SSL/TLS에의해 POP통신자체를 암호화하는 방식이다.</p>
+
+<h2 id="smimesecure-multipurposer-internet-mail-extensions">S/MIME(Secure Multipurposer Internet Mail Extensions)</h2>
+<p>MIME은 전자메일로 문자뿐만아니라 이미지파일이나, 음성파일등을 다루기위한 규격이다.
+S/MIME은 MIME의 확장규격으로 전자메일의 내용을 암호화하거나, 디지털서명을 부여하는등 보안대책을 넣은 것이다.</p>
+
+<h2 id="smtp-authsimple-mail-transfer-protocol-authentication">SMTP-AUTH(Simple Mail Transfer Protocol-Authentication)</h2>
+<p>메일을 송신, 전송하는 프로토콜 SMTP의 확장규격이다. 단순한 메일전송을 수행하는 SMTP에는 인증의 구조가 없기때문에 
+SMTP-AUTH에서는 송신하는쪽의 메일서버에서 유저명과 패스워드에따른 인증을 수행해, 송신자가 정규의 유저인지 확인이가능하다.</p>
+
+<h2 id="dfddata-flow-diagram">DFD(Data Flow Diagram)</h2>
+<p>데이터의 흐름에 착목해서 업무처리를 모델화한 다이어그램이다.</p>
+<ul>
+  <li>○：처리(프로세스), 데이터의가공이나 처리의 내용을 나타낸다.</li>
+  <li>二：데이터저장(파일), 데이터가 저장되는 파일을 나타낸다.</li>
+  <li>□：외부, 데이터의 발생원이나 데이터의 행선지를 나타낸다.</li>
+  <li>→：데이터흐름, 데이터의 흐름을 나타낸다.</li>
+</ul>
+
+<h2 id="스텁stub">스텁(Stub)</h2>
+<p>골격만 있는 또는 특별한 목적의 소프트웨어 컴포넌트를 구현한 것. 스텁을 호출하거나 또는 스텁에 의존적인 컴포넌트를 개발하거나 테스트할 때 사용됨. 스텁은 호출된 컴포넌트를 대체
+탑다운 방시에서 사용한다.</p>
+<h2 id="테스트드라이버test-driver">테스트드라이버(Test Driver)</h2>
+<p>바텀업방식에서 사용된다.
+최하위 모듈로부터 순서대로 모쥴을 결합하는 바텀업테스트에서 적절한 인수를 넘겨 하위 모듈을 호출하는등의 동작을 수행한다.</p>
+
+<h2 id="xpextreme-programming">XP(eXtreme Programming)</h2>
+<p>아자일개발의 대표적인 방법중하나이며, 유연성이 높은 개발방법이다. 
+사양의 변경등 변화에 대처해 빠른대응이 가능하다.</p>
+<h3 id="특징">특징</h3>
+<ul>
+  <li>코딩과 테스트를 중시</li>
+  <li>각공정의 피드백을 항상 수행하며, 수정과 재설계하는것을 중시
+    <h3 id="종류">종류</h3>
+  </li>
+  <li>테스트기반개발</li>
+  <li>페어프로그래밍</li>
+  <li>리팩토링</li>
+</ul>
+
+<h2 id="fpfunction-point">FP(Function Point)</h2>
+<p>소프트웨어가 가지는 기능의 개수를 기준으로 그 소프트웨어의 규모를 측정하는 수법이다.
+내부논리파일, 외부논리파일, 외부입력, 외부출력, 외부조회기능의 개수에 증분을 곱해 공수를 계산한다.</p>
+<h2 id="cocomoconstructive-cost-model">COCOMO(COnstructive COst MOdel)</h2>
+<p>공수와 기간등으로 견적을내는 방법중 하나이며, 소스코드의 상정 줄수를 기준으로 프로그래머의 스킬이나 재이용코드량등의 다양한 요인들로부터 개발규모를 파악하고
+보정계수를 곱해 공수를 계산하는 방법이다.</p>
+
+<h2 id="mtbfmean-time-between-failures">MTBF(Mean TIme Between Failures)</h2>
+<p>평균고장간격, 시스템이 연속해서 정상동작을 하고있는 시간의 평균치</p>
+
+<h2 id="mttrmean-time-to-repair">MTTR(Mean Time To Repair)</h2>
+<p>평균수리시간, 고장으로인해 시스템이 정지하고 수리가 완료되어 재가동할때까지의 시간의 평균치</p>
+
+<h2 id="bcpbusiness-continuity-plan">BCP(Business Continuity Plan)</h2>
+<p>사업지속계획, 재해등의 리스크가 발생하였을 경우를 대비해, 사업이 계속될 수 있도록 계획이나 복구대책등을 책정하는것이다.</p>
+
+<h2 id="rporecovery-point-objective">RPO(Recovery Point Objective)</h2>
+<p>BCP의 지표중 하나로, 사건이 발행 했을때에 과거의 어떤지점까지의 데이터를 복구시킬것인가의 목표치를 의미한다.</p>
+
+<h2 id="rtorecovery-time-objective">RTO(Recovery Time Objective)</h2>
+<p>BCP의 지표중하나로, 사건이 발생했을때에 언제까지 시스템을 복구시켜야하는가의 목표치이다.</p>
+
+
                 </div>
             </section>
 
@@ -338,6 +447,15 @@ www(호스트명), yahoo.com.(도메인명), www.yahoo.com.(FQDN)</p>
                                     
                                         
                                         
+                                            <li><a href="/CSMA">TIL - RAID란?</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
                                             <li><a href="/Code">TIL - 코드체계</a></li>
                                         
                                     
@@ -355,8 +473,6 @@ www(호스트명), yahoo.com.(도메인명), www.yahoo.com.(FQDN)</p>
                                   
                                     
                                         
-                                        
-                                            <li><a href="/Scheduling">TIL - 스케쥴링(Scheduling)</a></li>
                                         
                                     
                                   
@@ -423,7 +539,7 @@ www(호스트명), yahoo.com.(도메인명), www.yahoo.com.(FQDN)</p>
                         <footer class="read-next-card-footer">
                             <a href="/tag/til/">
                                 
-                                    See all 8 posts  →
+                                    See all 9 posts  →
                                 
                             </a>
                         </footer>

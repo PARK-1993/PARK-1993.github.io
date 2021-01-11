@@ -8,6 +8,23 @@
     
       
       <item>
+        <title>TIL - RAID란?</title>
+        
+          <description>&lt;h1 id=&quot;csma-csmacd-csmaca-란&quot;&gt;CSMA, CSMA/CD, CSMA/CA 란?&lt;/h1&gt;
+&lt;p&gt;여러개의 호스트가 하나의 매체/채널을 공유할때 동시에 채널을 사용할 경우 충돌이 발생하게된다.
+이를 막기위해 상호간의 약속이 필요하다. 그것이 바로 CSMA,CSMA/CD, CSMA/CA이다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 11 Jan 2021 01:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/CSMA</link>
+        <guid isPermaLink="true">http://localhost:4000/CSMA</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>TIL - 코드체계</title>
         
           <description>&lt;h2 id=&quot;코드란&quot;&gt;코드란&lt;/h2&gt;
