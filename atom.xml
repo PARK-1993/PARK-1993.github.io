@@ -8,6 +8,24 @@
     
       
       <item>
+        <title>TIL - Software License</title>
+        
+          <description>&lt;h2 id=&quot;오픈소스-라이센스&quot;&gt;오픈소스 라이센스&lt;/h2&gt;
+&lt;p&gt;오픈소스를 사용하기 위해서는 어떠한 조항들을 지키며 사용해야하는데, 
+그 지켜야하는 조항들에 대해서 나와있는 것이 라이센스이다.
+이번에 대표적인 라이센스들에 대해서 정리해보고자 한다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 14 Jan 2021 08:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/License</link>
+        <guid isPermaLink="true">http://localhost:4000/License</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>TIL - Cohesion</title>
         
           <description>&lt;h2 id=&quot;응집도cohesion&quot;&gt;응집도(Cohesion)&lt;/h2&gt;

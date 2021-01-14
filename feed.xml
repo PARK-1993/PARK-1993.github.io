@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-13T23:59:04+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - Cohesion</title><link href="http://localhost:4000/Coehsion" rel="alternate" type="text/html" title="TIL - Cohesion" /><published>2021-01-12T03:00:00+09:00</published><updated>2021-01-12T03:00:00+09:00</updated><id>http://localhost:4000/Coehsion</id><content type="html" xml:base="http://localhost:4000/Coehsion">&lt;h2 id=&quot;응집도cohesion&quot;&gt;응집도(Cohesion)&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-14T23:49:26+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - Software License</title><link href="http://localhost:4000/License" rel="alternate" type="text/html" title="TIL - Software License" /><published>2021-01-14T08:00:00+09:00</published><updated>2021-01-14T08:00:00+09:00</updated><id>http://localhost:4000/License</id><content type="html" xml:base="http://localhost:4000/License">&lt;h2 id=&quot;오픈소스-라이센스&quot;&gt;오픈소스 라이센스&lt;/h2&gt;
+&lt;p&gt;오픈소스를 사용하기 위해서는 어떠한 조항들을 지키며 사용해야하는데, 
+그 지켜야하는 조항들에 대해서 나와있는 것이 라이센스이다.
+이번에 대표적인 라이센스들에 대해서 정리해보고자 한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;gnugnu-is-not-unix-gplgeneral-public-license&quot;&gt;GNU(Gnu is Not Unix) GPL(General Public License)&lt;/h2&gt;
+&lt;p&gt;라이센스들 중에서도 좀 까다로운측에 속하며, GPL코드를 조금이라도 사용했다면 그 프로그램의 라이센스는 GPL이되어야한다.
+GPL은 판매나 배포하는 것이 가능하지만, 그렇게 할 경우 반드시 소스코드를 공개하여야한다.
+하지만 사내에서 배포하지않고 사용하는 경우에는 소스코드를 공개하지 않아도 된다.&lt;/p&gt;
+
+&lt;h2 id=&quot;lgplgnu-lesser-gpl&quot;&gt;LGPL(GNU Lesser GPL)&lt;/h2&gt;
+&lt;p&gt;@TODO&lt;/p&gt;
+
+&lt;h2 id=&quot;mit-license&quot;&gt;MIT License&lt;/h2&gt;
+&lt;p&gt;MIT 대학의 학도들을 위해 만들어진 라이센스로, 가장 느슨한 조항들로 이루어져있다.
+누구라도 무상으로 제한없이 사용가능하며, 취급할 땐 사용한 소프트웨어의 저작권 허가 표시를 모든 복제물이나 중요한 부분에 기재해야한다.
+또한 MIT 라이센스 소프트웨어를 사용해서 발생한 문제는 저작권자가 책임지지 않는다.
+MIT라이센스라는것을 기재만 하면 자유롭게 사용이 가능하다는 것이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;apache-license&quot;&gt;Apache License&lt;/h2&gt;
+&lt;p&gt;아파치소프트웨어 재단에서 자신들의 소프트웨어에 적용하기 위해 만든 라이센스이다.
+소스코드 공개에 대한 의무는 없으며, 수정 배포하는 경우 반드시 아파치재단의 이름과 라이센스의 내용을 명시해야한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;bsdberkeley-software-distribution-license&quot;&gt;BSD(Berkeley Software Distribution) License&lt;/h2&gt;
+&lt;p&gt;@TODO&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">오픈소스 라이센스 오픈소스를 사용하기 위해서는 어떠한 조항들을 지키며 사용해야하는데, 그 지켜야하는 조항들에 대해서 나와있는 것이 라이센스이다. 이번에 대표적인 라이센스들에 대해서 정리해보고자 한다.</summary></entry><entry><title type="html">TIL - Cohesion</title><link href="http://localhost:4000/Coehsion" rel="alternate" type="text/html" title="TIL - Cohesion" /><published>2021-01-12T03:00:00+09:00</published><updated>2021-01-12T03:00:00+09:00</updated><id>http://localhost:4000/Coehsion</id><content type="html" xml:base="http://localhost:4000/Coehsion">&lt;h2 id=&quot;응집도cohesion&quot;&gt;응집도(Cohesion)&lt;/h2&gt;
 &lt;p&gt;응집도란 모듈에 포함된 기능의 순수함을 나타내는 척도로, 모듈의 강도를 측정하는 단위다. 단계가 높을수록 순수하고 강하며 좋은 모듈이다. 모듈 내 요소 간 관계의 친밀함에 주목해서 판정한다.&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;단계: 암합적 강도
@@ -478,44 +502,4 @@ Parity란 에러를 검출할 경우 사용되는 용어인데, 기존의 데이
 &lt;p&gt;RAID03,04와 같이 패리티비트를 사용하지만, 하나의 디스크에만 패리티정보를 넣는 것이아니라,
 각 디스크에 패리티비트를 번갈아가며 저장해 데이터 분산처리로 성능향상과 안정성 둘 다 챙길 수 있는 구성이다.
 현재 가장 많이 사용되는 방식이며, 3개이상의 디스크가 있어야 사용가능하고 5개이상의 디스크를 보통사용한다.
-실제 사용가능한 디스크는 사용디스크 - 1개다(각 패리티정보를 모으면 하나의 디스크분량이된다.)&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">RAID란? 일본 기본정보처리시험을 준비하면서 문제에 나와서 정리해 두려고 한다. RAID란 Redundant Array of Independent Disk의 약자로 데이터의 안정성을 향상 시킬 수 있는 방식의 구조를 얘기한다.</summary></entry><entry><title type="html">최소지식원칙 - Principle of Least Knowledge</title><link href="http://localhost:4000/TheLawOfDemeter" rel="alternate" type="text/html" title="최소지식원칙 - Principle of Least Knowledge" /><published>2020-09-10T04:00:00+09:00</published><updated>2020-09-10T04:00:00+09:00</updated><id>http://localhost:4000/TheLawOfDemeter</id><content type="html" xml:base="http://localhost:4000/TheLawOfDemeter">&lt;h2 id=&quot;최소지식원칙&quot;&gt;최소지식원칙&lt;/h2&gt;
-&lt;p&gt;최소지식원칙(Principle of least knowledge)혹은 데메테르의법칙(The law of Demeter)라고 불리는 원칙은 객체 지향 디자인원칙중의 하나다.
-결합도가 낮은 설계를 목적으로한다. 왜 결합도가 낮을 필요가 있을까? 
-만약 한 클래스를 여러 클래스들이 상속하고있고, 그 클래스안에서 여러클래스들의 메소드를 불러오고 있다고 한다면, 그 클래스를 수정하게 되었을 경우 관계되는 클래스들의 수정이 필요로 하게된다.&lt;/p&gt;
-
-&lt;p&gt;이원칙에서는 한메소드에서 다음과같은 종류의 객체에있는 메소드들을 실행하라는 가이드라인을 제시한다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;자기자신의 메소드&lt;/li&gt;
-  &lt;li&gt;메소드에 매개변수로 전달된 객체&lt;/li&gt;
-  &lt;li&gt;그 메소드에서 생성하거나 인스턴스를 만든 객체&lt;/li&gt;
-  &lt;li&gt;그 객체에 속하는 구성요소&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Car&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;//이 클래스의 구성요소. 메소드 호출가능
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;Engine&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;engine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Car&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){};&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Key&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// 메소드내의 새로운객체. 메소드 호출가능
-&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;Doors&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;doors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Doors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// 메소드의 매개변수. 메소드 호출가능
-&lt;/span&gt;        &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;authorized&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;turns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;authorized&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;engine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-            &lt;span class=&quot;c1&quot;&gt;// 객체의 구성요소. 메소드 호출가능
-&lt;/span&gt;            &lt;span class=&quot;n&quot;&gt;updateDashboardDisplay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;doors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;updateDashboardDisplay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){};&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위의 소스코드는 헤드퍼스트의 예제이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;단점&quot;&gt;단점&lt;/h2&gt;
-&lt;p&gt;객체들간의 의존성과 유지보수가 용이해지나, 메소드호출을 처리하기 위한 래퍼클래스의 필요성과 시스템의 복잡도 증가, 성능저하가 있을 수 있다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="DesignPattern" /><summary type="html">최소지식원칙 최소지식원칙(Principle of least knowledge)혹은 데메테르의법칙(The law of Demeter)라고 불리는 원칙은 객체 지향 디자인원칙중의 하나다. 결합도가 낮은 설계를 목적으로한다. 왜 결합도가 낮을 필요가 있을까? 만약 한 클래스를 여러 클래스들이 상속하고있고, 그 클래스안에서 여러클래스들의 메소드를 불러오고 있다고 한다면, 그 클래스를 수정하게 되었을 경우 관계되는 클래스들의 수정이 필요로 하게된다.</summary></entry></feed>
+실제 사용가능한 디스크는 사용디스크 - 1개다(각 패리티정보를 모으면 하나의 디스크분량이된다.)&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">RAID란? 일본 기본정보처리시험을 준비하면서 문제에 나와서 정리해 두려고 한다. RAID란 Redundant Array of Independent Disk의 약자로 데이터의 안정성을 향상 시킬 수 있는 방식의 구조를 얘기한다.</summary></entry></feed>
