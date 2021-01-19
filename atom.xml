@@ -8,6 +8,65 @@
     
       
       <item>
+        <title>TIL - IP Address</title>
+        
+          <description>&lt;h2 id=&quot;ip-address&quot;&gt;IP Address&lt;/h2&gt;
+&lt;p&gt;IP(Internet Protocol)은 상호간에 접속된 네트워크에서 데이터를 중계해 전송하는 네트워크층의 프로토콜이다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 19 Jan 2021 06:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/NetworkAddress</link>
+        <guid isPermaLink="true">http://localhost:4000/NetworkAddress</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - Interupt종류</title>
+        
+          <description>&lt;h2 id=&quot;interrupt란&quot;&gt;Interrupt란&lt;/h2&gt;
+&lt;p&gt;프로그램 실행 도중에 이벤트나 예기치못한 상황으로인한 작업중단등을 얘기한다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 19 Jan 2021 03:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/interupt</link>
+        <guid isPermaLink="true">http://localhost:4000/interupt</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Sideproject1</title>
+        
+          <description>
+&lt;hr /&gt;
+&lt;p&gt;layout: post
+current: post
+cover:  assets/built/images/python-logo.png
+navigation: True
+title: TIL - SideProject1
+date: 2021-01-18 12:30:00
+tags: [TIL]
+class: post-template
+subclass: ‘post tag-TIL’
+author: PARK-1993
+—&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 18 Jan 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/sideProject1</link>
+        <guid isPermaLink="true">http://localhost:4000/sideProject1</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>TIL - Software License</title>
         
           <description>&lt;h2 id=&quot;오픈소스-라이센스&quot;&gt;오픈소스 라이센스&lt;/h2&gt;

@@ -1,4 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-17T22:23:05+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - Software License</title><link href="http://localhost:4000/License" rel="alternate" type="text/html" title="TIL - Software License" /><published>2021-01-14T08:00:00+09:00</published><updated>2021-01-14T08:00:00+09:00</updated><id>http://localhost:4000/License</id><content type="html" xml:base="http://localhost:4000/License">&lt;h2 id=&quot;오픈소스-라이센스&quot;&gt;오픈소스 라이센스&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-19T23:34:59+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - IP Address</title><link href="http://localhost:4000/NetworkAddress" rel="alternate" type="text/html" title="TIL - IP Address" /><published>2021-01-19T06:00:00+09:00</published><updated>2021-01-19T06:00:00+09:00</updated><id>http://localhost:4000/NetworkAddress</id><content type="html" xml:base="http://localhost:4000/NetworkAddress">&lt;h2 id=&quot;ip-address&quot;&gt;IP Address&lt;/h2&gt;
+&lt;p&gt;IP(Internet Protocol)은 상호간에 접속된 네트워크에서 데이터를 중계해 전송하는 네트워크층의 프로토콜이다.&lt;/p&gt;
+
+&lt;p&gt;IP Address에는 특별한 의미를 가지는 2개의 address가 있어, 이것들은 호스트에 할당하면 안된다.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Network Address : 호스트부가 전부 0인 address로 이 address는 네트워크 전체를 의미한다.&lt;/li&gt;
+  &lt;li&gt;Broadcast Address : 호스트부가 전부 1인 address로  이 address는 네트워크에 속하는 전체 노드에 대해 데이터를 송신할때 사용된다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;address-분석&quot;&gt;Address 분석&lt;/h2&gt;
+&lt;p&gt;192.168.0.0/23의 경우 네트워크부는 앞에서 23비트이고, 호스트부는 전체 32비트중에서 23비트를 뺀 영역을 가진다.
+여기서 23은 서브넷마스크라고 부르며, 이경우의 호스트부에서 사용할 수 있는 어드레스의 개수는 2^9(9bit) - 2(Network/Broadcast Addresss)이다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">IP Address IP(Internet Protocol)은 상호간에 접속된 네트워크에서 데이터를 중계해 전송하는 네트워크층의 프로토콜이다.</summary></entry><entry><title type="html">TIL - Interupt종류</title><link href="http://localhost:4000/interupt" rel="alternate" type="text/html" title="TIL - Interupt종류" /><published>2021-01-19T03:00:00+09:00</published><updated>2021-01-19T03:00:00+09:00</updated><id>http://localhost:4000/interupt</id><content type="html" xml:base="http://localhost:4000/interupt">&lt;h2 id=&quot;interrupt란&quot;&gt;Interrupt란&lt;/h2&gt;
+&lt;p&gt;프로그램 실행 도중에 이벤트나 예기치못한 상황으로인한 작업중단등을 얘기한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;interrupt종류&quot;&gt;Interrupt종류&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;내부 Interrupt
+    &lt;ul&gt;
+      &lt;li&gt;프로그램실행중 에러(제로나누기연산, 오버플로등)&lt;/li&gt;
+      &lt;li&gt;SVC(Supervisor Call) : 시스템콜이나 OS의 기능이 호출된경우 발생한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;외부 Interrupt
+    &lt;ul&gt;
+      &lt;li&gt;입출력Interrupt : 입출력동작이 종료될때 발생한다.&lt;/li&gt;
+      &lt;li&gt;기기체크Interrupt : 하드웨어가 고장났을때 발생한다.&lt;/li&gt;
+      &lt;li&gt;타이머Interrupt : 프로그램의 실행시간이 설정시간을 경과했을 경우 발생한다.&lt;/li&gt;
+      &lt;li&gt;콘솔Interrupt : 오퍼레이터가 개입한경우 발생한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">Interrupt란 프로그램 실행 도중에 이벤트나 예기치못한 상황으로인한 작업중단등을 얘기한다.</summary></entry><entry><title type="html">Sideproject1</title><link href="http://localhost:4000/sideProject1" rel="alternate" type="text/html" title="Sideproject1" /><published>2021-01-18T00:00:00+09:00</published><updated>2021-01-18T00:00:00+09:00</updated><id>http://localhost:4000/sideProject1</id><content type="html" xml:base="http://localhost:4000/sideProject1">&lt;hr /&gt;
+&lt;p&gt;layout: post
+current: post
+cover:  assets/built/images/python-logo.png
+navigation: True
+title: TIL - SideProject1
+date: 2021-01-18 12:30:00
+tags: [TIL]
+class: post-template
+subclass: ‘post tag-TIL’
+author: PARK-1993
+—&lt;/p&gt;
+
+&lt;h2 id=&quot;나만의-앱만들기&quot;&gt;나만의 앱만들기&lt;/h2&gt;
+&lt;h3 id=&quot;무엇을-만들것인가&quot;&gt;무엇을 만들것인가&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;iOS어플리케이션&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;어떤-프로그램인가&quot;&gt;어떤 프로그램인가&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;여행지 랜덤배정 및 주변 랜드마크 알람푸쉬해주는 어플&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;어떻게-만들-것인가&quot;&gt;어떻게 만들 것인가&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;swift사용, apple맵 사용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;누구와-만들-것인가&quot;&gt;누구와 만들 것인가&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;혼자&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;언제만들-것-인가&quot;&gt;언제만들 것 인가&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;하루 30분정도 시간을 투자해보자&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">layout: post current: post cover: assets/built/images/python-logo.png navigation: True title: TIL - SideProject1 date: 2021-01-18 12:30:00 tags: [TIL] class: post-template subclass: ‘post tag-TIL’ author: PARK-1993 —</summary></entry><entry><title type="html">TIL - Software License</title><link href="http://localhost:4000/License" rel="alternate" type="text/html" title="TIL - Software License" /><published>2021-01-14T08:00:00+09:00</published><updated>2021-01-14T08:00:00+09:00</updated><id>http://localhost:4000/License</id><content type="html" xml:base="http://localhost:4000/License">&lt;h2 id=&quot;오픈소스-라이센스&quot;&gt;오픈소스 라이센스&lt;/h2&gt;
 &lt;p&gt;오픈소스를 사용하기 위해서는 어떠한 조항들을 지키며 사용해야하는데, 
 그 지켜야하는 조항들에 대해서 나와있는 것이 라이센스이다.
 이번에 대표적인 라이센스들에 대해서 정리해보고자 한다.&lt;/p&gt;
@@ -280,381 +347,4 @@ CPU버스트타임이란 프로세스가 CPU를 사용할때의 시간을 말한
 
 &lt;h3 id=&quot;라운드로빈-스케쥴링&quot;&gt;라운드로빈 스케쥴링&lt;/h3&gt;
 &lt;p&gt;windows의 경우 라운드로빈과 우선순위스케쥴링 알고리즘을 채택하고있다.
-라운드로빈은 우선순위가 같은경우 일정시간(타임슬라이스)동안 프로세스를 수행하고 다음 프로세스에 넘겨주는 형식이다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">스케쥴링이란? OS가 CPU의 한정된 자원을 이용하여 고효율을 내기위해서 실행 대기중인 프로세스에게 자원배정을 하는 방식을 얘기한다. 크게 선점방식과 비선점방식 두가지로 나뉜다. 선점 스케쥴링(Preemptive Scheduling) OS가 CPU를 선점해 실행중인 프로세스에서 다른 프로세스의 전환이 가능하고, 회수도 가능하다. 유연한 스케쥴링이 가능하다.</summary></entry><entry><title type="html">TIL - IT관련용어</title><link href="http://localhost:4000/ITWords" rel="alternate" type="text/html" title="TIL - IT관련용어" /><published>2021-01-10T00:00:00+09:00</published><updated>2021-01-10T00:00:00+09:00</updated><id>http://localhost:4000/ITWords</id><content type="html" xml:base="http://localhost:4000/ITWords">&lt;h2 id=&quot;daisy-chain&quot;&gt;Daisy-Chain&lt;/h2&gt;
-&lt;p&gt;다중 화면 연결이라고도 하며 여러대의 모니터를 A-B-C의 형식으로 연결해 사용할 수 있는 기능이다.
-Daisy Chain은 원래 데이지라는 꽃을 연결해서 팔찌나 목걸이를 만드는 것인데, 이러한 형식이 비슷하다는 점에서 이 용어를 쓰는 듯 하다.&lt;/p&gt;
-
-&lt;h2 id=&quot;ide&quot;&gt;IDE&lt;/h2&gt;
-&lt;p&gt;Integrated Device Eletronics
-여기서 말하고자하는 IDE는 인터페이스를 의미한다(통합개발환경X)
-IDE는 EIDE, PATA라고도 불리며, 병렬형식이며 CD-ROM, HDD를 연결하는 인터페이스 규격이다. 
-전송 속도는 약 최소 3.3MB/s 최대 16.7MB/s 정도로 SATA와는 비교도 안될 정도로 느리다.&lt;/p&gt;
-
-&lt;h2 id=&quot;sata&quot;&gt;SATA&lt;/h2&gt;
-&lt;p&gt;Serial Advanced Technology Attatchment
-직렬형식의 인터페이스이며 현재 보통 사용되는 인터페이스가 바로 이것이다.
-SATA1,2,3가 있고 버전별로 속도가 150,300,600MB/s까지 지원한다고 한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;scsi&quot;&gt;SCSI&lt;/h2&gt;
-&lt;p&gt;Small Computer System Interface로 스커지라고 부르며 한국에서는 스카시라고 부른다고한다. 
-병렬 전송이 특징이며, 고성능과 안정성을 보장하는 인터페이스이다. 예전에는 서버 쪽에서 많이 사용하던 인터페이스이나, 현재는 SAS라는 직렬형태로 넘어간 편이다.
-전송속도는 10MB/s정도 이지만, CPU와는 독립적이라 멀티태스킹할 경우 성능이 발휘된다고한다.
-메인보드에서 SCSI를 지원하는 경우는 없고, 따로 컨트롤러가 필요하다.&lt;/p&gt;
-
-&lt;h2 id=&quot;sas&quot;&gt;SAS&lt;/h2&gt;
-&lt;p&gt;Serial Attached SCSI
-스카시의 직렬버전이고, 보통 서버쪽에서 사용하는 인터페이스이다.
-SCSI처럼 따로 컨트롤러가 필요하다.&lt;/p&gt;
-
-&lt;h2 id=&quot;토폴로지&quot;&gt;토폴로지&lt;/h2&gt;
-&lt;p&gt;일반적인 의미는 물리적인 배치의 형태로 이루어진 어떤 현장의 종류를 설명하는 것이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;napt-network-address-port-translation&quot;&gt;NAPT (Network Address Port Translation)&lt;/h2&gt;
-&lt;p&gt;NAT(Network Address Translation)의 기능과 같이 OSI 3계층 네트워크 계층에서 사설 IP 주소를 공인 IP 주소로 변환하는 기능을 가진다.
-하지만 NAPT의경우 공인IP를 이용하여 다수의 사설IP로 변환가능하다. 이름에서 알 수 있듯이 포트번호를 이용하여 가능케한다.
-ICMP와같은 패킷들은 port정보를 포함하지않지만 TCP/UDP의경우 port정보를 포함하기때문에 사용이 가능하다.&lt;/p&gt;
-
-&lt;h2 id=&quot;arp&quot;&gt;ARP&lt;/h2&gt;
-&lt;p&gt;ARP(Address Resolution Protocol)의 약자로서 IP주소를 MAC(Media Access Control)주소로 변환해주는 프로토콜이라고 합니다.&lt;/p&gt;
-
-&lt;h2 id=&quot;icmpinternet-control-message-protocol&quot;&gt;ICMP(Internet Control Message Protocol)&lt;/h2&gt;
-&lt;p&gt;ICMP는 TCP/IP에서 IP 패킷을 처리할 때 발생되는 문제를 알려주는 프로토콜이다.
-ping이 이프로토콜을 사용하고있다.&lt;/p&gt;
-
-&lt;h2 id=&quot;dhcpdynamic-host-configuration-protocol&quot;&gt;DHCP(Dynamic Host Configuration Protocol)&lt;/h2&gt;
-&lt;p&gt;DHCP란 호스트의 IP주소와 각종 TCP/IP 프로토콜의 기본 설정을 클라이언트에게 자동적으로 제공해주는 프로토콜을 말합니다&lt;/p&gt;
-
-&lt;h2 id=&quot;pppoepoint-to-point-protocol-over-ethernet&quot;&gt;PPPoE(Point to Point Protocol Over Ethernet)&lt;/h2&gt;
-&lt;p&gt;PPPoE는 이더넷을 통한 지점 간 프로토콜의 약자입니다. PPPoE는 PPP라고하는 다른 오래된 프로토콜에서 파생 된 네트워킹 프로토콜로, 지점 간 프로토콜을 나타냅니다.
-이더넷 프레임의 데이터 부분에  PPP 프레임이 캡슐화되어 전송됩니다.&lt;/p&gt;
-
-&lt;h2 id=&quot;패킷필터링&quot;&gt;패킷필터링&lt;/h2&gt;
-&lt;p&gt;네트워크에서는 IP 패킷이라는 단위로 데이터를 송수신하고 있는데, IP 패킷에는 송신하는 데이터 외에 보내는 측과 받는 측의 주소나 통신 절차 등과 같은 정보가 들어 있다.
-패킷 필터링에서는 이러한 정보에 대해 조건을 설정하여 통신 가능 여부를 제어한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;통신계층별-데이터-단위&quot;&gt;통신계층별 데이터 단위&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Layer 5 ~ Layer 7 : 메세지,데이터&lt;/li&gt;
-  &lt;li&gt;Layer 4 : 세그먼트&lt;/li&gt;
-  &lt;li&gt;Layer 3 : 패킷,데이터그램&lt;/li&gt;
-  &lt;li&gt;Layer 2 : 프레임&lt;/li&gt;
-  &lt;li&gt;Layer 1 : 비트&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;## FQDN(Fully Qualified Domain Name)
-FQDN은 명확한 도메인 표기법을 칭한다. 예로 소프트웨어 설치 중 도메인명을 요구하면, YAHOO.COM. 을 입력할지, WWW.YAHOO.COM. 을 입력할지 모호하다. 그래서 이러한 모호성을 피하기 위해 FQDN이란 단어를 사용하며, 이는 Namespace 계층상에서 최종 호스트명을 포함하는 도메인명을 뜻한다.
-www(호스트명), yahoo.com.(도메인명), www.yahoo.com.(FQDN)&lt;/p&gt;
-
-&lt;h2 id=&quot;malware분석방법&quot;&gt;Malware분석방법&lt;/h2&gt;
-&lt;p&gt;악성코드를 분석하는 방법이며 상세,동적,정적,자동화분석이 있다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;상세분석 : 디스어셈블을 통해 어셈블리어로 바꿔 상세분석한다.&lt;/li&gt;
-  &lt;li&gt;동적분석 : 해당파일을 직접 실행하여 나타나는 변화를 모니터링하며 악성코드를 판별하는 방법이다. 가상환경에서 독립된 네트워크를 형성하여 분석도구등을 통해 분석한다.&lt;/li&gt;
-  &lt;li&gt;정적분석 : 파일을 실행하지않고 그 파일자체가 가지고 있는 내용들로 악성코드를 판별하는 방법이다. 파일의 해시나, 사용되는 API,문자열등으로 확인한다.&lt;/li&gt;
-  &lt;li&gt;자동화분석 : 말그대로 자동으로 분석해주는 방법이다. 빠르지만 완벽하지않다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;공개키-암호화방식&quot;&gt;공개키 암호화방식&lt;/h2&gt;
-&lt;p&gt;공개키와 개인키를 이용하여 암호화하는 방식.
-공개키는 암호화하는데 사용되며, 개인키는 복호화하는데 사용된다.
-디지털서명에 이 방식이 사용된다.
-개인키가 노출되거나 잃어버릴 경우 암호화된 메세지가 위험에 노출되며, 
-암호화 및 해독에관련된 복잡한 수학적 계산때문에 대량의 데이터를 처리해야할 경우
-매우 느려지게됩니다.
-SSL(Secure Sockets Layer) 프로토콜도 비대칭 암호화 기능을 사용한다.
-공개 키 암호 방식은 또한 블록체인 및 암호 화폐 기술에서도 사용된다.&lt;/p&gt;
-
-&lt;h2 id=&quot;디지털서명&quot;&gt;디지털서명&lt;/h2&gt;
-&lt;p&gt;디지털 서명은 디지털 데이터의 진위성과 무결성을 검증하는 데 사용되는 암호 메커니즘입니다. 
-해싱, 서명, 검증 세 가지 기본 단계로 이뤄지는 경우가 많습니다.&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;해싱 : 해싱 알고리즘을 통해 데이터를 제출하여 해시값이 생성(예를 들면 메시지 다이제스트)&lt;/li&gt;
-  &lt;li&gt;서명 : 메시지 발신자의 개인키를 이용하여 서명&lt;/li&gt;
-  &lt;li&gt;검증 : 수신자가 공개키를 받아 그 공개키를 이용하여 유효성을 검증&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;데이터 무결성, 진위성, 부인 방지&lt;/p&gt;
-
-&lt;h2 id=&quot;dmzdemilitarized-zone&quot;&gt;DMZ(DeMilitarized Zone)&lt;/h2&gt;
-&lt;p&gt;내부세그먼트와 외부세그먼트로부터 격리된 영역&lt;/p&gt;
-
-&lt;h2 id=&quot;siemsecurity-information-and-event-management&quot;&gt;SIEM(Security Information and Event Management)&lt;/h2&gt;
-&lt;p&gt;네트워크내의 다양한기기나 소프트웨어로부터 로그를 수집해 일괄관리하는 통합로그관리시스템이다.
-자동으로 로그 수집,분석을 하며, 사전에 이상을 감지하는것이 가능하다.&lt;/p&gt;
-
-&lt;h2 id=&quot;cc서버&quot;&gt;C&amp;amp;C서버&lt;/h2&gt;
-&lt;p&gt;봇에 감염된 컴퓨터에 대해서 다른 컴퓨터로의 공격이나 부정한조작을 하도록 외부로부터 지시해 원격조작하는 역할을 맡는 서버이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;sdnsoftware-defined-networking&quot;&gt;SDN(Software-Defined Networking)&lt;/h2&gt;
-&lt;p&gt;소프트웨어 애플리케이션을 사용하여 네트워크를 지능화하고 중앙에서 제어하거나 ‘프로그래밍’할 수 있는 네트워크 아키텍처 접근법이다.
-네트워크상의 다양한 통신기기를 집중적으로 제어하고 네트워크 구성이나 보안설정등을 변경한다.
-종래의 네트워크기기는 제어기능과 데이터전송기능 두가지를 탑재하고있는데, 이를 논리적으로 분리해서 데이터전송을 OpenFlow스위치가 담당하고,
-제어기능을가진 OpenFlow컨트롤러가  집중관리한다. 제어기능을 프로그래밍하는 것으로 유연한 네트워크 구축을 수행하는것이 가능하다.&lt;/p&gt;
-
-&lt;h2 id=&quot;wafweb-application-firewall&quot;&gt;WAF(Web Application Firewall)&lt;/h2&gt;
-&lt;p&gt;패킷의헤더정보를 검사하는것 뿐만아니라 통신처의 어플리케이션프로그램을 식별해서 통신을 제어한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;apopauthenticated-post-office-protocol&quot;&gt;APOP(Authenticated Post Office Protocol)&lt;/h2&gt;
-&lt;p&gt;POP은 메일서버의 메일박스로부터 전자메일을 꺼낼때 사용하는 프로토콜이다. 유저명과 비밀번호에따른 인증을 수행하나, 패스워드를 평문으로 보내는 결점이있다.
-이 점을 대처해 해쉬함수등을 사용하여 패스워드송신을 암호화해 안정성을 높인 것이 APOP이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;pop3spop3-over-ssltls&quot;&gt;POP3S(POP3 over SSL/TLS)&lt;/h2&gt;
-&lt;p&gt;APOP은 패스워드만 암호화하지만, 전송로를 암호화하는 SSL/TLS에의해 POP통신자체를 암호화하는 방식이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;smimesecure-multipurposer-internet-mail-extensions&quot;&gt;S/MIME(Secure Multipurposer Internet Mail Extensions)&lt;/h2&gt;
-&lt;p&gt;MIME은 전자메일로 문자뿐만아니라 이미지파일이나, 음성파일등을 다루기위한 규격이다.
-S/MIME은 MIME의 확장규격으로 전자메일의 내용을 암호화하거나, 디지털서명을 부여하는등 보안대책을 넣은 것이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;smtp-authsimple-mail-transfer-protocol-authentication&quot;&gt;SMTP-AUTH(Simple Mail Transfer Protocol-Authentication)&lt;/h2&gt;
-&lt;p&gt;메일을 송신, 전송하는 프로토콜 SMTP의 확장규격이다. 단순한 메일전송을 수행하는 SMTP에는 인증의 구조가 없기때문에 
-SMTP-AUTH에서는 송신하는쪽의 메일서버에서 유저명과 패스워드에따른 인증을 수행해, 송신자가 정규의 유저인지 확인이가능하다.&lt;/p&gt;
-
-&lt;h2 id=&quot;dfddata-flow-diagram&quot;&gt;DFD(Data Flow Diagram)&lt;/h2&gt;
-&lt;p&gt;데이터의 흐름에 착목해서 업무처리를 모델화한 다이어그램이다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;○：처리(프로세스), 데이터의가공이나 처리의 내용을 나타낸다.&lt;/li&gt;
-  &lt;li&gt;二：데이터저장(파일), 데이터가 저장되는 파일을 나타낸다.&lt;/li&gt;
-  &lt;li&gt;□：외부, 데이터의 발생원이나 데이터의 행선지를 나타낸다.&lt;/li&gt;
-  &lt;li&gt;→：데이터흐름, 데이터의 흐름을 나타낸다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;스텁stub&quot;&gt;스텁(Stub)&lt;/h2&gt;
-&lt;p&gt;골격만 있는 또는 특별한 목적의 소프트웨어 컴포넌트를 구현한 것. 스텁을 호출하거나 또는 스텁에 의존적인 컴포넌트를 개발하거나 테스트할 때 사용됨. 스텁은 호출된 컴포넌트를 대체
-탑다운 방시에서 사용한다.&lt;/p&gt;
-&lt;h2 id=&quot;테스트드라이버test-driver&quot;&gt;테스트드라이버(Test Driver)&lt;/h2&gt;
-&lt;p&gt;바텀업방식에서 사용된다.
-최하위 모듈로부터 순서대로 모쥴을 결합하는 바텀업테스트에서 적절한 인수를 넘겨 하위 모듈을 호출하는등의 동작을 수행한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;xpextreme-programming&quot;&gt;XP(eXtreme Programming)&lt;/h2&gt;
-&lt;p&gt;아자일개발의 대표적인 방법중하나이며, 유연성이 높은 개발방법이다. 
-사양의 변경등 변화에 대처해 빠른대응이 가능하다.&lt;/p&gt;
-
-&lt;h3 id=&quot;특징&quot;&gt;특징&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;코딩과 테스트를 중시&lt;/li&gt;
-  &lt;li&gt;각공정의 피드백을 항상 수행하며, 수정과 재설계하는것을 중시&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;종류&quot;&gt;종류&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;테스트기반개발&lt;/li&gt;
-  &lt;li&gt;페어프로그래밍&lt;/li&gt;
-  &lt;li&gt;리팩토링&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;fpfunction-point&quot;&gt;FP(Function Point)&lt;/h2&gt;
-&lt;p&gt;소프트웨어가 가지는 기능의 개수를 기준으로 그 소프트웨어의 규모를 측정하는 수법이다.
-내부논리파일, 외부논리파일, 외부입력, 외부출력, 외부조회기능의 개수에 증분을 곱해 공수를 계산한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;cocomoconstructive-cost-model&quot;&gt;COCOMO(COnstructive COst MOdel)&lt;/h2&gt;
-&lt;p&gt;공수와 기간등으로 견적을내는 방법중 하나이며, 소스코드의 상정 줄수를 기준으로 프로그래머의 스킬이나 재이용코드량등의 다양한 요인들로부터 개발규모를 파악하고
-보정계수를 곱해 공수를 계산하는 방법이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;mtbfmean-time-between-failures&quot;&gt;MTBF(Mean TIme Between Failures)&lt;/h2&gt;
-&lt;p&gt;평균고장간격, 시스템이 연속해서 정상동작을 하고있는 시간의 평균치&lt;/p&gt;
-
-&lt;h2 id=&quot;mttrmean-time-to-repair&quot;&gt;MTTR(Mean Time To Repair)&lt;/h2&gt;
-&lt;p&gt;평균수리시간, 고장으로인해 시스템이 정지하고 수리가 완료되어 재가동할때까지의 시간의 평균치&lt;/p&gt;
-
-&lt;h2 id=&quot;bcpbusiness-continuity-plan&quot;&gt;BCP(Business Continuity Plan)&lt;/h2&gt;
-&lt;p&gt;사업지속계획, 재해등의 리스크가 발생하였을 경우를 대비해, 사업이 계속될 수 있도록 계획이나 복구대책등을 책정하는것이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;rporecovery-point-objective&quot;&gt;RPO(Recovery Point Objective)&lt;/h2&gt;
-&lt;p&gt;BCP의 지표중 하나로, 사건이 발행 했을때에 과거의 어떤지점까지의 데이터를 복구시킬것인가의 목표치를 의미한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;rtorecovery-time-objective&quot;&gt;RTO(Recovery Time Objective)&lt;/h2&gt;
-&lt;p&gt;BCP의 지표중하나로, 사건이 발생했을때에 언제까지 시스템을 복구시켜야하는가의 목표치이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;context-switching&quot;&gt;Context Switching&lt;/h1&gt;
-&lt;p&gt;인터럽트에 의해 다른프로세스로 디스패치될 경우 기존실행중의 프로세스의 상태또는 레지스터값을 교체하는 작업이다.&lt;/p&gt;
-
-&lt;p&gt;※ Context란 CPU가 해당프로세스를 실행하기위한 프로세스의 정보들을 이야기한다.&lt;/p&gt;
-
-&lt;p&gt;※ Context는 프로세스의 PCB(Process Control BLock)에 저장된다.&lt;/p&gt;
-
-&lt;p&gt;※ 저장되는 정보는 프로세스상태, 프로그램카운터, 레지스터(누산기, 스택, 색인레지스터), 프로세스번호가 있다.&lt;/p&gt;
-
-&lt;h1 id=&quot;epcglobal네트워크&quot;&gt;EPCglobal네트워크&lt;/h1&gt;
-&lt;p&gt;RFID(Radio Frequency IDentifier)이라는 카드에 들어가있는 IC칩에 정보를 기억시키고 전파에의해 정보교환이나 관리를 행하는 기술을 이용하는 IoT기술중 하나로, 
-물류 네트워크를 최적화하는데 사용되는 네트워크 아키텍처이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;cdncontent-delivery-network&quot;&gt;CDN(Content Delivery Network)&lt;/h1&gt;
-&lt;p&gt;웹 컨텐츠에 엑세스하는 유저에게 가장 가까운 서버로부터 효율적으로 송신할 수 있도록하는 구조의 네트워크이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;captchacompletely-automated-public-turing-test-to-tell-computers-and-humans-apart&quot;&gt;CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apart)&lt;/h1&gt;
-&lt;p&gt;웹페이지의 입력폼등의에서 부정이용을 방지하기위해 사용되는 인증기술이다. 흐릿하게하거나 살짝가린 사진으로부터 인간이 읽을수 있는 문자를 판독시켜 수동으로 입력시킨다.
-이것으로 인해 응답자가 인간인것을 판단한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;하이브리드-암호화시스템&quot;&gt;하이브리드 암호화시스템&lt;/h1&gt;
-&lt;p&gt;대칭키와 공개키 암호화를 섞은 암호화 시스템이다.
-대칭키 암호화시스템은 기밀성을 유지한 통신이 가능한데, 키 배송시 보안상 문제가 있다.
-공개키의 경우는 복호화에 사용할 키를 배송할 필요가 없기때문에, 배송상 문제는 없지만, 대칭키암호화방식에 비해 매우 느리고, 중간자 공격(MITM:Man In the Middle attack)에 약하다.
-※ 중간자 공격 : 해커가 중간에서 통신을 가로채어 수신자에게는 송신자인 척하고 송신자에게는 수신자인 척 해서 양쪽의 공개키와 실제 암호화에 사용되는 대칭키를 모두 얻어내는 기법.&lt;/p&gt;
-
-&lt;h1 id=&quot;aesadvanced-encryption-statndard&quot;&gt;AES(Advanced Encryption Statndard)&lt;/h1&gt;
-&lt;p&gt;암호화 알고리즘이며 대칭형 암호화에 사용된다. 현재 공모전에서 채택된 레인달(Rijindael)이라는 알고리즘에 해당한다.
-레인달알고리즘에서도 암호화 키의 길이가 128, 192, 256비트인 세 가지 종류가 AES 표준으로 지정되었다. 각각 AES-128, AES-192, AES-256으로 불린다.&lt;/p&gt;
-
-&lt;h1 id=&quot;암호화&quot;&gt;암호화&lt;/h1&gt;
-&lt;ol&gt;
-  &lt;li&gt;대칭형 암호화
-암호화에 사용하는 키가 복호화에 사용하는 키와 같으면 대칭형이다. 통상적으로 비공개키 암호화방식에 사용된다.&lt;/li&gt;
-  &lt;li&gt;비대칭형 암호화
-암호화에 사용하는 키가 복호화에 사용하는 키가 다르면 비대칭형이다. 통상적으로 공개키암호화방식에 사용된다.
-암호화는 하면 하나의 키 쌍이 생기고 이 두개의 키는 수학적으로 밀접한 관계를 가지고 있다. 두개의 키를 A,B로 봤을때, A로 암호환 암호문은 B로만 복호화 할 수 있다.
-    &lt;h3 id=&quot;흐름&quot;&gt;흐름&lt;/h3&gt;
-  &lt;/li&gt;
-  &lt;li&gt;내가 공개키 개인키 한쌍을 생성&lt;/li&gt;
-  &lt;li&gt;상대방에게 공개키 전송&lt;/li&gt;
-  &lt;li&gt;상대방은 받은 공개키를 이용해 메세지를 암호화&lt;/li&gt;
-  &lt;li&gt;상대방은 암호문을 나에게 전송&lt;/li&gt;
-  &lt;li&gt;나는 암호문을 개인키로 복호화&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;디피-헬만-키-교환diffiehellman-key-exchange&quot;&gt;디피-헬만 키 교환(Diffie–Hellman key exchange)&lt;/h3&gt;
-&lt;p&gt;비밀키를 주고받을 경우 이산대수의 난해함에 안정성을 둔 키교환 방식이다.
-엘가말(ElGamal) 방식이 디피-헬만 키 교환을 참고해 만들어졌다.
-통신 전체가 악의적인 스니퍼에 의해서 도청되고 있더라도 키 값을 정할 수 있게 해주는 원리는 바로, 키 값을 전달하는 것이 아니라 키 값을 만드는 방법을 전달하기 때문이다.&lt;/p&gt;
-
-&lt;h3 id=&quot;rsa&quot;&gt;RSA&lt;/h3&gt;
-&lt;p&gt;현재 SSL/TLS에 가장 많이 사용되는 공개키 암호화 알고리즘이다. 현재 나무위키도 HTTPS에 RSA-2048 인증서를 사용하고 있으며, 전세계 대부분의 인터넷 뱅킹(대한민국 포함)이 이 RSA-2048 암호화를 사용한다. 지금 GPG는 RSA-4096으로 키를 암호화 하지만…암호화할 때에는 마음대로였겠지만 해독할 때에는 아니란다를 기본 모토로 한 공개키 암호체계 중 하나이다. 공개키와 개인키가 한 쌍을 이루며, 공개키로 암호화한 내용은 개인키로만, 개인키로 암호화한 내용은 공개키로만 해독할 수 있다. 엄청 큰 숫자는 소인수분해하기가 힘들다는 것을 이용한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;메시지-인증-코드message-authentication-code-mac&quot;&gt;메시지 인증 코드(Message Authentication Code, MAC)&lt;/h1&gt;
-&lt;p&gt;해시알고리즘을 사용하여 수정또는 변경사항이 있는지 검출 할 수 있다. 거짓행세는 알 수 없으니 비밀키와 같이 사용해야한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;타원곡선-암호&quot;&gt;타원곡선 암호&lt;/h1&gt;
-&lt;p&gt;타원곡선 암호(楕圓曲線暗號, Elliptic curve cryptography)는 타원곡선 이론에 기반한 공개 키 암호 방식이다. 줄여서 ECC라고 쓰기도 한다.
-이산대수의 난해함에 안정성을 둔 키교환방식이며, RSA에 비교하여 암호화는 더 빠르고, 짧은 암호키사이즈로 같은수준의 안정성을 제공한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;ipsecsecurity-architecture-for-internet-protocol&quot;&gt;IPsec(Security Architecture for Internet Protocol)&lt;/h1&gt;
-&lt;p&gt;IP패킷의 기밀성과 완전성을 암호기술을 사용해 실현하는 구조이다. OSI기본참조모델의 네트워크층에서 동작하고, 조작을 방지하기위한 패킷인증을 수행하는 인증헤더(AH)
-와 인증과 암호화까지 수행하는 암호페이로드(ESP)의 두가지 프로토콜을 포함한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;sshsecure-shell&quot;&gt;SSH(Secure Shell)&lt;/h1&gt;
-&lt;p&gt;네트워크상의 컴퓨터 주변 단말들로부터 접속해 원격조작을 하기위한 통신프로토콜또는 소프트웨어를 말한다.
-SSH는 Telnet과 다르게, 통신데이터의 도청대책과 통신상대의 위장을 방지하는 구조를 갖추고 있다.
-SSH에서는 서버에 로그인해서 데이터를 주고받는 통신에앞서(로그인세션) SSH세션이 행해진다.&lt;/p&gt;
-
-&lt;h1 id=&quot;허니포트honeypot&quot;&gt;허니포트(Honeypot)&lt;/h1&gt;
-&lt;p&gt;악성코드나 바이러스, 침입자의 거동을 조사하기위해서 의도적으로 최약성을 가지게하는 시스템또는 네트워크를 말한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;dmzdemilitarized-zone-1&quot;&gt;DMZ(DeMilitarized Zone)&lt;/h1&gt;
-&lt;p&gt;외부네트워크나 내부네트워크로부터 격리된영역을 말한다.
-외부에 공개하는 서버를 DMZ에 두면, 외부로부터 부정액세스를 파이어월에의해 차단이 가능하다.
-또한 임의로 공개하는 서버가 바이러스에 감염되어버렸을 경우에도 내부 네트워크에까지는 피해가 미치지않는다.&lt;/p&gt;
-
-&lt;h1 id=&quot;siemsecurity-information-and-event-management-세큐리티정보이벤트관리&quot;&gt;SIEM(Security Information and Event Management, 세큐리티정보이벤트관리)&lt;/h1&gt;
-&lt;p&gt;세큐리티분석소프트의 하나이며, 다양한 네트워크기기나 소프트웨어의 동작상황의 기록을 수집하여 관리를 수행하고, 상관분석의 수법을 이용하여 세큐리티상의 위협을 검출,분석한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;봇넷botnet&quot;&gt;봇넷(BotNet)&lt;/h1&gt;
-&lt;p&gt;로봇과 네트워크를 결합한 단어로, 악성코드에 감염되어 중앙통제장치로부터 지시를 받는 디바이스로 구성된 네트워크이다.
-봇마스터에 의해 원격조종되며, C&amp;amp;C서버 방식을 사용한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;퍼징fuzzing&quot;&gt;퍼징(Fuzzing)&lt;/h1&gt;
-&lt;p&gt;검사대상의 제품에 문제를 발생시킬수있는 테스트데이터를 보내 그 반응이나 동작을 감시하는것으로 취약성을 검출하는 수법이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;ajaxasynchronous-javascript--xml&quot;&gt;Ajax(Asynchronous JavaScript + XML)&lt;/h1&gt;
-&lt;p&gt;브라우저와 웹서버가 JavaScript의 비동기통신을 수행하면서 XML형식의 데이터를 이용하여 동적으로 화면을 다시그리는 구조이다.
-화면전체의 전이는 하지않고, 동적인 유저인터페이스를 실현하는것이 가능하다.&lt;/p&gt;
-
-&lt;h1 id=&quot;csscascading-style-sheets&quot;&gt;CSS(Cascading Style Sheets)&lt;/h1&gt;
-&lt;p&gt;웹페이지의 스타일을 지정하는 언어이며, HTML, XML로 기술되어있는 문서에 CSS를 적용하는것으로 문자의 사이즈나 색, 배경의 그림등의
-겉모양을 표현하는것이 가능하다.&lt;/p&gt;
-
-&lt;h1 id=&quot;rssrich-site-summary&quot;&gt;RSS(Rich Site Summary&lt;/h1&gt;
-&lt;p&gt;웹사이트의 뉴스나 블로그등의 글의 표제나 요약등을 기술하는 XML베이스의 문서포맷이다.
-RSS에대응한브라우저나 RSS리더를 사용하는것으로 RSS로 전송하고있는 갱신정보등을 취득해 열람하는것이 가능하다.&lt;/p&gt;
-
-&lt;h1 id=&quot;stakeholder&quot;&gt;stakeholder&lt;/h1&gt;
-&lt;p&gt;기업의 이해관계자&lt;/p&gt;
-
-&lt;h1 id=&quot;프로젝트매니지먼트에관한-지식을-10개의-대조군으로-분류할-수-있다&quot;&gt;프로젝트매니지먼트에관한 지식을 10개의 대조군으로 분류할 수 있다.&lt;/h1&gt;
-&lt;ol&gt;
-  &lt;li&gt;통합&lt;/li&gt;
-  &lt;li&gt;stakeholder&lt;/li&gt;
-  &lt;li&gt;스코프 : 프로젝트의 달성목표와 성과물, 활동범위등을 명확하게한다. 그리고 프로젝트의 각페이즈에서 실시하는 작업을 계층적으로 분할하여 파악하고 성과물을 설정한다. 게획프로세스의 작업에있어서 목표 성과물 요구사항 혹은 경계를 포함한 프로젝트의 스코프를 정의하는것이 요구되어진다. 관리프로세스의 작업에있어서 스코프의 변경에의해 발생되는 프로젝트의 기회가되는영향을 최대화하고 위협이되는 영향을 최소화하는것이 요구되어진다.&lt;/li&gt;
-  &lt;li&gt;자원&lt;/li&gt;
-  &lt;li&gt;시간&lt;/li&gt;
-  &lt;li&gt;비용&lt;/li&gt;
-  &lt;li&gt;리스크 : 프로젝트의 목표에 영향을 주는 리스크를 특정하고, 평가를 진행하여 발생시의 영향도를 최소화하는 리스크대응계획을 책정한다. 또한 리스크에의 대응의 실시상황이나 리스크의 발생징후를 감시해 리스크를 관리한다.&lt;/li&gt;
-  &lt;li&gt;품질&lt;/li&gt;
-  &lt;li&gt;조달 : 프로젝트의 활동에 필요한 시스템개발요원, 제품, 서비스를 검토하고 조달계획을세워 프로젝트의 외부로부터 최적화된 공급자를 선정, 취득하고 관리를 수행한다.&lt;/li&gt;
-  &lt;li&gt;커뮤니케이션 : stakeholder와의 적절한 커뮤니케이션을 수행하는것에의해 프로젝트가 원활하게 진행된다. 구체적으로는 프로젝트의 상황을 분석,평가하여 상황이나 예정을 보고하거나, 프로젝트전체계획의 변경시에 대체안을 제안하고 stakeholder나 상위관리자에게 판단이나 의사결정을 촉진하는등 커뮤니케이션의 필요성을 확실히 만족시키고 커뮤니케이션의 과제가 발생한 경우 그것을 해결한다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;pdmprecedence-diagramming-method&quot;&gt;PDM(Precedence Diagramming Method)&lt;/h1&gt;
-&lt;p&gt;액티비티를 노드라고 불리는 사각형으로 표현하고, 그작업순서나 의존관계를 화살표로 나타내는 다이어그램이다. 
-FS(Finish-Start),SS(Start-Start), SF(Start-Finish), FF(Finish-Finish)네가지의 관계를 표현할 수 있다.&lt;/p&gt;
-
-&lt;h1 id=&quot;slmservice-level-management&quot;&gt;SLM(Service Level Management)&lt;/h1&gt;
-&lt;p&gt;제공하는 서비스의 내용과 범위 품질을 명확하게하고 보증해, 문서화한 SLA의 내용이 달성되었는지를 측정하고 수정을 검토하는등 서비스레벨의 유지와 향상에 초점을둔다.&lt;/p&gt;
-
-&lt;h1 id=&quot;롤포워드roll-forward&quot;&gt;롤포워드(Roll Forward)&lt;/h1&gt;
-&lt;p&gt;트랜잭션 로그에는 데이터 변경 처리가 완벽히 끝난 것으로 기록되어 있으나 해당 내용이 데이터 파일에 미처 반영되지 못했을 때 트랜잭션 로그 내용을 참조해 데이터 변경 작업이 실제 데이터 파일에 반영된다.&lt;/p&gt;
-
-&lt;h1 id=&quot;롤백roll-back&quot;&gt;롤백(Roll Back)&lt;/h1&gt;
-&lt;p&gt;데이터 변경이 가해지는 쿼리가 실행 되면 트랜잭션 로그에 기록된다. 그런데 해당 트랜잭션이 완전히 끝나지 못하게 되면, 해당 작업은 변경 전 상태로 되돌아간다.&lt;/p&gt;
-
-&lt;h1 id=&quot;shasecure-hash-algorithm&quot;&gt;SHA(Secure Hash Algorithm)&lt;/h1&gt;
-&lt;p&gt;NSA에서 만들고 NIST에서 표준으로 채택한 암호화 해시알고리즘이다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">Daisy-Chain 다중 화면 연결이라고도 하며 여러대의 모니터를 A-B-C의 형식으로 연결해 사용할 수 있는 기능이다. Daisy Chain은 원래 데이지라는 꽃을 연결해서 팔찌나 목걸이를 만드는 것인데, 이러한 형식이 비슷하다는 점에서 이 용어를 쓰는 듯 하다.</summary></entry><entry><title type="html">TIL - H.26x/MPEG</title><link href="http://localhost:4000/H.26x_MPEG" rel="alternate" type="text/html" title="TIL - H.26x/MPEG" /><published>2021-01-10T00:00:00+09:00</published><updated>2021-01-10T00:00:00+09:00</updated><id>http://localhost:4000/H.26x_MPEG</id><content type="html" xml:base="http://localhost:4000/H.26x_MPEG">&lt;p&gt;가끔 기본정보시험에서 MPEG에관련해서 묻는 문제가나와서 정리해보려한다.&lt;/p&gt;
-&lt;h2 id=&quot;h26x와-mpeg이란&quot;&gt;H.26x와 MPEG이란?&lt;/h2&gt;
-&lt;p&gt;동영상에 관련된 압축 규격인데, H.26x(x는 숫자)는 VCEG라는ITU내부 그룹에서 정한 규격이다. 참고로 ITU는 International Telecommunication Union 국제전기통신연합이다.
-그리고 MPEG의경우 ISO(International Organization for Standardization)라는 국제표준화기구에서 정한 규격이다.
-MPEG은 Moving Picture Experts Group의 약자이다.&lt;/p&gt;
-&lt;h2 id=&quot;왜-같이-거론되는-경우가-많나&quot;&gt;왜 같이 거론되는 경우가 많나?&lt;/h2&gt;
-&lt;p&gt;H.26x는 동영상규격이고, MPEG는 영상과 음성,시스템을 포함한 폭넓은 규격을 이야기하는데,
-보통 양 단체에서 공동으로 표준화를 진행하는 경우가 많기 때문이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;h261--mpeg-1&quot;&gt;H.261 &amp;amp; MPEG-1&lt;/h2&gt;
-&lt;p&gt;MPEG-1 비디오의 목적은 저사양 환경의 스트리밍이었기 때문에 고해상도 및 고비트레이트일수록 MPEG-2 비디오 화질 대비 큰 이득이 없거나 오히려 떨어지는 편이다.
-VCD(VideoCD)동영상매체, MP3의 압축기술로 사용되었다.&lt;/p&gt;
-
-&lt;h2 id=&quot;h262--mpeg-2-part-2&quot;&gt;H.262 &amp;amp; MPEG-2 Part 2&lt;/h2&gt;
-&lt;p&gt;저장매체(DVD), 방송매체(HDTV, 디지털 위성방송, Skylife등) 그리고 통신매체(LAN, ATM,ISDN)에서 영상 및 음향 압축에 사용하기 위해 표준화 한 것입니다. 
-MPEG-2 규격은 MPEG-1에 비해 더 높은 데이터 전송 속도를 가지고 있기 때문에 더 큰 해상도에서도 고화질과 고음질의 영상을 즐길 수 있게 합니다.&lt;/p&gt;
-
-&lt;h2 id=&quot;h264--mpeg-4-avc&quot;&gt;H.264 &amp;amp; MPEG-4 AVC&lt;/h2&gt;
-&lt;p&gt;MPEG2,4보다 2배에 가까운 압축률을 보여준 규격이다. 인터넷방송 규격으로 많이 사용되고 있다.&lt;/p&gt;
-
-&lt;h2 id=&quot;mpeg-7&quot;&gt;MPEG-7&lt;/h2&gt;
-&lt;p&gt;일제 인코딩하는 표준은아니다.
-멜로디 일부 입력으로 음성 검색, 그래픽의 도형 입력으로 그래픽검색, 영상의 물체 색깔, 재질, 동작 입력 및 시나리오 일부 묘사로 영상검색등에 활용가능하다고한다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">가끔 기본정보시험에서 MPEG에관련해서 묻는 문제가나와서 정리해보려한다. H.26x와 MPEG이란? 동영상에 관련된 압축 규격인데, H.26x(x는 숫자)는 VCEG라는ITU내부 그룹에서 정한 규격이다. 참고로 ITU는 International Telecommunication Union 국제전기통신연합이다. 그리고 MPEG의경우 ISO(International Organization for Standardization)라는 국제표준화기구에서 정한 규격이다. MPEG은 Moving Picture Experts Group의 약자이다. 왜 같이 거론되는 경우가 많나? H.26x는 동영상규격이고, MPEG는 영상과 음성,시스템을 포함한 폭넓은 규격을 이야기하는데, 보통 양 단체에서 공동으로 표준화를 진행하는 경우가 많기 때문이다.</summary></entry><entry><title type="html">TIL - RAID란?</title><link href="http://localhost:4000/WhatIsRAID" rel="alternate" type="text/html" title="TIL - RAID란?" /><published>2021-01-08T07:00:00+09:00</published><updated>2021-01-08T07:00:00+09:00</updated><id>http://localhost:4000/WhatIsRAID</id><content type="html" xml:base="http://localhost:4000/WhatIsRAID">&lt;h2 id=&quot;raid란&quot;&gt;RAID란?&lt;/h2&gt;
-&lt;p&gt;일본 기본정보처리시험을 준비하면서 문제에 나와서 정리해 두려고 한다.
-RAID란 Redundant Array of Independent Disk의 약자로 데이터의 안정성을 향상 시킬 수 있는 방식의 구조를 얘기한다.&lt;/p&gt;
-
-&lt;p&gt;서버를 사용할 경우 하드디크스 소무품이기때문에 언젠가 데이터 손실이 생길 수 있다.
-이를 대비해서 여유분의 디스크를 연결하여 백업해 놓고 안정성뿐만아니라 성능향상도 기대할 수 있다.&lt;/p&gt;
-
-&lt;h2 id=&quot;레이드의-종류&quot;&gt;레이드의 종류&lt;/h2&gt;
-&lt;h3 id=&quot;raid0---데이터분산처리striping&quot;&gt;RAID0 - 데이터분산처리(Striping)&lt;/h3&gt;
-&lt;p&gt;RAID0의 경우 안정성보다는 성능에 초첨을 둔 구성이다. 
-여러개의 디스크를 이용하여 데이터를 분산해서 처리한다.
-하지만 하나의 디스크의 데이터가 유실될 경우 모든 데이터가 유실되는 단점이 있다.&lt;/p&gt;
-
-&lt;h3 id=&quot;raid1---데이터-복제mirroring&quot;&gt;RAID1 - 데이터 복제(Mirroring)&lt;/h3&gt;
-&lt;p&gt;안정성에 초점을 두고, 여러개의 디스크를 사용하지만 모두 똑같은 데이터를 저장한다.
-한 디스크의 데이터가 유실되더라도 다른 디스크에 미러링되어있기 때문에 데이터 유실의 걱정이없다.
-하지만 사용가능 용량이 절반으로 줄어든다는 문제가 있다.&lt;/p&gt;
-
-&lt;h3 id=&quot;raid02---hamming-code&quot;&gt;RAID02 - Hamming code&lt;/h3&gt;
-&lt;p&gt;RAID0처럼 striping형식을 이용해 데이터를 저장하지만, “해밍코드”를 이용하여 복구용 디스크를 추가로 둔다.
-해밍코드란 복구용 디스크를 p, 사용할 디스크 d로 뒀을때, 디스크사용시 필요한 복구용 디스크수를 구하는 식이라고 보면 된다.
-‘’’  2^p &amp;gt;=  d + p + 1 ‘’’&lt;/p&gt;
-
-&lt;p&gt;하지만 복구용디스크중 하나라도 데이터가 유실되면 복구가 불가능해 현재는 거의 사용되지않는다.&lt;/p&gt;
-
-&lt;h3 id=&quot;raid03---패리티비트parity-bit&quot;&gt;RAID03 - 패리티비트(parity bit)&lt;/h3&gt;
-&lt;p&gt;RAID처럼 Striping형식으로 데아터를 처리하지만, 하나의 디스크는 Parity용으로 두는 구성이다.
-Parity란 에러를 검출할 경우 사용되는 용어인데, 기존의 데이터랑 동일한지 검사용으로 쓰이는 용어이다.&lt;/p&gt;
-
-&lt;p&gt;RAID에서의 Parity는 복구용도로 사용되는데, 1개의 디스크의 오류를 복구 가능하다.
-그리고 RAID3의 경우 데이터를 바이트 단위로 저장한다.
-하지만 데이터 복구용 디스크가 고장날 경우 복구가 어렵다.&lt;/p&gt;
-&lt;h3 id=&quot;raid04---패리티비트parity-bit&quot;&gt;RAID04 - 패리티비트(parity bit)&lt;/h3&gt;
-&lt;p&gt;RAID3과 거의 같지만, 데이터 저장단위가 블록이다.&lt;/p&gt;
-
-&lt;h3 id=&quot;raid05---패리티비트parity-bit&quot;&gt;RAID05 - 패리티비트(parity bit)&lt;/h3&gt;
-&lt;p&gt;RAID03,04와 같이 패리티비트를 사용하지만, 하나의 디스크에만 패리티정보를 넣는 것이아니라,
-각 디스크에 패리티비트를 번갈아가며 저장해 데이터 분산처리로 성능향상과 안정성 둘 다 챙길 수 있는 구성이다.
-현재 가장 많이 사용되는 방식이며, 3개이상의 디스크가 있어야 사용가능하고 5개이상의 디스크를 보통사용한다.
-실제 사용가능한 디스크는 사용디스크 - 1개다(각 패리티정보를 모으면 하나의 디스크분량이된다.)&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">RAID란? 일본 기본정보처리시험을 준비하면서 문제에 나와서 정리해 두려고 한다. RAID란 Redundant Array of Independent Disk의 약자로 데이터의 안정성을 향상 시킬 수 있는 방식의 구조를 얘기한다.</summary></entry></feed>
+라운드로빈은 우선순위가 같은경우 일정시간(타임슬라이스)동안 프로세스를 수행하고 다음 프로세스에 넘겨주는 형식이다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">스케쥴링이란? OS가 CPU의 한정된 자원을 이용하여 고효율을 내기위해서 실행 대기중인 프로세스에게 자원배정을 하는 방식을 얘기한다. 크게 선점방식과 비선점방식 두가지로 나뉜다. 선점 스케쥴링(Preemptive Scheduling) OS가 CPU를 선점해 실행중인 프로세스에서 다른 프로세스의 전환이 가능하고, 회수도 가능하다. 유연한 스케쥴링이 가능하다.</summary></entry></feed>
