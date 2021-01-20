@@ -8,6 +8,105 @@
     
       
       <item>
+        <title>TIL - 스키마란(schema)</title>
+        
+          <description>&lt;h1 id=&quot;스키마schema&quot;&gt;스키마(schema)&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터의 내용, 데이터의논리구조, 기억형식이나 편성등의 데이터베이스의 구조를 명세한 것이다.&lt;/li&gt;
+  &lt;li&gt;개체(Entity), 속성(Attribute), 관계(Relationship), 제약조건에 관해 정의한다.&lt;/li&gt;
+  &lt;li&gt;스키마는 데이터사전(Data Dictionary)에 저장되며, 메타데이터라고도 한다.&lt;/li&gt;
+  &lt;li&gt;스키마는 사용자 관점에따라 내부스키마, 외부스키마, 개념스키마 세 계층으로 나눠진다.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Wed, 20 Jan 2021 10:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/schema</link>
+        <guid isPermaLink="true">http://localhost:4000/schema</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - 캐시 교체 방법</title>
+        
+          <description>&lt;h2 id=&quot;캐시메모리-교체-방법-종류&quot;&gt;캐시메모리 교체 방법 종류&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;캐시메모리에 여유공간이없고 새로운 데이터를 주기억장치로부터 복사해야할 경우 캐시메모리의 블록을 교체하는 방식
+    &lt;ol&gt;
+      &lt;li&gt;LFU(Least Frequentely Used) : 사용되는 빈도가 가장 작은 블록을 교체한다.&lt;/li&gt;
+      &lt;li&gt;LRU(Least Recently Used) : 사용된지 가장 오래된 블록을 교체한다.&lt;/li&gt;
+      &lt;li&gt;NRU(Not Recently Used) : 일정시간동안 사용되지않은 블록을 교체한다.&lt;/li&gt;
+      &lt;li&gt;FIFO(First In First Out) : 캐시내에서 가장 오래있었던 블록을 교체한다.&lt;/li&gt;
+      &lt;li&gt;SCR(Second Change Replacement) : 두번 참조되면 블록을 교체한다.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Wed, 20 Jan 2021 08:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/HowToSelectBlock</link>
+        <guid isPermaLink="true">http://localhost:4000/HowToSelectBlock</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - Copyright</title>
+        
+          <description>&lt;h1 id=&quot;저작권의-종류&quot;&gt;저작권의 종류&lt;/h1&gt;
+&lt;p&gt;크게 두가지로 저작인격권과 저작재산권이 있다.&lt;/p&gt;
+&lt;h2 id=&quot;저작인격권&quot;&gt;저작인격권&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;공표권
+    &lt;ul&gt;
+      &lt;li&gt;저작자가 저작물을 공표할지 안할지, 공표시기, 공표방법등을 결정할 수 있는 권리이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;서명표시권
+    &lt;ul&gt;
+      &lt;li&gt;저작자가 저작물에대해서 저작자성명을 표시할지 안할지, 실명을 표시할지 안할지에 대한 권리이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;동일성유지권
+    &lt;ul&gt;
+      &lt;li&gt;저작물을 저작자의 의사에 반해 수정되지않을 권리이다. 창작한 본래의모습을 가지도록하는 권리.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;명예음망&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        
+        <pubDate>Wed, 20 Jan 2021 07:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/Copyright</link>
+        <guid isPermaLink="true">http://localhost:4000/Copyright</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - strategy</title>
+        
+          <description>&lt;h2 id=&quot;ppmproduct-portfolio-management&quot;&gt;PPM(Product Portfolio Management)&lt;/h2&gt;
+&lt;p&gt;자사제품,서비스의 시장에서의 위치나 평카를 명확하게하는 방법.
+시장쉐어와 시장성장률로부터 비지니스를 4개의 영역으로 나눠 자원의 배분의 우선순위를 결정한다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 20 Jan 2021 01:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/strategy</link>
+        <guid isPermaLink="true">http://localhost:4000/strategy</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>TIL - IP Address</title>
         
           <description>&lt;h2 id=&quot;ip-address&quot;&gt;IP Address&lt;/h2&gt;
