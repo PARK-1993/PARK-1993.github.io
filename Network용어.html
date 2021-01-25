@@ -1,0 +1,114 @@
+
+<h2 id="napt-network-address-port-translation">NAPT (Network Address Port Translation)</h2>
+<p>NAT(Network Address Translation)의 기능과 같이 OSI 3계층 네트워크 계층에서 사설 IP 주소를 공인 IP 주소로 변환하는 기능을 가진다.
+하지만 NAPT의경우 공인IP를 이용하여 다수의 사설IP로 변환가능하다. 이름에서 알 수 있듯이 포트번호를 이용하여 가능케한다.
+ICMP와같은 패킷들은 port정보를 포함하지않지만 TCP/UDP의경우 port정보를 포함하기때문에 사용이 가능하다.</p>
+
+<h2 id="arp">ARP</h2>
+<p>ARP(Address Resolution Protocol)의 약자로서 IP주소를 MAC(Media Access Control)주소로 변환해주는 프로토콜이라고 합니다.</p>
+
+<h2 id="icmpinternet-control-message-protocol">ICMP(Internet Control Message Protocol)</h2>
+<p>ICMP는 TCP/IP에서 IP 패킷을 처리할 때 발생되는 문제를 알려주는 프로토콜이다.
+ping이 이프로토콜을 사용하고있다.</p>
+
+<h2 id="dhcpdynamic-host-configuration-protocol">DHCP(Dynamic Host Configuration Protocol)</h2>
+<p>DHCP란 호스트의 IP주소와 각종 TCP/IP 프로토콜의 기본 설정을 클라이언트에게 자동적으로 제공해주는 프로토콜을 말합니다</p>
+
+<h2 id="pppoepoint-to-point-protocol-over-ethernet">PPPoE(Point to Point Protocol Over Ethernet)</h2>
+<p>PPPoE는 이더넷을 통한 지점 간 프로토콜의 약자입니다. PPPoE는 PPP라고하는 다른 오래된 프로토콜에서 파생 된 네트워킹 프로토콜로, 지점 간 프로토콜을 나타냅니다.
+이더넷 프레임의 데이터 부분에  PPP 프레임이 캡슐화되어 전송됩니다.</p>
+
+<h2 id="패킷필터링">패킷필터링</h2>
+<p>네트워크에서는 IP 패킷이라는 단위로 데이터를 송수신하고 있는데, IP 패킷에는 송신하는 데이터 외에 보내는 측과 받는 측의 주소나 통신 절차 등과 같은 정보가 들어 있다.
+패킷 필터링에서는 이러한 정보에 대해 조건을 설정하여 통신 가능 여부를 제어한다.</p>
+
+<h2 id="통신계층별-데이터-단위">통신계층별 데이터 단위</h2>
+<ul>
+  <li>Layer 5 ~ Layer 7 : 메세지,데이터</li>
+  <li>Layer 4 : 세그먼트</li>
+  <li>Layer 3 : 패킷,데이터그램</li>
+  <li>Layer 2 : 프레임</li>
+  <li>Layer 1 : 비트</li>
+</ul>
+
+<p>## FQDN(Fully Qualified Domain Name)
+FQDN은 명확한 도메인 표기법을 칭한다. 예로 소프트웨어 설치 중 도메인명을 요구하면, YAHOO.COM. 을 입력할지, WWW.YAHOO.COM. 을 입력할지 모호하다. 그래서 이러한 모호성을 피하기 위해 FQDN이란 단어를 사용하며, 이는 Namespace 계층상에서 최종 호스트명을 포함하는 도메인명을 뜻한다.
+www(호스트명), yahoo.com.(도메인명), www.yahoo.com.(FQDN)</p>
+
+<h2 id="dmzdemilitarized-zone">DMZ(DeMilitarized Zone)</h2>
+<p>내부세그먼트와 외부세그먼트로부터 격리된 영역</p>
+
+<h2 id="siemsecurity-information-and-event-management">SIEM(Security Information and Event Management)</h2>
+<p>네트워크내의 다양한기기나 소프트웨어로부터 로그를 수집해 일괄관리하는 통합로그관리시스템이다.
+자동으로 로그 수집,분석을 하며, 사전에 이상을 감지하는것이 가능하다.</p>
+
+<h2 id="cc서버">C&amp;C서버</h2>
+<p>봇에 감염된 컴퓨터에 대해서 다른 컴퓨터로의 공격이나 부정한조작을 하도록 외부로부터 지시해 원격조작하는 역할을 맡는 서버이다.</p>
+
+<h2 id="sdnsoftware-defined-networking">SDN(Software-Defined Networking)</h2>
+<p>소프트웨어 애플리케이션을 사용하여 네트워크를 지능화하고 중앙에서 제어하거나 ‘프로그래밍’할 수 있는 네트워크 아키텍처 접근법이다.
+네트워크상의 다양한 통신기기를 집중적으로 제어하고 네트워크 구성이나 보안설정등을 변경한다.
+종래의 네트워크기기는 제어기능과 데이터전송기능 두가지를 탑재하고있는데, 이를 논리적으로 분리해서 데이터전송을 OpenFlow스위치가 담당하고,
+제어기능을가진 OpenFlow컨트롤러가  집중관리한다. 제어기능을 프로그래밍하는 것으로 유연한 네트워크 구축을 수행하는것이 가능하다.</p>
+
+<h2 id="wafweb-application-firewall">WAF(Web Application Firewall)</h2>
+<p>패킷의헤더정보를 검사하는것 뿐만아니라 통신처의 어플리케이션프로그램을 식별해서 통신을 제어한다.</p>
+
+<h2 id="apopauthenticated-post-office-protocol">APOP(Authenticated Post Office Protocol)</h2>
+<p>POP은 메일서버의 메일박스로부터 전자메일을 꺼낼때 사용하는 프로토콜이다. 유저명과 비밀번호에따른 인증을 수행하나, 패스워드를 평문으로 보내는 결점이있다.
+이 점을 대처해 해쉬함수등을 사용하여 패스워드송신을 암호화해 안정성을 높인 것이 APOP이다.</p>
+
+<h2 id="pop3spop3-over-ssltls">POP3S(POP3 over SSL/TLS)</h2>
+<p>APOP은 패스워드만 암호화하지만, 전송로를 암호화하는 SSL/TLS에의해 POP통신자체를 암호화하는 방식이다.</p>
+
+<h2 id="smimesecure-multipurposer-internet-mail-extensions">S/MIME(Secure Multipurposer Internet Mail Extensions)</h2>
+<p>MIME은 전자메일로 문자뿐만아니라 이미지파일이나, 음성파일등을 다루기위한 규격이다.
+S/MIME은 MIME의 확장규격으로 전자메일의 내용을 암호화하거나, 디지털서명을 부여하는등 보안대책을 넣은 것이다.</p>
+
+<h2 id="smtp-authsimple-mail-transfer-protocol-authentication">SMTP-AUTH(Simple Mail Transfer Protocol-Authentication)</h2>
+<p>메일을 송신, 전송하는 프로토콜 SMTP의 확장규격이다. 단순한 메일전송을 수행하는 SMTP에는 인증의 구조가 없기때문에 
+SMTP-AUTH에서는 송신하는쪽의 메일서버에서 유저명과 패스워드에따른 인증을 수행해, 송신자가 정규의 유저인지 확인이가능하다.</p>
+
+<h2 id="http-over-tlshttps">HTTP over TLS(HTTPS)</h2>
+<p>웹 서버와 웹브라우저간의 통신프로토콜인 HTTP에 암호화기능을 추가한 안정성을 향상시킨것으로,
+통신경로상에있는 제3자에의한 위장이나 도청을 막는다. 정보를 암호화해서 송수신하는 프로토콜인 SSL(Secure SocketsLayer)나
+TLS(Transport Layer Security : SSL의 상위버전)이 이용되고있다.
+기본 포트는 80번이아닌 443번을 사용한다.</p>
+
+<p>전자서명과 암호화를 암호화를 사용하는데, 암호화시에 세션키를 공유하기위한 방법으로
+핸드쉐이크라는 방식을 이용한다.
+서로의 TLS버전을 사용가능한지 확인하고, 인증서로 신원을 확인후, 통신에 쓸 암호를 교환한다.(대칭키)</p>
+
+<h2 id="sshsecure-shell">SSH(Secure Shell)</h2>
+<p>네트워크상의 컴퓨터에 자신의 단말로부터 접속해서 원격조작하기위한 통신프로토콜또는 소프트웨어이다.
+Telnet과는 다르게 통신데이터의 도청대책이나 통신상대의 위장을 막을 수 있게 대비되어있다.
+SSH에서는 서버에 로그인해서 데이터를 주고받는 통신(로그인세션)에 앞서 SSH세션이 행해진다.</p>
+
+<h2 id="vpnvirtual-private-network">VPN(Virtual Private Network)</h2>
+<p>암호화기술등을 이용해서 통신사업자의 네트워크나 인터넷상에서 가상의전용선을 실현하는 보안기술이다. 
+코스트가많이드는 전용선에 비해서 저렴하게 구축이가능하고, 네트워크상의 거점간의 통신내용의 유출이나 부정액세스를 막는다.</p>
+
+<h2 id="vdivirtual-desktop-infrastructure-가상데크트탑환경">VDI(Virtual Desktop Infrastructure: 가상데크트탑환경)</h2>
+<p>유저가 사용하는 어플리케이션을 서버상에 집약해서 가상화된 데스크탑환경을 실현하고 가동시키는 구조이다.
+유저는 사용하는 클라이언트단말로부터 네트워크를 경유해서 가상데스크톱환경에 접속해서 조작을 수행한다.
+서버에 집약시키는것으로 관리가 쉬워지고, 단말로부터 정보유출의 리스크도 경감할 수 있다.</p>
+
+<h2 id="thin-client">Thin Client</h2>
+<p>유저가 사용하는 클라이언트단말에는 기억장치를 탑재하지않고, 최소한의기능만을 탑재해 거의 모든처리를 서버측에서 행하는형식의 시스템구성이다.
+VDI는 Thin Client를 실현하는 방법중 하나이다.</p>
+
+<h2 id="ssosingle-sign-on">SSO(Single Sign-On)</h2>
+<p>한번의 유저인증을 통해 보든 서비스에 로그인할 수 있는 구조를 말한다.</p>
+
+<h2 id="프록시서버">프록시서버</h2>
+<p>대리라는 의미의 프록시 서버는 내부 LAN과 외부 네트워크의 환경에 설치되는 서버에서 LAN내의 PC를 대신해서 프록시서버자체의IP주소를 사용해 인터넷에의 접속을 수행한다.</p>
+
+<h2 id="id프로바이더idp">ID프로바이더(IdP)</h2>
+<p>다른인터넷서비스간에서 이용자인증을 수행하기위한 규약인 SAML(Security Assertion Markup Language)인증에있어서, 
+이용자인증정보의 제공자를 말한다.
+이용자인증을 중개하며, SSO로 다른 서버에의 액세스를 가능하게한다.</p>
+
+<h2 id="ldaplightweight-directory-access-protocol">LDAP(Lightweight Directory Access Protocol)</h2>
+<p>네트워크기기나 유저등의 정보를 집중관리하는 디렉토리서비스에의 접속을위한 프로토콜이다.
+디렉토리서비스에는 유저ID나PW등의 유저정보를 일원관리하는것이 가능하며, 복수의 서비스에서 사용되는 공통의 인증정보의 보존, 조회목적으로도 사용된다.</p>
+

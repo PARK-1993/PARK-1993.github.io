@@ -1,4 +1,115 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-23T23:25:28+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - 스키마란(schema)</title><link href="http://localhost:4000/schema" rel="alternate" type="text/html" title="TIL - 스키마란(schema)" /><published>2021-01-20T10:00:00+09:00</published><updated>2021-01-20T10:00:00+09:00</updated><id>http://localhost:4000/schema</id><content type="html" xml:base="http://localhost:4000/schema">&lt;h1 id=&quot;스키마schema&quot;&gt;스키마(schema)&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-25T23:31:41+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">Network용어</title><link href="http://localhost:4000/Network%EC%9A%A9%EC%96%B4" rel="alternate" type="text/html" title="Network용어" /><published>2021-01-25T00:00:00+09:00</published><updated>2021-01-25T00:00:00+09:00</updated><id>http://localhost:4000/Network%EC%9A%A9%EC%96%B4</id><content type="html" xml:base="http://localhost:4000/Network%EC%9A%A9%EC%96%B4">&lt;h2 id=&quot;napt-network-address-port-translation&quot;&gt;NAPT (Network Address Port Translation)&lt;/h2&gt;
+&lt;p&gt;NAT(Network Address Translation)의 기능과 같이 OSI 3계층 네트워크 계층에서 사설 IP 주소를 공인 IP 주소로 변환하는 기능을 가진다.
+하지만 NAPT의경우 공인IP를 이용하여 다수의 사설IP로 변환가능하다. 이름에서 알 수 있듯이 포트번호를 이용하여 가능케한다.
+ICMP와같은 패킷들은 port정보를 포함하지않지만 TCP/UDP의경우 port정보를 포함하기때문에 사용이 가능하다.&lt;/p&gt;
+
+&lt;h2 id=&quot;arp&quot;&gt;ARP&lt;/h2&gt;
+&lt;p&gt;ARP(Address Resolution Protocol)의 약자로서 IP주소를 MAC(Media Access Control)주소로 변환해주는 프로토콜이라고 합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;icmpinternet-control-message-protocol&quot;&gt;ICMP(Internet Control Message Protocol)&lt;/h2&gt;
+&lt;p&gt;ICMP는 TCP/IP에서 IP 패킷을 처리할 때 발생되는 문제를 알려주는 프로토콜이다.
+ping이 이프로토콜을 사용하고있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;dhcpdynamic-host-configuration-protocol&quot;&gt;DHCP(Dynamic Host Configuration Protocol)&lt;/h2&gt;
+&lt;p&gt;DHCP란 호스트의 IP주소와 각종 TCP/IP 프로토콜의 기본 설정을 클라이언트에게 자동적으로 제공해주는 프로토콜을 말합니다&lt;/p&gt;
+
+&lt;h2 id=&quot;pppoepoint-to-point-protocol-over-ethernet&quot;&gt;PPPoE(Point to Point Protocol Over Ethernet)&lt;/h2&gt;
+&lt;p&gt;PPPoE는 이더넷을 통한 지점 간 프로토콜의 약자입니다. PPPoE는 PPP라고하는 다른 오래된 프로토콜에서 파생 된 네트워킹 프로토콜로, 지점 간 프로토콜을 나타냅니다.
+이더넷 프레임의 데이터 부분에  PPP 프레임이 캡슐화되어 전송됩니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;패킷필터링&quot;&gt;패킷필터링&lt;/h2&gt;
+&lt;p&gt;네트워크에서는 IP 패킷이라는 단위로 데이터를 송수신하고 있는데, IP 패킷에는 송신하는 데이터 외에 보내는 측과 받는 측의 주소나 통신 절차 등과 같은 정보가 들어 있다.
+패킷 필터링에서는 이러한 정보에 대해 조건을 설정하여 통신 가능 여부를 제어한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;통신계층별-데이터-단위&quot;&gt;통신계층별 데이터 단위&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Layer 5 ~ Layer 7 : 메세지,데이터&lt;/li&gt;
+  &lt;li&gt;Layer 4 : 세그먼트&lt;/li&gt;
+  &lt;li&gt;Layer 3 : 패킷,데이터그램&lt;/li&gt;
+  &lt;li&gt;Layer 2 : 프레임&lt;/li&gt;
+  &lt;li&gt;Layer 1 : 비트&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;## FQDN(Fully Qualified Domain Name)
+FQDN은 명확한 도메인 표기법을 칭한다. 예로 소프트웨어 설치 중 도메인명을 요구하면, YAHOO.COM. 을 입력할지, WWW.YAHOO.COM. 을 입력할지 모호하다. 그래서 이러한 모호성을 피하기 위해 FQDN이란 단어를 사용하며, 이는 Namespace 계층상에서 최종 호스트명을 포함하는 도메인명을 뜻한다.
+www(호스트명), yahoo.com.(도메인명), www.yahoo.com.(FQDN)&lt;/p&gt;
+
+&lt;h2 id=&quot;dmzdemilitarized-zone&quot;&gt;DMZ(DeMilitarized Zone)&lt;/h2&gt;
+&lt;p&gt;내부세그먼트와 외부세그먼트로부터 격리된 영역&lt;/p&gt;
+
+&lt;h2 id=&quot;siemsecurity-information-and-event-management&quot;&gt;SIEM(Security Information and Event Management)&lt;/h2&gt;
+&lt;p&gt;네트워크내의 다양한기기나 소프트웨어로부터 로그를 수집해 일괄관리하는 통합로그관리시스템이다.
+자동으로 로그 수집,분석을 하며, 사전에 이상을 감지하는것이 가능하다.&lt;/p&gt;
+
+&lt;h2 id=&quot;cc서버&quot;&gt;C&amp;amp;C서버&lt;/h2&gt;
+&lt;p&gt;봇에 감염된 컴퓨터에 대해서 다른 컴퓨터로의 공격이나 부정한조작을 하도록 외부로부터 지시해 원격조작하는 역할을 맡는 서버이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;sdnsoftware-defined-networking&quot;&gt;SDN(Software-Defined Networking)&lt;/h2&gt;
+&lt;p&gt;소프트웨어 애플리케이션을 사용하여 네트워크를 지능화하고 중앙에서 제어하거나 ‘프로그래밍’할 수 있는 네트워크 아키텍처 접근법이다.
+네트워크상의 다양한 통신기기를 집중적으로 제어하고 네트워크 구성이나 보안설정등을 변경한다.
+종래의 네트워크기기는 제어기능과 데이터전송기능 두가지를 탑재하고있는데, 이를 논리적으로 분리해서 데이터전송을 OpenFlow스위치가 담당하고,
+제어기능을가진 OpenFlow컨트롤러가  집중관리한다. 제어기능을 프로그래밍하는 것으로 유연한 네트워크 구축을 수행하는것이 가능하다.&lt;/p&gt;
+
+&lt;h2 id=&quot;wafweb-application-firewall&quot;&gt;WAF(Web Application Firewall)&lt;/h2&gt;
+&lt;p&gt;패킷의헤더정보를 검사하는것 뿐만아니라 통신처의 어플리케이션프로그램을 식별해서 통신을 제어한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;apopauthenticated-post-office-protocol&quot;&gt;APOP(Authenticated Post Office Protocol)&lt;/h2&gt;
+&lt;p&gt;POP은 메일서버의 메일박스로부터 전자메일을 꺼낼때 사용하는 프로토콜이다. 유저명과 비밀번호에따른 인증을 수행하나, 패스워드를 평문으로 보내는 결점이있다.
+이 점을 대처해 해쉬함수등을 사용하여 패스워드송신을 암호화해 안정성을 높인 것이 APOP이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;pop3spop3-over-ssltls&quot;&gt;POP3S(POP3 over SSL/TLS)&lt;/h2&gt;
+&lt;p&gt;APOP은 패스워드만 암호화하지만, 전송로를 암호화하는 SSL/TLS에의해 POP통신자체를 암호화하는 방식이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;smimesecure-multipurposer-internet-mail-extensions&quot;&gt;S/MIME(Secure Multipurposer Internet Mail Extensions)&lt;/h2&gt;
+&lt;p&gt;MIME은 전자메일로 문자뿐만아니라 이미지파일이나, 음성파일등을 다루기위한 규격이다.
+S/MIME은 MIME의 확장규격으로 전자메일의 내용을 암호화하거나, 디지털서명을 부여하는등 보안대책을 넣은 것이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;smtp-authsimple-mail-transfer-protocol-authentication&quot;&gt;SMTP-AUTH(Simple Mail Transfer Protocol-Authentication)&lt;/h2&gt;
+&lt;p&gt;메일을 송신, 전송하는 프로토콜 SMTP의 확장규격이다. 단순한 메일전송을 수행하는 SMTP에는 인증의 구조가 없기때문에 
+SMTP-AUTH에서는 송신하는쪽의 메일서버에서 유저명과 패스워드에따른 인증을 수행해, 송신자가 정규의 유저인지 확인이가능하다.&lt;/p&gt;
+
+&lt;h2 id=&quot;http-over-tlshttps&quot;&gt;HTTP over TLS(HTTPS)&lt;/h2&gt;
+&lt;p&gt;웹 서버와 웹브라우저간의 통신프로토콜인 HTTP에 암호화기능을 추가한 안정성을 향상시킨것으로,
+통신경로상에있는 제3자에의한 위장이나 도청을 막는다. 정보를 암호화해서 송수신하는 프로토콜인 SSL(Secure SocketsLayer)나
+TLS(Transport Layer Security : SSL의 상위버전)이 이용되고있다.
+기본 포트는 80번이아닌 443번을 사용한다.&lt;/p&gt;
+
+&lt;p&gt;전자서명과 암호화를 암호화를 사용하는데, 암호화시에 세션키를 공유하기위한 방법으로
+핸드쉐이크라는 방식을 이용한다.
+서로의 TLS버전을 사용가능한지 확인하고, 인증서로 신원을 확인후, 통신에 쓸 암호를 교환한다.(대칭키)&lt;/p&gt;
+
+&lt;h2 id=&quot;sshsecure-shell&quot;&gt;SSH(Secure Shell)&lt;/h2&gt;
+&lt;p&gt;네트워크상의 컴퓨터에 자신의 단말로부터 접속해서 원격조작하기위한 통신프로토콜또는 소프트웨어이다.
+Telnet과는 다르게 통신데이터의 도청대책이나 통신상대의 위장을 막을 수 있게 대비되어있다.
+SSH에서는 서버에 로그인해서 데이터를 주고받는 통신(로그인세션)에 앞서 SSH세션이 행해진다.&lt;/p&gt;
+
+&lt;h2 id=&quot;vpnvirtual-private-network&quot;&gt;VPN(Virtual Private Network)&lt;/h2&gt;
+&lt;p&gt;암호화기술등을 이용해서 통신사업자의 네트워크나 인터넷상에서 가상의전용선을 실현하는 보안기술이다. 
+코스트가많이드는 전용선에 비해서 저렴하게 구축이가능하고, 네트워크상의 거점간의 통신내용의 유출이나 부정액세스를 막는다.&lt;/p&gt;
+
+&lt;h2 id=&quot;vdivirtual-desktop-infrastructure-가상데크트탑환경&quot;&gt;VDI(Virtual Desktop Infrastructure: 가상데크트탑환경)&lt;/h2&gt;
+&lt;p&gt;유저가 사용하는 어플리케이션을 서버상에 집약해서 가상화된 데스크탑환경을 실현하고 가동시키는 구조이다.
+유저는 사용하는 클라이언트단말로부터 네트워크를 경유해서 가상데스크톱환경에 접속해서 조작을 수행한다.
+서버에 집약시키는것으로 관리가 쉬워지고, 단말로부터 정보유출의 리스크도 경감할 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;thin-client&quot;&gt;Thin Client&lt;/h2&gt;
+&lt;p&gt;유저가 사용하는 클라이언트단말에는 기억장치를 탑재하지않고, 최소한의기능만을 탑재해 거의 모든처리를 서버측에서 행하는형식의 시스템구성이다.
+VDI는 Thin Client를 실현하는 방법중 하나이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;ssosingle-sign-on&quot;&gt;SSO(Single Sign-On)&lt;/h2&gt;
+&lt;p&gt;한번의 유저인증을 통해 보든 서비스에 로그인할 수 있는 구조를 말한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;프록시서버&quot;&gt;프록시서버&lt;/h2&gt;
+&lt;p&gt;대리라는 의미의 프록시 서버는 내부 LAN과 외부 네트워크의 환경에 설치되는 서버에서 LAN내의 PC를 대신해서 프록시서버자체의IP주소를 사용해 인터넷에의 접속을 수행한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;id프로바이더idp&quot;&gt;ID프로바이더(IdP)&lt;/h2&gt;
+&lt;p&gt;다른인터넷서비스간에서 이용자인증을 수행하기위한 규약인 SAML(Security Assertion Markup Language)인증에있어서, 
+이용자인증정보의 제공자를 말한다.
+이용자인증을 중개하며, SSO로 다른 서버에의 액세스를 가능하게한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;ldaplightweight-directory-access-protocol&quot;&gt;LDAP(Lightweight Directory Access Protocol)&lt;/h2&gt;
+&lt;p&gt;네트워크기기나 유저등의 정보를 집중관리하는 디렉토리서비스에의 접속을위한 프로토콜이다.
+디렉토리서비스에는 유저ID나PW등의 유저정보를 일원관리하는것이 가능하며, 복수의 서비스에서 사용되는 공통의 인증정보의 보존, 조회목적으로도 사용된다.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">TIL - 스키마란(schema)</title><link href="http://localhost:4000/schema" rel="alternate" type="text/html" title="TIL - 스키마란(schema)" /><published>2021-01-20T10:00:00+09:00</published><updated>2021-01-20T10:00:00+09:00</updated><id>http://localhost:4000/schema</id><content type="html" xml:base="http://localhost:4000/schema">&lt;h1 id=&quot;스키마schema&quot;&gt;스키마(schema)&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;데이터의 내용, 데이터의논리구조, 기억형식이나 편성등의 데이터베이스의 구조를 명세한 것이다.&lt;/li&gt;
   &lt;li&gt;개체(Entity), 속성(Attribute), 관계(Relationship), 제약조건에 관해 정의한다.&lt;/li&gt;
@@ -321,89 +432,4 @@ MIT와는 실질적인 차이는 없다고한다.&lt;/p&gt;
 모듈 내의 모든 명령이 하나의 역할(기능)을 실행하기 위해 서로 관련된 모듈로, 응집도가 가장 높은 모듈이다. 단일 기능을 수행하기 위해 모든 명령이 서로 관련된다.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;From : https://peter-cho.gitbook.io/front-design-book/cohesion&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">응집도(Cohesion) 응집도란 모듈에 포함된 기능의 순수함을 나타내는 척도로, 모듈의 강도를 측정하는 단위다. 단계가 높을수록 순수하고 강하며 좋은 모듈이다. 모듈 내 요소 간 관계의 친밀함에 주목해서 판정한다. 단계: 암합적 강도 모듈 내 요소 간 특별한 관계가 인정되지 않는다. 예를 들면 모듈 내 중복된 명령의 패턴을 우연히 발견했다는 이유로 통합해서 하나의 모듈로 만든 경우다. 이때는 해당 모듈의 기능을 바르게 명명해서 정의할 수 없다. 단계: 논리적 강도 어떤 기능을 추상적으로 파악해서 모은 것이다. 예를 들면 모든 입출력 조작을 모아서 모듈화하거나 여러 가지 데이터를 편집하기 위한 모듈을 작성한 경우다. 하지만 관련된 기능을 하나의 모듈로 모은 것은 프로그래머의 사고를 집중시키는 장점이 있다. 단계: 시간적 강도 특정 시점에 연속해서 실행되는 여러 개의 기능을 하나의 모듈로 모은 것이다. 이때 기능 사이에 그다지 강한 관련성은 없다. 다만 특정 시점에 연속해서 실행될 뿐이다. 대표적인 사례가 초기 처리 모듈이다. 단계: 순서적 강도 문제를 처리하기 위해 관계된 여러 개의 기능은 순서대로 실행된다. 커다란 기능의 일부 순서를 하나의 모듈로 만들었다면 순서적 강도이다. 단계: 연락적 강도 연락적 강도 모듈은 기본적으로 순서적 강도의 특성을 갖는다. 순서적 강도와의 차이점은 모듈 내 기능 사이에서 데이터를 교환하거나 같은 데이터를 참조한다는 것이다. 단계: 정보적 강도 특정 자료구조를 다루는 여러 개의 기능을 하나의 모듈로 모은 것이다. 같은 자료구조(정보)는 가능한 한 특정 모듈에서만 접근하도록 하겠다는 발상이다. 논리적 강도 모듈 역시 정보 은닉의 특징을 갖고 있지만, 정보적 강도 모듈과의 차이점은 진입점의 개수다. 논리적 강도 모듈은 진입점을 하나만 가지며 실행할 기능은 파라미터에 의해 선택된다. 반면에 정보적 강도 모듈은 진입점을 여러 개 가지며 각 진입점은 단일한 고유 기능을 실행한다. 단계: 기능적 강도 모듈 내의 모든 명령이 하나의 역할(기능)을 실행하기 위해 서로 관련된 모듈로, 응집도가 가장 높은 모듈이다. 단일 기능을 수행하기 위해 모든 명령이 서로 관련된다.</summary></entry><entry><title type="html">TIL - 사이버공격</title><link href="http://localhost:4000/CiberAttack" rel="alternate" type="text/html" title="TIL - 사이버공격" /><published>2021-01-12T00:00:00+09:00</published><updated>2021-01-12T00:00:00+09:00</updated><id>http://localhost:4000/CiberAttack</id><content type="html" xml:base="http://localhost:4000/CiberAttack">&lt;h1 id=&quot;포트-스캐닝&quot;&gt;포트 스캐닝&lt;/h1&gt;
-&lt;dl&gt;
-  &lt;dt&gt;request를 보내면 Response가 오는 구조를 이용하여 서비스를 제공하는 서버의 작동여부와&lt;/dt&gt;
-  &lt;dt&gt;제공하고 있는 서비스를 확인한다.&lt;/dt&gt;
-  &lt;dd&gt;서비스를 제공하는 서버의 작동여부와 제공하고 있는 서비스를 확인
-네트워크는 기본적으로 질의 (Request)를 보내면 응답(Response)을 받는 구조로 되어있는데 이 특성을 이용
-포트가 열려있는지 닫혀있는지 확인을 한 후, 해당 포트의 취약점을 이용해 공격한다&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;ARP스캔
-ARP프로토콜을 이용하여 네트워크 대역의 정보를 확인한다.
-ARP Request르 보내, 살아있는 host의 존재유무를 알 수 있다.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;ICMP스캔
-ICMP프로토콜을 이용하여 타겟까지 도달할 수 있는지 여부와 운영체제등을 알 수 있다.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;TCP/UDP스캔&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;dl&gt;
-          &lt;dt&gt;TCP&lt;/dt&gt;
-          &lt;dd&gt;OpenScan - 대상포트가 열려있는지 확인하고 세션을 성립하기때문에 로그가남는다.&lt;/dd&gt;
-          &lt;dd&gt;Half-OpenScan - 열려있다는 신호가 날아오면 RST를 날려 강제로 세션맺음을 종료한다.&lt;/dd&gt;
-        &lt;/dl&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;UDP&lt;/dt&gt;
-      &lt;dd&gt;DP 스캔은 Open과 Close경우로 분류할 수 있다&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Stealth스캔
-세션을 성립하지않고 스캔하는 방식&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;※ TCP플래그&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;SYN(Synchronization,동기화) : 연결요청플래그&lt;/li&gt;
-  &lt;li&gt;ACK(Acknowledgement,응답) : 패킷을 받았다는 것을 알려주는 패킷&lt;/li&gt;
-  &lt;li&gt;RST(Reset, 연결종료) : 재설정을 하는 과정이며, 양방향에서 동시에일어나는 중단 작업이다.&lt;/li&gt;
-  &lt;li&gt;PSH(Push, 밀어넣기) : Telnet과같은 빠른응답이 중요한데, 받은 데이터를 바로 OSI Layer-7의 어플리케이션계층으로 보낸다.&lt;/li&gt;
-  &lt;li&gt;URG(Urgent, 긴급데이터) : Urgent Pointer가 유효한 것인지 나타낸다.&lt;/li&gt;
-  &lt;li&gt;FIN(Finish, 연결종료요청) : 세션연결종료를 나타낸다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;포트-미러링&quot;&gt;포트 미러링&lt;/h1&gt;
-&lt;p&gt;네트워크 스위치에서 스위치 포트를 통과하는 패킷들을 감시 또는 관찰하기 위해 패킷들을 다른 스위치 포트로 복사하는 방법&lt;/p&gt;
-
-&lt;h1 id=&quot;스니핑sniffing&quot;&gt;스니핑(sniffing)&lt;/h1&gt;
-&lt;p&gt;네트워크 상에 지나다니는 패킷들을 캡처하여 그 안에 있는 내용을 들여다보는 기술을 말한다&lt;/p&gt;
-
-&lt;h1 id=&quot;버퍼오버플로우&quot;&gt;버퍼오버플로우&lt;/h1&gt;
-&lt;p&gt;프로그램에 버퍼를 조작할 수 있는 버그가 존재할 경우 컴퓨터에게 해커가 원하는 일을 하도록 지시시켜 공격하는 것이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;seo포이즈닝search-engine-optimization&quot;&gt;SEO포이즈닝(Search Engine Optimization)&lt;/h1&gt;
-&lt;p&gt;검색엔진최적화, 검색사이트에있어 검색결과의 상위에 악성사이트가 표시되도록 웹페이지의 내용을 최적화하는 방법.&lt;/p&gt;
-
-&lt;h1 id=&quot;xsscross-site-script&quot;&gt;XSS(Cross Site Script)&lt;/h1&gt;
-&lt;p&gt;공격자가 악의적인 스크립트를 입력폼에 적용하여 이용자가 입력한 ID/PW가 공격자의 웹사이트로 보내지게되는 방식.&lt;/p&gt;
-
-&lt;h1 id=&quot;소셜엔지니어링&quot;&gt;소셜엔지니어링&lt;/h1&gt;
-&lt;p&gt;사람의 심리를 악용하여 전자적방법을 사용하지않고 패스워드나 기밀정보를 손에넣는 방법&lt;/p&gt;
-
-&lt;h1 id=&quot;패스워드-리스트공격&quot;&gt;패스워드 리스트공격&lt;/h1&gt;
-&lt;p&gt;복수의 사이트에서 동일의 이용자ID와PW를 사용하고있는 이용자가 있는 상황을 악용해 부정으로 습득한 다른 사이트의 이용자ID/PW의 일람표를 사용하여 다른 사이트에 로그인을 시도하는 공격이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;사전공격&quot;&gt;사전공격&lt;/h1&gt;
-&lt;p&gt;사에 있는 단어들을 패스워드로 설정하는 이용자가 있다는 점에 착목해서, 공격대상으로하는 이용자ID를 하나 정해, 사전에 이쓴ㄴ단어나 그 조합으로 패스워드를 만들어 로그인을 시도하는 공격이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;무차별-대입-공격brute-force-attack&quot;&gt;무차별 대입 공격(brute-force attack)&lt;/h1&gt;
-&lt;p&gt;패스워드의 문자수의 상한을 두고 있는 웹사이트가 있다는 점에 착목하여 공격대상의 ID를 하나 정해, 말 그대로 무차별적으로 모든 경우의수의 패스워드를 입력하여 로그인을 시도하는 공격이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;리버스-무차별-대입공격reverse-brute-force-attack&quot;&gt;리버스 무차별 대입공격(reverse brute-force attack)&lt;/h1&gt;
-&lt;p&gt;잘 쓰일거같은 패스워드를 하나정해 모든경우의 수의 ID를 입력하면서 로그인을 시도하는 공격이다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">포트 스캐닝 request를 보내면 Response가 오는 구조를 이용하여 서비스를 제공하는 서버의 작동여부와 제공하고 있는 서비스를 확인한다. 서비스를 제공하는 서버의 작동여부와 제공하고 있는 서비스를 확인 네트워크는 기본적으로 질의 (Request)를 보내면 응답(Response)을 받는 구조로 되어있는데 이 특성을 이용 포트가 열려있는지 닫혀있는지 확인을 한 후, 해당 포트의 취약점을 이용해 공격한다</summary></entry></feed>
+&lt;p&gt;From : https://peter-cho.gitbook.io/front-design-book/cohesion&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">응집도(Cohesion) 응집도란 모듈에 포함된 기능의 순수함을 나타내는 척도로, 모듈의 강도를 측정하는 단위다. 단계가 높을수록 순수하고 강하며 좋은 모듈이다. 모듈 내 요소 간 관계의 친밀함에 주목해서 판정한다. 단계: 암합적 강도 모듈 내 요소 간 특별한 관계가 인정되지 않는다. 예를 들면 모듈 내 중복된 명령의 패턴을 우연히 발견했다는 이유로 통합해서 하나의 모듈로 만든 경우다. 이때는 해당 모듈의 기능을 바르게 명명해서 정의할 수 없다. 단계: 논리적 강도 어떤 기능을 추상적으로 파악해서 모은 것이다. 예를 들면 모든 입출력 조작을 모아서 모듈화하거나 여러 가지 데이터를 편집하기 위한 모듈을 작성한 경우다. 하지만 관련된 기능을 하나의 모듈로 모은 것은 프로그래머의 사고를 집중시키는 장점이 있다. 단계: 시간적 강도 특정 시점에 연속해서 실행되는 여러 개의 기능을 하나의 모듈로 모은 것이다. 이때 기능 사이에 그다지 강한 관련성은 없다. 다만 특정 시점에 연속해서 실행될 뿐이다. 대표적인 사례가 초기 처리 모듈이다. 단계: 순서적 강도 문제를 처리하기 위해 관계된 여러 개의 기능은 순서대로 실행된다. 커다란 기능의 일부 순서를 하나의 모듈로 만들었다면 순서적 강도이다. 단계: 연락적 강도 연락적 강도 모듈은 기본적으로 순서적 강도의 특성을 갖는다. 순서적 강도와의 차이점은 모듈 내 기능 사이에서 데이터를 교환하거나 같은 데이터를 참조한다는 것이다. 단계: 정보적 강도 특정 자료구조를 다루는 여러 개의 기능을 하나의 모듈로 모은 것이다. 같은 자료구조(정보)는 가능한 한 특정 모듈에서만 접근하도록 하겠다는 발상이다. 논리적 강도 모듈 역시 정보 은닉의 특징을 갖고 있지만, 정보적 강도 모듈과의 차이점은 진입점의 개수다. 논리적 강도 모듈은 진입점을 하나만 가지며 실행할 기능은 파라미터에 의해 선택된다. 반면에 정보적 강도 모듈은 진입점을 여러 개 가지며 각 진입점은 단일한 고유 기능을 실행한다. 단계: 기능적 강도 모듈 내의 모든 명령이 하나의 역할(기능)을 실행하기 위해 서로 관련된 모듈로, 응집도가 가장 높은 모듈이다. 단일 기능을 수행하기 위해 모든 명령이 서로 관련된다.</summary></entry></feed>
