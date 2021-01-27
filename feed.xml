@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-26T23:38:40+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">Network용어</title><link href="http://localhost:4000/Network%EC%9A%A9%EC%96%B4" rel="alternate" type="text/html" title="Network용어" /><published>2021-01-25T00:00:00+09:00</published><updated>2021-01-25T00:00:00+09:00</updated><id>http://localhost:4000/Network%EC%9A%A9%EC%96%B4</id><content type="html" xml:base="http://localhost:4000/Network%EC%9A%A9%EC%96%B4">&lt;h2 id=&quot;napt-network-address-port-translation&quot;&gt;NAPT (Network Address Port Translation)&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-27T23:50:53+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - 2021/01/26 KIMINI레슨</title><link href="http://localhost:4000/WhenNeedToSayGoodBye" rel="alternate" type="text/html" title="TIL - 2021/01/26 KIMINI레슨" /><published>2021-01-27T08:00:00+09:00</published><updated>2021-01-27T08:00:00+09:00</updated><id>http://localhost:4000/WhenNeedToSayGoodBye</id><content type="html" xml:base="http://localhost:4000/WhenNeedToSayGoodBye">&lt;h3 id=&quot;처음-만났을-때&quot;&gt;처음 만났을 때&lt;/h3&gt;
+&lt;p&gt;Glad to meet you. (very formal)
+Pleased to meet you. (Very formal)&lt;/p&gt;
+
+&lt;h3 id=&quot;메일로만-주고받다가-처음만났을-때&quot;&gt;메일로만 주고받다가 처음만났을 때&lt;/h3&gt;
+&lt;p&gt;It`s nice to finally meet you&lt;/p&gt;
+
+&lt;h3 id=&quot;누군가-나에대해-얘기-많이-들었다고-했을-때&quot;&gt;누군가 나에대해 얘기 많이 들었다고 했을 때&lt;/h3&gt;
+&lt;p&gt;All good, I hope
+Only good things, I hope&lt;/p&gt;
+
+&lt;h3 id=&quot;소개할-타이밍을-놓쳤을-때&quot;&gt;소개할 타이밍을 놓쳤을 때&lt;/h3&gt;
+&lt;p&gt;By the way, My name is Joon&lt;/p&gt;
+
+&lt;h3 id=&quot;좋은-시간을-보내고-헤어질-때&quot;&gt;좋은 시간을 보내고 헤어질 때&lt;/h3&gt;
+&lt;p&gt;It was nice meeting you
+It was a pleasure meeting you
+I hope to see/meet you next time&lt;/p&gt;
+
+&lt;h3 id=&quot;처음만난-사람과-얘기를-나누고-헤어질-때&quot;&gt;처음만난 사람과 얘기를 나누고 헤어질 때&lt;/h3&gt;
+&lt;p&gt;It was nice talking to you, take care
+I was happy talking to you
+God bless on your way home&lt;/p&gt;
+
+&lt;h3 id=&quot;여행자와-헤어질-때&quot;&gt;여행자와 헤어질 때&lt;/h3&gt;
+&lt;p&gt;Enjoy your stay in Japan
+Enjoy your trip in Japan
+I hope you guys have a good time in Japan&lt;/p&gt;
+
+&lt;h2 id=&quot;단어-및-표현&quot;&gt;단어 및 표현&lt;/h2&gt;
+&lt;h3 id=&quot;watching-over-somethingsomebody&quot;&gt;watching over Something/Somebody&lt;/h3&gt;
+&lt;p&gt;누군가를 돌보다&lt;/p&gt;
+
+&lt;h3 id=&quot;caught-off-guard&quot;&gt;caught off guard&lt;/h3&gt;
+&lt;p&gt;의표를 찔리다. 허를찔리다. 당황하다,&lt;/p&gt;
+
+&lt;h3 id=&quot;get-it-done&quot;&gt;get it done&lt;/h3&gt;
+&lt;p&gt;about not getting it done
+그것을 끝내지 못한것에 대해서&lt;/p&gt;
+
+&lt;h3 id=&quot;have-on-their-health&quot;&gt;have on their health&lt;/h3&gt;
+&lt;p&gt;건강을 유지하다.&lt;/p&gt;
+
+&lt;h3 id=&quot;sense-of-alarm&quot;&gt;sense of alarm.&lt;/h3&gt;
+&lt;p&gt;경각심
+경고의 감각&lt;/p&gt;
+
+&lt;h3 id=&quot;this-can-help-a-child-feel-empowered&quot;&gt;This can help a child feel empowered.&lt;/h3&gt;
+&lt;p&gt;이것은 아이가 힘을 느끼는 데 도움이 될 수 있습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;input-on-that&quot;&gt;input on that&lt;/h3&gt;
+&lt;p&gt;~에 의견이있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;team-up-with&quot;&gt;team up with&lt;/h3&gt;
+&lt;p&gt;~와 협력하다&lt;/p&gt;
+
+&lt;h3 id=&quot;among-the-most-popular&quot;&gt;among the most popular.&lt;/h3&gt;
+&lt;p&gt;가장 인기가있다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">처음 만났을 때 Glad to meet you. (very formal) Pleased to meet you. (Very formal)</summary></entry><entry><title type="html">Network용어</title><link href="http://localhost:4000/Network%EC%9A%A9%EC%96%B4" rel="alternate" type="text/html" title="Network용어" /><published>2021-01-25T00:00:00+09:00</published><updated>2021-01-25T00:00:00+09:00</updated><id>http://localhost:4000/Network%EC%9A%A9%EC%96%B4</id><content type="html" xml:base="http://localhost:4000/Network%EC%9A%A9%EC%96%B4">&lt;h2 id=&quot;napt-network-address-port-translation&quot;&gt;NAPT (Network Address Port Translation)&lt;/h2&gt;
 &lt;p&gt;NAT(Network Address Translation)의 기능과 같이 OSI 3계층 네트워크 계층에서 사설 IP 주소를 공인 IP 주소로 변환하는 기능을 가진다.
 하지만 NAPT의경우 공인IP를 이용하여 다수의 사설IP로 변환가능하다. 이름에서 알 수 있듯이 포트번호를 이용하여 가능케한다.
 ICMP와같은 패킷들은 port정보를 포함하지않지만 TCP/UDP의경우 port정보를 포함하기때문에 사용이 가능하다.&lt;/p&gt;
@@ -413,23 +470,4 @@ MIT와는 실질적인 차이는 없다고한다.&lt;/p&gt;
 
 &lt;h2 id=&quot;copyleft&quot;&gt;Copyleft&lt;/h2&gt;
 &lt;p&gt;작성자가 저작권을 보유한채로 2차저작물을 포함하여 모든 사람이 저작물을 이용,재배포, 변경할 수 있어야된다는 의미를 가진다.
-이것은 오픈소스 라이센스인 GPL LGPL MGPL등에 도입되었다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">오픈소스 라이센스 오픈소스를 사용하기 위해서는 어떠한 조항들을 지키며 사용해야하는데, 그 지켜야하는 조항들에 대해서 나와있는 것이 라이센스이다. 이번에 대표적인 라이센스들에 대해서 정리해보고자 한다.</summary></entry><entry><title type="html">TIL - Cohesion</title><link href="http://localhost:4000/Coehsion" rel="alternate" type="text/html" title="TIL - Cohesion" /><published>2021-01-12T03:00:00+09:00</published><updated>2021-01-12T03:00:00+09:00</updated><id>http://localhost:4000/Coehsion</id><content type="html" xml:base="http://localhost:4000/Coehsion">&lt;h2 id=&quot;응집도cohesion&quot;&gt;응집도(Cohesion)&lt;/h2&gt;
-&lt;p&gt;응집도란 모듈에 포함된 기능의 순수함을 나타내는 척도로, 모듈의 강도를 측정하는 단위다. 단계가 높을수록 순수하고 강하며 좋은 모듈이다. 모듈 내 요소 간 관계의 친밀함에 주목해서 판정한다.&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;단계: 암합적 강도
-모듈 내 요소 간 특별한 관계가 인정되지 않는다. 예를 들면 모듈 내 중복된 명령의 패턴을 우연히 발견했다는 이유로 통합해서 하나의 모듈로 만든 경우다. 이때는 해당 모듈의 기능을 바르게 명명해서 정의할 수 없다.&lt;/li&gt;
-  &lt;li&gt;단계: 논리적 강도
-어떤 기능을 추상적으로 파악해서 모은 것이다. 예를 들면 모든 입출력 조작을 모아서 모듈화하거나 여러 가지 데이터를 편집하기 위한 모듈을 작성한 경우다. 하지만 관련된 기능을 하나의 모듈로 모은 것은 프로그래머의 사고를 집중시키는 장점이 있다.&lt;/li&gt;
-  &lt;li&gt;단계: 시간적 강도
-특정 시점에 연속해서 실행되는 여러 개의 기능을 하나의 모듈로 모은 것이다. 이때 기능 사이에 그다지 강한 관련성은 없다. 다만 특정 시점에 연속해서 실행될 뿐이다. 대표적인 사례가 초기 처리 모듈이다.&lt;/li&gt;
-  &lt;li&gt;단계: 순서적 강도
-문제를 처리하기 위해 관계된 여러 개의 기능은 순서대로 실행된다. 커다란 기능의 일부 순서를 하나의 모듈로 만들었다면 순서적 강도이다.&lt;/li&gt;
-  &lt;li&gt;단계: 연락적 강도
-연락적 강도 모듈은 기본적으로 순서적 강도의 특성을 갖는다. 순서적 강도와의 차이점은 모듈 내 기능 사이에서 데이터를 교환하거나 같은 데이터를 참조한다는 것이다.&lt;/li&gt;
-  &lt;li&gt;단계: 정보적 강도
-특정 자료구조를 다루는 여러 개의 기능을 하나의 모듈로 모은 것이다. 같은 자료구조(정보)는 가능한 한 특정 모듈에서만 접근하도록 하겠다는 발상이다. 논리적 강도 모듈 역시 정보 은닉의 특징을 갖고 있지만, 정보적 강도 모듈과의 차이점은 진입점의 개수다. 논리적 강도 모듈은 진입점을 하나만 가지며 실행할 기능은 파라미터에 의해 선택된다. 반면에 정보적 강도 모듈은 진입점을 여러 개 가지며 각 진입점은 단일한 고유 기능을 실행한다.&lt;/li&gt;
-  &lt;li&gt;단계: 기능적 강도
-모듈 내의 모든 명령이 하나의 역할(기능)을 실행하기 위해 서로 관련된 모듈로, 응집도가 가장 높은 모듈이다. 단일 기능을 수행하기 위해 모든 명령이 서로 관련된다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;From : https://peter-cho.gitbook.io/front-design-book/cohesion&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">응집도(Cohesion) 응집도란 모듈에 포함된 기능의 순수함을 나타내는 척도로, 모듈의 강도를 측정하는 단위다. 단계가 높을수록 순수하고 강하며 좋은 모듈이다. 모듈 내 요소 간 관계의 친밀함에 주목해서 판정한다. 단계: 암합적 강도 모듈 내 요소 간 특별한 관계가 인정되지 않는다. 예를 들면 모듈 내 중복된 명령의 패턴을 우연히 발견했다는 이유로 통합해서 하나의 모듈로 만든 경우다. 이때는 해당 모듈의 기능을 바르게 명명해서 정의할 수 없다. 단계: 논리적 강도 어떤 기능을 추상적으로 파악해서 모은 것이다. 예를 들면 모든 입출력 조작을 모아서 모듈화하거나 여러 가지 데이터를 편집하기 위한 모듈을 작성한 경우다. 하지만 관련된 기능을 하나의 모듈로 모은 것은 프로그래머의 사고를 집중시키는 장점이 있다. 단계: 시간적 강도 특정 시점에 연속해서 실행되는 여러 개의 기능을 하나의 모듈로 모은 것이다. 이때 기능 사이에 그다지 강한 관련성은 없다. 다만 특정 시점에 연속해서 실행될 뿐이다. 대표적인 사례가 초기 처리 모듈이다. 단계: 순서적 강도 문제를 처리하기 위해 관계된 여러 개의 기능은 순서대로 실행된다. 커다란 기능의 일부 순서를 하나의 모듈로 만들었다면 순서적 강도이다. 단계: 연락적 강도 연락적 강도 모듈은 기본적으로 순서적 강도의 특성을 갖는다. 순서적 강도와의 차이점은 모듈 내 기능 사이에서 데이터를 교환하거나 같은 데이터를 참조한다는 것이다. 단계: 정보적 강도 특정 자료구조를 다루는 여러 개의 기능을 하나의 모듈로 모은 것이다. 같은 자료구조(정보)는 가능한 한 특정 모듈에서만 접근하도록 하겠다는 발상이다. 논리적 강도 모듈 역시 정보 은닉의 특징을 갖고 있지만, 정보적 강도 모듈과의 차이점은 진입점의 개수다. 논리적 강도 모듈은 진입점을 하나만 가지며 실행할 기능은 파라미터에 의해 선택된다. 반면에 정보적 강도 모듈은 진입점을 여러 개 가지며 각 진입점은 단일한 고유 기능을 실행한다. 단계: 기능적 강도 모듈 내의 모든 명령이 하나의 역할(기능)을 실행하기 위해 서로 관련된 모듈로, 응집도가 가장 높은 모듈이다. 단일 기능을 수행하기 위해 모든 명령이 서로 관련된다.</summary></entry></feed>
+이것은 오픈소스 라이센스인 GPL LGPL MGPL등에 도입되었다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">오픈소스 라이센스 오픈소스를 사용하기 위해서는 어떠한 조항들을 지키며 사용해야하는데, 그 지켜야하는 조항들에 대해서 나와있는 것이 라이센스이다. 이번에 대표적인 라이센스들에 대해서 정리해보고자 한다.</summary></entry></feed>
