@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-28T23:55:28+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - 2021/01/27 Practical English</title><link href="http://localhost:4000/PracticalConversation2" rel="alternate" type="text/html" title="TIL - 2021/01/27 Practical English" /><published>2021-01-28T08:00:00+09:00</published><updated>2021-01-28T08:00:00+09:00</updated><id>http://localhost:4000/PracticalConversation2</id><content type="html" xml:base="http://localhost:4000/PracticalConversation2">&lt;h3 id=&quot;어떻게-이친구를-알게되었는지-물어볼-때&quot;&gt;어떻게 이친구를 알게되었는지 물어볼 때&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-29T23:58:41+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - 2021/01/28 Practical English3</title><link href="http://localhost:4000/PracticalEnglish3" rel="alternate" type="text/html" title="TIL - 2021/01/28 Practical English3" /><published>2021-01-29T08:30:00+09:00</published><updated>2021-01-29T08:30:00+09:00</updated><id>http://localhost:4000/PracticalEnglish3</id><content type="html" xml:base="http://localhost:4000/PracticalEnglish3">&lt;h3 id=&quot;쉴때-뭐하는지-물어볼-때&quot;&gt;쉴때 뭐하는지 물어볼 때&lt;/h3&gt;
+&lt;p&gt;What do you do in your free time?&lt;/p&gt;
+
+&lt;h3 id=&quot;2주뒤에-시험이-있다고-말할-때&quot;&gt;2주뒤에 시험이 있다고 말할 때&lt;/h3&gt;
+&lt;p&gt;I have a test in two weeks&lt;/p&gt;
+
+&lt;h3 id=&quot;외국드라마에-빠졌다고-말할-때&quot;&gt;외국드라마에 빠졌다고 말할 때&lt;/h3&gt;
+&lt;p&gt;I’m hooked on forign dramas
+I’m into forign dramas&lt;/p&gt;
+
+&lt;h3 id=&quot;대학교-몇학년인지-물어볼-때&quot;&gt;대학교 몇학년인지 물어볼 때&lt;/h3&gt;
+&lt;p&gt;What year are you in?
+What year are you now in University?&lt;/p&gt;
+
+&lt;h3 id=&quot;형제나-자매가-있는지-물어볼-때&quot;&gt;형제나 자매가 있는지 물어볼 때&lt;/h3&gt;
+&lt;p&gt;Do you have any brothers or sisters?&lt;/p&gt;
+
+&lt;h3 id=&quot;몰랐던-단어&quot;&gt;몰랐던 단어&lt;/h3&gt;
+&lt;p&gt;precautionary measure : 사전주의사항
+clingy : 계속붙어있는
+inquisitive eyes : 호기심이가능학 눈
+stray : 주인을 잃은&lt;/p&gt;
+
+&lt;h3 id=&quot;알고는-있지만-안나온-단어&quot;&gt;알고는 있지만 안나온 단어&lt;/h3&gt;
+&lt;p&gt;old hairstyle
+rules to follow
+preparing for test
+in 기간 : 기간 후에
+noisy 
+quite
+doubt&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">쉴때 뭐하는지 물어볼 때 What do you do in your free time?</summary></entry><entry><title type="html">TIL - 2021/01/28 Database 쿼리 기본</title><link href="http://localhost:4000/Database%EC%BF%BC%EB%A6%AC%EA%B8%B0%EB%B3%B8" rel="alternate" type="text/html" title="TIL - 2021/01/28 Database 쿼리 기본" /><published>2021-01-29T08:00:00+09:00</published><updated>2021-01-29T08:00:00+09:00</updated><id>http://localhost:4000/Database%EC%BF%BC%EB%A6%AC%EA%B8%B0%EB%B3%B8</id><content type="html" xml:base="http://localhost:4000/Database%EC%BF%BC%EB%A6%AC%EA%B8%B0%EB%B3%B8">&lt;h3 id=&quot;union-all&quot;&gt;UNION ALL&lt;/h3&gt;
+&lt;p&gt;UNION과 동일하게 표를 통합해서 하나의결과를 만들지만, 중복도 포함한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;distinct&quot;&gt;DISTINCT&lt;/h3&gt;
+&lt;p&gt;열의 값에서 중복하는 행을 뽑아서 정리해 하나의 행으로 표시한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;as-별명&quot;&gt;AS 별명&lt;/h3&gt;
+&lt;p&gt;AS문은 필드명이나 테이블명에 별도의 이름을 붙인다.&lt;/p&gt;
+
+&lt;h3 id=&quot;exists-검사대상&quot;&gt;EXISTS (검사대상)&lt;/h3&gt;
+&lt;p&gt;SELECT문에의한 검사결과의 조합이 존재하는지아닌지를 검사하는 기능을 갖는다. 조건을 만족하는 레코드가 있으면 참이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;case&quot;&gt;CASE&lt;/h3&gt;
+&lt;p&gt;SQL문에서 조건분기를 수행한다.&lt;/p&gt;
+
+&lt;p&gt;CASE 식  WHEN 조건식1 THEN 리턴값1
+CASE 식  WHEN 조건식2 THEN 리턴값2 ELSE 어떤조건에도 일치하지않는 경우의 리턴값&lt;/p&gt;
+
+&lt;h3 id=&quot;group-by&quot;&gt;GROUP BY&lt;/h3&gt;
+&lt;p&gt;지정한열의 값과 같은것들을 그릅화해서 집계한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;having&quot;&gt;HAVING&lt;/h3&gt;
+&lt;p&gt;GROUP BY 문에의해 그룹화된 결과에 대해 한층 검색조건을 지정한경우에는 WHRER을 쓸 수 없고 HAVING을 써서 표현한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;between연산자&quot;&gt;BETWEEN연산자&lt;/h3&gt;
+&lt;p&gt;값의 범위를 지정한다.
+SELECT 이름, 연령 FROM 명부 WHERE 연령 BETWEEN 18 AND 22&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">UNION ALL UNION과 동일하게 표를 통합해서 하나의결과를 만들지만, 중복도 포함한다.</summary></entry><entry><title type="html">TIL - 2021/01/27 Practical English</title><link href="http://localhost:4000/PracticalConversation2" rel="alternate" type="text/html" title="TIL - 2021/01/27 Practical English" /><published>2021-01-28T08:00:00+09:00</published><updated>2021-01-28T08:00:00+09:00</updated><id>http://localhost:4000/PracticalConversation2</id><content type="html" xml:base="http://localhost:4000/PracticalConversation2">&lt;h3 id=&quot;어떻게-이친구를-알게되었는지-물어볼-때&quot;&gt;어떻게 이친구를 알게되었는지 물어볼 때&lt;/h3&gt;
 &lt;p&gt;How do you know her?&lt;/p&gt;
 
 &lt;h3 id=&quot;어디-출신인지-물어볼-때formal&quot;&gt;어디 출신인지 물어볼 때(formal)&lt;/h3&gt;
@@ -403,60 +461,4 @@ CVR=Conversion수/사이트액세스수
 
 &lt;h2 id=&quot;address-분석&quot;&gt;Address 분석&lt;/h2&gt;
 &lt;p&gt;192.168.0.0/23의 경우 네트워크부는 앞에서 23비트이고, 호스트부는 전체 32비트중에서 23비트를 뺀 영역을 가진다.
-여기서 23은 서브넷마스크라고 부르며, 이경우의 호스트부에서 사용할 수 있는 어드레스의 개수는 2^9(9bit) - 2(Network/Broadcast Addresss)이다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">IP Address IP(Internet Protocol)은 상호간에 접속된 네트워크에서 데이터를 중계해 전송하는 네트워크층의 프로토콜이다.</summary></entry><entry><title type="html">TIL - Interupt종류</title><link href="http://localhost:4000/interupt" rel="alternate" type="text/html" title="TIL - Interupt종류" /><published>2021-01-19T03:00:00+09:00</published><updated>2021-01-19T03:00:00+09:00</updated><id>http://localhost:4000/interupt</id><content type="html" xml:base="http://localhost:4000/interupt">&lt;h2 id=&quot;interrupt란&quot;&gt;Interrupt란&lt;/h2&gt;
-&lt;p&gt;프로그램 실행 도중에 이벤트나 예기치못한 상황으로인한 작업중단등을 얘기한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;interrupt종류&quot;&gt;Interrupt종류&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;내부 Interrupt
-    &lt;ul&gt;
-      &lt;li&gt;프로그램실행중 에러(제로나누기연산, 오버플로등)&lt;/li&gt;
-      &lt;li&gt;SVC(Supervisor Call) : 시스템콜이나 OS의 기능이 호출된경우 발생한다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;외부 Interrupt
-    &lt;ul&gt;
-      &lt;li&gt;입출력Interrupt : 입출력동작이 종료될때 발생한다.&lt;/li&gt;
-      &lt;li&gt;기기체크Interrupt : 하드웨어가 고장났을때 발생한다.&lt;/li&gt;
-      &lt;li&gt;타이머Interrupt : 프로그램의 실행시간이 설정시간을 경과했을 경우 발생한다.&lt;/li&gt;
-      &lt;li&gt;콘솔Interrupt : 오퍼레이터가 개입한경우 발생한다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">Interrupt란 프로그램 실행 도중에 이벤트나 예기치못한 상황으로인한 작업중단등을 얘기한다.</summary></entry><entry><title type="html">Sideproject1</title><link href="http://localhost:4000/sideProject1" rel="alternate" type="text/html" title="Sideproject1" /><published>2021-01-18T00:00:00+09:00</published><updated>2021-01-18T00:00:00+09:00</updated><id>http://localhost:4000/sideProject1</id><content type="html" xml:base="http://localhost:4000/sideProject1">&lt;hr /&gt;
-&lt;p&gt;layout: post
-current: post
-cover:  assets/built/images/python-logo.png
-navigation: True
-title: TIL - SideProject1
-date: 2021-01-18 12:30:00
-tags: [TIL]
-class: post-template
-subclass: ‘post tag-TIL’
-author: PARK-1993
-—&lt;/p&gt;
-
-&lt;h2 id=&quot;나만의-앱만들기&quot;&gt;나만의 앱만들기&lt;/h2&gt;
-&lt;h3 id=&quot;무엇을-만들것인가&quot;&gt;무엇을 만들것인가&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;iOS어플리케이션&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;어떤-프로그램인가&quot;&gt;어떤 프로그램인가&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;여행지 랜덤배정 및 주변 랜드마크 알람푸쉬해주는 어플&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;어떻게-만들-것인가&quot;&gt;어떻게 만들 것인가&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;swift사용, apple맵 사용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;누구와-만들-것인가&quot;&gt;누구와 만들 것인가&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;혼자&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;언제만들-것-인가&quot;&gt;언제만들 것 인가&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;하루 30분정도 시간을 투자해보자&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">layout: post current: post cover: assets/built/images/python-logo.png navigation: True title: TIL - SideProject1 date: 2021-01-18 12:30:00 tags: [TIL] class: post-template subclass: ‘post tag-TIL’ author: PARK-1993 —</summary></entry></feed>
+여기서 23은 서브넷마스크라고 부르며, 이경우의 호스트부에서 사용할 수 있는 어드레스의 개수는 2^9(9bit) - 2(Network/Broadcast Addresss)이다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">IP Address IP(Internet Protocol)은 상호간에 접속된 네트워크에서 데이터를 중계해 전송하는 네트워크층의 프로토콜이다.</summary></entry></feed>
