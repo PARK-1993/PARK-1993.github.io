@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/til/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-02-01T23:52:20+09:00</updated>
+  <updated>2021-02-02T23:58:33+09:00</updated>
   <id>http://localhost:4000/tag/til/feed.xml</id>
 
   
@@ -30,6 +30,58 @@
   
   
 
+  
+    <entry>
+      <title type="html">TIL - 2021/02/01 Practical English4</title>
+      <link href="http://localhost:4000/PracticalEnglish4" rel="alternate" type="text/html" title="TIL - 2021/02/01 Practical English4" />
+      <published>2021-02-02T08:30:00+09:00</published>
+      <updated>2021-02-02T08:30:00+09:00</updated>
+      <id>http://localhost:4000/PracticalEnglish4</id>
+      <content type="html" xml:base="http://localhost:4000/PracticalEnglish4">&lt;h2 id=&quot;다시만나게-되었을-때&quot;&gt;다시만나게 되었을 때&lt;/h2&gt;
+&lt;p&gt;It’s nice to see you again. How have you been?
+Nice to see you again!&lt;/p&gt;
+
+&lt;h2 id=&quot;어떻게-지냈어의-다양한-표현&quot;&gt;어떻게 지냈어의 다양한 표현&lt;/h2&gt;
+&lt;p&gt;How have you been?
+How are you doing?
+How’s it going?
+How’s everything going?
+How’s everything?&lt;/p&gt;
+
+&lt;h2 id=&quot;질문이-없을-때&quot;&gt;질문이 없을 때&lt;/h2&gt;
+&lt;p&gt;None so far&lt;/p&gt;
+
+&lt;h2 id=&quot;머리짤랐냐고-물어볼-때&quot;&gt;머리짤랐냐고 물어볼 때&lt;/h2&gt;
+&lt;p&gt;Did you get a haircut?&lt;/p&gt;
+
+&lt;h2 id=&quot;익숙해지다&quot;&gt;익숙해지다&lt;/h2&gt;
+&lt;p&gt;get used it&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">다시만나게 되었을 때 It’s nice to see you again. How have you been? Nice to see you again!</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">TIL - 2021/01/28 Practical English3</title>
@@ -710,59 +762,6 @@ CVR=Conversion수/사이트액세스수
 
       
         <summary type="html">IP Address IP(Internet Protocol)은 상호간에 접속된 네트워크에서 데이터를 중계해 전송하는 네트워크층의 프로토콜이다.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - Interupt종류</title>
-      <link href="http://localhost:4000/interupt" rel="alternate" type="text/html" title="TIL - Interupt종류" />
-      <published>2021-01-19T03:00:00+09:00</published>
-      <updated>2021-01-19T03:00:00+09:00</updated>
-      <id>http://localhost:4000/interupt</id>
-      <content type="html" xml:base="http://localhost:4000/interupt">&lt;h2 id=&quot;interrupt란&quot;&gt;Interrupt란&lt;/h2&gt;
-&lt;p&gt;프로그램 실행 도중에 이벤트나 예기치못한 상황으로인한 작업중단등을 얘기한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;interrupt종류&quot;&gt;Interrupt종류&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;내부 Interrupt
-    &lt;ul&gt;
-      &lt;li&gt;프로그램실행중 에러(제로나누기연산, 오버플로등)&lt;/li&gt;
-      &lt;li&gt;SVC(Supervisor Call) : 시스템콜이나 OS의 기능이 호출된경우 발생한다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;외부 Interrupt
-    &lt;ul&gt;
-      &lt;li&gt;입출력Interrupt : 입출력동작이 종료될때 발생한다.&lt;/li&gt;
-      &lt;li&gt;기기체크Interrupt : 하드웨어가 고장났을때 발생한다.&lt;/li&gt;
-      &lt;li&gt;타이머Interrupt : 프로그램의 실행시간이 설정시간을 경과했을 경우 발생한다.&lt;/li&gt;
-      &lt;li&gt;콘솔Interrupt : 오퍼레이터가 개입한경우 발생한다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">Interrupt란 프로그램 실행 도중에 이벤트나 예기치못한 상황으로인한 작업중단등을 얘기한다.</summary>
       
 
       
