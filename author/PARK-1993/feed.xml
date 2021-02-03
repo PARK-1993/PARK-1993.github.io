@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/author/PARK-1993/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-02-02T23:58:33+09:00</updated>
+  <updated>2021-02-03T23:27:00+09:00</updated>
   <id>http://localhost:4000/author/PARK-1993/feed.xml</id>
 
   
@@ -30,6 +30,68 @@
   
   
 
+  
+    <entry>
+      <title type="html">TIL - 2021/02/02 Practical English5</title>
+      <link href="http://localhost:4000/PracticalEnglish5" rel="alternate" type="text/html" title="TIL - 2021/02/02 Practical English5" />
+      <published>2021-02-03T08:30:00+09:00</published>
+      <updated>2021-02-03T08:30:00+09:00</updated>
+      <id>http://localhost:4000/PracticalEnglish5</id>
+      <content type="html" xml:base="http://localhost:4000/PracticalEnglish5">&lt;h2 id=&quot;되게-오랜만에-만났을-때&quot;&gt;되게 오랜만에 만났을 때&lt;/h2&gt;
+&lt;p&gt;It’s been a long time.(formal) How have you been?
+Long time no see.(informal)&lt;/p&gt;
+
+&lt;h2 id=&quot;변함없는-하루를-보냈을-때&quot;&gt;변함없는 하루를 보냈을 때&lt;/h2&gt;
+&lt;p&gt;Not much
+Nothing special
+Same as usual&lt;/p&gt;
+
+&lt;h2 id=&quot;헤어질-때&quot;&gt;헤어질 때&lt;/h2&gt;
+&lt;p&gt;See you
+See ya
+Take care&lt;/p&gt;
+
+&lt;h2 id=&quot;늦게-회식하고-집으로-갈-때&quot;&gt;늦게 회식하고 집으로 갈 때&lt;/h2&gt;
+&lt;p&gt;Have a good night&lt;/p&gt;
+
+&lt;h2 id=&quot;미팅이-끝났을-때&quot;&gt;미팅이 끝났을 때&lt;/h2&gt;
+&lt;p&gt;Thank you for your time. Have a good day.
+Thank you for attending this meeting&lt;/p&gt;
+
+&lt;h2 id=&quot;늦게-차를-타고-집으로-가는-친구에게&quot;&gt;늦게 차를 타고 집으로 가는 친구에게&lt;/h2&gt;
+&lt;p&gt;drive safely
+be safe
+god bless on your way home&lt;/p&gt;
+
+&lt;h2 id=&quot;퇴근할-때&quot;&gt;퇴근할 때&lt;/h2&gt;
+&lt;p&gt;See you tomorrow
+good night&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">되게 오랜만에 만났을 때 It’s been a long time.(formal) How have you been? Long time no see.(informal)</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">TIL - 2021/02/01 Practical English4</title>
@@ -717,51 +779,6 @@ CVR=Conversion수/사이트액세스수
 
       
         <summary type="html">PPM(Product Portfolio Management) 자사제품,서비스의 시장에서의 위치나 평카를 명확하게하는 방법. 시장쉐어와 시장성장률로부터 비지니스를 4개의 영역으로 나눠 자원의 배분의 우선순위를 결정한다.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - IP Address</title>
-      <link href="http://localhost:4000/NetworkAddress" rel="alternate" type="text/html" title="TIL - IP Address" />
-      <published>2021-01-19T06:00:00+09:00</published>
-      <updated>2021-01-19T06:00:00+09:00</updated>
-      <id>http://localhost:4000/NetworkAddress</id>
-      <content type="html" xml:base="http://localhost:4000/NetworkAddress">&lt;h2 id=&quot;ip-address&quot;&gt;IP Address&lt;/h2&gt;
-&lt;p&gt;IP(Internet Protocol)은 상호간에 접속된 네트워크에서 데이터를 중계해 전송하는 네트워크층의 프로토콜이다.&lt;/p&gt;
-
-&lt;p&gt;IP Address에는 특별한 의미를 가지는 2개의 address가 있어, 이것들은 호스트에 할당하면 안된다.&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Network Address : 호스트부가 전부 0인 address로 이 address는 네트워크 전체를 의미한다.&lt;/li&gt;
-  &lt;li&gt;Broadcast Address : 호스트부가 전부 1인 address로  이 address는 네트워크에 속하는 전체 노드에 대해 데이터를 송신할때 사용된다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;address-분석&quot;&gt;Address 분석&lt;/h2&gt;
-&lt;p&gt;192.168.0.0/23의 경우 네트워크부는 앞에서 23비트이고, 호스트부는 전체 32비트중에서 23비트를 뺀 영역을 가진다.
-여기서 23은 서브넷마스크라고 부르며, 이경우의 호스트부에서 사용할 수 있는 어드레스의 개수는 2^9(9bit) - 2(Network/Broadcast Addresss)이다.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">IP Address IP(Internet Protocol)은 상호간에 접속된 네트워크에서 데이터를 중계해 전송하는 네트워크층의 프로토콜이다.</summary>
       
 
       
