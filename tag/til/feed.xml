@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/til/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-02-03T23:27:00+09:00</updated>
+  <updated>2021-02-04T23:44:56+09:00</updated>
   <id>http://localhost:4000/tag/til/feed.xml</id>
 
   
@@ -30,6 +30,121 @@
   
   
 
+  
+    <entry>
+      <title type="html">TIL - 2021/02/03 Security</title>
+      <link href="http://localhost:4000/Security" rel="alternate" type="text/html" title="TIL - 2021/02/03 Security" />
+      <published>2021-02-04T04:30:00+09:00</published>
+      <updated>2021-02-04T04:30:00+09:00</updated>
+      <id>http://localhost:4000/Security</id>
+      <content type="html" xml:base="http://localhost:4000/Security">&lt;h1 id=&quot;captchacompletely-automated-public-turing-test-to-tell-computers-and-humans-apart&quot;&gt;CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apart)&lt;/h1&gt;
+&lt;p&gt;웹페이지의 입력폼등의에서 부정이용을 방지하기위해 사용되는 인증기술이다. 흐릿하게하거나 살짝가린 사진으로부터 인간이 읽을수 있는 문자를 판독시켜 수동으로 입력시킨다.
+이것으로 인해 응답자가 인간인것을 판단한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;malware분석방법&quot;&gt;Malware분석방법&lt;/h2&gt;
+&lt;p&gt;악성코드를 분석하는 방법이며 상세,동적,정적,자동화분석이 있다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;상세분석 : 디스어셈블을 통해 어셈블리어로 바꿔 상세분석한다.&lt;/li&gt;
+  &lt;li&gt;동적분석 : 해당파일을 직접 실행하여 나타나는 변화를 모니터링하며 악성코드를 판별하는 방법이다. 가상환경에서 독립된 네트워크를 형성하여 분석도구등을 통해 분석한다.&lt;/li&gt;
+  &lt;li&gt;정적분석 : 파일을 실행하지않고 그 파일자체가 가지고 있는 내용들로 악성코드를 판별하는 방법이다. 파일의 해시나, 사용되는 API,문자열등으로 확인한다.&lt;/li&gt;
+  &lt;li&gt;자동화분석 : 말그대로 자동으로 분석해주는 방법이다. 빠르지만 완벽하지않다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;암호화&quot;&gt;암호화&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;대칭형 암호화
+암호화에 사용하는 키가 복호화에 사용하는 키와 같으면 대칭형이다. 통상적으로 비공개키 암호화방식에 사용된다.&lt;/li&gt;
+  &lt;li&gt;비대칭형 암호화
+암호화에 사용하는 키가 복호화에 사용하는 키가 다르면 비대칭형이다. 통상적으로 공개키암호화방식에 사용된다.
+암호화는 하면 하나의 키 쌍이 생기고 이 두개의 키는 수학적으로 밀접한 관계를 가지고 있다. 두개의 키를 A,B로 봤을때, A로 암호환 암호문은 B로만 복호화 할 수 있다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;흐름&quot;&gt;흐름&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;내가 공개키 개인키 한쌍을 생성&lt;/li&gt;
+  &lt;li&gt;상대방에게 공개키 전송&lt;/li&gt;
+  &lt;li&gt;상대방은 받은 공개키를 이용해 메세지를 암호화&lt;/li&gt;
+  &lt;li&gt;상대방은 암호문을 나에게 전송&lt;/li&gt;
+  &lt;li&gt;나는 암호문을 개인키로 복호화&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;공개키-암호화방식&quot;&gt;공개키 암호화방식&lt;/h2&gt;
+&lt;p&gt;공개키와 개인키를 이용하여 암호화하는 방식.
+공개키는 암호화하는데 사용되며, 개인키는 복호화하는데 사용된다.
+디지털서명에 이 방식이 사용된다.
+개인키가 노출되거나 잃어버릴 경우 암호화된 메세지가 위험에 노출되며, 
+암호화 및 해독에관련된 복잡한 수학적 계산때문에 대량의 데이터를 처리해야할 경우
+매우 느려지게됩니다.
+SSL(Secure Sockets Layer) 프로토콜도 비대칭 암호화 기능을 사용한다.
+공개 키 암호 방식은 또한 블록체인 및 암호 화폐 기술에서도 사용된다.&lt;/p&gt;
+
+&lt;h2 id=&quot;디지털서명&quot;&gt;디지털서명&lt;/h2&gt;
+&lt;p&gt;디지털 서명은 디지털 데이터의 진위성과 무결성을 검증하는 데 사용되는 암호 메커니즘입니다. 
+해싱, 서명, 검증 세 가지 기본 단계로 이뤄지는 경우가 많습니다.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;해싱 : 해싱 알고리즘을 통해 데이터를 제출하여 해시값이 생성(예를 들면 메시지 다이제스트)&lt;/li&gt;
+  &lt;li&gt;서명 : 메시지 발신자의 개인키를 이용하여 서명&lt;/li&gt;
+  &lt;li&gt;검증 : 수신자가 공개키를 받아 그 공개키를 이용하여 유효성을 검증
+데이터 무결성, 진위성, 부인 방지&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;디피-헬만-키-교환diffiehellman-key-exchange&quot;&gt;디피-헬만 키 교환(Diffie–Hellman key exchange)&lt;/h3&gt;
+&lt;p&gt;비밀키를 주고받을 경우 이산대수의 난해함에 안정성을 둔 키교환 방식이다.
+엘가말(ElGamal) 방식이 디피-헬만 키 교환을 참고해 만들어졌다.
+통신 전체가 악의적인 스니퍼에 의해서 도청되고 있더라도 키 값을 정할 수 있게 해주는 원리는 바로, 키 값을 전달하는 것이 아니라 키 값을 만드는 방법을 전달하기 때문이다.&lt;/p&gt;
+
+&lt;h1 id=&quot;하이브리드-암호화시스템&quot;&gt;하이브리드 암호화시스템&lt;/h1&gt;
+&lt;p&gt;대칭키와 공개키 암호화를 섞은 암호화 시스템이다.
+대칭키 암호화시스템은 기밀성을 유지한 통신이 가능한데, 키 배송시 보안상 문제가 있다.
+공개키의 경우는 복호화에 사용할 키를 배송할 필요가 없기때문에, 배송상 문제는 없지만, 대칭키암호화방식에 비해 매우 느리고, 중간자 공격(MITM:Man In the Middle attack)에 약하다.
+※ 중간자 공격 : 해커가 중간에서 통신을 가로채어 수신자에게는 송신자인 척하고 송신자에게는 수신자인 척 해서 양쪽의 공개키와 실제 암호화에 사용되는 대칭키를 모두 얻어내는 기법.&lt;/p&gt;
+
+&lt;h1 id=&quot;aesadvanced-encryption-statndard&quot;&gt;AES(Advanced Encryption Statndard)&lt;/h1&gt;
+&lt;p&gt;암호화 알고리즘이며 대칭형 암호화에 사용된다. 현재 공모전에서 채택된 레인달(Rijindael)이라는 알고리즘에 해당한다.
+레인달알고리즘에서도 암호화 키의 길이가 128, 192, 256비트인 세 가지 종류가 AES 표준으로 지정되었다. 각각 AES-128, AES-192, AES-256으로 불린다.&lt;/p&gt;
+
+&lt;h3 id=&quot;rsa&quot;&gt;RSA&lt;/h3&gt;
+&lt;p&gt;현재 SSL/TLS에 가장 많이 사용되는 공개키 암호화 알고리즘이다. 현재 나무위키도 HTTPS에 RSA-2048 인증서를 사용하고 있으며, 전세계 대부분의 인터넷 뱅킹(대한민국 포함)이 이 RSA-2048 암호화를 사용한다. 지금 GPG는 RSA-4096으로 키를 암호화 하지만…암호화할 때에는 마음대로였겠지만 해독할 때에는 아니란다를 기본 모토로 한 공개키 암호체계 중 하나이다. 공개키와 개인키가 한 쌍을 이루며, 공개키로 암호화한 내용은 개인키로만, 개인키로 암호화한 내용은 공개키로만 해독할 수 있다. 엄청 큰 숫자는 소인수분해하기가 힘들다는 것을 이용한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;메시지-인증-코드message-authentication-code-mac&quot;&gt;메시지 인증 코드(Message Authentication Code, MAC)&lt;/h2&gt;
+&lt;p&gt;해시알고리즘을 사용하여 수정또는 변경사항이 있는지 검출 할 수 있다. 거짓행세는 알 수 없으니 비밀키와 같이 사용해야한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;타원곡선-암호&quot;&gt;타원곡선 암호&lt;/h2&gt;
+&lt;p&gt;타원곡선 암호(楕圓曲線暗號, Elliptic curve cryptography)는 타원곡선 이론에 기반한 공개 키 암호 방식이다. 줄여서 ECC라고 쓰기도 한다.
+이산대수의 난해함에 안정성을 둔 키교환방식이며, RSA에 비교하여 암호화는 더 빠르고, 짧은 암호키사이즈로 같은수준의 안정성을 제공한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;siemsecurity-information-and-event-management-세큐리티정보이벤트관리&quot;&gt;SIEM(Security Information and Event Management, 세큐리티정보이벤트관리)&lt;/h2&gt;
+&lt;p&gt;세큐리티분석소프트의 하나이며, 다양한 네트워크기기나 소프트웨어의 동작상황의 기록을 수집하여 관리를 수행하고, 상관분석의 수법을 이용하여 세큐리티상의 위협을 검출,분석한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;봇넷botnet&quot;&gt;봇넷(BotNet)&lt;/h2&gt;
+&lt;p&gt;로봇과 네트워크를 결합한 단어로, 악성코드에 감염되어 중앙통제장치로부터 지시를 받는 디바이스로 구성된 네트워크이다.
+봇마스터에 의해 원격조종되며, C&amp;amp;C서버 방식을 사용한다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apart) 웹페이지의 입력폼등의에서 부정이용을 방지하기위해 사용되는 인증기술이다. 흐릿하게하거나 살짝가린 사진으로부터 인간이 읽을수 있는 문자를 판독시켜 수동으로 입력시킨다. 이것으로 인해 응답자가 인간인것을 판단한다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">TIL - 2021/02/02 Practical English5</title>
@@ -600,185 +715,6 @@ I hope you guys have a good time in Japan&lt;/p&gt;
 
       
         <summary type="html">저작권의 종류 크게 두가지로 저작인격권과 저작재산권이 있다. 저작인격권 공표권 저작자가 저작물을 공표할지 안할지, 공표시기, 공표방법등을 결정할 수 있는 권리이다. 서명표시권 저작자가 저작물에대해서 저작자성명을 표시할지 안할지, 실명을 표시할지 안할지에 대한 권리이다. 동일성유지권 저작물을 저작자의 의사에 반해 수정되지않을 권리이다. 창작한 본래의모습을 가지도록하는 권리. 명예음망</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - strategy</title>
-      <link href="http://localhost:4000/strategy" rel="alternate" type="text/html" title="TIL - strategy" />
-      <published>2021-01-20T01:00:00+09:00</published>
-      <updated>2021-01-20T01:00:00+09:00</updated>
-      <id>http://localhost:4000/strategy</id>
-      <content type="html" xml:base="http://localhost:4000/strategy">&lt;h2 id=&quot;ppmproduct-portfolio-management&quot;&gt;PPM(Product Portfolio Management)&lt;/h2&gt;
-&lt;p&gt;자사제품,서비스의 시장에서의 위치나 평카를 명확하게하는 방법.
-시장쉐어와 시장성장률로부터 비지니스를 4개의 영역으로 나눠 자원의 배분의 우선순위를 결정한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;stp분석segmentation-targeting-positioning&quot;&gt;STP분석(Segmentation Targeting Positioning)&lt;/h2&gt;
-&lt;p&gt;자사제품의 평가설정을 위해서 시장에서의 경쟁력을 분석하는 방법&lt;/p&gt;
-
-&lt;h2 id=&quot;재무분석&quot;&gt;재무분석&lt;/h2&gt;
-&lt;p&gt;기업의 재무재표를 기준으로 수익성이나 안정성을 분석하는 방법&lt;/p&gt;
-
-&lt;h2 id=&quot;컴플라이언스&quot;&gt;컴플라이언스&lt;/h2&gt;
-&lt;p&gt;경영을 하는데있어 법령이나 각종규제, 사회적규범등을 준수하는 기업활동&lt;/p&gt;
-
-&lt;h2 id=&quot;it가버넌스&quot;&gt;IT가버넌스&lt;/h2&gt;
-&lt;p&gt;조직활동의 목적을 달성하기위해서 실행하는 업무와시스템의 전체최적화수법&lt;/p&gt;
-
-&lt;h2 id=&quot;코어컴피턴스core-competence&quot;&gt;코어컴피턴스(core competence)&lt;/h2&gt;
-&lt;p&gt;기업활동분야에있어 경쟁회사가 따라할 수 없는 탁월한 능력&lt;/p&gt;
-
-&lt;h2 id=&quot;업무도메인&quot;&gt;업무도메인&lt;/h2&gt;
-&lt;p&gt;시장, 기술, 상품의 시점으로부터 설정한 업무의 전개영역&lt;/p&gt;
-
-&lt;h2 id=&quot;digital-divide&quot;&gt;Digital Divide&lt;/h2&gt;
-&lt;p&gt;PC나 통신등을 이용하는 능력이나 기회의 차이에의해 경제적, 또는 사회적인 격차가 생기는것&lt;/p&gt;
-
-&lt;h2 id=&quot;universal-service&quot;&gt;Universal Service&lt;/h2&gt;
-&lt;p&gt;국민누구든지 지역의 격차없이 타당한 요금으로 균등하게 이용할수 있는 통신또는 방송서비스&lt;/p&gt;
-
-&lt;h2 id=&quot;digital-democracy&quot;&gt;Digital Democracy&lt;/h2&gt;
-&lt;p&gt;인터넷등을 활용하는 것에의해 주민이 직접, 정부나 지자체의 정책에 참여할 수 있는것&lt;/p&gt;
-
-&lt;h2 id=&quot;one-stop-service&quot;&gt;One Stop Service&lt;/h2&gt;
-&lt;p&gt;시민생활의 이벤트또는 기업활동의 분야마다 모든 서비스를 한곳에 제공하는 것.&lt;/p&gt;
-
-&lt;h2 id=&quot;vanvalue-added-network&quot;&gt;VAN(Value Added Network)&lt;/h2&gt;
-&lt;p&gt;네트워크내에서 전송되는 데이터를 축적하거나 데이터의 포맷을 변환하거나하는 서비스등 부가가치를 더한 통신 서비스&lt;/p&gt;
-
-&lt;h2 id=&quot;mhsmessage-handling-system-전자메일시스템&quot;&gt;MHS(Message Handling System 전자메일시스템)&lt;/h2&gt;
-&lt;p&gt;OSI기본참조모델에 준거하여 전자메일서비스의 국제규격이며, 메세지의 생성 전송 처리에관한 종합적인 서비스&lt;/p&gt;
-
-&lt;h2 id=&quot;edielectronic-data-interchange-전자데이터교환&quot;&gt;EDI(Electronic Data Interchange 전자데이터교환)&lt;/h2&gt;
-&lt;p&gt;네트워크를 경유하여, 상업적인 거래를 위한 데이터를 컴퓨터간에서 표준적인 규약에 준거해서 교환하는 것&lt;/p&gt;
-
-&lt;h2 id=&quot;eoselectronic-ordering-system-전자발주시스템&quot;&gt;EOS(Electronic Ordering System 전자발주시스템)&lt;/h2&gt;
-&lt;p&gt;발주정보를 데이터엔트리단말로부터 입력하는것으로 본부또는 매입처에 송신하고 발주를 수행하는 시스템&lt;/p&gt;
-
-&lt;h2 id=&quot;디스클로저&quot;&gt;디스클로저&lt;/h2&gt;
-&lt;p&gt;투자가나 분석가에게 투자판단에 필요로되는 정확한 정보를 적시에 또는 계속해서 제공하는것&lt;/p&gt;
-
-&lt;h2 id=&quot;환경회계&quot;&gt;환경회계&lt;/h2&gt;
-&lt;p&gt;기업이 환경보전에 들인 비용과 그효과를 정량화하여 재무정보로서 정기적으로 공표하는것&lt;/p&gt;
-
-&lt;h2 id=&quot;accountability&quot;&gt;Accountability&lt;/h2&gt;
-&lt;p&gt;주주나 그외의 이해관계자에 대해 경영활동의 내용,실적에관한 설명책임을 진다.
-사회적으로 영향력을 미치는 조직등이 그 이해관계자에 대하여, 활동이나 권한행사의 예정, 내용, 결과등의 보고의 필요성이 있다는 의견&lt;/p&gt;
-
-&lt;h1 id=&quot;bibusiness-inteligence&quot;&gt;BI(Business Inteligence)&lt;/h1&gt;
-&lt;p&gt;기업내외의 데이터를 조직적으로 축적, 분류, 가공, 검색, 분석하는 시스템을 말한다. 추겆ㄱ된 막대한 데이터를 분석하는것으로 경영전략의 책정이나 업무의 개선등 비지니스에 유용하게 활용할 수 있다.&lt;/p&gt;
-
-&lt;h1 id=&quot;lmslearning-management-system&quot;&gt;LMS(Learning Management System)&lt;/h1&gt;
-&lt;p&gt;e러닝의 실시에 필요한 학습재료의 전송이나 학습,성적관리등의 기능을 갖춘 통합적인 시스템이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;workflowsystem&quot;&gt;WorkFlowSystem&lt;/h1&gt;
-&lt;p&gt;품의나 결재등 일상에서 정기적인 업무를 전자화하는것으로 수속을 확실하게 수행하고 처리를 빠르게한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;기능요건&quot;&gt;기능요건&lt;/h1&gt;
-&lt;p&gt;소프트웨어개발이나 정보시스템에서 정의된 요건중, 기능에관한 것이다. 조작방법, 화면표시, 데이터종류, 처리내용, 출력형식등이 있다.&lt;/p&gt;
-&lt;h1 id=&quot;비기능요건&quot;&gt;비기능요건&lt;/h1&gt;
-&lt;p&gt;소프트웨어개발이나 정보시스템개발에서 정의되는 요건중, 기능면이외의 전반적인 요건이다.
-기능성, 신뢰성, 조작성, 습득의간편성, 효율성, 보수성, 운용성, 보안성등이 있다.&lt;/p&gt;
-&lt;h1 id=&quot;업무요건&quot;&gt;업무요건&lt;/h1&gt;
-&lt;p&gt;새로운 업무의 본연의상태와 운용과 관계가있는 업무 순서, 입출력 정보, 조직, 책임, 권한, 업무상의 규약등의 항목을 말한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;erpenterprise-resource-planning&quot;&gt;ERP(Enterprise Resource Planning)&lt;/h1&gt;
-&lt;p&gt;기업전체의 경영자원의 배분을 유효또는 통합적으로 관리해 경영의 효율성향상을 목표로하는 전략이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;bprbusiness-process-re-engineering&quot;&gt;BPR(Business Process Re-engineering)&lt;/h1&gt;
-&lt;p&gt;업무프로세스를 근본적으로 다시생각하고, 발본적으로 디자인을 다시 만드는것으로 기업의 코스트, 품질, 서비스, 스피드등을 극적으로 개선하는것&lt;/p&gt;
-
-&lt;h1 id=&quot;리더전략&quot;&gt;리더전략&lt;/h1&gt;
-&lt;p&gt;시장에있어서 탑시장점유율을 자랑하는 포지션. 전시장을 커버하고 시장내의 모든 고객을 대상으로한 최대시장점유율을 확보하는 전방위전략이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;챌린지전략&quot;&gt;챌린지전략&lt;/h1&gt;
-&lt;p&gt;시장점유율추격등의 리더공격에 필요한 차별화전략을 사용하는 포지션, 시장점유율을 뺏는것을 목표로해 제품, 서비스, 판매촉진, 유통채널등의 모든면에서 차별화전략을 취한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;틈새시장전략ニッチ戦略&quot;&gt;틈새시장전략(ニッチ戦略)&lt;/h1&gt;
-&lt;p&gt;다른 기업이 진출하지 않은, 한정된 일부분을 집중적으로 공략하는 마케팅 전략.&lt;/p&gt;
-
-&lt;h1 id=&quot;팔로워전략&quot;&gt;팔로워전략&lt;/h1&gt;
-&lt;p&gt;시장기회에 빠르게대응하는 모방전략을 취하는 포지션. 목표로하는 기업의 전략을 관찰하고 신속하게 모방하는것으로 개발이나 광고의 코스트를 억제하고 시장에서의 존속을 목표로하는 전략이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;cvrconversion-rate&quot;&gt;CVR(Conversion Rate)&lt;/h1&gt;
-&lt;p&gt;ㅇ인터넷광고나EC사이트의 효율을 나타내는값으로서 사용된다. 다음의 식으로 구할 수 있다.
-CVR=Conversion수/사이트액세스수 
-여기서말하는 Conversion은 상품이나 서비스를 구입, 회원등록, 자료청구등의 웹사이트에있어서 최종성과가되는 방문자의 행동을 말한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;roasreturn-on-advertising-spend&quot;&gt;ROAS(Return On Advertising Spend)&lt;/h1&gt;
-&lt;p&gt;광고비용대비 효과를 얘기한다. 광고경유로 매상을 광고비용으로 나눈 수치이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;de-facto-standard&quot;&gt;de facto standard&lt;/h1&gt;
-&lt;p&gt;사실상의표준을 의미하며, 표준화기관에의한 표준화가 이뤄지지않아도 국제적또는 사회적,업계적으로 널리 채용되어지는 사실상의 표준을 말한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;emselectronics-manufacturing-service&quot;&gt;EMS(Electronics Manufacturing Service)&lt;/h1&gt;
-&lt;p&gt;아웃소싱에관한 기술이다. EMS란 전자기기나 정보기기등의 설계나 제조를 전문적으로 수행하는 서비스나 기업을말한다. 자사에서 브랜드를 가지지않고 타사에서부터 위탁을 받아 제조프로세스를 수행한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;hemshome-energy-management-system-주택용-에너지관리-시스템&quot;&gt;HEMS(Home Energy Management System 주택용 에너지관리 시스템)&lt;/h1&gt;
-&lt;p&gt;가정에서 사용하는 에너지를 절약하기위한 관리시스템이다.
-다수의 가전제품을 네트워크로 연결해 전ㄹㄱ을 가시화하고 제어를 수행한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;cgmconsumer-generated-media-소비자생산미디어&quot;&gt;CGM(Consumer Generated Media, 소비자생산미디어)&lt;/h1&gt;
-&lt;p&gt;상품이나 서비스에 관한 정보를 교환하는 리뷰사이트나 개인블로그,SNS와같이 개인이 제작한 미디어콘텐츠의 열람자, 시청자에게 발신이나 이용자들의 공유를 가능하게하는 것을 말한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;irinvestor-relation&quot;&gt;IR(Investor Relation)&lt;/h1&gt;
-&lt;p&gt;기업이 경영상황이나 재무상황,업적동향에관한 정보를 개인투자자들이 볼 수 있또록 공개하는 자사의웹사이트를 말한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;공유경제sharing-economy&quot;&gt;공유경제(Sharing Economy)&lt;/h1&gt;
-&lt;p&gt;물건을 소유하는 개념이 아닌 대여해주고 차용해서 쓰는 개념이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;o-to-oonline-to-offline&quot;&gt;O to O(Online to Offline)&lt;/h1&gt;
-&lt;p&gt;온라인과 오프라인을 연계해 고객의 구매활동을 촉진하는 구조를 말한다.
-인터넷상의 가상점포에서 특판정보나 쿠폰을 제공해 고객을 실점포에 유도, 실점포위치정보를 모바일단말에 제공, 실점포에 준비된 QR코드에 접속해 상품정보를 보거나 내점포인트를 쌓는 활동을 말한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;digital-signage&quot;&gt;Digital Signage&lt;/h1&gt;
-&lt;p&gt;디지털기술을 사용해서 표시하는 광고를 말한다. 디스플레이나 프로젝터를 사용해서 영상이나 글정보를 표시한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;워터마크電子透かし&quot;&gt;워터마크(電子透かし)&lt;/h1&gt;
-&lt;p&gt;부정이용을 방지하기위해서 데이터에 식별정보를 넣는 기술이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;기업지배구조coporate-governance&quot;&gt;기업지배구조(Coporate governance)&lt;/h1&gt;
-&lt;p&gt;주주에게 기업의 경영상황을 투명화하는것을 목표로한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;기업의-사회적-책임csrcoporate-social-responsibility&quot;&gt;기업의 사회적 책임CSR(Coporate Social Responsibility)&lt;/h1&gt;
-&lt;p&gt;기업은 이익을 얻는 것뿐만아니라 사회에 주는영향에 대한 책임을 가지고, 이해관계자와의 관계를 중요시하며, 사회에 공헌하는 활동이 필요로되어진다.
-종업원의 봉사활동을 지원하는 휴가제도등의 구축을하는것은 CSR활동의 하나로 볼 수 있다.&lt;/p&gt;
-
-&lt;h1 id=&quot;ietfinternet-engineering-task-force--인터넷기술특별조사위원회&quot;&gt;IETF(Internet Engineering Task Force : 인터넷기술특별조사위원회)&lt;/h1&gt;
-&lt;p&gt;인터넷에서 이용되는 기술이나 프로토콜의 표준화를 추진하는 조직이다. 기술사양을 RFC(Request For Comments)라고 불리는 문서로 정리해 공개하고있다.&lt;/p&gt;
-
-&lt;h1 id=&quot;ieeethe-institute-of-electrical-and-electronic-engineersinc&quot;&gt;IEEE(The Institute of Electrical and Electronic Engineers,Inc)&lt;/h1&gt;
-&lt;p&gt;미국에 본부를 두고있는 전기전자기술에 관한 세계적인 학회이다. 규격의 표준화에 관한 활동을 하고 이더넷의IEEE802.3, 무선랜의IEEE802.11등이 알려져있다.&lt;/p&gt;
-
-&lt;h1 id=&quot;ansiamerican-national-standard-institute&quot;&gt;ANSI(American National Standard Institute)&lt;/h1&gt;
-&lt;p&gt;미국국내에 공업분야의 규격표준화를 수행하는 조직이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;nistnational-institute-of-standards-and-technology-미국-국립표준기술연구소&quot;&gt;NIST(National Institute of Standards and Technology, 미국 국립표준기술연구소)&lt;/h1&gt;
-&lt;p&gt;미국상무부 산하의 과학기술분야에있어서 계측과 표준에관한 연구를 수행하는 기관이다. AES나 SHA시리즈등의 암호기술의 표준화나 보안기준의 책정등을 수행하고있다.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">PPM(Product Portfolio Management) 자사제품,서비스의 시장에서의 위치나 평카를 명확하게하는 방법. 시장쉐어와 시장성장률로부터 비지니스를 4개의 영역으로 나눠 자원의 배분의 우선순위를 결정한다.</summary>
       
 
       

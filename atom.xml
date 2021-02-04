@@ -8,6 +8,23 @@
     
       
       <item>
+        <title>TIL - 2021/02/03 Security</title>
+        
+          <description>&lt;h1 id=&quot;captchacompletely-automated-public-turing-test-to-tell-computers-and-humans-apart&quot;&gt;CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apart)&lt;/h1&gt;
+&lt;p&gt;웹페이지의 입력폼등의에서 부정이용을 방지하기위해 사용되는 인증기술이다. 흐릿하게하거나 살짝가린 사진으로부터 인간이 읽을수 있는 문자를 판독시켜 수동으로 입력시킨다.
+이것으로 인해 응답자가 인간인것을 판단한다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 04 Feb 2021 04:30:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/Security</link>
+        <guid isPermaLink="true">http://localhost:4000/Security</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>TIL - 2021/02/02 Practical English5</title>
         
           <description>&lt;h2 id=&quot;되게-오랜만에-만났을-때&quot;&gt;되게 오랜만에 만났을 때&lt;/h2&gt;
