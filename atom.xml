@@ -8,6 +8,153 @@
     
       
       <item>
+        <title>Kmp</title>
+        
+          <description>&lt;h1 id=&quot;kmp&quot;&gt;KMP??????&lt;/h1&gt;
+&lt;p&gt;Knuth, Morris, Prett? ??? ??? ?? ??????.
+Boyer-Moore????? ??? ???? ???? ??? ??? ??? ????.&lt;/p&gt;
+
+&lt;h2 id=&quot;pi&quot;&gt;pi????&lt;/h2&gt;
+&lt;p&gt;pi???? ???? ???? ????? ???? ???? ???? ???? ???? ?? ??? ??? ??? ????.&lt;/p&gt;
+&lt;h3 id=&quot;-&quot;&gt;??? ???&lt;/h3&gt;
+&lt;p&gt;ABCAB?? ???? ???
+???? 
+A
+AB
+ABC
+ABCA
+ABCAB
+??&lt;/p&gt;
+
+&lt;p&gt;???? 
+B
+AB
+CAB
+BCAB
+ABCAB
+???.&lt;/p&gt;
+
+&lt;h3 id=&quot;pi-&quot;&gt;pi??? ??????&lt;/h3&gt;
+&lt;p&gt;pi[i]? ??? ABCAB? 
+pi[0] = 0
+ A
+ A
+pi[1] = 1
+ A AB
+ A AB
+pi[2] = 0
+ A AB ABC
+ C BC ABC
+pi[3] = 1
+ A AB ABC ABCA
+ A CA BCA ABCA
+pi[4] = 2
+ A AB ABC ABCA ABCAB
+ B AB CAB BCAB ABCAB&lt;/p&gt;
+
+&lt;p&gt;pi = [0, 1, 0 , 1 , 2]? ?? ? ??.&lt;/p&gt;
+
+&lt;h2 id=&quot;kmp-1&quot;&gt;KMP????&lt;/h2&gt;
+&lt;p&gt;????(T) = AABBCABABCA
+????(P) = ABCAB&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
+A A B B C A B A B C A B
+A B C A B 
+-&amp;gt; ??? 4? C B ???
+-&amp;gt; ??? 0 ?? ??
+-&amp;gt; pi[0]? 0????? ??? ????&lt;/li&gt;
+  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
+A A B B C A B A B C A B
+  A B C A B
+-&amp;gt; ??? 5? A B ???
+-&amp;gt; ??? 1,2 ??
+-&amp;gt; pi[1]? 1????? ??? 2???&lt;/li&gt;
+  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
+A A B B C A B A B C A B
+  A B C A B
+-&amp;gt; ??? 7? A B ???
+-&amp;gt; ??? ?? ???
+-&amp;gt; ??? ????&lt;/li&gt;
+  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
+A A B B C A B A B C A B
+    A B C A B
+-&amp;gt; ??? 8? B B ??
+-&amp;gt; ??? 7?? ???
+-&amp;gt; pi[0]? 0????? ??? ????&lt;/li&gt;
+  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
+A A B B C A B A B C A B
+      A B C A B
+-&amp;gt; ??? 9? C B ???
+-&amp;gt; ??? 5,6 ??
+-&amp;gt; pi[2]? 1????? ??? 2???&lt;/li&gt;
+  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
+A A B B C A B A B C A B
+          A B C A B
+-&amp;gt;??&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        
+        <pubDate>Fri, 05 Feb 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/KMP</link>
+        <guid isPermaLink="true">http://localhost:4000/KMP</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Boyer Moore</title>
+        
+          <description>&lt;h1 id=&quot;boyer-moore-horspool&quot;&gt;Boyer-Moore-Horspool???????&lt;/h1&gt;
+&lt;p&gt;??? ?? ??????, ???? ?? ?? ???? ???? ????? ??.
+???? ??? ????? ???? ??? ???? ????? ???? ???? ?????,
+? ????? ?? ???? ??? ???? ???? ????.
+�� ????? : O(N), ??O(MN)
+�� M? ??? ?? good??? 3&lt;/p&gt;
+&lt;h2&gt;??&lt;/h2&gt;
+&lt;h3 id=&quot;bad-character-method&quot;&gt;Bad Character Method&lt;/h3&gt;
+&lt;p&gt;: ????? ?? ??????? ???? ?????? ??? ??, ? ??? ???? ???? ?? ???? ?? ????. 
+�� ??? ???? ?? ?? :&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;????? ??? ????? ???? ?????? ??? ???.
+   ex) gentleman 
+   g e n t l e m a n
+   8 7 6 5 4 3 2 1 0&lt;/li&gt;
+  &lt;li&gt;??? ??? ???? ??? ????, ?? ??? ???? ????? ????.
+   g e n t l e m a n
+   8 7 9 5 4 3 2 1 9&lt;/li&gt;
+  &lt;li&gt;?? ???? ?? ??? ???? ??? ????.
+   ex) z x y? ?? ?? 9? ??&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;--&quot;&gt;?? ???? ?&lt;/h4&gt;
+&lt;p&gt;aodgoodfndjx? ????? good???? ??? ??&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;good? ???? 
+g o o d
+3 1 1 4&lt;/li&gt;
+  &lt;li&gt;a o d g o o d f n d j x
+g o o d
+????? ?? ????? d? g? ???? ????? g? ???? ??? 3?? ?? ??&lt;/li&gt;
+  &lt;li&gt;a o d g o o d f n d j x
+      g o o d
+??
+    &lt;h3 id=&quot;good-suffix-method&quot;&gt;Good Suffix Method&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        
+        <pubDate>Fri, 05 Feb 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/Boyer-Moore</link>
+        <guid isPermaLink="true">http://localhost:4000/Boyer-Moore</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>TIL - 2021/02/03 Security</title>
         
           <description>&lt;h1 id=&quot;captchacompletely-automated-public-turing-test-to-tell-computers-and-humans-apart&quot;&gt;CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apart)&lt;/h1&gt;
@@ -495,6 +642,91 @@ RAID란 Redundant Array of Independent Disk의 약자로 데이터의 안정성�
     
       
       <item>
+        <title>TemplateMethod Pattern</title>
+        
+          <description>&lt;h2 id=&quot;템플릿메소드-패턴이란&quot;&gt;템플릿메소드 패턴이란&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;템플릿 메소드 패턴에서는 메소드에서 알고리즘의 골격을 정의합니다. 알고리즘의 여러단계중 일부는 서브클래스에서 구현할 수 있습니다. 템플릿 메소드를 이용하면 알고리즘의 구조느 그대로 유지하며 서브클래스에서 특정 단계를 재정의 할 수 있습니다.&lt;/em&gt;
+헤드퍼스트의 정의이다. 템플릿메소드에는 하나이상의 추상메소드가 정의 되어있고, 그 템플릿메소드의 클래스를 상속받은 클래스에서 그 추상메소드를 구현하거나, 그대로 사용하는 구조이다.
+아마 알게모르게 템플릿 메소드를 사용했던것 같다.&lt;/p&gt;
+
+&lt;h2 id=&quot;구조&quot;&gt;구조&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/image/post/20200910/TemplateMethodPattern.jpg&quot; alt=&quot;TemplateMethodPattern&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;소스코드&quot;&gt;소스코드&lt;/h2&gt;
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include&amp;lt;iostream&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AbstractClass&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;templateMethod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;final&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;primitiveOperation1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;primitiveOperation2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;concreteOperation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;primitiveOperation1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;primitiveOperation2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	
+	&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;concreteOperation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;superclass method&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// hook은 구상메소드이긴하지만 내용이없다. 즉, 서브클래스에서 구현을해도되고 안해도되는 유연성을가진 메소드이다. 
+&lt;/span&gt;    &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 아무것도하지않음
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SubClass1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AbstractClass&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;primitiveOperation1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;primitiveOperation1 of SubClass1&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;primitiveOperation2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;primitiveOperation2 of SubClass1 &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SubClass2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AbstractClass&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;primitiveOperation1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;primitiveOperation1 of SubClass2&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;primitiveOperation2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;primitiveOperation2 of SubClass2 &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;SubClass1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subClass1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SubClass1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;subClass1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;templateMethod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+	&lt;span class=&quot;n&quot;&gt;SubClass2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subClass2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SubClass2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;subClass2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;templateMethod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        
+        <pubDate>Fri, 11 Sep 2020 04:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/TemplateMethodPattern</link>
+        <guid isPermaLink="true">http://localhost:4000/TemplateMethodPattern</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>최소지식원칙 - Principle of Least Knowledge</title>
         
           <description>&lt;h2 id=&quot;최소지식원칙&quot;&gt;최소지식원칙&lt;/h2&gt;
@@ -508,6 +740,32 @@ RAID란 Redundant Array of Independent Disk의 약자로 데이터의 안정성�
         <link>
         http://localhost:4000/TheLawOfDemeter</link>
         <guid isPermaLink="true">http://localhost:4000/TheLawOfDemeter</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>헐리우드원칙이란</title>
+        
+          <description>&lt;h2 id=&quot;헐리우드원칙이란hollywood-principle&quot;&gt;헐리우드원칙이란(Hollywood Principle)&lt;/h2&gt;
+&lt;h3 id=&quot;헐리우드원칙의-기원&quot;&gt;헐리우드원칙의 기원&lt;/h3&gt;
+&lt;p&gt;일단 이름이 왜 헐리우드 원칙일까? 헐리우드란 미국의 영화의 도시로 알려진 지역이다.
+헐리우드에서 배우들이 오디션에서 자주 들었던 얘기가 &lt;em&gt;Don’t call us, we’ll call you&lt;/em&gt; 였다고한다.
+우리가 연락할테니까 먼저 연락을 주지 말라는 얘기이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;객체지향에서의-헐리우드원칙&quot;&gt;객체지향에서의 헐리우드원칙&lt;/h3&gt;
+&lt;p&gt;이러한 상황을 객체지향프로그래밍에서 고수준구성요소와 저수준구성요소의 관계에 적용한 것이다.
+먼저 고수준구성요소란 상위의 클래스의 구성요소라고 볼 수 있다. 저수준 구성요소는 서브클래스의 구성요소라고 보면된다.&lt;/p&gt;
+
+&lt;h3 id=&quot;의존성부패&quot;&gt;의존성부패&lt;/h3&gt;
+&lt;p&gt;의존성 부패(dependency rot)를 방지하기 위한 수단이다. 의존성부패란 고수준 구성요소가 저수준 구성요소에 의존하고, 다시 저수준 구성요소가 고수준 구성요소에 의존하고, 또다른 구성요소가 의존하고.. 이러한 복잡한 상태를 의존성부패라고 부른다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 10 Sep 2020 04:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/HollywoodPrinciple</link>
+        <guid isPermaLink="true">http://localhost:4000/HollywoodPrinciple</guid>
       </item>
       
     

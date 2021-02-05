@@ -1,4 +1,122 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-04T23:44:56+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - 2021/02/03 Security</title><link href="http://localhost:4000/Security" rel="alternate" type="text/html" title="TIL - 2021/02/03 Security" /><published>2021-02-04T04:30:00+09:00</published><updated>2021-02-04T04:30:00+09:00</updated><id>http://localhost:4000/Security</id><content type="html" xml:base="http://localhost:4000/Security">&lt;h1 id=&quot;captchacompletely-automated-public-turing-test-to-tell-computers-and-humans-apart&quot;&gt;CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apart)&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-05T22:16:30+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">Kmp</title><link href="http://localhost:4000/KMP" rel="alternate" type="text/html" title="Kmp" /><published>2021-02-05T00:00:00+09:00</published><updated>2021-02-05T00:00:00+09:00</updated><id>http://localhost:4000/KMP</id><content type="html" xml:base="http://localhost:4000/KMP">&lt;h1 id=&quot;kmp&quot;&gt;KMP??????&lt;/h1&gt;
+&lt;p&gt;Knuth, Morris, Prett? ??? ??? ?? ??????.
+Boyer-Moore????? ??? ???? ???? ??? ??? ??? ????.&lt;/p&gt;
+
+&lt;h2 id=&quot;pi&quot;&gt;pi????&lt;/h2&gt;
+&lt;p&gt;pi???? ???? ???? ????? ???? ???? ???? ???? ???? ?? ??? ??? ??? ????.&lt;/p&gt;
+&lt;h3 id=&quot;-&quot;&gt;??? ???&lt;/h3&gt;
+&lt;p&gt;ABCAB?? ???? ???
+???? 
+A
+AB
+ABC
+ABCA
+ABCAB
+??&lt;/p&gt;
+
+&lt;p&gt;???? 
+B
+AB
+CAB
+BCAB
+ABCAB
+???.&lt;/p&gt;
+
+&lt;h3 id=&quot;pi-&quot;&gt;pi??? ??????&lt;/h3&gt;
+&lt;p&gt;pi[i]? ??? ABCAB? 
+pi[0] = 0
+ A
+ A
+pi[1] = 1
+ A AB
+ A AB
+pi[2] = 0
+ A AB ABC
+ C BC ABC
+pi[3] = 1
+ A AB ABC ABCA
+ A CA BCA ABCA
+pi[4] = 2
+ A AB ABC ABCA ABCAB
+ B AB CAB BCAB ABCAB&lt;/p&gt;
+
+&lt;p&gt;pi = [0, 1, 0 , 1 , 2]? ?? ? ??.&lt;/p&gt;
+
+&lt;h2 id=&quot;kmp-1&quot;&gt;KMP????&lt;/h2&gt;
+&lt;p&gt;????(T) = AABBCABABCA
+????(P) = ABCAB&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
+A A B B C A B A B C A B
+A B C A B 
+-&amp;gt; ??? 4? C B ???
+-&amp;gt; ??? 0 ?? ??
+-&amp;gt; pi[0]? 0????? ??? ????&lt;/li&gt;
+  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
+A A B B C A B A B C A B
+  A B C A B
+-&amp;gt; ??? 5? A B ???
+-&amp;gt; ??? 1,2 ??
+-&amp;gt; pi[1]? 1????? ??? 2???&lt;/li&gt;
+  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
+A A B B C A B A B C A B
+  A B C A B
+-&amp;gt; ??? 7? A B ???
+-&amp;gt; ??? ?? ???
+-&amp;gt; ??? ????&lt;/li&gt;
+  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
+A A B B C A B A B C A B
+    A B C A B
+-&amp;gt; ??? 8? B B ??
+-&amp;gt; ??? 7?? ???
+-&amp;gt; pi[0]? 0????? ??? ????&lt;/li&gt;
+  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
+A A B B C A B A B C A B
+      A B C A B
+-&amp;gt; ??? 9? C B ???
+-&amp;gt; ??? 5,6 ??
+-&amp;gt; pi[2]? 1????? ??? 2???&lt;/li&gt;
+  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
+A A B B C A B A B C A B
+          A B C A B
+-&amp;gt;??&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">KMP?????? Knuth, Morris, Prett? ??? ??? ?? ??????. Boyer-Moore????? ??? ???? ???? ??? ??? ??? ????. pi???? pi???? ???? ???? ????? ???? ???? ???? ???? ???? ?? ??? ??? ??? ????. ??? ??? ABCAB?? ???? ??? ???? A AB ABC ABCA ABCAB ?? ???? B AB CAB BCAB ABCAB ???. pi??? ?????? pi[i]? ??? ABCAB? pi[0] = 0 A A pi[1] = 1 A AB A AB pi[2] = 0 A AB ABC C BC ABC pi[3] = 1 A AB ABC ABCA A CA BCA ABCA pi[4] = 2 A AB ABC ABCA ABCAB B AB CAB BCAB ABCAB pi = [0, 1, 0 , 1 , 2]? ?? ? ??. KMP???? ????(T) = AABBCABABCA ????(P) = ABCAB 0 1 2 3 4 5 6 7 8 9 10 11 A A B B C A B A B C A B A B C A B -&amp;gt; ??? 4? C B ??? -&amp;gt; ??? 0 ?? ?? -&amp;gt; pi[0]? 0????? ??? ???? 0 1 2 3 4 5 6 7 8 9 10 11 A A B B C A B A B C A B A B C A B -&amp;gt; ??? 5? A B ??? -&amp;gt; ??? 1,2 ?? -&amp;gt; pi[1]? 1????? ??? 2??? 0 1 2 3 4 5 6 7 8 9 10 11 A A B B C A B A B C A B A B C A B -&amp;gt; ??? 7? A B ??? -&amp;gt; ??? ?? ??? -&amp;gt; ??? ???? 0 1 2 3 4 5 6 7 8 9 10 11 A A B B C A B A B C A B A B C A B -&amp;gt; ??? 8? B B ?? -&amp;gt; ??? 7?? ??? -&amp;gt; pi[0]? 0????? ??? ???? 0 1 2 3 4 5 6 7 8 9 10 11 A A B B C A B A B C A B A B C A B -&amp;gt; ??? 9? C B ??? -&amp;gt; ??? 5,6 ?? -&amp;gt; pi[2]? 1????? ??? 2??? 0 1 2 3 4 5 6 7 8 9 10 11 A A B B C A B A B C A B A B C A B -&amp;gt;??</summary></entry><entry><title type="html">Boyer Moore</title><link href="http://localhost:4000/Boyer-Moore" rel="alternate" type="text/html" title="Boyer Moore" /><published>2021-02-05T00:00:00+09:00</published><updated>2021-02-05T00:00:00+09:00</updated><id>http://localhost:4000/Boyer-Moore</id><content type="html" xml:base="http://localhost:4000/Boyer-Moore">&lt;h1 id=&quot;boyer-moore-horspool&quot;&gt;Boyer-Moore-Horspool???????&lt;/h1&gt;
+&lt;p&gt;??? ?? ??????, ???? ?? ?? ???? ???? ????? ??.
+???? ??? ????? ???? ??? ???? ????? ???? ???? ?????,
+? ????? ?? ???? ??? ???? ???? ????.
+�� ????? : O(N), ??O(MN)
+�� M? ??? ?? good??? 3&lt;/p&gt;
+&lt;h2&gt;??&lt;/h2&gt;
+&lt;h3 id=&quot;bad-character-method&quot;&gt;Bad Character Method&lt;/h3&gt;
+&lt;p&gt;: ????? ?? ??????? ???? ?????? ??? ??, ? ??? ???? ???? ?? ???? ?? ????. 
+�� ??? ???? ?? ?? :&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;????? ??? ????? ???? ?????? ??? ???.
+   ex) gentleman 
+   g e n t l e m a n
+   8 7 6 5 4 3 2 1 0&lt;/li&gt;
+  &lt;li&gt;??? ??? ???? ??? ????, ?? ??? ???? ????? ????.
+   g e n t l e m a n
+   8 7 9 5 4 3 2 1 9&lt;/li&gt;
+  &lt;li&gt;?? ???? ?? ??? ???? ??? ????.
+   ex) z x y? ?? ?? 9? ??&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;--&quot;&gt;?? ???? ?&lt;/h4&gt;
+&lt;p&gt;aodgoodfndjx? ????? good???? ??? ??&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;good? ???? 
+g o o d
+3 1 1 4&lt;/li&gt;
+  &lt;li&gt;a o d g o o d f n d j x
+g o o d
+????? ?? ????? d? g? ???? ????? g? ???? ??? 3?? ?? ??&lt;/li&gt;
+  &lt;li&gt;a o d g o o d f n d j x
+      g o o d
+??
+    &lt;h3 id=&quot;good-suffix-method&quot;&gt;Good Suffix Method&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Boyer-Moore-Horspool??????? ??? ?? ??????, ???? ?? ?? ???? ???? ????? ??. ???? ??? ????? ???? ??? ???? ????? ???? ???? ?????, ? ????? ?? ???? ??? ???? ???? ????. �� ????? : O(N), ??O(MN) �� M? ??? ?? good??? 3 ?? Bad Character Method : ????? ?? ??????? ???? ?????? ??? ??, ? ??? ???? ???? ?? ???? ?? ????. �� ??? ???? ?? ?? : ????? ??? ????? ???? ?????? ??? ???. ex) gentleman g e n t l e m a n 8 7 6 5 4 3 2 1 0 ??? ??? ???? ??? ????, ?? ??? ???? ????? ????. g e n t l e m a n 8 7 9 5 4 3 2 1 9 ?? ???? ?? ??? ???? ??? ????. ex) z x y? ?? ?? 9? ?? ?? ???? ? aodgoodfndjx? ????? good???? ??? ?? good? ???? g o o d 3 1 1 4 a o d g o o d f n d j x g o o d ????? ?? ????? d? g? ???? ????? g? ???? ??? 3?? ?? ?? a o d g o o d f n d j x g o o d ?? Good Suffix Method</summary></entry><entry><title type="html">TIL - 2021/02/03 Security</title><link href="http://localhost:4000/Security" rel="alternate" type="text/html" title="TIL - 2021/02/03 Security" /><published>2021-02-04T04:30:00+09:00</published><updated>2021-02-04T04:30:00+09:00</updated><id>http://localhost:4000/Security</id><content type="html" xml:base="http://localhost:4000/Security">&lt;h1 id=&quot;captchacompletely-automated-public-turing-test-to-tell-computers-and-humans-apart&quot;&gt;CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apart)&lt;/h1&gt;
 &lt;p&gt;웹페이지의 입력폼등의에서 부정이용을 방지하기위해 사용되는 인증기술이다. 흐릿하게하거나 살짝가린 사진으로부터 인간이 읽을수 있는 문자를 판독시켜 수동으로 입력시킨다.
 이것으로 인해 응답자가 인간인것을 판단한다.&lt;/p&gt;
 
@@ -399,33 +517,90 @@ VDI는 Thin Client를 실현하는 방법중 하나이다.&lt;/p&gt;
 
 &lt;h2 id=&quot;ldaplightweight-directory-access-protocol&quot;&gt;LDAP(Lightweight Directory Access Protocol)&lt;/h2&gt;
 &lt;p&gt;네트워크기기나 유저등의 정보를 집중관리하는 디렉토리서비스에의 접속을위한 프로토콜이다.
-디렉토리서비스에는 유저ID나PW등의 유저정보를 일원관리하는것이 가능하며, 복수의 서비스에서 사용되는 공통의 인증정보의 보존, 조회목적으로도 사용된다.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">TIL - 스키마란(schema)</title><link href="http://localhost:4000/schema" rel="alternate" type="text/html" title="TIL - 스키마란(schema)" /><published>2021-01-20T10:00:00+09:00</published><updated>2021-01-20T10:00:00+09:00</updated><id>http://localhost:4000/schema</id><content type="html" xml:base="http://localhost:4000/schema">&lt;h1 id=&quot;스키마schema&quot;&gt;스키마(schema)&lt;/h1&gt;
+디렉토리서비스에는 유저ID나PW등의 유저정보를 일원관리하는것이 가능하며, 복수의 서비스에서 사용되는 공통의 인증정보의 보존, 조회목적으로도 사용된다.&lt;/p&gt;
+
+&lt;h3 id=&quot;csmacdcarrier-sense-multiple-accesscollision-detection&quot;&gt;CSMA/CD(Carrier Sense Multiple Access/Collision Detection)&lt;/h3&gt;
+&lt;dl&gt;
+  &lt;dt&gt;: LAN의 통신 트로토콜의 종류중 하나이며 이더넷환경에서 사용된다.&lt;/dt&gt;
+  &lt;dd&gt;이더넷 환경에서 네트워크상의 통신이 일어나는지 확인하고(Carrier Sense), 캐리어가 감지되면 기다린다. 캐리어가 감지되지않으면 데이터를 네트워크상에 보내고, Multiple Access가 일어나게되면 발생 사실을 네트워크상의 모든 컴퓨터에게 통보한다(Collision Detection) 두 PC나 서버들은 랜덤한 시간동안 기다린 다음 다시 데이터를 전송한다.&lt;/dd&gt;
+  &lt;dd&gt;데이터링크 계층의 MAC계층에서 동작하는 액세스 방법
+    &lt;h3 id=&quot;라우터-vs-허브-vs-게이트웨이-vs-스위치&quot;&gt;라우터 vs 허브 vs 게이트웨이 vs 스위치&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;허브&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/dd&gt;
+  &lt;dd&gt;물리계층만을 다루며, 물리계층은 케이블 혹은 바이너리 전송시그널같은 전기적신호..&lt;/dd&gt;
+  &lt;dd&gt;어떤 전기신호의 INPUT이 들어왔을때, 다른포트에 똑같이 복사한다.
+    &lt;ul&gt;
+      &lt;li&gt;스위치&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/dd&gt;
+  &lt;dd&gt;물리계층과 데이터링크계층도 다루며, 허브의 경우 전기신호만 복사했다면 스위치는 해당 MAC주소를 갖는 곳에만 전기 신호를 발생 시킬 수 있다. 한 프레임을 모두 버퍼에 담고있다가 MAC을 확인하는 방ㅂ식과 MAC관련헤더만 버퍼에 담고 있는 방식 두가지가 존재한다. 전자는 Store and Forward이고, 후자는 Cut-Through 방식이라고한다.
+    &lt;ul&gt;
+      &lt;li&gt;라우터&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/dd&gt;
+  &lt;dd&gt;라우터라는 말 그대로 경로를 찾는것으로 IP가 담겨있는 네트워크계층에서 목적지 IP를 찾고 효율적인 경로를 탐색해 라우터로 데이터를 이동시키는 일을한다.
+    &lt;ul&gt;
+      &lt;li&gt;게이트웨이&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/dd&gt;
+  &lt;dd&gt;프로토콜 변경을하는 역할. 게이트웨이 뒤쪽의 Host들은 A라는 프로토콜을 사용할때, 게이트웨이 넘어서 들어오는 B,C,D라는 프로토콜을 A로 변환하는 작업을 게이트웨이가 한다고 보면된다. 하지만 TCP/IP 프로토콜이 대세인 세상에서 프로토콜변환은 유명무실하다고 한다. 게이트웨이는 네트워크의 트래픽 매니징을 한다고 봐도 된다.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h3 id=&quot;이더넷&quot;&gt;이더넷&lt;/h3&gt;
+&lt;h3 id=&quot;lanlocal-area-network&quot;&gt;LAN(Local Area Network)&lt;/h3&gt;
+&lt;p&gt;한정된 거리에서 고속으로 데이터를 교환할 수 있는 근거리 통신망&lt;/p&gt;
+&lt;h4 id=&quot;특징&quot;&gt;특징&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;데이터의 내용, 데이터의논리구조, 기억형식이나 편성등의 데이터베이스의 구조를 명세한 것이다.&lt;/li&gt;
-  &lt;li&gt;개체(Entity), 속성(Attribute), 관계(Relationship), 제약조건에 관해 정의한다.&lt;/li&gt;
-  &lt;li&gt;스키마는 데이터사전(Data Dictionary)에 저장되며, 메타데이터라고도 한다.&lt;/li&gt;
-  &lt;li&gt;스키마는 사용자 관점에따라 내부스키마, 외부스키마, 개념스키마 세 계층으로 나눠진다.&lt;/li&gt;
+  &lt;li&gt;고속통신&lt;/li&gt;
+  &lt;li&gt;신뢰도 높음&lt;/li&gt;
+  &lt;li&gt;거리제한&lt;/li&gt;
+  &lt;li&gt;망설치 및 확장,변경가능&lt;/li&gt;
+  &lt;li&gt;다양한 통신 장비와 연결가능&lt;/li&gt;
+  &lt;li&gt;다양한 데이터의 처리가 가능&lt;/li&gt;
+  &lt;li&gt;오류 제어 기능&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;내부스키마 : 물리적 저장장치의 관점에서본 스키마이며, 데이터베이스의 물리적구조를 나타낸다.&lt;/li&gt;
-  &lt;li&gt;외부스키마 : 응용프로그래머나 각 개인의 관점에서 본 스키마이며, 데이터베이스의 논리적 구조를 나타낸다. 서브스키마로도 불리며 여러개의 서브스키마가 존재할 수 있다.&lt;/li&gt;
-  &lt;li&gt;개념스키마 : 모든 사용자의 관점에서 본 스키마이며, 전체적인 논리적구조를 나타낸다. 스키마라고하면 개념스키마를 말하는 경우가 많으며, 모든 개체들간의 제약조건등이 기술 되어있따. 하나의 스키마밖에 존재 할 수 없다.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">스키마(schema) 데이터의 내용, 데이터의논리구조, 기억형식이나 편성등의 데이터베이스의 구조를 명세한 것이다. 개체(Entity), 속성(Attribute), 관계(Relationship), 제약조건에 관해 정의한다. 스키마는 데이터사전(Data Dictionary)에 저장되며, 메타데이터라고도 한다. 스키마는 사용자 관점에따라 내부스키마, 외부스키마, 개념스키마 세 계층으로 나눠진다.</summary></entry><entry><title type="html">TIL - 캐시 교체 방법</title><link href="http://localhost:4000/HowToSelectBlock" rel="alternate" type="text/html" title="TIL - 캐시 교체 방법" /><published>2021-01-20T08:00:00+09:00</published><updated>2021-01-20T08:00:00+09:00</updated><id>http://localhost:4000/HowToSelectBlock</id><content type="html" xml:base="http://localhost:4000/HowToSelectBlock">&lt;h2 id=&quot;캐시메모리-교체-방법-종류&quot;&gt;캐시메모리 교체 방법 종류&lt;/h2&gt;
+&lt;h4 id=&quot;토폴로지별-분류&quot;&gt;토폴로지별 분류&lt;/h4&gt;
+&lt;p&gt;※ 토폴로지란 : 통신망을 구성하기위한 물리적 결선방식&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;캐시메모리에 여유공간이없고 새로운 데이터를 주기억장치로부터 복사해야할 경우 캐시메모리의 블록을 교체하는 방식
-    &lt;ol&gt;
-      &lt;li&gt;LFU(Least Frequentely Used) : 사용되는 빈도가 가장 작은 블록을 교체한다.&lt;/li&gt;
-      &lt;li&gt;LRU(Least Recently Used) : 사용된지 가장 오래된 블록을 교체한다.&lt;/li&gt;
-      &lt;li&gt;NRU(Not Recently Used) : 일정시간동안 사용되지않은 블록을 교체한다.&lt;/li&gt;
-      &lt;li&gt;FIFO(First In First Out) : 캐시내에서 가장 오래있었던 블록을 교체한다.&lt;/li&gt;
-      &lt;li&gt;SCR(Second Change Replacement) : 두번 참조되면 블록을 교체한다.&lt;/li&gt;
-    &lt;/ol&gt;
+  &lt;li&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;Bus Topology&lt;/dt&gt;
+      &lt;dd&gt;신뢰성과 확장성이 좋고 모든 노드들이 T자형으로 연결되어 상호 Point to Multi Point형태를 가진다. 각 노드들의 연결은 어댑터를 사용하며 양 끝 단에 Terminator를 둔다. 각 노드의 고장이 전체 네트워크에 영향을 미치지 않고 CSMA/CD방식을 주로 채용한다. 
+ ※ Point-to-Point방식 : 가장 단순한 형태의 망 구성방식(Linear Topology), 통신 양단 간에 1:1데이터링크로 연결된형상
+ ex)HDLC, PPP프로토콜을 사용하는 시리얼 인터페이스, Point-to-Point 서브인터페이스등&lt;/dd&gt;
+    &lt;/dl&gt;
   &lt;/li&gt;
+  &lt;li&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;Ring Topology&lt;/dt&gt;
+      &lt;dd&gt;통신제어가 간단하고 신뢰성이 높다. 장거리 네트워크에서 사용가능하다. 노드간 통신은 Point-to-Point이며 각 노드에서 신호재생이 가능해 버스형태와 달리 거리제약이 적고 잡음에도 강하다. 링구조는 데이터 충돌이 일어 날 수 있으므로 토큰을 가져 전송 권한을 통해 데이터를 전송한다.&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;Star Topology&lt;/dt&gt;
+      &lt;dd&gt;중앙 제어 방식으로 모든기기가 Point-to-Multi Point방식으로 연결되어있으며, 문제 해결이 쉽고 하나의 기기의 고장은 전체에 영향을 미치지않지만, 중앙제어장비가 고장나면 모든 시스템에 영향을준다. 케이블사용량이 많으며 비용이 많이든다.&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Mash Topology
+ 네트워크 상의 모든 컴퓨터들이 연결되어진 형태, 기기나 노드가 고장이나더라도 다른 경로로 통신이 가능하다. 하지만 기기 수가 많아질 경우 케이블 사용량이 급격히 많아지며 구조가 복잡하여 네트워크관리가 힘들어진다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;쓰기정책&quot;&gt;쓰기정책&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;write Through : 캐시에 생긴 변화가 바로 메인메모리에도 반영되는 방식&lt;/li&gt;
-  &lt;li&gt;write back : 먼저 캐시를 변경하고 해당메모리가 캐시에서 제거될때 메인메모리에 반영되는 방식&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">캐시메모리 교체 방법 종류 캐시메모리에 여유공간이없고 새로운 데이터를 주기억장치로부터 복사해야할 경우 캐시메모리의 블록을 교체하는 방식 LFU(Least Frequentely Used) : 사용되는 빈도가 가장 작은 블록을 교체한다. LRU(Least Recently Used) : 사용된지 가장 오래된 블록을 교체한다. NRU(Not Recently Used) : 일정시간동안 사용되지않은 블록을 교체한다. FIFO(First In First Out) : 캐시내에서 가장 오래있었던 블록을 교체한다. SCR(Second Change Replacement) : 두번 참조되면 블록을 교체한다.</summary></entry></feed>
+&lt;h4 id=&quot;lan의-확장&quot;&gt;LAN의 확장&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;MAN(Metropolitan Area Network)&lt;/dt&gt;
+      &lt;dd&gt;도시형 통신망이라고도 하며 50km반경이내의 도시, 번화가, 아파트단지등을 대상으로 구성하는 통신망. LAN제약과 WAN의 능률저하의 단점을 해소하기 위한 통신망&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;WAN(Wide Area Network)&lt;/dt&gt;
+      &lt;dd&gt;일반적으로 제3자(KT,SKT등)에 의해 제공되고 운영되는 공중망을 말하며 LAN이 여러개 모여 LAN간에 고속 전공이 가능한 전용 회선으로 연결한다.&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>
