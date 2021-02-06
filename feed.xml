@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-05T22:16:30+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">Kmp</title><link href="http://localhost:4000/KMP" rel="alternate" type="text/html" title="Kmp" /><published>2021-02-05T00:00:00+09:00</published><updated>2021-02-05T00:00:00+09:00</updated><id>http://localhost:4000/KMP</id><content type="html" xml:base="http://localhost:4000/KMP">&lt;h1 id=&quot;kmp&quot;&gt;KMP??????&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-06T22:38:39+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - 2021/02/05 Git</title><link href="http://localhost:4000/git" rel="alternate" type="text/html" title="TIL - 2021/02/05 Git" /><published>2021-02-06T06:30:00+09:00</published><updated>2021-02-06T06:30:00+09:00</updated><id>http://localhost:4000/git</id><content type="html" xml:base="http://localhost:4000/git">&lt;h2 id=&quot;git이란&quot;&gt;Git이란&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;다른 VCS와다르게 시간순으로 스냅샷을 저장하는 버전관리시스템이다.&lt;/li&gt;
+  &lt;li&gt;명령을 로컬에서 실행하므로 빠르다.&lt;/li&gt;
+  &lt;li&gt;네트워크에 연결되어 있지않아도 Commit이 가능하여 작업이 가능하다.&lt;/li&gt;
+  &lt;li&gt;SHA-1해시를 사용하여 만든 체크섬으로 데이터를 관리한다.&lt;/li&gt;
+  &lt;li&gt;Git으로 뭘하든 Git DB에 데이터가 추가된다. 되돌리거나 데이터를 삭제할 방법이 없다. 스냅샷을 커밋하고나면 데이터를 잃어버리기 어렵다.&lt;/li&gt;
+  &lt;li&gt;Committed : 데이터가 로컬DB에 안전하게 저장됐다는 것을 의미&lt;/li&gt;
+  &lt;li&gt;Modified : 수정한 파일을 아직 로컬 DB에 커밋하지 않은것을 의미&lt;/li&gt;
+  &lt;li&gt;Staged : 현재 수정한 파일을 곧 커밋할 것이라고 표시한 상태를 의미&lt;/li&gt;
+  &lt;li&gt;Git Directory : Git이 프로젝트의 메타데이터와 객체 DB를 저장하는곳&lt;/li&gt;
+  &lt;li&gt;Working Tree : 프로젝트의 특정 버전을 CheckOut한것&lt;/li&gt;
+  &lt;li&gt;Staging Area : Git디렉토리에 있고, 단순한파일이고 곧 커밋할 파일에 대한 정보를 저장함.&lt;/li&gt;
+  &lt;li&gt;Git으로 하는일 : 워킹트리에서 파일수정 -&amp;gt; StagingArea에 파일을 Stage해서 커밋할 스냅샷을 만듬 -&amp;gt; StagingArea에서 Git디렉토리에 영구적인스냅샷으로&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">Git이란 다른 VCS와다르게 시간순으로 스냅샷을 저장하는 버전관리시스템이다. 명령을 로컬에서 실행하므로 빠르다. 네트워크에 연결되어 있지않아도 Commit이 가능하여 작업이 가능하다. SHA-1해시를 사용하여 만든 체크섬으로 데이터를 관리한다. Git으로 뭘하든 Git DB에 데이터가 추가된다. 되돌리거나 데이터를 삭제할 방법이 없다. 스냅샷을 커밋하고나면 데이터를 잃어버리기 어렵다. Committed : 데이터가 로컬DB에 안전하게 저장됐다는 것을 의미 Modified : 수정한 파일을 아직 로컬 DB에 커밋하지 않은것을 의미 Staged : 현재 수정한 파일을 곧 커밋할 것이라고 표시한 상태를 의미 Git Directory : Git이 프로젝트의 메타데이터와 객체 DB를 저장하는곳 Working Tree : 프로젝트의 특정 버전을 CheckOut한것 Staging Area : Git디렉토리에 있고, 단순한파일이고 곧 커밋할 파일에 대한 정보를 저장함. Git으로 하는일 : 워킹트리에서 파일수정 -&amp;gt; StagingArea에 파일을 Stage해서 커밋할 스냅샷을 만듬 -&amp;gt; StagingArea에서 Git디렉토리에 영구적인스냅샷으로</summary></entry><entry><title type="html">Kmp</title><link href="http://localhost:4000/KMP" rel="alternate" type="text/html" title="Kmp" /><published>2021-02-05T00:00:00+09:00</published><updated>2021-02-05T00:00:00+09:00</updated><id>http://localhost:4000/KMP</id><content type="html" xml:base="http://localhost:4000/KMP">&lt;h1 id=&quot;kmp&quot;&gt;KMP??????&lt;/h1&gt;
 &lt;p&gt;Knuth, Morris, Prett? ??? ??? ?? ??????.
 Boyer-Moore????? ??? ???? ???? ??? ??? ??? ????.&lt;/p&gt;
 
@@ -406,201 +420,4 @@ I hope you guys have a good time in Japan&lt;/p&gt;
 &lt;p&gt;~와 협력하다&lt;/p&gt;
 
 &lt;h3 id=&quot;among-the-most-popular&quot;&gt;among the most popular.&lt;/h3&gt;
-&lt;p&gt;가장 인기가있다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">처음 만났을 때 Glad to meet you. (very formal) Pleased to meet you. (Very formal)</summary></entry><entry><title type="html">Network용어</title><link href="http://localhost:4000/Network%EC%9A%A9%EC%96%B4" rel="alternate" type="text/html" title="Network용어" /><published>2021-01-25T00:00:00+09:00</published><updated>2021-01-25T00:00:00+09:00</updated><id>http://localhost:4000/Network%EC%9A%A9%EC%96%B4</id><content type="html" xml:base="http://localhost:4000/Network%EC%9A%A9%EC%96%B4">&lt;h2 id=&quot;napt-network-address-port-translation&quot;&gt;NAPT (Network Address Port Translation)&lt;/h2&gt;
-&lt;p&gt;NAT(Network Address Translation)의 기능과 같이 OSI 3계층 네트워크 계층에서 사설 IP 주소를 공인 IP 주소로 변환하는 기능을 가진다.
-하지만 NAPT의경우 공인IP를 이용하여 다수의 사설IP로 변환가능하다. 이름에서 알 수 있듯이 포트번호를 이용하여 가능케한다.
-ICMP와같은 패킷들은 port정보를 포함하지않지만 TCP/UDP의경우 port정보를 포함하기때문에 사용이 가능하다.&lt;/p&gt;
-
-&lt;h2 id=&quot;arp&quot;&gt;ARP&lt;/h2&gt;
-&lt;p&gt;ARP(Address Resolution Protocol)의 약자로서 IP주소를 MAC(Media Access Control)주소로 변환해주는 프로토콜이라고 합니다.&lt;/p&gt;
-
-&lt;h2 id=&quot;icmpinternet-control-message-protocol&quot;&gt;ICMP(Internet Control Message Protocol)&lt;/h2&gt;
-&lt;p&gt;ICMP는 TCP/IP에서 IP 패킷을 처리할 때 발생되는 문제를 알려주는 프로토콜이다.
-ping이 이프로토콜을 사용하고있다.&lt;/p&gt;
-
-&lt;h2 id=&quot;dhcpdynamic-host-configuration-protocol&quot;&gt;DHCP(Dynamic Host Configuration Protocol)&lt;/h2&gt;
-&lt;p&gt;DHCP란 호스트의 IP주소와 각종 TCP/IP 프로토콜의 기본 설정을 클라이언트에게 자동적으로 제공해주는 프로토콜을 말합니다&lt;/p&gt;
-
-&lt;h2 id=&quot;pppoepoint-to-point-protocol-over-ethernet&quot;&gt;PPPoE(Point to Point Protocol Over Ethernet)&lt;/h2&gt;
-&lt;p&gt;PPPoE는 이더넷을 통한 지점 간 프로토콜의 약자입니다. PPPoE는 PPP라고하는 다른 오래된 프로토콜에서 파생 된 네트워킹 프로토콜로, 지점 간 프로토콜을 나타냅니다.
-이더넷 프레임의 데이터 부분에  PPP 프레임이 캡슐화되어 전송됩니다.&lt;/p&gt;
-
-&lt;h2 id=&quot;패킷필터링&quot;&gt;패킷필터링&lt;/h2&gt;
-&lt;p&gt;네트워크에서는 IP 패킷이라는 단위로 데이터를 송수신하고 있는데, IP 패킷에는 송신하는 데이터 외에 보내는 측과 받는 측의 주소나 통신 절차 등과 같은 정보가 들어 있다.
-패킷 필터링에서는 이러한 정보에 대해 조건을 설정하여 통신 가능 여부를 제어한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;통신계층별-데이터-단위&quot;&gt;통신계층별 데이터 단위&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Layer 5 ~ Layer 7 : 메세지,데이터&lt;/li&gt;
-  &lt;li&gt;Layer 4 : 세그먼트&lt;/li&gt;
-  &lt;li&gt;Layer 3 : 패킷,데이터그램&lt;/li&gt;
-  &lt;li&gt;Layer 2 : 프레임&lt;/li&gt;
-  &lt;li&gt;Layer 1 : 비트&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;## FQDN(Fully Qualified Domain Name)
-FQDN은 명확한 도메인 표기법을 칭한다. 예로 소프트웨어 설치 중 도메인명을 요구하면, YAHOO.COM. 을 입력할지, WWW.YAHOO.COM. 을 입력할지 모호하다. 그래서 이러한 모호성을 피하기 위해 FQDN이란 단어를 사용하며, 이는 Namespace 계층상에서 최종 호스트명을 포함하는 도메인명을 뜻한다.
-www(호스트명), yahoo.com.(도메인명), www.yahoo.com.(FQDN)&lt;/p&gt;
-
-&lt;h2 id=&quot;dmzdemilitarized-zone&quot;&gt;DMZ(DeMilitarized Zone)&lt;/h2&gt;
-&lt;p&gt;내부세그먼트와 외부세그먼트로부터 격리된 영역&lt;/p&gt;
-
-&lt;h2 id=&quot;siemsecurity-information-and-event-management&quot;&gt;SIEM(Security Information and Event Management)&lt;/h2&gt;
-&lt;p&gt;네트워크내의 다양한기기나 소프트웨어로부터 로그를 수집해 일괄관리하는 통합로그관리시스템이다.
-자동으로 로그 수집,분석을 하며, 사전에 이상을 감지하는것이 가능하다.&lt;/p&gt;
-
-&lt;h2 id=&quot;cc서버&quot;&gt;C&amp;amp;C서버&lt;/h2&gt;
-&lt;p&gt;봇에 감염된 컴퓨터에 대해서 다른 컴퓨터로의 공격이나 부정한조작을 하도록 외부로부터 지시해 원격조작하는 역할을 맡는 서버이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;sdnsoftware-defined-networking&quot;&gt;SDN(Software-Defined Networking)&lt;/h2&gt;
-&lt;p&gt;소프트웨어 애플리케이션을 사용하여 네트워크를 지능화하고 중앙에서 제어하거나 ‘프로그래밍’할 수 있는 네트워크 아키텍처 접근법이다.
-네트워크상의 다양한 통신기기를 집중적으로 제어하고 네트워크 구성이나 보안설정등을 변경한다.
-종래의 네트워크기기는 제어기능과 데이터전송기능 두가지를 탑재하고있는데, 이를 논리적으로 분리해서 데이터전송을 OpenFlow스위치가 담당하고,
-제어기능을가진 OpenFlow컨트롤러가  집중관리한다. 제어기능을 프로그래밍하는 것으로 유연한 네트워크 구축을 수행하는것이 가능하다.&lt;/p&gt;
-
-&lt;h2 id=&quot;wafweb-application-firewall&quot;&gt;WAF(Web Application Firewall)&lt;/h2&gt;
-&lt;p&gt;패킷의헤더정보를 검사하는것 뿐만아니라 통신처의 어플리케이션프로그램을 식별해서 통신을 제어한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;apopauthenticated-post-office-protocol&quot;&gt;APOP(Authenticated Post Office Protocol)&lt;/h2&gt;
-&lt;p&gt;POP은 메일서버의 메일박스로부터 전자메일을 꺼낼때 사용하는 프로토콜이다. 유저명과 비밀번호에따른 인증을 수행하나, 패스워드를 평문으로 보내는 결점이있다.
-이 점을 대처해 해쉬함수등을 사용하여 패스워드송신을 암호화해 안정성을 높인 것이 APOP이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;pop3spop3-over-ssltls&quot;&gt;POP3S(POP3 over SSL/TLS)&lt;/h2&gt;
-&lt;p&gt;APOP은 패스워드만 암호화하지만, 전송로를 암호화하는 SSL/TLS에의해 POP통신자체를 암호화하는 방식이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;smimesecure-multipurposer-internet-mail-extensions&quot;&gt;S/MIME(Secure Multipurposer Internet Mail Extensions)&lt;/h2&gt;
-&lt;p&gt;MIME은 전자메일로 문자뿐만아니라 이미지파일이나, 음성파일등을 다루기위한 규격이다.
-S/MIME은 MIME의 확장규격으로 전자메일의 내용을 암호화하거나, 디지털서명을 부여하는등 보안대책을 넣은 것이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;smtp-authsimple-mail-transfer-protocol-authentication&quot;&gt;SMTP-AUTH(Simple Mail Transfer Protocol-Authentication)&lt;/h2&gt;
-&lt;p&gt;메일을 송신, 전송하는 프로토콜 SMTP의 확장규격이다. 단순한 메일전송을 수행하는 SMTP에는 인증의 구조가 없기때문에 
-SMTP-AUTH에서는 송신하는쪽의 메일서버에서 유저명과 패스워드에따른 인증을 수행해, 송신자가 정규의 유저인지 확인이가능하다.&lt;/p&gt;
-
-&lt;h2 id=&quot;http-over-tlshttps&quot;&gt;HTTP over TLS(HTTPS)&lt;/h2&gt;
-&lt;p&gt;웹 서버와 웹브라우저간의 통신프로토콜인 HTTP에 암호화기능을 추가한 안정성을 향상시킨것으로,
-통신경로상에있는 제3자에의한 위장이나 도청을 막는다. 정보를 암호화해서 송수신하는 프로토콜인 SSL(Secure SocketsLayer)나
-TLS(Transport Layer Security : SSL의 상위버전)이 이용되고있다.
-기본 포트는 80번이아닌 443번을 사용한다.&lt;/p&gt;
-
-&lt;p&gt;전자서명과 암호화를 암호화를 사용하는데, 암호화시에 세션키를 공유하기위한 방법으로
-핸드쉐이크라는 방식을 이용한다.
-서로의 TLS버전을 사용가능한지 확인하고, 인증서로 신원을 확인후, 통신에 쓸 암호를 교환한다.(대칭키)&lt;/p&gt;
-
-&lt;h2 id=&quot;sshsecure-shell&quot;&gt;SSH(Secure Shell)&lt;/h2&gt;
-&lt;p&gt;네트워크상의 컴퓨터에 자신의 단말로부터 접속해서 원격조작하기위한 통신프로토콜또는 소프트웨어이다.
-Telnet과는 다르게 통신데이터의 도청대책이나 통신상대의 위장을 막을 수 있게 대비되어있다.
-SSH에서는 서버에 로그인해서 데이터를 주고받는 통신(로그인세션)에 앞서 SSH세션이 행해진다.&lt;/p&gt;
-
-&lt;h2 id=&quot;vpnvirtual-private-network&quot;&gt;VPN(Virtual Private Network)&lt;/h2&gt;
-&lt;p&gt;암호화기술등을 이용해서 통신사업자의 네트워크나 인터넷상에서 가상의전용선을 실현하는 보안기술이다. 
-코스트가많이드는 전용선에 비해서 저렴하게 구축이가능하고, 네트워크상의 거점간의 통신내용의 유출이나 부정액세스를 막는다.&lt;/p&gt;
-
-&lt;h2 id=&quot;vdivirtual-desktop-infrastructure-가상데크트탑환경&quot;&gt;VDI(Virtual Desktop Infrastructure: 가상데크트탑환경)&lt;/h2&gt;
-&lt;p&gt;유저가 사용하는 어플리케이션을 서버상에 집약해서 가상화된 데스크탑환경을 실현하고 가동시키는 구조이다.
-유저는 사용하는 클라이언트단말로부터 네트워크를 경유해서 가상데스크톱환경에 접속해서 조작을 수행한다.
-서버에 집약시키는것으로 관리가 쉬워지고, 단말로부터 정보유출의 리스크도 경감할 수 있다.&lt;/p&gt;
-
-&lt;h2 id=&quot;thin-client&quot;&gt;Thin Client&lt;/h2&gt;
-&lt;p&gt;유저가 사용하는 클라이언트단말에는 기억장치를 탑재하지않고, 최소한의기능만을 탑재해 거의 모든처리를 서버측에서 행하는형식의 시스템구성이다.
-VDI는 Thin Client를 실현하는 방법중 하나이다.&lt;/p&gt;
-
-&lt;h2 id=&quot;ssosingle-sign-on&quot;&gt;SSO(Single Sign-On)&lt;/h2&gt;
-&lt;p&gt;한번의 유저인증을 통해 보든 서비스에 로그인할 수 있는 구조를 말한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;프록시서버&quot;&gt;프록시서버&lt;/h2&gt;
-&lt;p&gt;대리라는 의미의 프록시 서버는 내부 LAN과 외부 네트워크의 환경에 설치되는 서버에서 LAN내의 PC를 대신해서 프록시서버자체의IP주소를 사용해 인터넷에의 접속을 수행한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;id프로바이더idp&quot;&gt;ID프로바이더(IdP)&lt;/h2&gt;
-&lt;p&gt;다른인터넷서비스간에서 이용자인증을 수행하기위한 규약인 SAML(Security Assertion Markup Language)인증에있어서, 
-이용자인증정보의 제공자를 말한다.
-이용자인증을 중개하며, SSO로 다른 서버에의 액세스를 가능하게한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;ldaplightweight-directory-access-protocol&quot;&gt;LDAP(Lightweight Directory Access Protocol)&lt;/h2&gt;
-&lt;p&gt;네트워크기기나 유저등의 정보를 집중관리하는 디렉토리서비스에의 접속을위한 프로토콜이다.
-디렉토리서비스에는 유저ID나PW등의 유저정보를 일원관리하는것이 가능하며, 복수의 서비스에서 사용되는 공통의 인증정보의 보존, 조회목적으로도 사용된다.&lt;/p&gt;
-
-&lt;h3 id=&quot;csmacdcarrier-sense-multiple-accesscollision-detection&quot;&gt;CSMA/CD(Carrier Sense Multiple Access/Collision Detection)&lt;/h3&gt;
-&lt;dl&gt;
-  &lt;dt&gt;: LAN의 통신 트로토콜의 종류중 하나이며 이더넷환경에서 사용된다.&lt;/dt&gt;
-  &lt;dd&gt;이더넷 환경에서 네트워크상의 통신이 일어나는지 확인하고(Carrier Sense), 캐리어가 감지되면 기다린다. 캐리어가 감지되지않으면 데이터를 네트워크상에 보내고, Multiple Access가 일어나게되면 발생 사실을 네트워크상의 모든 컴퓨터에게 통보한다(Collision Detection) 두 PC나 서버들은 랜덤한 시간동안 기다린 다음 다시 데이터를 전송한다.&lt;/dd&gt;
-  &lt;dd&gt;데이터링크 계층의 MAC계층에서 동작하는 액세스 방법
-    &lt;h3 id=&quot;라우터-vs-허브-vs-게이트웨이-vs-스위치&quot;&gt;라우터 vs 허브 vs 게이트웨이 vs 스위치&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;허브&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/dd&gt;
-  &lt;dd&gt;물리계층만을 다루며, 물리계층은 케이블 혹은 바이너리 전송시그널같은 전기적신호..&lt;/dd&gt;
-  &lt;dd&gt;어떤 전기신호의 INPUT이 들어왔을때, 다른포트에 똑같이 복사한다.
-    &lt;ul&gt;
-      &lt;li&gt;스위치&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/dd&gt;
-  &lt;dd&gt;물리계층과 데이터링크계층도 다루며, 허브의 경우 전기신호만 복사했다면 스위치는 해당 MAC주소를 갖는 곳에만 전기 신호를 발생 시킬 수 있다. 한 프레임을 모두 버퍼에 담고있다가 MAC을 확인하는 방ㅂ식과 MAC관련헤더만 버퍼에 담고 있는 방식 두가지가 존재한다. 전자는 Store and Forward이고, 후자는 Cut-Through 방식이라고한다.
-    &lt;ul&gt;
-      &lt;li&gt;라우터&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/dd&gt;
-  &lt;dd&gt;라우터라는 말 그대로 경로를 찾는것으로 IP가 담겨있는 네트워크계층에서 목적지 IP를 찾고 효율적인 경로를 탐색해 라우터로 데이터를 이동시키는 일을한다.
-    &lt;ul&gt;
-      &lt;li&gt;게이트웨이&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/dd&gt;
-  &lt;dd&gt;프로토콜 변경을하는 역할. 게이트웨이 뒤쪽의 Host들은 A라는 프로토콜을 사용할때, 게이트웨이 넘어서 들어오는 B,C,D라는 프로토콜을 A로 변환하는 작업을 게이트웨이가 한다고 보면된다. 하지만 TCP/IP 프로토콜이 대세인 세상에서 프로토콜변환은 유명무실하다고 한다. 게이트웨이는 네트워크의 트래픽 매니징을 한다고 봐도 된다.&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h3 id=&quot;이더넷&quot;&gt;이더넷&lt;/h3&gt;
-&lt;h3 id=&quot;lanlocal-area-network&quot;&gt;LAN(Local Area Network)&lt;/h3&gt;
-&lt;p&gt;한정된 거리에서 고속으로 데이터를 교환할 수 있는 근거리 통신망&lt;/p&gt;
-&lt;h4 id=&quot;특징&quot;&gt;특징&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;고속통신&lt;/li&gt;
-  &lt;li&gt;신뢰도 높음&lt;/li&gt;
-  &lt;li&gt;거리제한&lt;/li&gt;
-  &lt;li&gt;망설치 및 확장,변경가능&lt;/li&gt;
-  &lt;li&gt;다양한 통신 장비와 연결가능&lt;/li&gt;
-  &lt;li&gt;다양한 데이터의 처리가 가능&lt;/li&gt;
-  &lt;li&gt;오류 제어 기능&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;토폴로지별-분류&quot;&gt;토폴로지별 분류&lt;/h4&gt;
-&lt;p&gt;※ 토폴로지란 : 통신망을 구성하기위한 물리적 결선방식&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;Bus Topology&lt;/dt&gt;
-      &lt;dd&gt;신뢰성과 확장성이 좋고 모든 노드들이 T자형으로 연결되어 상호 Point to Multi Point형태를 가진다. 각 노드들의 연결은 어댑터를 사용하며 양 끝 단에 Terminator를 둔다. 각 노드의 고장이 전체 네트워크에 영향을 미치지 않고 CSMA/CD방식을 주로 채용한다. 
- ※ Point-to-Point방식 : 가장 단순한 형태의 망 구성방식(Linear Topology), 통신 양단 간에 1:1데이터링크로 연결된형상
- ex)HDLC, PPP프로토콜을 사용하는 시리얼 인터페이스, Point-to-Point 서브인터페이스등&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;Ring Topology&lt;/dt&gt;
-      &lt;dd&gt;통신제어가 간단하고 신뢰성이 높다. 장거리 네트워크에서 사용가능하다. 노드간 통신은 Point-to-Point이며 각 노드에서 신호재생이 가능해 버스형태와 달리 거리제약이 적고 잡음에도 강하다. 링구조는 데이터 충돌이 일어 날 수 있으므로 토큰을 가져 전송 권한을 통해 데이터를 전송한다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;Star Topology&lt;/dt&gt;
-      &lt;dd&gt;중앙 제어 방식으로 모든기기가 Point-to-Multi Point방식으로 연결되어있으며, 문제 해결이 쉽고 하나의 기기의 고장은 전체에 영향을 미치지않지만, 중앙제어장비가 고장나면 모든 시스템에 영향을준다. 케이블사용량이 많으며 비용이 많이든다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Mash Topology
- 네트워크 상의 모든 컴퓨터들이 연결되어진 형태, 기기나 노드가 고장이나더라도 다른 경로로 통신이 가능하다. 하지만 기기 수가 많아질 경우 케이블 사용량이 급격히 많아지며 구조가 복잡하여 네트워크관리가 힘들어진다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;lan의-확장&quot;&gt;LAN의 확장&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;MAN(Metropolitan Area Network)&lt;/dt&gt;
-      &lt;dd&gt;도시형 통신망이라고도 하며 50km반경이내의 도시, 번화가, 아파트단지등을 대상으로 구성하는 통신망. LAN제약과 WAN의 능률저하의 단점을 해소하기 위한 통신망&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;WAN(Wide Area Network)&lt;/dt&gt;
-      &lt;dd&gt;일반적으로 제3자(KT,SKT등)에 의해 제공되고 운영되는 공중망을 말하며 LAN이 여러개 모여 LAN간에 고속 전공이 가능한 전용 회선으로 연결한다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>
+&lt;p&gt;가장 인기가있다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">처음 만났을 때 Glad to meet you. (very formal) Pleased to meet you. (Very formal)</summary></entry></feed>

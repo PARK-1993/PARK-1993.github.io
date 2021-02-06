@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/author/PARK-1993/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-02-05T22:16:30+09:00</updated>
+  <updated>2021-02-06T22:38:39+09:00</updated>
   <id>http://localhost:4000/author/PARK-1993/feed.xml</id>
 
   
@@ -30,6 +30,54 @@
   
   
 
+  
+    <entry>
+      <title type="html">TIL - 2021/02/05 Git</title>
+      <link href="http://localhost:4000/git" rel="alternate" type="text/html" title="TIL - 2021/02/05 Git" />
+      <published>2021-02-06T06:30:00+09:00</published>
+      <updated>2021-02-06T06:30:00+09:00</updated>
+      <id>http://localhost:4000/git</id>
+      <content type="html" xml:base="http://localhost:4000/git">&lt;h2 id=&quot;git이란&quot;&gt;Git이란&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;다른 VCS와다르게 시간순으로 스냅샷을 저장하는 버전관리시스템이다.&lt;/li&gt;
+  &lt;li&gt;명령을 로컬에서 실행하므로 빠르다.&lt;/li&gt;
+  &lt;li&gt;네트워크에 연결되어 있지않아도 Commit이 가능하여 작업이 가능하다.&lt;/li&gt;
+  &lt;li&gt;SHA-1해시를 사용하여 만든 체크섬으로 데이터를 관리한다.&lt;/li&gt;
+  &lt;li&gt;Git으로 뭘하든 Git DB에 데이터가 추가된다. 되돌리거나 데이터를 삭제할 방법이 없다. 스냅샷을 커밋하고나면 데이터를 잃어버리기 어렵다.&lt;/li&gt;
+  &lt;li&gt;Committed : 데이터가 로컬DB에 안전하게 저장됐다는 것을 의미&lt;/li&gt;
+  &lt;li&gt;Modified : 수정한 파일을 아직 로컬 DB에 커밋하지 않은것을 의미&lt;/li&gt;
+  &lt;li&gt;Staged : 현재 수정한 파일을 곧 커밋할 것이라고 표시한 상태를 의미&lt;/li&gt;
+  &lt;li&gt;Git Directory : Git이 프로젝트의 메타데이터와 객체 DB를 저장하는곳&lt;/li&gt;
+  &lt;li&gt;Working Tree : 프로젝트의 특정 버전을 CheckOut한것&lt;/li&gt;
+  &lt;li&gt;Staging Area : Git디렉토리에 있고, 단순한파일이고 곧 커밋할 파일에 대한 정보를 저장함.&lt;/li&gt;
+  &lt;li&gt;Git으로 하는일 : 워킹트리에서 파일수정 -&amp;gt; StagingArea에 파일을 Stage해서 커밋할 스냅샷을 만듬 -&amp;gt; StagingArea에서 Git디렉토리에 영구적인스냅샷으로&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">Git이란 다른 VCS와다르게 시간순으로 스냅샷을 저장하는 버전관리시스템이다. 명령을 로컬에서 실행하므로 빠르다. 네트워크에 연결되어 있지않아도 Commit이 가능하여 작업이 가능하다. SHA-1해시를 사용하여 만든 체크섬으로 데이터를 관리한다. Git으로 뭘하든 Git DB에 데이터가 추가된다. 되돌리거나 데이터를 삭제할 방법이 없다. 스냅샷을 커밋하고나면 데이터를 잃어버리기 어렵다. Committed : 데이터가 로컬DB에 안전하게 저장됐다는 것을 의미 Modified : 수정한 파일을 아직 로컬 DB에 커밋하지 않은것을 의미 Staged : 현재 수정한 파일을 곧 커밋할 것이라고 표시한 상태를 의미 Git Directory : Git이 프로젝트의 메타데이터와 객체 DB를 저장하는곳 Working Tree : 프로젝트의 특정 버전을 CheckOut한것 Staging Area : Git디렉토리에 있고, 단순한파일이고 곧 커밋할 파일에 대한 정보를 저장함. Git으로 하는일 : 워킹트리에서 파일수정 -&amp;gt; StagingArea에 파일을 Stage해서 커밋할 스냅샷을 만듬 -&amp;gt; StagingArea에서 Git디렉토리에 영구적인스냅샷으로</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">TIL - 2021/02/03 Security</title>
@@ -650,71 +698,6 @@ I hope you guys have a good time in Japan&lt;/p&gt;
 
       
         <summary type="html">캐시메모리 교체 방법 종류 캐시메모리에 여유공간이없고 새로운 데이터를 주기억장치로부터 복사해야할 경우 캐시메모리의 블록을 교체하는 방식 LFU(Least Frequentely Used) : 사용되는 빈도가 가장 작은 블록을 교체한다. LRU(Least Recently Used) : 사용된지 가장 오래된 블록을 교체한다. NRU(Not Recently Used) : 일정시간동안 사용되지않은 블록을 교체한다. FIFO(First In First Out) : 캐시내에서 가장 오래있었던 블록을 교체한다. SCR(Second Change Replacement) : 두번 참조되면 블록을 교체한다.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - Copyright</title>
-      <link href="http://localhost:4000/Copyright" rel="alternate" type="text/html" title="TIL - Copyright" />
-      <published>2021-01-20T07:00:00+09:00</published>
-      <updated>2021-01-20T07:00:00+09:00</updated>
-      <id>http://localhost:4000/Copyright</id>
-      <content type="html" xml:base="http://localhost:4000/Copyright">&lt;h1 id=&quot;저작권의-종류&quot;&gt;저작권의 종류&lt;/h1&gt;
-&lt;p&gt;크게 두가지로 저작인격권과 저작재산권이 있다.&lt;/p&gt;
-&lt;h2 id=&quot;저작인격권&quot;&gt;저작인격권&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;공표권
-    &lt;ul&gt;
-      &lt;li&gt;저작자가 저작물을 공표할지 안할지, 공표시기, 공표방법등을 결정할 수 있는 권리이다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;서명표시권
-    &lt;ul&gt;
-      &lt;li&gt;저작자가 저작물에대해서 저작자성명을 표시할지 안할지, 실명을 표시할지 안할지에 대한 권리이다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;동일성유지권
-    &lt;ul&gt;
-      &lt;li&gt;저작물을 저작자의 의사에 반해 수정되지않을 권리이다. 창작한 본래의모습을 가지도록하는 권리.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;명예음망&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;저작재산권&quot;&gt;저작재산권&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;복제권&lt;/li&gt;
-  &lt;li&gt;공중송신권&lt;/li&gt;
-  &lt;li&gt;대여권&lt;/li&gt;
-  &lt;li&gt;공연권&lt;/li&gt;
-  &lt;li&gt;전시권&lt;/li&gt;
-  &lt;li&gt;배포권&lt;/li&gt;
-  &lt;li&gt;2차적저작물작성권&lt;/li&gt;
-&lt;/ol&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">저작권의 종류 크게 두가지로 저작인격권과 저작재산권이 있다. 저작인격권 공표권 저작자가 저작물을 공표할지 안할지, 공표시기, 공표방법등을 결정할 수 있는 권리이다. 서명표시권 저작자가 저작물에대해서 저작자성명을 표시할지 안할지, 실명을 표시할지 안할지에 대한 권리이다. 동일성유지권 저작물을 저작자의 의사에 반해 수정되지않을 권리이다. 창작한 본래의모습을 가지도록하는 권리. 명예음망</summary>
       
 
       
