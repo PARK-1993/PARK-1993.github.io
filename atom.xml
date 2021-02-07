@@ -8,6 +8,22 @@
     
       
       <item>
+        <title>최단거리문제</title>
+        
+          <description>&lt;h1 id=&quot;최단거리문제란shortest-path-problem&quot;&gt;최단거리문제란(Shortest Path Problem)&lt;/h1&gt;
+&lt;p&gt;가중치가 있는 그래프가 주어졌을때, 임의의 두 노드를 잇는 최단거리를 찾는 문제이다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 07 Feb 2021 23:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/DijkstraAlgorithm</link>
+        <guid isPermaLink="true">http://localhost:4000/DijkstraAlgorithm</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>TIL - 2021/02/05 Git</title>
         
           <description>&lt;h2 id=&quot;git이란&quot;&gt;Git이란&lt;/h2&gt;

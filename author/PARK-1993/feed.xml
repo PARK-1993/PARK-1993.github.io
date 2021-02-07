@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/author/PARK-1993/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-02-06T22:38:39+09:00</updated>
+  <updated>2021-02-08T00:11:46+09:00</updated>
   <id>http://localhost:4000/author/PARK-1993/feed.xml</id>
 
   
@@ -30,6 +30,73 @@
   
   
 
+  
+    <entry>
+      <title type="html">최단거리문제</title>
+      <link href="http://localhost:4000/DijkstraAlgorithm" rel="alternate" type="text/html" title="최단거리문제" />
+      <published>2021-02-07T23:00:00+09:00</published>
+      <updated>2021-02-07T23:00:00+09:00</updated>
+      <id>http://localhost:4000/DijkstraAlgorithm</id>
+      <content type="html" xml:base="http://localhost:4000/DijkstraAlgorithm">&lt;h1 id=&quot;최단거리문제란shortest-path-problem&quot;&gt;최단거리문제란(Shortest Path Problem)&lt;/h1&gt;
+&lt;p&gt;가중치가 있는 그래프가 주어졌을때, 임의의 두 노드를 잇는 최단거리를 찾는 문제이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;최단거리문제-종류&quot;&gt;최단거리문제 종류&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;단일출발 : 단일노드에서 출발해서 모든 다른 노드의 최단경로를 구하는 문제&lt;/li&gt;
+  &lt;li&gt;단일도착 : 모든 노드로부터 단일 도착노드에의 최단경로를 구하는 문제&lt;/li&gt;
+  &lt;li&gt;단일 쌍 : 지정된 출발노드와 도착노드를 가지고 최단경로를 구하는 문제&lt;/li&gt;
+  &lt;li&gt;전체 쌍 : 그래프 내의 모든 노드쌍의 최단경로를 구하는 문제&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;dijkstra-algorithm이란&quot;&gt;Dijkstra algorithm이란&lt;/h2&gt;
+&lt;p&gt;최단경로 알고리즘중 하나이며, 출발지점과 목표지점을 설정하여 그사이의 최단경로를 트리로 구한다.
+단일 출발 문제에 적합하다.
+※ 시간복잡도 : O(|E|+|V|\log |V|)&lt;/p&gt;
+
+&lt;h3 id=&quot;과정&quot;&gt;과정&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;지점간 거리를 나타내는 테이블을 만들어 놓는다.(지점간 노드가 없는 경우 -1 설정)&lt;/li&gt;
+  &lt;li&gt;모든 지점을 미확정 상태로 초기화한다.&lt;/li&gt;
+  &lt;li&gt;최단 거리를 저장할 배열을 초기지점을 0으로하고 나머지는 무한대값(최대값)을 설정한다.&lt;/li&gt;
+  &lt;li&gt;초기지점을 현재지점으로 설정한다.&lt;/li&gt;
+  &lt;li&gt;현재지점에서 미확정상태의 지점을 찾아 그 지점으로부터 인접하는 지점의 거리를 구해, 현재까지의 지점간 거리와 비교해서 더 작은값이 있다면 그걸로 대체한다.&lt;/li&gt;
+  &lt;li&gt;인접한 모든 지점간의 거리계산이 끝났으면 지점을 확정상태로 바꾼다.&lt;/li&gt;
+  &lt;li&gt;미확정 상태인 모든 지점들 중, 출발점으로부터의 거리가 제일 짧은 지점 하나를 골라서 현재지점으로 설정한다.&lt;/li&gt;
+  &lt;li&gt;도착지점이 확정상태로 되거나, 모든 지점이 확정상태로 될때 까지 5~7을 반복한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;bellman-ford-algorithm이란&quot;&gt;Bellman-Ford Algorithm이란&lt;/h2&gt;
+&lt;p&gt;Dijkstra와 마찬가지로 출발지점과 목표지점을 설정하면 그 사이의 최단경로를 모든 지점의 최단경로를 구하는 알고리즘이다.
+Dijkstra와 비교해서 시간이 더 걸리지만, 두 지점간의 가중치(거리)가 음수 일 때도 사용이 가능하다.
+Dijkstra algorithm과는 다르게 모든 노드경로에 대해서 edge relaxation을 매번 수행한다.
+단일 출발 문제에 적합하다.
+※ 시간복잡도 : O(VE)&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Algorithm" />
+      
+
+      
+        <summary type="html">최단거리문제란(Shortest Path Problem) 가중치가 있는 그래프가 주어졌을때, 임의의 두 노드를 잇는 최단거리를 찾는 문제이다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">TIL - 2021/02/05 Git</title>
@@ -647,57 +714,6 @@ I hope you guys have a good time in Japan&lt;/p&gt;
 
       
         <summary type="html">스키마(schema) 데이터의 내용, 데이터의논리구조, 기억형식이나 편성등의 데이터베이스의 구조를 명세한 것이다. 개체(Entity), 속성(Attribute), 관계(Relationship), 제약조건에 관해 정의한다. 스키마는 데이터사전(Data Dictionary)에 저장되며, 메타데이터라고도 한다. 스키마는 사용자 관점에따라 내부스키마, 외부스키마, 개념스키마 세 계층으로 나눠진다.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 캐시 교체 방법</title>
-      <link href="http://localhost:4000/HowToSelectBlock" rel="alternate" type="text/html" title="TIL - 캐시 교체 방법" />
-      <published>2021-01-20T08:00:00+09:00</published>
-      <updated>2021-01-20T08:00:00+09:00</updated>
-      <id>http://localhost:4000/HowToSelectBlock</id>
-      <content type="html" xml:base="http://localhost:4000/HowToSelectBlock">&lt;h2 id=&quot;캐시메모리-교체-방법-종류&quot;&gt;캐시메모리 교체 방법 종류&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;캐시메모리에 여유공간이없고 새로운 데이터를 주기억장치로부터 복사해야할 경우 캐시메모리의 블록을 교체하는 방식
-    &lt;ol&gt;
-      &lt;li&gt;LFU(Least Frequentely Used) : 사용되는 빈도가 가장 작은 블록을 교체한다.&lt;/li&gt;
-      &lt;li&gt;LRU(Least Recently Used) : 사용된지 가장 오래된 블록을 교체한다.&lt;/li&gt;
-      &lt;li&gt;NRU(Not Recently Used) : 일정시간동안 사용되지않은 블록을 교체한다.&lt;/li&gt;
-      &lt;li&gt;FIFO(First In First Out) : 캐시내에서 가장 오래있었던 블록을 교체한다.&lt;/li&gt;
-      &lt;li&gt;SCR(Second Change Replacement) : 두번 참조되면 블록을 교체한다.&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;쓰기정책&quot;&gt;쓰기정책&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;write Through : 캐시에 생긴 변화가 바로 메인메모리에도 반영되는 방식&lt;/li&gt;
-  &lt;li&gt;write back : 먼저 캐시를 변경하고 해당메모리가 캐시에서 제거될때 메인메모리에 반영되는 방식&lt;/li&gt;
-&lt;/ol&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">캐시메모리 교체 방법 종류 캐시메모리에 여유공간이없고 새로운 데이터를 주기억장치로부터 복사해야할 경우 캐시메모리의 블록을 교체하는 방식 LFU(Least Frequentely Used) : 사용되는 빈도가 가장 작은 블록을 교체한다. LRU(Least Recently Used) : 사용된지 가장 오래된 블록을 교체한다. NRU(Not Recently Used) : 일정시간동안 사용되지않은 블록을 교체한다. FIFO(First In First Out) : 캐시내에서 가장 오래있었던 블록을 교체한다. SCR(Second Change Replacement) : 두번 참조되면 블록을 교체한다.</summary>
       
 
       

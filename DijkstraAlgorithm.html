@@ -11,7 +11,7 @@
 
 
 
-    <title>TIL - 2021/02/01 Practical English4</title>
+    <title>최단거리문제</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -36,30 +36,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="TIL" />
     <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/favicon.jpg" type="image/png" />
-    <link rel="canonical" href="http://localhost:4000/PracticalEnglish4" />
+    <link rel="canonical" href="http://localhost:4000/DijkstraAlgorithm" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="푸바 프로그래밍" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="TIL - 2021/02/01 Practical English4" />
-    <meta property="og:description" content="다시만나게 되었을 때 It’s nice to see you again. How have you been? Nice to see you again! 어떻게 지냈어의 다양한 표현 How have you been? How are you doing? How’s it going? How’s everything going? How’s everything? 질문이 없을 때 None so far 머리짤랐냐고 물어볼 때 Did you get" />
-    <meta property="og:url" content="http://localhost:4000/PracticalEnglish4" />
+    <meta property="og:title" content="최단거리문제" />
+    <meta property="og:description" content="최단거리문제란(Shortest Path Problem) 가중치가 있는 그래프가 주어졌을때, 임의의 두 노드를 잇는 최단거리를 찾는 문제이다. 최단거리문제 종류 단일출발 : 단일노드에서 출발해서 모든 다른 노드의 최단경로를 구하는 문제 단일도착 : 모든 노드로부터 단일 도착노드에의 최단경로를 구하는 문제 단일 쌍 : 지정된 출발노드와 도착노드를 가지고 최단경로를 구하는 문제 전체 쌍 : 그래프 내의" />
+    <meta property="og:url" content="http://localhost:4000/DijkstraAlgorithm" />
     <meta property="og:image" content="http://localhost:4000/assets/built/images/python-logo.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2021-02-02T08:30:00+09:00" />
-    <meta property="article:modified_time" content="2021-02-02T08:30:00+09:00" />
-    <meta property="article:tag" content="Til" />
+    <meta property="article:published_time" content="2021-02-07T23:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-02-07T23:00:00+09:00" />
+    <meta property="article:tag" content="Algorithm" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="TIL - 2021/02/01 Practical English4" />
-    <meta name="twitter:description" content="다시만나게 되었을 때 It’s nice to see you again. How have you been? Nice to see you again! 어떻게 지냈어의 다양한 표현 How have you been? How are you doing? How’s it going? How’s everything going? How’s everything? 질문이 없을 때 None so far 머리짤랐냐고 물어볼 때 Did you get" />
+    <meta name="twitter:title" content="최단거리문제" />
+    <meta name="twitter:description" content="최단거리문제란(Shortest Path Problem) 가중치가 있는 그래프가 주어졌을때, 임의의 두 노드를 잇는 최단거리를 찾는 문제이다. 최단거리문제 종류 단일출발 : 단일노드에서 출발해서 모든 다른 노드의 최단경로를 구하는 문제 단일도착 : 모든 노드로부터 단일 도착노드에의 최단경로를 구하는 문제 단일 쌍 : 지정된 출발노드와 도착노드를 가지고 최단경로를 구하는 문제 전체 쌍 : 그래프 내의" />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/built/images/python-logo.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="푸바 프로그래밍" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Til" />
+    <meta name="twitter:data2" content="Algorithm" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="1400" />
@@ -74,7 +74,7 @@
         "name": "푸바 프로그래밍",
         "logo": "http://localhost:4000/"
     },
-    "url": "http://localhost:4000/PracticalEnglish4",
+    "url": "http://localhost:4000/DijkstraAlgorithm",
     "image": {
         "@type": "ImageObject",
         "url": "http://localhost:4000/assets/built/images/python-logo.png",
@@ -83,9 +83,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/PracticalEnglish4"
+        "@id": "http://localhost:4000/DijkstraAlgorithm"
     },
-    "description": "다시만나게 되었을 때 It’s nice to see you again. How have you been? Nice to see you again! 어떻게 지냈어의 다양한 표현 How have you been? How are you doing? How’s it going? How’s everything going? How’s everything? 질문이 없을 때 None so far 머리짤랐냐고 물어볼 때 Did you get"
+    "description": "최단거리문제란(Shortest Path Problem) 가중치가 있는 그래프가 주어졌을때, 임의의 두 노드를 잇는 최단거리를 찾는 문제이다. 최단거리문제 종류 단일출발 : 단일노드에서 출발해서 모든 다른 노드의 최단경로를 구하는 문제 단일도착 : 모든 노드로부터 단일 도착노드에의 최단경로를 구하는 문제 단일 쌍 : 지정된 출발노드와 도착노드를 가지고 최단경로를 구하는 문제 전체 쌍 : 그래프 내의"
 }
     </script>
 
@@ -98,7 +98,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="TIL - 2021/02/01 Practical English4" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="최단거리문제" href="/feed.xml" />
 
 
 </head>
@@ -156,21 +156,21 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  tag-til post tag-TIL ">
+        <article class="post-full  tag-algorithm post tag-Algorithm ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime=" 2 February 2021"> 2 February 2021</time>
+                    <time class="post-full-meta-date" datetime=" 7 February 2021"> 7 February 2021</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/til/'>TIL</a>
+                               <a href='/tag/algorithm/'>ALGORITHM</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">TIL - 2021/02/01 Practical English4</h1>
+                <h1 class="post-full-title">최단거리문제</h1>
             </header>
 
             
@@ -180,25 +180,40 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <h2 id="다시만나게-되었을-때">다시만나게 되었을 때</h2>
-<p>It’s nice to see you again. How have you been?
-Nice to see you again!</p>
+                    <h1 id="최단거리문제란shortest-path-problem">최단거리문제란(Shortest Path Problem)</h1>
+<p>가중치가 있는 그래프가 주어졌을때, 임의의 두 노드를 잇는 최단거리를 찾는 문제이다.</p>
 
-<h2 id="어떻게-지냈어의-다양한-표현">어떻게 지냈어의 다양한 표현</h2>
-<p>How have you been?
-How are you doing?
-How’s it going?
-How’s everything going?
-How’s everything?</p>
+<h2 id="최단거리문제-종류">최단거리문제 종류</h2>
+<ol>
+  <li>단일출발 : 단일노드에서 출발해서 모든 다른 노드의 최단경로를 구하는 문제</li>
+  <li>단일도착 : 모든 노드로부터 단일 도착노드에의 최단경로를 구하는 문제</li>
+  <li>단일 쌍 : 지정된 출발노드와 도착노드를 가지고 최단경로를 구하는 문제</li>
+  <li>전체 쌍 : 그래프 내의 모든 노드쌍의 최단경로를 구하는 문제</li>
+</ol>
 
-<h2 id="질문이-없을-때">질문이 없을 때</h2>
-<p>None so far</p>
+<h2 id="dijkstra-algorithm이란">Dijkstra algorithm이란</h2>
+<p>최단경로 알고리즘중 하나이며, 출발지점과 목표지점을 설정하여 그사이의 최단경로를 트리로 구한다.
+단일 출발 문제에 적합하다.
+※ 시간복잡도 : O(|E|+|V|\log |V|)</p>
 
-<h2 id="머리짤랐냐고-물어볼-때">머리짤랐냐고 물어볼 때</h2>
-<p>Did you get a haircut?</p>
+<h3 id="과정">과정</h3>
+<ol>
+  <li>지점간 거리를 나타내는 테이블을 만들어 놓는다.(지점간 노드가 없는 경우 -1 설정)</li>
+  <li>모든 지점을 미확정 상태로 초기화한다.</li>
+  <li>최단 거리를 저장할 배열을 초기지점을 0으로하고 나머지는 무한대값(최대값)을 설정한다.</li>
+  <li>초기지점을 현재지점으로 설정한다.</li>
+  <li>현재지점에서 미확정상태의 지점을 찾아 그 지점으로부터 인접하는 지점의 거리를 구해, 현재까지의 지점간 거리와 비교해서 더 작은값이 있다면 그걸로 대체한다.</li>
+  <li>인접한 모든 지점간의 거리계산이 끝났으면 지점을 확정상태로 바꾼다.</li>
+  <li>미확정 상태인 모든 지점들 중, 출발점으로부터의 거리가 제일 짧은 지점 하나를 골라서 현재지점으로 설정한다.</li>
+  <li>도착지점이 확정상태로 되거나, 모든 지점이 확정상태로 될때 까지 5~7을 반복한다.</li>
+</ol>
 
-<h2 id="익숙해지다">익숙해지다</h2>
-<p>get used it</p>
+<h2 id="bellman-ford-algorithm이란">Bellman-Ford Algorithm이란</h2>
+<p>Dijkstra와 마찬가지로 출발지점과 목표지점을 설정하면 그 사이의 최단경로를 모든 지점의 최단경로를 구하는 알고리즘이다.
+Dijkstra와 비교해서 시간이 더 걸리지만, 두 지점간의 가중치(거리)가 음수 일 때도 사용이 가능하다.
+Dijkstra algorithm과는 다르게 모든 노드경로에 대해서 edge relaxation을 매번 수행한다.
+단일 출발 문제에 적합하다.
+※ 시간복잡도 : O(VE)</p>
 
                 </div>
             </section>
@@ -238,9 +253,9 @@ How’s everything?</p>
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            this.page.url = 'http://localhost:4000/PracticalEnglish4';
-                            this.page.identifier = '/PracticalEnglish4';
-                            this.page.title = 'TIL - 2021/02/01 Practical English4';
+                            this.page.url = 'http://localhost:4000/DijkstraAlgorithm';
+                            this.page.identifier = '/DijkstraAlgorithm';
+                            this.page.title = '최단거리문제';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -266,303 +281,9 @@ How’s everything?</p>
                 
                 
                 
-                    <article class="read-next-card"
-                        
-                            style="background-image: url(/assets/built/images/blog-cover1.png)"
-                        
-                    >
-                        <header class="read-next-card-header">
-                            <small class="read-next-card-header-sitetitle">&mdash; 푸바 프로그래밍 &mdash;</small>
-                            
-                                <h3 class="read-next-card-header-title"><a href="/tag/til/">Til</a></h3>
-                            
-                        </header>
-                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
-</div>
-                        <div class="read-next-card-content">
-                            <ul>
-                                
-                                
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/git">TIL - 2021/02/05 Git</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/Security">TIL - 2021/02/03 Security</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/PracticalEnglish5">TIL - 2021/02/02 Practical English5</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                            </ul>
-                        </div>
-                        <footer class="read-next-card-footer">
-                            <a href="/tag/til/">
-                                
-                                    See all 26 posts  →
-                                
-                            </a>
-                        </footer>
-                    </article>
-                
             
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
-            
-                
-
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/PracticalEnglish5">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/python-logo.png)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/PracticalEnglish5">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Til</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">TIL - 2021/02/02 Practical English5</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p></p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
             
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
@@ -571,12 +292,12 @@ How’s everything?</p>
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/PracticalEnglish3">
+            <a class="post-card-image-link" href="/git">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/python-logo.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/PracticalEnglish3">
+            <a class="post-card-content-link" href="/git">
                 <header class="post-card-header">
                     
                         
@@ -586,7 +307,7 @@ How’s everything?</p>
                         
                     
 
-                    <h2 class="post-card-title">TIL - 2021/01/28 Practical English3</h2>
+                    <h2 class="post-card-title">TIL - 2021/02/05 Git</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -623,18 +344,18 @@ How’s everything?</p>
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">TIL - 2021/02/01 Practical English4</div>
+    <div class="floating-header-title">최단거리문제</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=TIL+-+2021%2F02%2F01+Practical+English4&amp;url=https://PARK-1993.github.ioPracticalEnglish4"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=%EC%B5%9C%EB%8B%A8%EA%B1%B0%EB%A6%AC%EB%AC%B8%EC%A0%9C&amp;url=https://PARK-1993.github.ioDijkstraAlgorithm"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://PARK-1993.github.ioPracticalEnglish4"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://PARK-1993.github.ioDijkstraAlgorithm"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 
