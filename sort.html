@@ -11,7 +11,7 @@
 
 
 
-    <title>Simple Factory Pattern (c++)</title>
+    <title>정렬알고리즘</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -36,30 +36,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="TIL" />
     <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/favicon.jpg" type="image/png" />
-    <link rel="canonical" href="http://localhost:4000/SimpleFactory" />
+    <link rel="canonical" href="http://localhost:4000/sort" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="푸바 프로그래밍" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Simple Factory Pattern (c++)" />
-    <meta property="og:description" content="팩토리 패턴은 생성 패턴으로 객체를 생성할때 사용 되는 디자인패턴이다. 객체를 생성하는 부분을 팩토리 클래스로 따로 빼서 관리하는 것이다. simple Factory Simple Factory는 디자인패턴이라고는 할 수 없다고한다. 프로그래밍에서 자주쓰이는 용법..? 그정도라고 보면된다. 그러면 simple Factory는 뭔가? 구조 #include&lt;iostream&gt; int main() { Pizza objPizza; std::string order; if(order == "cheesePizza") objPizza = new" />
-    <meta property="og:url" content="http://localhost:4000/SimpleFactory" />
+    <meta property="og:title" content="정렬알고리즘" />
+    <meta property="og:description" content="븐류 내부정렬 : 정렬할 데이터를 주기억장치에 올려서 정렬하는 방식 선택, 버블, 힙, 삽입, 병합, 퀵 외부정렬 : 보조기억장치에서 정렬하는 방식이며 속도는 좀 더 느리지만, 대용량의 데이터를 처리할 수 있다. 정렬알고리즘 종류 선택정렬 버블정렬 힙정렬 삽입정렬 병합정렬 퀵정렬 선택정렬 시간복잡도 : O(N^2) 공간복잡도 : O(N) 원소하나를 선택하여 다른원소와 자리교환하는 방식이다. 과정" />
+    <meta property="og:url" content="http://localhost:4000/sort" />
     <meta property="og:image" content="http://localhost:4000/assets/built/images/python-logo.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2020-09-01T04:00:00+09:00" />
-    <meta property="article:modified_time" content="2020-09-01T04:00:00+09:00" />
-    <meta property="article:tag" content="Designpattern" />
+    <meta property="article:published_time" content="2021-02-08T03:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-02-08T03:00:00+09:00" />
+    <meta property="article:tag" content="Algorithm" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Simple Factory Pattern (c++)" />
-    <meta name="twitter:description" content="팩토리 패턴은 생성 패턴으로 객체를 생성할때 사용 되는 디자인패턴이다. 객체를 생성하는 부분을 팩토리 클래스로 따로 빼서 관리하는 것이다. simple Factory Simple Factory는 디자인패턴이라고는 할 수 없다고한다. 프로그래밍에서 자주쓰이는 용법..? 그정도라고 보면된다. 그러면 simple Factory는 뭔가? 구조 #include&lt;iostream&gt; int main() { Pizza objPizza; std::string order; if(order == "cheesePizza") objPizza = new" />
+    <meta name="twitter:title" content="정렬알고리즘" />
+    <meta name="twitter:description" content="븐류 내부정렬 : 정렬할 데이터를 주기억장치에 올려서 정렬하는 방식 선택, 버블, 힙, 삽입, 병합, 퀵 외부정렬 : 보조기억장치에서 정렬하는 방식이며 속도는 좀 더 느리지만, 대용량의 데이터를 처리할 수 있다. 정렬알고리즘 종류 선택정렬 버블정렬 힙정렬 삽입정렬 병합정렬 퀵정렬 선택정렬 시간복잡도 : O(N^2) 공간복잡도 : O(N) 원소하나를 선택하여 다른원소와 자리교환하는 방식이다. 과정" />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/built/images/python-logo.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="푸바 프로그래밍" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Designpattern" />
+    <meta name="twitter:data2" content="Algorithm" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="1400" />
@@ -74,7 +74,7 @@
         "name": "푸바 프로그래밍",
         "logo": "http://localhost:4000/"
     },
-    "url": "http://localhost:4000/SimpleFactory",
+    "url": "http://localhost:4000/sort",
     "image": {
         "@type": "ImageObject",
         "url": "http://localhost:4000/assets/built/images/python-logo.png",
@@ -83,9 +83,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/SimpleFactory"
+        "@id": "http://localhost:4000/sort"
     },
-    "description": "팩토리 패턴은 생성 패턴으로 객체를 생성할때 사용 되는 디자인패턴이다. 객체를 생성하는 부분을 팩토리 클래스로 따로 빼서 관리하는 것이다. simple Factory Simple Factory는 디자인패턴이라고는 할 수 없다고한다. 프로그래밍에서 자주쓰이는 용법..? 그정도라고 보면된다. 그러면 simple Factory는 뭔가? 구조 #include&lt;iostream&gt; int main() { Pizza objPizza; std::string order; if(order == "cheesePizza") objPizza = new"
+    "description": "븐류 내부정렬 : 정렬할 데이터를 주기억장치에 올려서 정렬하는 방식 선택, 버블, 힙, 삽입, 병합, 퀵 외부정렬 : 보조기억장치에서 정렬하는 방식이며 속도는 좀 더 느리지만, 대용량의 데이터를 처리할 수 있다. 정렬알고리즘 종류 선택정렬 버블정렬 힙정렬 삽입정렬 병합정렬 퀵정렬 선택정렬 시간복잡도 : O(N^2) 공간복잡도 : O(N) 원소하나를 선택하여 다른원소와 자리교환하는 방식이다. 과정"
 }
     </script>
 
@@ -98,7 +98,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Simple Factory Pattern (c++)" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="정렬알고리즘" href="/feed.xml" />
 
 
 </head>
@@ -156,21 +156,21 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  tag-designpattern post tag-DesignPattern ">
+        <article class="post-full  tag-algorithm post tag-Algorithm ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime=" 1 September 2020"> 1 September 2020</time>
+                    <time class="post-full-meta-date" datetime=" 8 February 2021"> 8 February 2021</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/designpattern/'>DESIGNPATTERN</a>
+                               <a href='/tag/algorithm/'>ALGORITHM</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">Simple Factory Pattern (c++)</h1>
+                <h1 class="post-full-title">정렬알고리즘</h1>
             </header>
 
             
@@ -180,71 +180,116 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p>팩토리 패턴은 생성 패턴으로 객체를 생성할때 사용 되는 디자인패턴이다.
-객체를 생성하는 부분을 팩토리 클래스로 따로 빼서 관리하는 것이다.</p>
+                    <h2 id="븐류">븐류</h2>
+<ol>
+  <li>내부정렬 : 정렬할 데이터를 주기억장치에 올려서 정렬하는 방식
+    <ul>
+      <li>선택, 버블, 힙, 삽입, 병합, 퀵</li>
+    </ul>
+  </li>
+  <li>외부정렬 : 보조기억장치에서 정렬하는 방식이며 속도는 좀 더 느리지만, 대용량의 데이터를 처리할 수 있다.</li>
+</ol>
 
-<h2 id="simple-factory">simple Factory</h2>
-<p>Simple Factory는 디자인패턴이라고는 할 수 없다고한다. 프로그래밍에서 자주쓰이는 용법..? 그정도라고 보면된다.
-그러면 simple Factory는 뭔가?</p>
+<h2 id="정렬알고리즘-종류">정렬알고리즘 종류</h2>
+<ol>
+  <li>선택정렬</li>
+  <li>버블정렬</li>
+  <li>힙정렬</li>
+  <li>삽입정렬</li>
+  <li>병합정렬</li>
+  <li>퀵정렬</li>
+</ol>
 
-<h2 id="구조">구조</h2>
+<h3 id="선택정렬">선택정렬</h3>
+<ul>
+  <li>시간복잡도 : O(N^2)</li>
+  <li>공간복잡도 : O(N)</li>
+  <li>원소하나를 선택하여 다른원소와 자리교환하는 방식이다.</li>
+  <li>과정 
+ ※ 현재인덱스 0로 설정
+    <ol>
+      <li>전체 원소중 가장 작은값의 원소를 선택한다.</li>
+      <li>선택한 원소를 현재인덱스의 원소와 교환한다.</li>
+      <li>현재인덱스를 증분하여 1로 돌아간다.</li>
+    </ol>
+  </li>
+</ul>
 
-<p><img src="/assets/image/post/20200831/SimpleFactory.jpg" alt="Activity" /></p>
+<h3 id="버블정렬">버블정렬</h3>
+<ul>
+  <li>시간복잡도 : O(n^2)</li>
+  <li>공간복잡도 : O(n)</li>
+  <li>인접한 두 원소를 비교하여 자리교환을 한다.</li>
+  <li>과정
+    <ol>
+      <li>헛번째 원소부터 인접한 두원소를 비교하고 값이큰 원소를 뒷자리로 보낸다.</li>
+      <li>모두 정렬될때까지 계속해서 반복한다.</li>
+    </ol>
+  </li>
+</ul>
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include&lt;iostream&gt;
-</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="n">Pizza</span> <span class="n">objPizza</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">order</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">order</span> <span class="o">==</span> <span class="s">"cheesePizza"</span><span class="p">)</span>
-        <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CheesePizza</span><span class="p">;</span>
-    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">order</span> <span class="o">==</span><span class="s">"bbqPizza"</span><span class="p">)</span>
-        <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BbqPizza</span><span class="p">;</span>
-    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">order</span> <span class="o">==</span><span class="s">"potatoPizza"</span><span class="p">)</span>
-        <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PotatoPizza</span><span class="p">;</span>
-    <span class="k">else</span>
-        <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">OriginalPizza</span><span class="p">;</span>
+<h3 id="삽입정렬">삽입정렬</h3>
+<ul>
+  <li>시간복잡도 : O(n^2) / 정렬되어있을 경우 O(N)</li>
+  <li>공간복잡도 : O(n)</li>
+  <li>두번째 원소부터 시작해서 정렬된 그이전의 원소들과 비교하며 맞는위치를 찾아 삽입하는 방식이다.</li>
+  <li>과정 
+ ※ 2번째 인덱스에서 시작한다.
+    <ol>
+      <li>현재인덱스의 왼쪽(앞)의 원소와 비교하며 알맞은 위치를 찾는다.</li>
+      <li>삽입을 수행한다.(삽입이 수행되는 인덱스를 포함한 뒤로의 인덱스들은 한칸씩 뒤로 물린다.)</li>
+      <li>현재인덱스를 증분한다.</li>
+      <li>모든 원소가 정렬 될 때까지 반복한다.</li>
+    </ol>
+  </li>
+</ul>
 
-    <span class="n">Pizza</span><span class="p">.</span><span class="n">cook</span><span class="p">();</span>    
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-<p>Pizza클래스가 있다고 가정하고, Pizza클래스를 상속하는 cheesePizza, bbqPizza, potatoPizza가 있다고 하자.
-다형성을 이용하여 만든 클래스를 동적으로 바꿀 수 있도록 코드를 짰다.
-하지만 이코드는 피자메뉴가 추가될 경우 계속해서 main()을 바꿔줘야하고 테스트도 다시 해야된다.
-여기서 Simple Factory를 사용하면 유지보수성이 좋아지고 캡슐화가 되어 객체지향적인 코딩이 가능하다.</p>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include&lt;iostream&gt;
-</span><span class="k">class</span> <span class="nc">PizzaFactory</span>
-<span class="p">{</span>
-    <span class="n">Pizza</span> <span class="n">createPizza</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">order</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">Pizza</span> <span class="n">objPizza</span><span class="p">;</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">order</span> <span class="o">==</span> <span class="s">"cheesePizza"</span><span class="p">)</span>
-            <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CheesePizza</span><span class="p">;</span>
-        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">order</span> <span class="o">==</span><span class="s">"bbqPizza"</span><span class="p">)</span>
-            <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BbqPizza</span><span class="p">;</span>
-        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">order</span> <span class="o">==</span><span class="s">"potatoPizza"</span><span class="p">)</span>
-            <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PotatoPizza</span><span class="p">;</span>
-        <span class="k">else</span>
-            <span class="n">objPizza</span> <span class="o">=</span> <span class="k">new</span> <span class="n">OriginalPizza</span><span class="p">;</span> 
-        <span class="k">return</span> <span class="n">objPizza</span><span class="p">;</span> 
-    <span class="p">}</span>
-<span class="p">}</span>
+<h3 id="힙정렬">힙정렬</h3>
+<ul>
+  <li>시간복잡도 : O(nlog₂n)</li>
+  <li>힙트리구조일때 사용할 수 있으며, 힙생성 알고리즘을 사용하여 정렬된 데이터를 얻는 방식. 최대값,최소값이 필요할 때 유용하다.</li>
+  <li>최대힙/최소힙 : 최대힙은 부모노드가 자식노드보다 값거나 큰경우의 구조이고, 최소힙은 부모노드가 자식노드보다 작거나같은 구조이다.</li>
+  <li>과정
+    <ol>
+      <li>힙을 생성한다.(힙생성알고리즘 사용)</li>
+      <li>루트에있는 값을 맨뒤의 요소와 교환한다.</li>
+      <li>힙트리의 크기를 1빼준다.</li>
+      <li>1~3을 모든원소가 정렬될때까지 반복한다.</li>
+    </ol>
+  </li>
+</ul>
 
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="n">Pizza</span> <span class="n">objPizza</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">order</span> <span class="o">=</span> <span class="s">"cheesePizza"</span><span class="p">;</span>
-    <span class="n">PizzaFactory</span> <span class="n">objPizzaFactory</span><span class="p">;</span>
-    <span class="n">objPizzaFactory</span><span class="p">.</span><span class="n">createPizza</span><span class="p">(</span><span class="n">order</span><span class="p">);</span>
+<h3 id="퀵정렬">퀵정렬</h3>
+<ul>
+  <li>시간복잡도 : O(nlog₂n) / 정렬되어있을 경우 O(N^2)</li>
+  <li>공간복잡도 : O(n)</li>
+  <li>기준값(pivot)을 지정하여 그 기준값을 기준으로 좌우로 분할하여 정렬할는 방식이다.(분할 정복 방식)</li>
+  <li>과정
+    <ol>
+      <li>pivot원소를 정한다.(보통 마지막원소나 중간값 혹은 랜덤값)</li>
+      <li>배열의 가장왼쪽원소를 나타내는 left와 가장오른쪽 원소를 나타내는 right변수를 생성한다.</li>
+      <li>right원소부터 pivot값과 비교한 후 pivot값보다 클 경우 -1한다.</li>
+      <li>left원소도 pivot값과 비교해서 pivot값보다 작을 경우 +1한다.</li>
+      <li>right원소가 pivot원소보다 작고 left원소가 pivot원소보다 클때까지 3,4를 반복한다.</li>
+      <li>반복이 끝나면 right원소와 left원소를 교환한다.</li>
+      <li>right원소인덱스와 left원소인덱스가 교차할때까지 3~6을 반복한다.</li>
+    </ol>
+  </li>
+</ul>
 
-    <span class="n">Pizza</span><span class="p">.</span><span class="n">cook</span><span class="p">();</span>    
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-<p>위같은 형식이 Simple Factory를 적용한 예이다. 이렇게 코딩을 할 경우
-혹시 피자메뉴가 추가되거나하면 PizzaFactory클래스만 변경하면 되기 때문에
-main은 건드릴 필요가 없게된다.</p>
+<h3 id="병합정렬">병합정렬</h3>
+<ul>
+  <li>시간복잡도 : O(nlog₂n)</li>
+  <li>배열을 균등한 크기로 분할 하고, 분할된 부분배열를 정렬한 다음 정렬된 배열을 합하는 방식이다.(배열의 크기가 0또는1이 될 때 까지 반복한다.)</li>
+  <li>과정
+    <ol>
+      <li>배열을 반으로 분할하여 부분배열로 나눈다.</li>
+      <li>배열사이즈가 0또는 1이될 때 까지 부분배열로 나눈다.</li>
+      <li>두 배열씩 값을 비교하여 정렬된 배열로 합병한다.</li>
+      <li>모든 배열이 합병될 때 까지 반복한다.</li>
+    </ol>
+  </li>
+</ul>
 
                 </div>
             </section>
@@ -284,9 +329,9 @@ main은 건드릴 필요가 없게된다.</p>
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            this.page.url = 'http://localhost:4000/SimpleFactory';
-                            this.page.identifier = '/SimpleFactory';
-                            this.page.title = 'Simple Factory Pattern (c++)';
+                            this.page.url = 'http://localhost:4000/sort';
+                            this.page.identifier = '/sort';
+                            this.page.title = '정렬알고리즘';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -320,7 +365,7 @@ main은 건드릴 필요가 없게된다.</p>
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; 푸바 프로그래밍 &mdash;</small>
                             
-                                <h3 class="read-next-card-header-title"><a href="/tag/designpattern/">Designpattern</a></h3>
+                                <h3 class="read-next-card-header-title"><a href="/tag/algorithm/">Algorithm</a></h3>
                             
                         </header>
                         <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
@@ -332,120 +377,10 @@ main은 건드릴 필요가 없게된다.</p>
                                   
                                 
                                   
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
                                     
                                         
                                         
-                                            <li><a href="/TemplateMethodPattern">TemplateMethod Pattern</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/TheLawOfDemeter">최소지식원칙 - Principle of Least Knowledge</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/HollywoodPrinciple">헐리우드원칙이란</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
+                                            <li><a href="/Big-O">Big-O</a></li>
                                         
                                     
                                   
@@ -458,12 +393,7 @@ main은 건드릴 필요가 없게된다.</p>
                                     
                                         
                                         
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
+                                            <li><a href="/Search">탐색문제</a></li>
                                         
                                     
                                   
@@ -472,7 +402,87 @@ main은 건드릴 필요가 없게된다.</p>
                                     
                                         
                                         
+                                            <li><a href="/DijkstraAlgorithm">최단거리문제</a></li>
+                                        
                                     
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
                                   
                                 
                                   
@@ -484,9 +494,9 @@ main은 건드릴 필요가 없게된다.</p>
                             </ul>
                         </div>
                         <footer class="read-next-card-footer">
-                            <a href="/tag/designpattern/">
+                            <a href="/tag/algorithm/">
                                 
-                                    See all 10 posts  →
+                                    See all 3 posts  →
                                 
                             </a>
                         </footer>
@@ -500,22 +510,22 @@ main은 건드릴 필요가 없게된다.</p>
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/FactoryMethodPattern">
+            <a class="post-card-image-link" href="/Big-O">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/python-logo.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/FactoryMethodPattern">
+            <a class="post-card-content-link" href="/Big-O">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Designpattern</span>
+                                <span class="post-card-tags">Algorithm</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Factory Method Pattern (c++)</h2>
+                    <h2 class="post-card-title">Big-O</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -545,22 +555,22 @@ main은 건드릴 필요가 없게된다.</p>
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/DecorationPattern">
+            <a class="post-card-image-link" href="/Search">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/python-logo.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/DecorationPattern">
+            <a class="post-card-content-link" href="/Search">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Designpattern</span>
+                                <span class="post-card-tags">Algorithm</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Decoration Pattern (C++)</h2>
+                    <h2 class="post-card-title">탐색문제</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -597,18 +607,18 @@ main은 건드릴 필요가 없게된다.</p>
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Simple Factory Pattern (c++)</div>
+    <div class="floating-header-title">정렬알고리즘</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Simple+Factory+Pattern+%28c%2B%2B%29&amp;url=https://PARK-1993.github.ioSimpleFactory"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=%EC%A0%95%EB%A0%AC%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98&amp;url=https://PARK-1993.github.iosort"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://PARK-1993.github.ioSimpleFactory"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://PARK-1993.github.iosort"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

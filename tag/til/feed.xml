@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/til/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-02-08T00:11:46+09:00</updated>
+  <updated>2021-02-08T23:46:04+09:00</updated>
   <id>http://localhost:4000/tag/til/feed.xml</id>
 
   
@@ -30,6 +30,56 @@
   
   
 
+  
+    <entry>
+      <title type="html">TIL - 2021/02/07 Practical Enlgish 6</title>
+      <link href="http://localhost:4000/PracticalEnglish6" rel="alternate" type="text/html" title="TIL - 2021/02/07 Practical Enlgish 6" />
+      <published>2021-02-08T08:30:00+09:00</published>
+      <updated>2021-02-08T08:30:00+09:00</updated>
+      <id>http://localhost:4000/PracticalEnglish6</id>
+      <content type="html" xml:base="http://localhost:4000/PracticalEnglish6">&lt;h2 id=&quot;제대로-못들었을-때&quot;&gt;제대로 못들었을 때&lt;/h2&gt;
+&lt;p&gt;I’m sorry. Could you say again, please?&lt;/p&gt;
+
+&lt;h2 id=&quot;천천히-말해달라고-할-때&quot;&gt;천천히 말해달라고 할 때&lt;/h2&gt;
+&lt;p&gt;I’m sorry. Could you speak slowly, please?
+I’m sorry. Could you speak a little more slowly, please?&lt;/p&gt;
+
+&lt;h2 id=&quot;좀-생각할-시간을-가질-때&quot;&gt;좀 생각할 시간을 가질 때&lt;/h2&gt;
+&lt;p&gt;Let me see..
+Let me think for a while.&lt;/p&gt;
+
+&lt;h2 id=&quot;영어로-어떻게-말해야-될지-모를-때&quot;&gt;영어로 어떻게 말해야 될지 모를 때&lt;/h2&gt;
+&lt;p&gt;How can I explain it in Enlgish?
+How do I say it in Enlish?&lt;/p&gt;
+
+&lt;h2 id=&quot;몇몇-교수들은-제대로-설명하지-못한다-속도와는-상관없이&quot;&gt;몇몇 교수들은 제대로 설명하지 못한다 속도와는 상관없이.&lt;/h2&gt;
+&lt;p&gt;There are some professors who really can’t explain the topic well whether they talk fast or slow.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">제대로 못들었을 때 I’m sorry. Could you say again, please?</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">TIL - 2021/02/05 Git</title>
@@ -647,57 +697,6 @@ I hope you guys have a good time in Japan&lt;/p&gt;
 
       
         <summary type="html">스키마(schema) 데이터의 내용, 데이터의논리구조, 기억형식이나 편성등의 데이터베이스의 구조를 명세한 것이다. 개체(Entity), 속성(Attribute), 관계(Relationship), 제약조건에 관해 정의한다. 스키마는 데이터사전(Data Dictionary)에 저장되며, 메타데이터라고도 한다. 스키마는 사용자 관점에따라 내부스키마, 외부스키마, 개념스키마 세 계층으로 나눠진다.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 캐시 교체 방법</title>
-      <link href="http://localhost:4000/HowToSelectBlock" rel="alternate" type="text/html" title="TIL - 캐시 교체 방법" />
-      <published>2021-01-20T08:00:00+09:00</published>
-      <updated>2021-01-20T08:00:00+09:00</updated>
-      <id>http://localhost:4000/HowToSelectBlock</id>
-      <content type="html" xml:base="http://localhost:4000/HowToSelectBlock">&lt;h2 id=&quot;캐시메모리-교체-방법-종류&quot;&gt;캐시메모리 교체 방법 종류&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;캐시메모리에 여유공간이없고 새로운 데이터를 주기억장치로부터 복사해야할 경우 캐시메모리의 블록을 교체하는 방식
-    &lt;ol&gt;
-      &lt;li&gt;LFU(Least Frequentely Used) : 사용되는 빈도가 가장 작은 블록을 교체한다.&lt;/li&gt;
-      &lt;li&gt;LRU(Least Recently Used) : 사용된지 가장 오래된 블록을 교체한다.&lt;/li&gt;
-      &lt;li&gt;NRU(Not Recently Used) : 일정시간동안 사용되지않은 블록을 교체한다.&lt;/li&gt;
-      &lt;li&gt;FIFO(First In First Out) : 캐시내에서 가장 오래있었던 블록을 교체한다.&lt;/li&gt;
-      &lt;li&gt;SCR(Second Change Replacement) : 두번 참조되면 블록을 교체한다.&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;쓰기정책&quot;&gt;쓰기정책&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;write Through : 캐시에 생긴 변화가 바로 메인메모리에도 반영되는 방식&lt;/li&gt;
-  &lt;li&gt;write back : 먼저 캐시를 변경하고 해당메모리가 캐시에서 제거될때 메인메모리에 반영되는 방식&lt;/li&gt;
-&lt;/ol&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">캐시메모리 교체 방법 종류 캐시메모리에 여유공간이없고 새로운 데이터를 주기억장치로부터 복사해야할 경우 캐시메모리의 블록을 교체하는 방식 LFU(Least Frequentely Used) : 사용되는 빈도가 가장 작은 블록을 교체한다. LRU(Least Recently Used) : 사용된지 가장 오래된 블록을 교체한다. NRU(Not Recently Used) : 일정시간동안 사용되지않은 블록을 교체한다. FIFO(First In First Out) : 캐시내에서 가장 오래있었던 블록을 교체한다. SCR(Second Change Replacement) : 두번 참조되면 블록을 교체한다.</summary>
       
 
       

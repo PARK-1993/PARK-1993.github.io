@@ -8,6 +8,86 @@
     
       
       <item>
+        <title>TIL - 2021/02/07 Practical Enlgish 6</title>
+        
+          <description>&lt;h2 id=&quot;제대로-못들었을-때&quot;&gt;제대로 못들었을 때&lt;/h2&gt;
+&lt;p&gt;I’m sorry. Could you say again, please?&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 08 Feb 2021 08:30:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/PracticalEnglish6</link>
+        <guid isPermaLink="true">http://localhost:4000/PracticalEnglish6</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Big-O</title>
+        
+          <description>&lt;p&gt;O(1) – 상수 시간 : 알고리즘이 문제를 해결하는데 오직 한 단계만 거칩니다.
+O(log n) – 로그 시간 : 문제를 해결하는데 필요한 단계들이 연산마다 특정 요인에 의해 줄어듭니다.
+O(n) – 직선적 시간 : 문제를 해결하기 위한 단계의 수와 입력값 n이 1:1 관계를 가집니다.
+O(n^2) – 2차 시간 : 문제를 해결하기 위한 단계의 수는 입력값 n의 제곱입니다.
+O(C^n) – 지수 시간 : 문제를 해결하기 위한 단계의 수는 주어진 상수값 C 의 n 제곱입니다. (상당히 큰수가 됩니다)&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 08 Feb 2021 04:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/Big-O</link>
+        <guid isPermaLink="true">http://localhost:4000/Big-O</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>정렬알고리즘</title>
+        
+          <description>&lt;h2 id=&quot;븐류&quot;&gt;븐류&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;내부정렬 : 정렬할 데이터를 주기억장치에 올려서 정렬하는 방식
+    &lt;ul&gt;
+      &lt;li&gt;선택, 버블, 힙, 삽입, 병합, 퀵&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;외부정렬 : 보조기억장치에서 정렬하는 방식이며 속도는 좀 더 느리지만, 대용량의 데이터를 처리할 수 있다.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        
+        <pubDate>Mon, 08 Feb 2021 03:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/sort</link>
+        <guid isPermaLink="true">http://localhost:4000/sort</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>탐색문제</title>
+        
+          <description>&lt;h2 id=&quot;탐색-알고리즘-종류&quot;&gt;탐색 알고리즘 종류&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;선형탐색&lt;/li&gt;
+  &lt;li&gt;이진탐색&lt;/li&gt;
+  &lt;li&gt;해시탐색&lt;/li&gt;
+  &lt;li&gt;이진탐색트리&lt;/li&gt;
+  &lt;li&gt;DFS/BFS&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        
+        <pubDate>Mon, 08 Feb 2021 02:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/Search</link>
+        <guid isPermaLink="true">http://localhost:4000/Search</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>최단거리문제</title>
         
           <description>&lt;h1 id=&quot;최단거리문제란shortest-path-problem&quot;&gt;최단거리문제란(Shortest Path Problem)&lt;/h1&gt;
