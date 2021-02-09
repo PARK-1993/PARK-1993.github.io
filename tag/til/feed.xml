@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/til/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-02-08T23:46:04+09:00</updated>
+  <updated>2021-02-09T23:54:35+09:00</updated>
   <id>http://localhost:4000/tag/til/feed.xml</id>
 
   
@@ -30,6 +30,62 @@
   
   
 
+  
+    <entry>
+      <title type="html">TIL - 2021/02/08 Practical Enlgish 7</title>
+      <link href="http://localhost:4000/PracticalEnlgish7" rel="alternate" type="text/html" title="TIL - 2021/02/08 Practical Enlgish 7" />
+      <published>2021-02-09T08:30:00+09:00</published>
+      <updated>2021-02-09T08:30:00+09:00</updated>
+      <id>http://localhost:4000/PracticalEnlgish7</id>
+      <content type="html" xml:base="http://localhost:4000/PracticalEnlgish7">&lt;h2 id=&quot;화상회의중에-상대방의-목소리가-너무-작을-때&quot;&gt;화상회의중에 상대방의 목소리가 너무 작을 때&lt;/h2&gt;
+&lt;p&gt;Could you speak a little louder, please?
+Could you speak up?&lt;/p&gt;
+
+&lt;h2 id=&quot;동시에-말하기-시작해서-양보할-때&quot;&gt;동시에 말하기 시작해서 양보할 때&lt;/h2&gt;
+&lt;p&gt;I’m sorry. Go ahead.
+Go ahead, please.&lt;/p&gt;
+
+&lt;h2 id=&quot;의미를-물어볼-때&quot;&gt;의미를 물어볼 때&lt;/h2&gt;
+&lt;p&gt;What’s the meaning of “amiable”?
+What does the word “amiable” mean?&lt;/p&gt;
+
+&lt;h2 id=&quot;스펠링을-알려달라고-할-때&quot;&gt;스펠링을 알려달라고 할 때&lt;/h2&gt;
+&lt;p&gt;How do I spell that
+Excuse me Teacher, How do I spell that word?
+Could you please spell that word for me?&lt;/p&gt;
+
+&lt;h2 id=&quot;사전에서-단어-찾아봐도-되냐고-물어볼-때&quot;&gt;사전에서 단어 찾아봐도 되냐고 물어볼 때&lt;/h2&gt;
+&lt;p&gt;Could I look for the word in my dictionary?
+Let me look it up in my dictionary.&lt;/p&gt;
+
+&lt;h2 id=&quot;말하고-싶었던-단어&quot;&gt;말하고 싶었던 단어&lt;/h2&gt;
+&lt;p&gt;stare at : 뚫어지게 쳐다보다&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">화상회의중에 상대방의 목소리가 너무 작을 때 Could you speak a little louder, please? Could you speak up?</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">TIL - 2021/02/07 Practical Enlgish 6</title>
@@ -651,52 +707,6 @@ I hope you guys have a good time in Japan&lt;/p&gt;
 
       
         <summary type="html">처음 만났을 때 Glad to meet you. (very formal) Pleased to meet you. (Very formal)</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 스키마란(schema)</title>
-      <link href="http://localhost:4000/schema" rel="alternate" type="text/html" title="TIL - 스키마란(schema)" />
-      <published>2021-01-20T10:00:00+09:00</published>
-      <updated>2021-01-20T10:00:00+09:00</updated>
-      <id>http://localhost:4000/schema</id>
-      <content type="html" xml:base="http://localhost:4000/schema">&lt;h1 id=&quot;스키마schema&quot;&gt;스키마(schema)&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;데이터의 내용, 데이터의논리구조, 기억형식이나 편성등의 데이터베이스의 구조를 명세한 것이다.&lt;/li&gt;
-  &lt;li&gt;개체(Entity), 속성(Attribute), 관계(Relationship), 제약조건에 관해 정의한다.&lt;/li&gt;
-  &lt;li&gt;스키마는 데이터사전(Data Dictionary)에 저장되며, 메타데이터라고도 한다.&lt;/li&gt;
-  &lt;li&gt;스키마는 사용자 관점에따라 내부스키마, 외부스키마, 개념스키마 세 계층으로 나눠진다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;내부스키마 : 물리적 저장장치의 관점에서본 스키마이며, 데이터베이스의 물리적구조를 나타낸다.&lt;/li&gt;
-  &lt;li&gt;외부스키마 : 응용프로그래머나 각 개인의 관점에서 본 스키마이며, 데이터베이스의 논리적 구조를 나타낸다. 서브스키마로도 불리며 여러개의 서브스키마가 존재할 수 있다.&lt;/li&gt;
-  &lt;li&gt;개념스키마 : 모든 사용자의 관점에서 본 스키마이며, 전체적인 논리적구조를 나타낸다. 스키마라고하면 개념스키마를 말하는 경우가 많으며, 모든 개체들간의 제약조건등이 기술 되어있따. 하나의 스키마밖에 존재 할 수 없다.&lt;/li&gt;
-&lt;/ol&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">스키마(schema) 데이터의 내용, 데이터의논리구조, 기억형식이나 편성등의 데이터베이스의 구조를 명세한 것이다. 개체(Entity), 속성(Attribute), 관계(Relationship), 제약조건에 관해 정의한다. 스키마는 데이터사전(Data Dictionary)에 저장되며, 메타데이터라고도 한다. 스키마는 사용자 관점에따라 내부스키마, 외부스키마, 개념스키마 세 계층으로 나눠진다.</summary>
       
 
       
