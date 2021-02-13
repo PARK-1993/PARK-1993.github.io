@@ -90,7 +90,6 @@ O(C^n) – 지수 시간 : 문제를 해결하기 위한 단계의 수는 주어
   &lt;li&gt;선형탐색&lt;/li&gt;
   &lt;li&gt;이진탐색&lt;/li&gt;
   &lt;li&gt;해시탐색&lt;/li&gt;
-  &lt;li&gt;이진탐색트리&lt;/li&gt;
   &lt;li&gt;DFS/BFS&lt;/li&gt;
 &lt;/ol&gt;
 

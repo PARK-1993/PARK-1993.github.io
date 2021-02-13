@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-09T23:54:35+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - 2021/02/08 Practical Enlgish 7</title><link href="http://localhost:4000/PracticalEnlgish7" rel="alternate" type="text/html" title="TIL - 2021/02/08 Practical Enlgish 7" /><published>2021-02-09T08:30:00+09:00</published><updated>2021-02-09T08:30:00+09:00</updated><id>http://localhost:4000/PracticalEnlgish7</id><content type="html" xml:base="http://localhost:4000/PracticalEnlgish7">&lt;h2 id=&quot;화상회의중에-상대방의-목소리가-너무-작을-때&quot;&gt;화상회의중에 상대방의 목소리가 너무 작을 때&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-13T22:54:11+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - 2021/02/08 Practical Enlgish 7</title><link href="http://localhost:4000/PracticalEnlgish7" rel="alternate" type="text/html" title="TIL - 2021/02/08 Practical Enlgish 7" /><published>2021-02-09T08:30:00+09:00</published><updated>2021-02-09T08:30:00+09:00</updated><id>http://localhost:4000/PracticalEnlgish7</id><content type="html" xml:base="http://localhost:4000/PracticalEnlgish7">&lt;h2 id=&quot;화상회의중에-상대방의-목소리가-너무-작을-때&quot;&gt;화상회의중에 상대방의 목소리가 너무 작을 때&lt;/h2&gt;
 &lt;p&gt;Could you speak a little louder, please?
 Could you speak up?&lt;/p&gt;
 
@@ -162,7 +162,6 @@ O(C^n) — Exponential Time: Given an input of size n, the number of steps it ta
   &lt;li&gt;선형탐색&lt;/li&gt;
   &lt;li&gt;이진탐색&lt;/li&gt;
   &lt;li&gt;해시탐색&lt;/li&gt;
-  &lt;li&gt;이진탐색트리&lt;/li&gt;
   &lt;li&gt;DFS/BFS&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -179,15 +178,19 @@ k만큼 반복하면 N = 2^(k-k) = 0이된다.
 k를 식으로부터 구하면  logN = k이되므로 시간복잡도는 O(logN)이된다.&lt;/p&gt;
 
 &lt;h3 id=&quot;해시탐색&quot;&gt;해시탐색&lt;/h3&gt;
-&lt;p&gt;TODO&lt;/p&gt;
-&lt;h3 id=&quot;이진탐색트리&quot;&gt;이진탐색트리&lt;/h3&gt;
-&lt;p&gt;TODO&lt;/p&gt;
+&lt;p&gt;검색하고자하는 키에 산술적인 연산을 적용하여 항목이 저장되어 있는 테이블의 주소를 계산하여 값을 탐색하는 방법이다.
+보통 dictionary와 같은 자료구조를 구현할때 사용된다. 시간복잡도는 O(1)를 가진다.
+하지만 다른 내용을 갖는 key값이 다를 경우 충돌이 발생하게 되는데, 이러한 충돌이 일어날 경우 해시테이블의 성능을 떨어트리기 때문에 충돌을 최소화 할 수 있는 해시함수를 정의하는 것이 중요하다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;해싱테이블 : key, value로 데이터를 저장하는 자료구조이며, 내부적으로 해싱함수를 이용하여 Key에 대한 고유한 index를 생성하여 이를 활용하여 value를 index에 해당되는 버킷,슬롯에 저장하거나, 검색할 수 있다.&lt;/li&gt;
+  &lt;li&gt;해시함수 : 해싱테이블에서 내부적으로 사용되는 함수이며, key값을 이 해시함수에 넣었을 경우 그결과로 나온값을 이용하여 value를 찾는다.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;dfsdepth-first-search--bfsbreadth-first-search&quot;&gt;DFS(Depth-First Search),  BFS(Breadth-First Search)&lt;/h3&gt;
 &lt;ol&gt;
   &lt;li&gt;깊이우선탐색(DFS)이란 트리를 예로 들었을때, 처음부터 마지막분기까지 쭉내려가면서 검색하는 방법이다.&lt;/li&gt;
   &lt;li&gt;너비우선탐색(BFS)이란 한 분기,단계에 있는 모든 노드들을 먼저 검색하고 그다음에 다음분기로 내려가서 검색하는 방법이다.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>JoonHyun Park</name></author><category term="Algorithm" /><summary type="html">탐색 알고리즘 종류 선형탐색 이진탐색 해시탐색 이진탐색트리 DFS/BFS</summary></entry><entry><title type="html">최단거리문제</title><link href="http://localhost:4000/DijkstraAlgorithm" rel="alternate" type="text/html" title="최단거리문제" /><published>2021-02-07T23:00:00+09:00</published><updated>2021-02-07T23:00:00+09:00</updated><id>http://localhost:4000/DijkstraAlgorithm</id><content type="html" xml:base="http://localhost:4000/DijkstraAlgorithm">&lt;h1 id=&quot;최단거리문제란shortest-path-problem&quot;&gt;최단거리문제란(Shortest Path Problem)&lt;/h1&gt;
+&lt;/ol&gt;</content><author><name>JoonHyun Park</name></author><category term="Algorithm" /><summary type="html">탐색 알고리즘 종류 선형탐색 이진탐색 해시탐색 DFS/BFS</summary></entry><entry><title type="html">최단거리문제</title><link href="http://localhost:4000/DijkstraAlgorithm" rel="alternate" type="text/html" title="최단거리문제" /><published>2021-02-07T23:00:00+09:00</published><updated>2021-02-07T23:00:00+09:00</updated><id>http://localhost:4000/DijkstraAlgorithm</id><content type="html" xml:base="http://localhost:4000/DijkstraAlgorithm">&lt;h1 id=&quot;최단거리문제란shortest-path-problem&quot;&gt;최단거리문제란(Shortest Path Problem)&lt;/h1&gt;
 &lt;p&gt;가중치가 있는 그래프가 주어졌을때, 임의의 두 노드를 잇는 최단거리를 찾는 문제이다.&lt;/p&gt;
 
 &lt;h2 id=&quot;최단거리문제-종류&quot;&gt;최단거리문제 종류&lt;/h2&gt;
