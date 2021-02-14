@@ -53,10 +53,14 @@ www(호스트명), yahoo.com.(도메인명), www.yahoo.com.(FQDN)</p>
 
 <h2 id="wafweb-application-firewall">WAF(Web Application Firewall)</h2>
 <p>패킷의헤더정보를 검사하는것 뿐만아니라 통신처의 어플리케이션프로그램을 식별해서 통신을 제어한다.</p>
-
-<h2 id="apopauthenticated-post-office-protocol">APOP(Authenticated Post Office Protocol)</h2>
-<p>POP은 메일서버의 메일박스로부터 전자메일을 꺼낼때 사용하는 프로토콜이다. 유저명과 비밀번호에따른 인증을 수행하나, 패스워드를 평문으로 보내는 결점이있다.
+<ul>
+  <li>파이어월, IDS/IPS로도 막을 수 없는 스크립트공격을 막을 수 있다.</li>
+  <li>처리시간이 길고, 서버에 부하를 줄 수 있다.
+    <h2 id="apopauthenticated-post-office-protocol">APOP(Authenticated Post Office Protocol)</h2>
+    <p>POP은 메일서버의 메일박스로부터 전자메일을 꺼낼때 사용하는 프로토콜이다. 유저명과 비밀번호에따른 인증을 수행하나, 패스워드를 평문으로 보내는 결점이있다.
 이 점을 대처해 해쉬함수등을 사용하여 패스워드송신을 암호화해 안정성을 높인 것이 APOP이다.</p>
+  </li>
+</ul>
 
 <h2 id="pop3spop3-over-ssltls">POP3S(POP3 over SSL/TLS)</h2>
 <p>APOP은 패스워드만 암호화하지만, 전송로를 암호화하는 SSL/TLS에의해 POP통신자체를 암호화하는 방식이다.</p>
@@ -196,4 +200,15 @@ VDI는 Thin Client를 실현하는 방법중 하나이다.</p>
       <dd>일반적으로 제3자(KT,SKT등)에 의해 제공되고 운영되는 공중망을 말하며 LAN이 여러개 모여 LAN간에 고속 전공이 가능한 전용 회선으로 연결한다.</dd>
     </dl>
   </li>
+</ul>
+
+<h3 id="idsips">IDS/IPS</h3>
+<ul>
+  <li>IDS(Intrusion Detection System) : 침입탐지시스템, 외부에서 내부로 들어오는 패킷을 탐지해 정상인지아닌지 판별하는 시스템</li>
+  <li>IPS(Intrusion Prevention System) : 침입방지시스템, 침입방지에 초점을 둔 방식이며, IPS를 이용하면 정상이아닌 패킷을 통과하지못하게 막을 수 있다.</li>
+  <li>헤더부 정보만아니라 데이터부의 내용까지 감시하여, 다양한 종류의 공격을 막을 수 있다.(OS의취약성을 노린공격, 파일공유시스템에의 공격, DoS공격 방어)
+    <h3 id="파이어월">파이어월</h3>
+  </li>
+  <li>헤더부의 정보(IP address, Port number)를 가지고 부정출입을 제한한다.(포트스캔 방어)</li>
+  <li>한계 : DoS공격, 스크립트 공격은 막지못한다.</li>
 </ul>
