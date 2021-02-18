@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/til/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-02-17T23:58:54+09:00</updated>
+  <updated>2021-02-18T23:40:21+09:00</updated>
   <id>http://localhost:4000/tag/til/feed.xml</id>
 
   
@@ -30,6 +30,106 @@
   
   
 
+  
+    <entry>
+      <title type="html">TIL - 2021/02/17 Happen</title>
+      <link href="http://localhost:4000/happen" rel="alternate" type="text/html" title="TIL - 2021/02/17 Happen" />
+      <published>2021-02-18T08:30:00+09:00</published>
+      <updated>2021-02-18T08:30:00+09:00</updated>
+      <id>http://localhost:4000/happen</id>
+      <content type="html" xml:base="http://localhost:4000/happen">&lt;h2 id=&quot;what-happened&quot;&gt;What happened?&lt;/h2&gt;
+&lt;p&gt;무슨일이 있었어?&lt;/p&gt;
+
+&lt;h2 id=&quot;another-singer-committed-suicide&quot;&gt;Another singer committed suicide&lt;/h2&gt;
+&lt;p&gt;또 가수가 한명 자살했대&lt;/p&gt;
+
+&lt;h2 id=&quot;when-did-that-happen&quot;&gt;When did that happen?&lt;/h2&gt;
+&lt;p&gt;언제그랬는데? 
+언제일어났어?&lt;/p&gt;
+
+&lt;h2 id=&quot;how-did-that-happen&quot;&gt;How did that happen?&lt;/h2&gt;
+&lt;p&gt;어떻게하다가 그렇게 됐어?&lt;/p&gt;
+
+&lt;h2 id=&quot;why-did-that-happen&quot;&gt;Why did that happen?&lt;/h2&gt;
+&lt;p&gt;왜 그렇게 됐어?&lt;/p&gt;
+
+&lt;h2 id=&quot;it-happened-just-a-fer-days-age&quot;&gt;It happened just a fer days age.&lt;/h2&gt;
+&lt;p&gt;며칠전에 일어났어.&lt;/p&gt;
+
+&lt;h2 id=&quot;its-been-all-over-the-news--its-all-over-the-news현재에대해서만-얘기할때&quot;&gt;It’s been all over the news. / It’s all over the news.(현재에대해서만 얘기할때)&lt;/h2&gt;
+&lt;p&gt;뉴스에서 다 얘기하고 있어.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">What happened? 무슨일이 있었어?</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">TIL - 2021/02/17 혼자서 / 스스로 알아서 / 직접</title>
+      <link href="http://localhost:4000/alone_byself_" rel="alternate" type="text/html" title="TIL - 2021/02/17 혼자서 / 스스로 알아서 / 직접" />
+      <published>2021-02-18T08:30:00+09:00</published>
+      <updated>2021-02-18T08:30:00+09:00</updated>
+      <id>http://localhost:4000/alone_byself_</id>
+      <content type="html" xml:base="http://localhost:4000/alone_byself_">&lt;h2 id=&quot;저-혼자살아요&quot;&gt;저 혼자살아요&lt;/h2&gt;
+&lt;p&gt;I live alone.
+I live by myself.&lt;/p&gt;
+
+&lt;h2 id=&quot;저-혼자예요&quot;&gt;저 혼자예요&lt;/h2&gt;
+&lt;p&gt;I’m alone.
+I’m by myself.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-used-to-have-a-rommate&quot;&gt;I used to have a rommate.&lt;/h2&gt;
+&lt;p&gt;예전에 룸메이트가 있었다.&lt;/p&gt;
+
+&lt;h2 id=&quot;at-the-moment&quot;&gt;at the moment&lt;/h2&gt;
+&lt;p&gt;지금당장, now와 다르게 나중에 바뀔 수 있다는걸 전제로두고 말하는것.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">저 혼자살아요 I live alone. I live by myself.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">TIL - 2021/02/08 Practical Enlgish 7</title>
@@ -561,152 +661,6 @@ ex) ID INT CHECK (ID &amp;gt;= 0 AND ID &amp;lt;= 1000)&lt;/p&gt;
 
       
         <summary type="html">UNION ALL UNION과 동일하게 표를 통합해서 하나의결과를 만들지만, 중복도 포함한다.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/01/27 Practical English</title>
-      <link href="http://localhost:4000/PracticalConversation2" rel="alternate" type="text/html" title="TIL - 2021/01/27 Practical English" />
-      <published>2021-01-28T08:00:00+09:00</published>
-      <updated>2021-01-28T08:00:00+09:00</updated>
-      <id>http://localhost:4000/PracticalConversation2</id>
-      <content type="html" xml:base="http://localhost:4000/PracticalConversation2">&lt;h3 id=&quot;어떻게-이친구를-알게되었는지-물어볼-때&quot;&gt;어떻게 이친구를 알게되었는지 물어볼 때&lt;/h3&gt;
-&lt;p&gt;How do you know her?&lt;/p&gt;
-
-&lt;h3 id=&quot;어디-출신인지-물어볼-때formal&quot;&gt;어디 출신인지 물어볼 때(formal)&lt;/h3&gt;
-&lt;p&gt;May I ask you where you`re from?&lt;/p&gt;
-
-&lt;h3 id=&quot;그나라의-정확히-어디서-왔는지-물어볼-때&quot;&gt;그나라의 정확히 어디서 왔는지 물어볼 때&lt;/h3&gt;
-&lt;p&gt;Where in Australia?
-Which park of Australia?
-Which city of Australia?&lt;/p&gt;
-
-&lt;h3 id=&quot;왜-일본에-왔는지-물어볼-때&quot;&gt;왜 일본에 왔는지 물어볼 때&lt;/h3&gt;
-&lt;p&gt;What brought you to Japan
-May I ask you why you come here in Japan&lt;/p&gt;
-
-&lt;h3 id=&quot;살짝웃다&quot;&gt;살짝웃다&lt;/h3&gt;
-&lt;p&gt;smirking&lt;/p&gt;
-
-&lt;h3 id=&quot;알고있지만-써먹지-못한-단어들&quot;&gt;알고있지만 써먹지 못한 단어들&lt;/h3&gt;
-&lt;p&gt;guest : 손님
-glass : 잔
-Wear a necklace : 목걸이를 하다&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">어떻게 이친구를 알게되었는지 물어볼 때 How do you know her?</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/01/26 KIMINI레슨</title>
-      <link href="http://localhost:4000/WhenNeedToSayGoodBye" rel="alternate" type="text/html" title="TIL - 2021/01/26 KIMINI레슨" />
-      <published>2021-01-27T08:00:00+09:00</published>
-      <updated>2021-01-27T08:00:00+09:00</updated>
-      <id>http://localhost:4000/WhenNeedToSayGoodBye</id>
-      <content type="html" xml:base="http://localhost:4000/WhenNeedToSayGoodBye">&lt;h3 id=&quot;처음-만났을-때&quot;&gt;처음 만났을 때&lt;/h3&gt;
-&lt;p&gt;Glad to meet you. (very formal)
-Pleased to meet you. (Very formal)&lt;/p&gt;
-
-&lt;h3 id=&quot;메일로만-주고받다가-처음만났을-때&quot;&gt;메일로만 주고받다가 처음만났을 때&lt;/h3&gt;
-&lt;p&gt;It`s nice to finally meet you&lt;/p&gt;
-
-&lt;h3 id=&quot;누군가-나에대해-얘기-많이-들었다고-했을-때&quot;&gt;누군가 나에대해 얘기 많이 들었다고 했을 때&lt;/h3&gt;
-&lt;p&gt;All good, I hope
-Only good things, I hope&lt;/p&gt;
-
-&lt;h3 id=&quot;소개할-타이밍을-놓쳤을-때&quot;&gt;소개할 타이밍을 놓쳤을 때&lt;/h3&gt;
-&lt;p&gt;By the way, My name is Joon&lt;/p&gt;
-
-&lt;h3 id=&quot;좋은-시간을-보내고-헤어질-때&quot;&gt;좋은 시간을 보내고 헤어질 때&lt;/h3&gt;
-&lt;p&gt;It was nice meeting you
-It was a pleasure meeting you
-I hope to see/meet you next time&lt;/p&gt;
-
-&lt;h3 id=&quot;처음만난-사람과-얘기를-나누고-헤어질-때&quot;&gt;처음만난 사람과 얘기를 나누고 헤어질 때&lt;/h3&gt;
-&lt;p&gt;It was nice talking to you, take care
-I was happy talking to you
-God bless on your way home&lt;/p&gt;
-
-&lt;h3 id=&quot;여행자와-헤어질-때&quot;&gt;여행자와 헤어질 때&lt;/h3&gt;
-&lt;p&gt;Enjoy your stay in Japan
-Enjoy your trip in Japan
-I hope you guys have a good time in Japan&lt;/p&gt;
-
-&lt;h2 id=&quot;단어-및-표현&quot;&gt;단어 및 표현&lt;/h2&gt;
-&lt;h3 id=&quot;watching-over-somethingsomebody&quot;&gt;watching over Something/Somebody&lt;/h3&gt;
-&lt;p&gt;누군가를 돌보다&lt;/p&gt;
-
-&lt;h3 id=&quot;caught-off-guard&quot;&gt;caught off guard&lt;/h3&gt;
-&lt;p&gt;의표를 찔리다. 허를찔리다. 당황하다,&lt;/p&gt;
-
-&lt;h3 id=&quot;get-it-done&quot;&gt;get it done&lt;/h3&gt;
-&lt;p&gt;about not getting it done
-그것을 끝내지 못한것에 대해서&lt;/p&gt;
-
-&lt;h3 id=&quot;have-on-their-health&quot;&gt;have on their health&lt;/h3&gt;
-&lt;p&gt;건강을 유지하다.&lt;/p&gt;
-
-&lt;h3 id=&quot;sense-of-alarm&quot;&gt;sense of alarm.&lt;/h3&gt;
-&lt;p&gt;경각심
-경고의 감각&lt;/p&gt;
-
-&lt;h3 id=&quot;this-can-help-a-child-feel-empowered&quot;&gt;This can help a child feel empowered.&lt;/h3&gt;
-&lt;p&gt;이것은 아이가 힘을 느끼는 데 도움이 될 수 있습니다.&lt;/p&gt;
-
-&lt;h3 id=&quot;input-on-that&quot;&gt;input on that&lt;/h3&gt;
-&lt;p&gt;~에 의견이있다.&lt;/p&gt;
-
-&lt;h3 id=&quot;team-up-with&quot;&gt;team up with&lt;/h3&gt;
-&lt;p&gt;~와 협력하다&lt;/p&gt;
-
-&lt;h3 id=&quot;among-the-most-popular&quot;&gt;among the most popular.&lt;/h3&gt;
-&lt;p&gt;가장 인기가있다.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">처음 만났을 때 Glad to meet you. (very formal) Pleased to meet you. (Very formal)</summary>
       
 
       
