@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/til/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-02-19T23:59:50+09:00</updated>
+  <updated>2021-02-20T23:54:44+09:00</updated>
   <id>http://localhost:4000/tag/til/feed.xml</id>
 
   
@@ -30,6 +30,137 @@
   
   
 
+  
+    <entry>
+      <title type="html">TIL - 2021/02/19 토들러2(이유, 결과)</title>
+      <link href="http://localhost:4000/toddler2" rel="alternate" type="text/html" title="TIL - 2021/02/19 토들러2(이유, 결과)" />
+      <published>2021-02-20T08:30:00+09:00</published>
+      <updated>2021-02-20T08:30:00+09:00</updated>
+      <id>http://localhost:4000/toddler2</id>
+      <content type="html" xml:base="http://localhost:4000/toddler2">&lt;h2 id=&quot;차가-많이-막혀서-늦었어요&quot;&gt;차가 많이 막혀서 늦었어요.&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;이유를 설명하려면 결과를 먼저 얘기하는 방법(이유설명이 목적)
+I was late because there was a lot of traffic
+※ there이나오면 뒤에나오는 내용이 있었다라는 의미.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;벌어진 일을 순서대로 나열해서 설명하는 방법
+There was a lot of traffic and I was late&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;차가많이-막혀서-내려서-지하철을-탔어&quot;&gt;차가많이 막혀서 내려서 지하철을 탔어&lt;/h2&gt;
+&lt;p&gt;There was a lot of traffic, so I got off and I took the subway.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;배고파서-뭘-먹긴-해야됐는데-일-끝나고-너무-피곤해서-뭘-만들어-먹고-싶진-않았고-밖에는-비가-와서-나가고-싶지-않아서-그냥-라면-먹었어&quot;&gt;배고파서 뭘 먹긴 해야됐는데, 일 끝나고 너무 피곤해서 뭘 만들어 먹고 싶진 않았고 밖에는 비가 와서 나가고 싶지 않아서 그냥 라면 먹었어.&lt;/h2&gt;
+
+&lt;p&gt;I was hungry so I had to eat something.
+※ 당연한거기때문에 becuase보단 so를
+I was so tired after work and I didn’t want to cook anything
+※ 부정문이기 때문에 anything이 어울림
+I didn’t want to go out because It was raining outside so I just ate ramen
+※ 전체적으로 중복도 없애고 문맥적으로 왜 나가지않았는지 이유가 필요하기 때문에 because가 어울린다.&lt;/p&gt;
+
+&lt;h2 id=&quot;여행-내내-우리아버지가-운전하셨어&quot;&gt;여행 내내 우리아버지가 운전하셨어.&lt;/h2&gt;
+&lt;p&gt;My father drove throughout the entire trip&lt;/p&gt;
+&lt;h2 id=&quot;너-운전면허증-있지않아&quot;&gt;너 운전면허증 있지않아?&lt;/h2&gt;
+&lt;p&gt;Don’t you have a driver’s license?&lt;/p&gt;
+&lt;h2 id=&quot;응-작년에-따서-심지어-차도-샀어&quot;&gt;응, 작년에 따서 심지어 차도 샀어.&lt;/h2&gt;
+&lt;p&gt;Yes. I got it last year and I even bought a car&lt;/p&gt;
+&lt;h2 id=&quot;근데-연습을-안해서-아직도-운전을-잘-못해&quot;&gt;근데 연습을 안해서 아직도 운전을 잘 못해.&lt;/h2&gt;
+&lt;p&gt;But I didn’t practice so I still can’t drive well.&lt;/p&gt;
+&lt;h2 id=&quot;어머니는-시력이-너무-안좋으셔서-운전을-못하셔&quot;&gt;어머니는 시력이 너무 안좋으셔서 운전을 못하셔.&lt;/h2&gt;
+&lt;p&gt;My mother can’t drive because she has bad eye-sight
+※ 증상의 경우 가지고있다는 식으로 얘기해야한다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">차가 많이 막혀서 늦었어요.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">TIL - 2021/02/19 토들러1(기상, 습관)</title>
+      <link href="http://localhost:4000/toddler1" rel="alternate" type="text/html" title="TIL - 2021/02/19 토들러1(기상, 습관)" />
+      <published>2021-02-20T08:00:00+09:00</published>
+      <updated>2021-02-20T08:00:00+09:00</updated>
+      <id>http://localhost:4000/toddler1</id>
+      <content type="html" xml:base="http://localhost:4000/toddler1">&lt;h2 id=&quot;i-get-up-around-7-oclock-every-morning&quot;&gt;I get up around 7 o’clock every morning&lt;/h2&gt;
+&lt;p&gt;나는 매일 아침 7시쯤 일어나&lt;/p&gt;
+
+&lt;h2 id=&quot;i-go-jogging-for-about-half-an-hour&quot;&gt;I go jogging for about half an hour&lt;/h2&gt;
+&lt;p&gt;30분정도 조깅을해&lt;/p&gt;
+
+&lt;h2 id=&quot;wow-thats-amazing&quot;&gt;Wow! That’s amazing!&lt;/h2&gt;
+&lt;p&gt;와! 장난아니다!&lt;/p&gt;
+
+&lt;h2 id=&quot;just-on-weekdaysright&quot;&gt;Just on weekdays,right?&lt;/h2&gt;
+&lt;p&gt;평일에만 그러는거죠?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;weekdays 복수형을 쓰는것으로 반복되는 주를 얘기한다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;no-even-on-weekends&quot;&gt;No. Even On weekends&lt;/h2&gt;
+&lt;p&gt;아니야 주말에도&lt;/p&gt;
+
+&lt;h2 id=&quot;how-do-you-do-that&quot;&gt;How do you do that&lt;/h2&gt;
+&lt;p&gt;어떻게 그렇게해?&lt;/p&gt;
+
+&lt;h2 id=&quot;i-have-to-work-out-hard&quot;&gt;I have to work out hard.&lt;/h2&gt;
+&lt;p&gt;나는 운동 열심히 해야 돼&lt;/p&gt;
+
+&lt;h2 id=&quot;i-gain-weight-so-easily&quot;&gt;I gain weight so easily&lt;/h2&gt;
+&lt;p&gt;살이너무 잘 찌거든&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">I get up around 7 o’clock every morning 나는 매일 아침 7시쯤 일어나</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">TIL - 2021/02/17 Happen</title>
@@ -508,159 +639,6 @@ How’s everything?&lt;/p&gt;
 
       
         <summary type="html">다시만나게 되었을 때 It’s nice to see you again. How have you been? Nice to see you again!</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/01/28 Practical English3</title>
-      <link href="http://localhost:4000/PracticalEnglish3" rel="alternate" type="text/html" title="TIL - 2021/01/28 Practical English3" />
-      <published>2021-01-29T08:30:00+09:00</published>
-      <updated>2021-01-29T08:30:00+09:00</updated>
-      <id>http://localhost:4000/PracticalEnglish3</id>
-      <content type="html" xml:base="http://localhost:4000/PracticalEnglish3">&lt;h3 id=&quot;쉴때-뭐하는지-물어볼-때&quot;&gt;쉴때 뭐하는지 물어볼 때&lt;/h3&gt;
-&lt;p&gt;What do you do in your free time?&lt;/p&gt;
-
-&lt;h3 id=&quot;2주뒤에-시험이-있다고-말할-때&quot;&gt;2주뒤에 시험이 있다고 말할 때&lt;/h3&gt;
-&lt;p&gt;I have a test in two weeks&lt;/p&gt;
-
-&lt;h3 id=&quot;외국드라마에-빠졌다고-말할-때&quot;&gt;외국드라마에 빠졌다고 말할 때&lt;/h3&gt;
-&lt;p&gt;I’m hooked on forign dramas
-I’m into forign dramas&lt;/p&gt;
-
-&lt;h3 id=&quot;대학교-몇학년인지-물어볼-때&quot;&gt;대학교 몇학년인지 물어볼 때&lt;/h3&gt;
-&lt;p&gt;What year are you in?
-What year are you now in University?&lt;/p&gt;
-
-&lt;h3 id=&quot;형제나-자매가-있는지-물어볼-때&quot;&gt;형제나 자매가 있는지 물어볼 때&lt;/h3&gt;
-&lt;p&gt;Do you have any brothers or sisters?&lt;/p&gt;
-
-&lt;h3 id=&quot;몰랐던-단어&quot;&gt;몰랐던 단어&lt;/h3&gt;
-&lt;p&gt;precautionary measure : 사전주의사항
-clingy : 계속붙어있는
-inquisitive eyes : 호기심이가능학 눈
-stray : 주인을 잃은&lt;/p&gt;
-
-&lt;h3 id=&quot;알고는-있지만-안나온-단어&quot;&gt;알고는 있지만 안나온 단어&lt;/h3&gt;
-&lt;p&gt;old hairstyle
-rules to follow
-preparing for test
-in 기간 : 기간 후에
-noisy 
-quite
-doubt&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">쉴때 뭐하는지 물어볼 때 What do you do in your free time?</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/01/28 Database 쿼리 기본</title>
-      <link href="http://localhost:4000/Database%EC%BF%BC%EB%A6%AC%EA%B8%B0%EB%B3%B8" rel="alternate" type="text/html" title="TIL - 2021/01/28 Database 쿼리 기본" />
-      <published>2021-01-29T08:00:00+09:00</published>
-      <updated>2021-01-29T08:00:00+09:00</updated>
-      <id>http://localhost:4000/Database%EC%BF%BC%EB%A6%AC%EA%B8%B0%EB%B3%B8</id>
-      <content type="html" xml:base="http://localhost:4000/Database%EC%BF%BC%EB%A6%AC%EA%B8%B0%EB%B3%B8">&lt;h3 id=&quot;union-all&quot;&gt;UNION ALL&lt;/h3&gt;
-&lt;p&gt;UNION과 동일하게 표를 통합해서 하나의결과를 만들지만, 중복도 포함한다.&lt;/p&gt;
-
-&lt;h3 id=&quot;distinct&quot;&gt;DISTINCT&lt;/h3&gt;
-&lt;p&gt;열의 값에서 중복하는 행을 뽑아서 정리해 하나의 행으로 표시한다.&lt;/p&gt;
-
-&lt;h3 id=&quot;as-별명&quot;&gt;AS 별명&lt;/h3&gt;
-&lt;p&gt;AS문은 필드명이나 테이블명에 별도의 이름을 붙인다.&lt;/p&gt;
-
-&lt;h3 id=&quot;exists-검사대상&quot;&gt;EXISTS (검사대상)&lt;/h3&gt;
-&lt;p&gt;SELECT문에의한 검사결과의 조합이 존재하는지아닌지를 검사하는 기능을 갖는다. 조건을 만족하는 레코드가 있으면 참이다.&lt;/p&gt;
-
-&lt;h3 id=&quot;case&quot;&gt;CASE&lt;/h3&gt;
-&lt;p&gt;SQL문에서 조건분기를 수행한다.&lt;/p&gt;
-
-&lt;p&gt;CASE 식  WHEN 조건식1 THEN 리턴값1
-CASE 식  WHEN 조건식2 THEN 리턴값2 ELSE 어떤조건에도 일치하지않는 경우의 리턴값&lt;/p&gt;
-
-&lt;h3 id=&quot;group-by&quot;&gt;GROUP BY&lt;/h3&gt;
-&lt;p&gt;지정한열의 값과 같은것들을 그릅화해서 집계한다.&lt;/p&gt;
-
-&lt;h3 id=&quot;having&quot;&gt;HAVING&lt;/h3&gt;
-&lt;p&gt;GROUP BY 문에의해 그룹화된 결과에 대해 한층 검색조건을 지정한경우에는 WHRER을 쓸 수 없고 HAVING을 써서 표현한다.&lt;/p&gt;
-
-&lt;h3 id=&quot;between연산자&quot;&gt;BETWEEN연산자&lt;/h3&gt;
-&lt;p&gt;값의 범위를 지정한다.
-SELECT 이름, 연령 FROM 명부 WHERE 연령 BETWEEN 18 AND 22&lt;/p&gt;
-
-&lt;h3 id=&quot;count&quot;&gt;COUNT(*)&lt;/h3&gt;
-&lt;p&gt;데이터의 건수를 센다
-SELECT COUNT(*) FROM 상품표&lt;/p&gt;
-
-&lt;h3 id=&quot;right-outer-join--오른쪽외부결합&quot;&gt;RIGHT OUTER JOIN : 오른쪽외부결합&lt;/h3&gt;
-&lt;p&gt;SELECT 컬럼명 FROM 표1 RIGHT OUTER JOIN 표2 ON 조건식
-조건에 맞는 데이터를 표2로 가져온다.&lt;/p&gt;
-
-&lt;h2 id=&quot;제약조건&quot;&gt;제약조건&lt;/h2&gt;
-&lt;h3 id=&quot;기본키&quot;&gt;기본키&lt;/h3&gt;
-&lt;p&gt;값은 중복될 수 없으며 NULL사용이 불가능하다.
-ex) Name CHAR(10) PRIMARY KEYa&lt;/p&gt;
-
-&lt;h3 id=&quot;외래키&quot;&gt;외래키&lt;/h3&gt;
-&lt;p&gt;외래키가 참조하는 테이블의 열은 반드시 기본키이거나 unique제약조건이 걸려있어야한다.
-ex) FOREIGN KEY(ID) REFERENCES 다른테이블(ID)&lt;/p&gt;
-
-&lt;h3 id=&quot;unique&quot;&gt;Unique&lt;/h3&gt;
-&lt;p&gt;값은 중복될 수 없으며, NULL사용은 가능하다.
-ex) mail CHAR(30)
-    Constraint UQ_mail UNIQUE(mail)&lt;/p&gt;
-
-&lt;h3 id=&quot;check&quot;&gt;Check&lt;/h3&gt;
-&lt;p&gt;입력되는 데이터에 조건을 부여하는 제약조건이다. 양수값만 입력가능하게 하거나 음수값만 입력가능하게하거나 할 수 있다.
-ex) ID INT CHECK (ID &amp;gt;= 0 AND ID &amp;lt;= 1000)&lt;/p&gt;
-
-&lt;h3 id=&quot;default&quot;&gt;DEFAULT&lt;/h3&gt;
-&lt;p&gt;어떤 값도 입력하지 않았을 경우 설정되는 기본 값이다.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">UNION ALL UNION과 동일하게 표를 통합해서 하나의결과를 만들지만, 중복도 포함한다.</summary>
       
 
       
