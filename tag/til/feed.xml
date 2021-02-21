@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/til/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-02-20T23:54:44+09:00</updated>
+  <updated>2021-02-21T14:36:25+09:00</updated>
   <id>http://localhost:4000/tag/til/feed.xml</id>
 
   
@@ -30,6 +30,267 @@
   
   
 
+  
+    <entry>
+      <title type="html">TIL - 2021/02/21 토들러6(시간이걸리다/돈이들다)</title>
+      <link href="http://localhost:4000/toddler6" rel="alternate" type="text/html" title="TIL - 2021/02/21 토들러6(시간이걸리다/돈이들다)" />
+      <published>2021-02-21T09:30:00+09:00</published>
+      <updated>2021-02-21T09:30:00+09:00</updated>
+      <id>http://localhost:4000/toddler6</id>
+      <content type="html" xml:base="http://localhost:4000/toddler6">&lt;h2 id=&quot;5분-걸려요&quot;&gt;5분 걸려요&lt;/h2&gt;
+&lt;p&gt;It takes 5 minutes.&lt;/p&gt;
+
+&lt;h2 id=&quot;5000원-들어요&quot;&gt;5000원 들어요.&lt;/h2&gt;
+&lt;p&gt;It costs 5000 won
+※ costs발음할 때 ㅆ+ㅌ+ㅆ로 해야된다&lt;/p&gt;
+
+&lt;h2 id=&quot;시간이-많이-걸려요&quot;&gt;시간이 많이 걸려요.&lt;/h2&gt;
+&lt;p&gt;It takes a lot time&lt;/p&gt;
+
+&lt;h2 id=&quot;돈이-많이-들려요&quot;&gt;돈이 많이 들려요&lt;/h2&gt;
+&lt;p&gt;It costs  a lot money&lt;/p&gt;
+
+&lt;h2 id=&quot;시간이-많이-걸렸어요&quot;&gt;시간이 많이 걸렸어요.&lt;/h2&gt;
+&lt;p&gt;It took a lot time.
+It took really(very) long&lt;/p&gt;
+
+&lt;h2 id=&quot;돈이-많이-들었어요&quot;&gt;돈이 많이 들었어요.&lt;/h2&gt;
+&lt;p&gt;It cost a lot money&lt;/p&gt;
+
+&lt;h2 id=&quot;시간이-많이-걸릴거예요&quot;&gt;시간이 많이 걸릴거예요.&lt;/h2&gt;
+&lt;p&gt;It’s going to take a lot of time / a long time / long&lt;/p&gt;
+
+&lt;h2 id=&quot;돈이-많이-들거예요&quot;&gt;돈이 많이 들거예요.&lt;/h2&gt;
+&lt;p&gt;It’s going to cost a lot of money.&lt;/p&gt;
+
+&lt;h2 id=&quot;시간이-많이-안걸려요&quot;&gt;시간이 많이 안걸려요&lt;/h2&gt;
+&lt;p&gt;It doesn’t take a lot of time / long / &lt;strong&gt;very long&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;시간이-많이-안걸렸어요&quot;&gt;시간이 많이 안걸렸어요.&lt;/h2&gt;
+&lt;p&gt;It didn’t take very long.&lt;/p&gt;
+
+&lt;h2 id=&quot;돈이-많이-안들어요&quot;&gt;돈이 많이 안들어요.&lt;/h2&gt;
+&lt;p&gt;It doesn’t cost very much.&lt;/p&gt;
+
+&lt;h2 id=&quot;돈이-많이-안들었어요&quot;&gt;돈이 많이 안들었어요.&lt;/h2&gt;
+&lt;p&gt;It didn’t cost very much&lt;/p&gt;
+
+&lt;h2 id=&quot;돈이-많이-안들거예요&quot;&gt;돈이 많이 안들거예요.&lt;/h2&gt;
+&lt;p&gt;It’s not going to cost very much&lt;/p&gt;
+
+&lt;h2 id=&quot;does-it-take-a-lot-of-time--long&quot;&gt;Does it take a lot of time / long?&lt;/h2&gt;
+&lt;h2 id=&quot;did-it-take-a-lot-of-time--long&quot;&gt;Did it take a lot of time / long?&lt;/h2&gt;
+&lt;h2 id=&quot;is-it-going-to-take-a-lot-of-time--long&quot;&gt;Is it going to take a lot of time / long?&lt;/h2&gt;
+&lt;h2 id=&quot;willwould-it-take-long&quot;&gt;Will/&lt;strong&gt;Would&lt;/strong&gt; it take long?&lt;/h2&gt;
+&lt;h2 id=&quot;how-long-does-it-take&quot;&gt;How long does it take?&lt;/h2&gt;
+&lt;h2 id=&quot;how-long-did-it-take&quot;&gt;How long did it take?&lt;/h2&gt;
+&lt;h2 id=&quot;how-long-would-it-take&quot;&gt;How long would it take?&lt;/h2&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">5분 걸려요 It takes 5 minutes.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">TIL - 2021/02/20 토들러5(something/somewhere/someone)</title>
+      <link href="http://localhost:4000/toddler5" rel="alternate" type="text/html" title="TIL - 2021/02/20 토들러5(something/somewhere/someone)" />
+      <published>2021-02-21T08:30:00+09:00</published>
+      <updated>2021-02-21T08:30:00+09:00</updated>
+      <id>http://localhost:4000/toddler5</id>
+      <content type="html" xml:base="http://localhost:4000/toddler5">&lt;h2 id=&quot;나-뭐-좀-필요해&quot;&gt;나 뭐 좀 필요해&lt;/h2&gt;
+&lt;p&gt;I need something&lt;/p&gt;
+
+&lt;h2 id=&quot;나-뭐가-좀-먹고-싶어&quot;&gt;나 뭐가 좀 먹고 싶어&lt;/h2&gt;
+&lt;p&gt;I want to eat something&lt;/p&gt;
+
+&lt;h2 id=&quot;나-어디-좀-가고-싶어&quot;&gt;나 어디 좀 가고 싶어&lt;/h2&gt;
+&lt;p&gt;I need(have) to go somewhere&lt;/p&gt;
+
+&lt;h2 id=&quot;나-누구좀-만나야-돼n&quot;&gt;나 누구좀 만나야 돼N&lt;/h2&gt;
+&lt;p&gt;I have(need) to meet someone&lt;/p&gt;
+
+&lt;h2 id=&quot;나-뭔가-가벼운게-필요해&quot;&gt;나 뭔가 가벼운게 필요해&lt;/h2&gt;
+&lt;p&gt;I need something light&lt;/p&gt;
+
+&lt;h2 id=&quot;나-뭔가-더-가벼운게-필요해&quot;&gt;나 뭔가 더 가벼운게 필요해&lt;/h2&gt;
+&lt;p&gt;I need something lighter&lt;/p&gt;
+
+&lt;h2 id=&quot;나-뭔가-좀-단게-먹고-싶어&quot;&gt;나 뭔가 좀 단게 먹고 싶어.&lt;/h2&gt;
+&lt;p&gt;I want to eat something sweet.&lt;/p&gt;
+
+&lt;h2 id=&quot;나-진짜-매운게-좀-먹고-싶어&quot;&gt;나 진짜 매운게 좀 먹고 싶어.&lt;/h2&gt;
+&lt;p&gt;I want to eat something really spicy&lt;/p&gt;
+
+&lt;h2 id=&quot;나-어디-조용한-데-가고-싶어&quot;&gt;나 어디 조용한 데 가고 싶어.&lt;/h2&gt;
+&lt;p&gt;I want to go somewhere quite.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">나 뭐 좀 필요해 I need something</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">TIL - 2021/02/20 토들러4(It’s)</title>
+      <link href="http://localhost:4000/toddler4" rel="alternate" type="text/html" title="TIL - 2021/02/20 토들러4(It's)" />
+      <published>2021-02-21T08:30:00+09:00</published>
+      <updated>2021-02-21T08:30:00+09:00</updated>
+      <id>http://localhost:4000/toddler4</id>
+      <content type="html" xml:base="http://localhost:4000/toddler4">&lt;h2 id=&quot;잊어버리기-쉬어요&quot;&gt;잊어버리기 쉬어요.&lt;/h2&gt;
+&lt;p&gt;It’s easy to forget&lt;/p&gt;
+
+&lt;h2 id=&quot;잃어버리기-쉬어요&quot;&gt;잃어버리기 쉬어요.&lt;/h2&gt;
+&lt;p&gt;It’s really easy to lose&lt;/p&gt;
+
+&lt;p&gt;※ to를 두발음으로 내는게 자연스럽다.&lt;/p&gt;
+&lt;h2 id=&quot;집중하기-어려워요&quot;&gt;집중하기 어려워요.&lt;/h2&gt;
+&lt;p&gt;It’s hard/difficult to concentrate&lt;/p&gt;
+
+&lt;h2 id=&quot;시끄러워서-집중하기-어려워요&quot;&gt;시끄러워서 집중하기 어려워요.&lt;/h2&gt;
+&lt;p&gt;It’s difficult to concentrate because It’s so noisy&lt;/p&gt;
+
+&lt;h2 id=&quot;일주일에-적어도-한-두번은-운동을-하는-것이-중요하다&quot;&gt;일주일에 적어도 한 두번은 운동을 하는 것이 중요하다.&lt;/h2&gt;
+&lt;p&gt;It’s important to exercise at least once or twice a week.&lt;/p&gt;
+
+&lt;h2 id=&quot;그런데-물론-그렇게-하기-쉽지-않다&quot;&gt;그런데 물론 그렇게 하기 쉽지 않다.&lt;/h2&gt;
+&lt;p&gt;but of course, It’s not easy to do that&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">잊어버리기 쉬어요. It’s easy to forget</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">TIL - 2021/02/20 토들러3(There is, Have)</title>
+      <link href="http://localhost:4000/toddler3" rel="alternate" type="text/html" title="TIL - 2021/02/20 토들러3(There is, Have)" />
+      <published>2021-02-21T08:30:00+09:00</published>
+      <updated>2021-02-21T08:30:00+09:00</updated>
+      <id>http://localhost:4000/toddler3</id>
+      <content type="html" xml:base="http://localhost:4000/toddler3">&lt;h1 id=&quot;이용하는-사람이-불특정다수공용--there-is&quot;&gt;이용하는 사람이 불특정다수(공용) =&amp;gt; There is&lt;/h1&gt;
+&lt;h1 id=&quot;특정사람이-소유한것에대해서-얘기할-때--have&quot;&gt;특정사람이 소유한것에대해서 얘기할 때 =&amp;gt; Have&lt;/h1&gt;
+
+&lt;h2 id=&quot;별로-없다&quot;&gt;별로 없다&lt;/h2&gt;
+&lt;p&gt;There isn’t a lot of
+There aren’t a lot of&lt;/p&gt;
+
+&lt;h2 id=&quot;사람이-별로-없어요&quot;&gt;사람이 별로 없어요&lt;/h2&gt;
+&lt;p&gt;There aren’t many people&lt;/p&gt;
+
+&lt;h2 id=&quot;나는-피아노가-있어&quot;&gt;나는 피아노가 있어.&lt;/h2&gt;
+&lt;p&gt;I have 2 bedrooms&lt;/p&gt;
+&lt;h2 id=&quot;우리집에-침실이-두개-있어&quot;&gt;우리집에 침실이 두개 있어&lt;/h2&gt;
+&lt;p&gt;My house has 2 bedrooms.&lt;/p&gt;
+
+&lt;h2 id=&quot;내방에-큰-창문이-하나-있어요&quot;&gt;내방에 큰 창문이 하나 있어요.&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;I have a big window in my room&lt;/li&gt;
+  &lt;li&gt;My room has a big window&lt;/li&gt;
+  &lt;li&gt;There is a big window in my room(사용 빈도가 낮다. 내가 방의 주인이기 때문에)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;부모님의-집에는--tv가-두-개-있어요&quot;&gt;부모님의 집에는  TV가 두 개 있어요.&lt;/h2&gt;
+&lt;p&gt;There are 2 television at my parents’ place =&amp;gt; 부자연스럽다
+They have 2 televisions at their place. =&amp;gt; 자연스럽다.&lt;/p&gt;
+
+&lt;h2 id=&quot;그-가게는-테이블이-아주-많아&quot;&gt;그 가게는 테이블이 아주 많아.&lt;/h2&gt;
+&lt;p&gt;There are a lot of tables at the store.=&amp;gt; 부자연스럽다
+They have a lot of tables. =&amp;gt; 자연스럽다.&lt;/p&gt;
+
+&lt;h2 id=&quot;is-there--are-there&quot;&gt;Is There / Are there&lt;/h2&gt;
+&lt;h2 id=&quot;do-you-have--do-they-have&quot;&gt;Do you have / Do they have&lt;/h2&gt;
+
+&lt;h2 id=&quot;이-근처에-백화점이-있나요&quot;&gt;이 근처에 백화점이 있나요?&lt;/h2&gt;
+&lt;p&gt;Is there a gas station near there?&lt;/p&gt;
+&lt;h2 id=&quot;거기-해물요리도-있어&quot;&gt;거기 해물요리도 있어?&lt;/h2&gt;
+&lt;p&gt;Do they have seafood?&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">이용하는 사람이 불특정다수(공용) =&amp;gt; There is 특정사람이 소유한것에대해서 얘기할 때 =&amp;gt; Have</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">TIL - 2021/02/19 토들러2(이유, 결과)</title>
@@ -362,283 +623,6 @@ How do I say it in Enlish?&lt;/p&gt;
 
       
         <summary type="html">제대로 못들었을 때 I’m sorry. Could you say again, please?</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/02/05 Git</title>
-      <link href="http://localhost:4000/git" rel="alternate" type="text/html" title="TIL - 2021/02/05 Git" />
-      <published>2021-02-06T06:30:00+09:00</published>
-      <updated>2021-02-06T06:30:00+09:00</updated>
-      <id>http://localhost:4000/git</id>
-      <content type="html" xml:base="http://localhost:4000/git">&lt;h2 id=&quot;git이란&quot;&gt;Git이란&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;다른 VCS와다르게 시간순으로 스냅샷을 저장하는 버전관리시스템이다.&lt;/li&gt;
-  &lt;li&gt;명령을 로컬에서 실행하므로 빠르다.&lt;/li&gt;
-  &lt;li&gt;네트워크에 연결되어 있지않아도 Commit이 가능하여 작업이 가능하다.&lt;/li&gt;
-  &lt;li&gt;SHA-1해시를 사용하여 만든 체크섬으로 데이터를 관리한다.&lt;/li&gt;
-  &lt;li&gt;Git으로 뭘하든 Git DB에 데이터가 추가된다. 되돌리거나 데이터를 삭제할 방법이 없다. 스냅샷을 커밋하고나면 데이터를 잃어버리기 어렵다.&lt;/li&gt;
-  &lt;li&gt;Committed : 데이터가 로컬DB에 안전하게 저장됐다는 것을 의미&lt;/li&gt;
-  &lt;li&gt;Modified : 수정한 파일을 아직 로컬 DB에 커밋하지 않은것을 의미&lt;/li&gt;
-  &lt;li&gt;Staged : 현재 수정한 파일을 곧 커밋할 것이라고 표시한 상태를 의미&lt;/li&gt;
-  &lt;li&gt;Git Directory : Git이 프로젝트의 메타데이터와 객체 DB를 저장하는곳&lt;/li&gt;
-  &lt;li&gt;Working Tree : 프로젝트의 특정 버전을 CheckOut한것&lt;/li&gt;
-  &lt;li&gt;Staging Area : Git디렉토리에 있고, 단순한파일이고 곧 커밋할 파일에 대한 정보를 저장함.&lt;/li&gt;
-  &lt;li&gt;Git으로 하는일 : 워킹트리에서 파일수정 -&amp;gt; StagingArea에 파일을 Stage해서 커밋할 스냅샷을 만듬 -&amp;gt; StagingArea에서 Git디렉토리에 영구적인스냅샷으로&lt;/li&gt;
-&lt;/ul&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">Git이란 다른 VCS와다르게 시간순으로 스냅샷을 저장하는 버전관리시스템이다. 명령을 로컬에서 실행하므로 빠르다. 네트워크에 연결되어 있지않아도 Commit이 가능하여 작업이 가능하다. SHA-1해시를 사용하여 만든 체크섬으로 데이터를 관리한다. Git으로 뭘하든 Git DB에 데이터가 추가된다. 되돌리거나 데이터를 삭제할 방법이 없다. 스냅샷을 커밋하고나면 데이터를 잃어버리기 어렵다. Committed : 데이터가 로컬DB에 안전하게 저장됐다는 것을 의미 Modified : 수정한 파일을 아직 로컬 DB에 커밋하지 않은것을 의미 Staged : 현재 수정한 파일을 곧 커밋할 것이라고 표시한 상태를 의미 Git Directory : Git이 프로젝트의 메타데이터와 객체 DB를 저장하는곳 Working Tree : 프로젝트의 특정 버전을 CheckOut한것 Staging Area : Git디렉토리에 있고, 단순한파일이고 곧 커밋할 파일에 대한 정보를 저장함. Git으로 하는일 : 워킹트리에서 파일수정 -&amp;gt; StagingArea에 파일을 Stage해서 커밋할 스냅샷을 만듬 -&amp;gt; StagingArea에서 Git디렉토리에 영구적인스냅샷으로</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/02/03 Security</title>
-      <link href="http://localhost:4000/Security" rel="alternate" type="text/html" title="TIL - 2021/02/03 Security" />
-      <published>2021-02-04T04:30:00+09:00</published>
-      <updated>2021-02-04T04:30:00+09:00</updated>
-      <id>http://localhost:4000/Security</id>
-      <content type="html" xml:base="http://localhost:4000/Security">&lt;h1 id=&quot;captchacompletely-automated-public-turing-test-to-tell-computers-and-humans-apart&quot;&gt;CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apart)&lt;/h1&gt;
-&lt;p&gt;웹페이지의 입력폼등의에서 부정이용을 방지하기위해 사용되는 인증기술이다. 흐릿하게하거나 살짝가린 사진으로부터 인간이 읽을수 있는 문자를 판독시켜 수동으로 입력시킨다.
-이것으로 인해 응답자가 인간인것을 판단한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;malware분석방법&quot;&gt;Malware분석방법&lt;/h2&gt;
-&lt;p&gt;악성코드를 분석하는 방법이며 상세,동적,정적,자동화분석이 있다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;상세분석 : 디스어셈블을 통해 어셈블리어로 바꿔 상세분석한다.&lt;/li&gt;
-  &lt;li&gt;동적분석 : 해당파일을 직접 실행하여 나타나는 변화를 모니터링하며 악성코드를 판별하는 방법이다. 가상환경에서 독립된 네트워크를 형성하여 분석도구등을 통해 분석한다.&lt;/li&gt;
-  &lt;li&gt;정적분석 : 파일을 실행하지않고 그 파일자체가 가지고 있는 내용들로 악성코드를 판별하는 방법이다. 파일의 해시나, 사용되는 API,문자열등으로 확인한다.&lt;/li&gt;
-  &lt;li&gt;자동화분석 : 말그대로 자동으로 분석해주는 방법이다. 빠르지만 완벽하지않다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;암호화&quot;&gt;암호화&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;대칭형 암호화
-암호화에 사용하는 키가 복호화에 사용하는 키와 같으면 대칭형이다. 통상적으로 비공개키 암호화방식에 사용된다.&lt;/li&gt;
-  &lt;li&gt;비대칭형 암호화
-암호화에 사용하는 키가 복호화에 사용하는 키가 다르면 비대칭형이다. 통상적으로 공개키암호화방식에 사용된다.
-암호화는 하면 하나의 키 쌍이 생기고 이 두개의 키는 수학적으로 밀접한 관계를 가지고 있다. 두개의 키를 A,B로 봤을때, A로 암호환 암호문은 B로만 복호화 할 수 있다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;흐름&quot;&gt;흐름&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;내가 공개키 개인키 한쌍을 생성&lt;/li&gt;
-  &lt;li&gt;상대방에게 공개키 전송&lt;/li&gt;
-  &lt;li&gt;상대방은 받은 공개키를 이용해 메세지를 암호화&lt;/li&gt;
-  &lt;li&gt;상대방은 암호문을 나에게 전송&lt;/li&gt;
-  &lt;li&gt;나는 암호문을 개인키로 복호화&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;공개키-암호화방식&quot;&gt;공개키 암호화방식&lt;/h2&gt;
-&lt;p&gt;공개키와 개인키를 이용하여 암호화하는 방식.
-공개키는 암호화하는데 사용되며, 개인키는 복호화하는데 사용된다.
-디지털서명에 이 방식이 사용된다.
-개인키가 노출되거나 잃어버릴 경우 암호화된 메세지가 위험에 노출되며, 
-암호화 및 해독에관련된 복잡한 수학적 계산때문에 대량의 데이터를 처리해야할 경우
-매우 느려지게됩니다.
-SSL(Secure Sockets Layer) 프로토콜도 비대칭 암호화 기능을 사용한다.
-공개 키 암호 방식은 또한 블록체인 및 암호 화폐 기술에서도 사용된다.&lt;/p&gt;
-
-&lt;h2 id=&quot;디지털서명&quot;&gt;디지털서명&lt;/h2&gt;
-&lt;p&gt;디지털 서명은 디지털 데이터의 진위성과 무결성을 검증하는 데 사용되는 암호 메커니즘입니다. 
-해싱, 서명, 검증 세 가지 기본 단계로 이뤄지는 경우가 많습니다.&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;해싱 : 해싱 알고리즘을 통해 데이터를 제출하여 해시값이 생성(예를 들면 메시지 다이제스트)&lt;/li&gt;
-  &lt;li&gt;서명 : 메시지 발신자의 개인키를 이용하여 서명&lt;/li&gt;
-  &lt;li&gt;검증 : 수신자가 공개키를 받아 그 공개키를 이용하여 유효성을 검증
-데이터 무결성, 진위성, 부인 방지&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;디피-헬만-키-교환diffiehellman-key-exchange&quot;&gt;디피-헬만 키 교환(Diffie–Hellman key exchange)&lt;/h3&gt;
-&lt;p&gt;비밀키를 주고받을 경우 이산대수의 난해함에 안정성을 둔 키교환 방식이다.
-엘가말(ElGamal) 방식이 디피-헬만 키 교환을 참고해 만들어졌다.
-통신 전체가 악의적인 스니퍼에 의해서 도청되고 있더라도 키 값을 정할 수 있게 해주는 원리는 바로, 키 값을 전달하는 것이 아니라 키 값을 만드는 방법을 전달하기 때문이다.&lt;/p&gt;
-
-&lt;h1 id=&quot;하이브리드-암호화시스템&quot;&gt;하이브리드 암호화시스템&lt;/h1&gt;
-&lt;p&gt;대칭키와 공개키 암호화를 섞은 암호화 시스템이다.
-대칭키 암호화시스템은 기밀성을 유지한 통신이 가능한데, 키 배송시 보안상 문제가 있다.
-공개키의 경우는 복호화에 사용할 키를 배송할 필요가 없기때문에, 배송상 문제는 없지만, 대칭키암호화방식에 비해 매우 느리고, 중간자 공격(MITM:Man In the Middle attack)에 약하다.
-※ 중간자 공격 : 해커가 중간에서 통신을 가로채어 수신자에게는 송신자인 척하고 송신자에게는 수신자인 척 해서 양쪽의 공개키와 실제 암호화에 사용되는 대칭키를 모두 얻어내는 기법.&lt;/p&gt;
-
-&lt;h1 id=&quot;aesadvanced-encryption-statndard&quot;&gt;AES(Advanced Encryption Statndard)&lt;/h1&gt;
-&lt;p&gt;암호화 알고리즘이며 대칭형 암호화에 사용된다. 현재 공모전에서 채택된 레인달(Rijindael)이라는 알고리즘에 해당한다.
-레인달알고리즘에서도 암호화 키의 길이가 128, 192, 256비트인 세 가지 종류가 AES 표준으로 지정되었다. 각각 AES-128, AES-192, AES-256으로 불린다.&lt;/p&gt;
-
-&lt;h3 id=&quot;rsa&quot;&gt;RSA&lt;/h3&gt;
-&lt;p&gt;현재 SSL/TLS에 가장 많이 사용되는 공개키 암호화 알고리즘이다. 현재 나무위키도 HTTPS에 RSA-2048 인증서를 사용하고 있으며, 전세계 대부분의 인터넷 뱅킹(대한민국 포함)이 이 RSA-2048 암호화를 사용한다. 지금 GPG는 RSA-4096으로 키를 암호화 하지만…암호화할 때에는 마음대로였겠지만 해독할 때에는 아니란다를 기본 모토로 한 공개키 암호체계 중 하나이다. 공개키와 개인키가 한 쌍을 이루며, 공개키로 암호화한 내용은 개인키로만, 개인키로 암호화한 내용은 공개키로만 해독할 수 있다. 엄청 큰 숫자는 소인수분해하기가 힘들다는 것을 이용한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;메시지-인증-코드message-authentication-code-mac&quot;&gt;메시지 인증 코드(Message Authentication Code, MAC)&lt;/h2&gt;
-&lt;p&gt;해시알고리즘을 사용하여 수정또는 변경사항이 있는지 검출 할 수 있다. 거짓행세는 알 수 없으니 비밀키와 같이 사용해야한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;타원곡선-암호&quot;&gt;타원곡선 암호&lt;/h2&gt;
-&lt;p&gt;타원곡선 암호(楕圓曲線暗號, Elliptic curve cryptography)는 타원곡선 이론에 기반한 공개 키 암호 방식이다. 줄여서 ECC라고 쓰기도 한다.
-이산대수의 난해함에 안정성을 둔 키교환방식이며, RSA에 비교하여 암호화는 더 빠르고, 짧은 암호키사이즈로 같은수준의 안정성을 제공한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;siemsecurity-information-and-event-management-세큐리티정보이벤트관리&quot;&gt;SIEM(Security Information and Event Management, 세큐리티정보이벤트관리)&lt;/h2&gt;
-&lt;p&gt;세큐리티분석소프트의 하나이며, 다양한 네트워크기기나 소프트웨어의 동작상황의 기록을 수집하여 관리를 수행하고, 상관분석의 수법을 이용하여 세큐리티상의 위협을 검출,분석한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;봇넷botnet&quot;&gt;봇넷(BotNet)&lt;/h2&gt;
-&lt;p&gt;로봇과 네트워크를 결합한 단어로, 악성코드에 감염되어 중앙통제장치로부터 지시를 받는 디바이스로 구성된 네트워크이다.
-봇마스터에 의해 원격조종되며, C&amp;amp;C서버 방식을 사용한다.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apart) 웹페이지의 입력폼등의에서 부정이용을 방지하기위해 사용되는 인증기술이다. 흐릿하게하거나 살짝가린 사진으로부터 인간이 읽을수 있는 문자를 판독시켜 수동으로 입력시킨다. 이것으로 인해 응답자가 인간인것을 판단한다.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/02/02 Practical English5</title>
-      <link href="http://localhost:4000/PracticalEnglish5" rel="alternate" type="text/html" title="TIL - 2021/02/02 Practical English5" />
-      <published>2021-02-03T08:30:00+09:00</published>
-      <updated>2021-02-03T08:30:00+09:00</updated>
-      <id>http://localhost:4000/PracticalEnglish5</id>
-      <content type="html" xml:base="http://localhost:4000/PracticalEnglish5">&lt;h2 id=&quot;되게-오랜만에-만났을-때&quot;&gt;되게 오랜만에 만났을 때&lt;/h2&gt;
-&lt;p&gt;It’s been a long time.(formal) How have you been?
-Long time no see.(informal)&lt;/p&gt;
-
-&lt;h2 id=&quot;변함없는-하루를-보냈을-때&quot;&gt;변함없는 하루를 보냈을 때&lt;/h2&gt;
-&lt;p&gt;Not much
-Nothing special
-Same as usual&lt;/p&gt;
-
-&lt;h2 id=&quot;헤어질-때&quot;&gt;헤어질 때&lt;/h2&gt;
-&lt;p&gt;See you
-See ya
-Take care&lt;/p&gt;
-
-&lt;h2 id=&quot;늦게-회식하고-집으로-갈-때&quot;&gt;늦게 회식하고 집으로 갈 때&lt;/h2&gt;
-&lt;p&gt;Have a good night&lt;/p&gt;
-
-&lt;h2 id=&quot;미팅이-끝났을-때&quot;&gt;미팅이 끝났을 때&lt;/h2&gt;
-&lt;p&gt;Thank you for your time. Have a good day.
-Thank you for attending this meeting&lt;/p&gt;
-
-&lt;h2 id=&quot;늦게-차를-타고-집으로-가는-친구에게&quot;&gt;늦게 차를 타고 집으로 가는 친구에게&lt;/h2&gt;
-&lt;p&gt;drive safely
-be safe
-god bless on your way home&lt;/p&gt;
-
-&lt;h2 id=&quot;퇴근할-때&quot;&gt;퇴근할 때&lt;/h2&gt;
-&lt;p&gt;See you tomorrow
-good night&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">되게 오랜만에 만났을 때 It’s been a long time.(formal) How have you been? Long time no see.(informal)</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/02/01 Practical English4</title>
-      <link href="http://localhost:4000/PracticalEnglish4" rel="alternate" type="text/html" title="TIL - 2021/02/01 Practical English4" />
-      <published>2021-02-02T08:30:00+09:00</published>
-      <updated>2021-02-02T08:30:00+09:00</updated>
-      <id>http://localhost:4000/PracticalEnglish4</id>
-      <content type="html" xml:base="http://localhost:4000/PracticalEnglish4">&lt;h2 id=&quot;다시만나게-되었을-때&quot;&gt;다시만나게 되었을 때&lt;/h2&gt;
-&lt;p&gt;It’s nice to see you again. How have you been?
-Nice to see you again!&lt;/p&gt;
-
-&lt;h2 id=&quot;어떻게-지냈어의-다양한-표현&quot;&gt;어떻게 지냈어의 다양한 표현&lt;/h2&gt;
-&lt;p&gt;How have you been?
-How are you doing?
-How’s it going?
-How’s everything going?
-How’s everything?&lt;/p&gt;
-
-&lt;h2 id=&quot;질문이-없을-때&quot;&gt;질문이 없을 때&lt;/h2&gt;
-&lt;p&gt;None so far&lt;/p&gt;
-
-&lt;h2 id=&quot;머리짤랐냐고-물어볼-때&quot;&gt;머리짤랐냐고 물어볼 때&lt;/h2&gt;
-&lt;p&gt;Did you get a haircut?&lt;/p&gt;
-
-&lt;h2 id=&quot;익숙해지다&quot;&gt;익숙해지다&lt;/h2&gt;
-&lt;p&gt;get used it&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">다시만나게 되었을 때 It’s nice to see you again. How have you been? Nice to see you again!</summary>
       
 
       
