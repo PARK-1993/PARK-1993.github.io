@@ -8,6 +8,25 @@
     
       
       <item>
+        <title>TIL - 2021/02/21 NoPlanTravel1</title>
+        
+          <description>&lt;h2 id=&quot;앱-이름-후보&quot;&gt;앱 이름 후보&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;NoPlanTravel&lt;/li&gt;
+  &lt;li&gt;TravelRightNow&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Mon, 22 Feb 2021 02:50:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/NoPlanTravel1</link>
+        <guid isPermaLink="true">http://localhost:4000/NoPlanTravel1</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>TIL - 2021/02/21 토들러6(시간이걸리다/돈이들다)</title>
         
           <description>&lt;h2 id=&quot;5분-걸려요&quot;&gt;5분 걸려요&lt;/h2&gt;
@@ -679,33 +698,6 @@ Pleased to meet you. (Very formal)&lt;/p&gt;
         <link>
         http://localhost:4000/interupt</link>
         <guid isPermaLink="true">http://localhost:4000/interupt</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Sideproject1</title>
-        
-          <description>
-&lt;hr /&gt;
-&lt;p&gt;layout: post
-current: post
-cover:  assets/built/images/python-logo.png
-navigation: True
-title: TIL - SideProject1
-date: 2021-01-18 12:30:00
-tags: [TIL]
-class: post-template
-subclass: ‘post tag-TIL’
-author: PARK-1993
-—&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Mon, 18 Jan 2021 00:00:00 +0900</pubDate>
-        <link>
-        http://localhost:4000/sideProject1</link>
-        <guid isPermaLink="true">http://localhost:4000/sideProject1</guid>
       </item>
       
     

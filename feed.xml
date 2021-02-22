@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-21T14:36:25+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - 2021/02/21 토들러6(시간이걸리다/돈이들다)</title><link href="http://localhost:4000/toddler6" rel="alternate" type="text/html" title="TIL - 2021/02/21 토들러6(시간이걸리다/돈이들다)" /><published>2021-02-21T09:30:00+09:00</published><updated>2021-02-21T09:30:00+09:00</updated><id>http://localhost:4000/toddler6</id><content type="html" xml:base="http://localhost:4000/toddler6">&lt;h2 id=&quot;5분-걸려요&quot;&gt;5분 걸려요&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-22T23:17:33+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - 2021/02/21 NoPlanTravel1</title><link href="http://localhost:4000/NoPlanTravel1" rel="alternate" type="text/html" title="TIL - 2021/02/21 NoPlanTravel1" /><published>2021-02-22T02:50:00+09:00</published><updated>2021-02-22T02:50:00+09:00</updated><id>http://localhost:4000/NoPlanTravel1</id><content type="html" xml:base="http://localhost:4000/NoPlanTravel1">&lt;h2 id=&quot;앱-이름-후보&quot;&gt;앱 이름 후보&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;NoPlanTravel&lt;/li&gt;
+  &lt;li&gt;TravelRightNow&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;타겟&quot;&gt;타겟&lt;/h2&gt;
+&lt;p&gt;주 타겟은 여행은 가고싶지만 계획을 짜기 싫어하는 사람들. 국적불문&lt;/p&gt;
+
+&lt;h2 id=&quot;큰-기능&quot;&gt;큰 기능&lt;/h2&gt;
+&lt;p&gt;큰 기능으로 2가지를 가진다.
+&lt;strong&gt;첫번째,&lt;/strong&gt; 주변의 관광지를 랜덤으로 선택해준다. “관광지 랜덤 배정”
+&lt;strong&gt;두번째,&lt;/strong&gt; 걸어 갈 수 있을만한 거리의 주변의 관광지를 리스트로 보여주고, 새로운 관광지가 리스트에 추가될때 알람을 울린다.&lt;/p&gt;
+
+&lt;h2 id=&quot;작은-기능&quot;&gt;작은 기능&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;관광지 배정시 반경 선택가능.&lt;/li&gt;
+  &lt;li&gt;관광지 배정시 관광지 종류 선택 가능.&lt;/li&gt;
+  &lt;li&gt;관광지 배정 후 경로 찾기 가능.&lt;/li&gt;
+  &lt;li&gt;애플맵으로 링크이동 가능.&lt;/li&gt;
+  &lt;li&gt;배정된 관광지를 “가고싶은 관광지”리스트에 보관 가능&lt;/li&gt;
+  &lt;li&gt;관광지알람도 1,2 기능 가능.&lt;/li&gt;
+  &lt;li&gt;도보 경로 찾기 가능.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;사용-툴-참고-사이트&quot;&gt;사용 툴, 참고 사이트&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;프로토타입 디자인 : 카카오 Oven&lt;/li&gt;
+  &lt;li&gt;사진 : Pixabay&lt;/li&gt;
+  &lt;li&gt;개발툴 : Xcode&lt;/li&gt;
+  &lt;li&gt;개발언어 : Swift&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;프로토타입&quot;&gt;프로토타입&lt;/h2&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">앱 이름 후보 NoPlanTravel TravelRightNow</summary></entry><entry><title type="html">TIL - 2021/02/21 토들러6(시간이걸리다/돈이들다)</title><link href="http://localhost:4000/toddler6" rel="alternate" type="text/html" title="TIL - 2021/02/21 토들러6(시간이걸리다/돈이들다)" /><published>2021-02-21T09:30:00+09:00</published><updated>2021-02-21T09:30:00+09:00</updated><id>http://localhost:4000/toddler6</id><content type="html" xml:base="http://localhost:4000/toddler6">&lt;h2 id=&quot;5분-걸려요&quot;&gt;5분 걸려요&lt;/h2&gt;
 &lt;p&gt;It takes 5 minutes.&lt;/p&gt;
 
 &lt;h2 id=&quot;5000원-들어요&quot;&gt;5000원 들어요.&lt;/h2&gt;
@@ -240,20 +273,4 @@ Could you please spell that word for me?&lt;/p&gt;
 Let me look it up in my dictionary.&lt;/p&gt;
 
 &lt;h2 id=&quot;말하고-싶었던-단어&quot;&gt;말하고 싶었던 단어&lt;/h2&gt;
-&lt;p&gt;stare at : 뚫어지게 쳐다보다&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">화상회의중에 상대방의 목소리가 너무 작을 때 Could you speak a little louder, please? Could you speak up?</summary></entry><entry><title type="html">TIL - 2021/02/07 Practical Enlgish 6</title><link href="http://localhost:4000/PracticalEnglish6" rel="alternate" type="text/html" title="TIL - 2021/02/07 Practical Enlgish 6" /><published>2021-02-08T08:30:00+09:00</published><updated>2021-02-08T08:30:00+09:00</updated><id>http://localhost:4000/PracticalEnglish6</id><content type="html" xml:base="http://localhost:4000/PracticalEnglish6">&lt;h2 id=&quot;제대로-못들었을-때&quot;&gt;제대로 못들었을 때&lt;/h2&gt;
-&lt;p&gt;I’m sorry. Could you say again, please?&lt;/p&gt;
-
-&lt;h2 id=&quot;천천히-말해달라고-할-때&quot;&gt;천천히 말해달라고 할 때&lt;/h2&gt;
-&lt;p&gt;I’m sorry. Could you speak slowly, please?
-I’m sorry. Could you speak a little more slowly, please?&lt;/p&gt;
-
-&lt;h2 id=&quot;좀-생각할-시간을-가질-때&quot;&gt;좀 생각할 시간을 가질 때&lt;/h2&gt;
-&lt;p&gt;Let me see..
-Let me think for a while.&lt;/p&gt;
-
-&lt;h2 id=&quot;영어로-어떻게-말해야-될지-모를-때&quot;&gt;영어로 어떻게 말해야 될지 모를 때&lt;/h2&gt;
-&lt;p&gt;How can I explain it in Enlgish?
-How do I say it in Enlish?&lt;/p&gt;
-
-&lt;h2 id=&quot;몇몇-교수들은-제대로-설명하지-못한다-속도와는-상관없이&quot;&gt;몇몇 교수들은 제대로 설명하지 못한다 속도와는 상관없이.&lt;/h2&gt;
-&lt;p&gt;There are some professors who really can’t explain the topic well whether they talk fast or slow.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">제대로 못들었을 때 I’m sorry. Could you say again, please?</summary></entry></feed>
+&lt;p&gt;stare at : 뚫어지게 쳐다보다&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">화상회의중에 상대방의 목소리가 너무 작을 때 Could you speak a little louder, please? Could you speak up?</summary></entry></feed>
