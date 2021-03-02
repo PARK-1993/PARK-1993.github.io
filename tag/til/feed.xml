@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/til/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-02-24T23:45:39+09:00</updated>
+  <updated>2021-03-02T23:16:20+09:00</updated>
   <id>http://localhost:4000/tag/til/feed.xml</id>
 
   
@@ -32,38 +32,360 @@
 
   
     <entry>
+      <title type="html">TIL - 2021/03/01 토들러7(있나요/걸릴까요/나을까요/거예요)</title>
+      <link href="http://localhost:4000/Toddler7" rel="alternate" type="text/html" title="TIL - 2021/03/01 토들러7(있나요/걸릴까요/나을까요/거예요)" />
+      <published>2021-03-02T08:00:00+09:00</published>
+      <updated>2021-03-02T08:00:00+09:00</updated>
+      <id>http://localhost:4000/Toddler7</id>
+      <content type="html" xml:base="http://localhost:4000/Toddler7">## 이 근처에 우체국이 있나요?
+Is there a post office near here/nearby?
+
+## 지하철역 근처에 하나 있어요.
+There is one near the subway station.
+
+## 멀어요? 여기서 얼마나 걸릴까요?
+Is it far? How long would it take from here?
+
+## 걸어서 20분 정도 걸릴거예요.
+It's going to take about 20 minutes on foot.
+If you walk, It's going to take about 20 minutes
+
+## 아,(그냥) 택시 타는게 나을까요?
+Oh, Should I (just) take a taxi?
+## 네,(요금이) 얼마 안나올거예요.
+yes, It won't cost a lot.
+
+## 얼마정도 나올까요?
+How much would it cost?
+How much does it cost?(X) 이는 정확히 얼마나오는지 묻는 느낌
+
+## 많이 나와야 5달러 밖에 안나올거예요.
+It's going to cost only about 5 five dollars at most.
+※ 많이나와야 : at most</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">이 근처에 우체국이 있나요? Is there a post office near here/nearby?</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">TIL - 2021/03/01 CleanCode - 주석</title>
+      <link href="http://localhost:4000/CleanCode_Comment" rel="alternate" type="text/html" title="TIL - 2021/03/01 CleanCode - 주석" />
+      <published>2021-03-02T00:30:00+09:00</published>
+      <updated>2021-03-02T00:30:00+09:00</updated>
+      <id>http://localhost:4000/CleanCode_Comment</id>
+      <content type="html" xml:base="http://localhost:4000/CleanCode_Comment">주석은 실패를 만회하기위해 사용한다.
+주석이 필요하다면 코드로 표현할 수 있는 방법이 없을 지 생각해보아야한다.
+코드는 변화하고 진화하기 때문에 주석이 이를 따라가지 못하는 상황이 많다.
+부정확한 주석은 없는 것 보다 훨씬 나쁘다.
+
+## 주석은 나쁜 코드를 보완하지 못한다.
+모듈을 짜고 보니 짜임새가 엉망이고 알아먹기 어려울 경우, 주석을 다는 것이 아니라
+코드를 정리해야한다. 표현력이 풍부하고 깔금하며 주석이 거의 없는 코드가 복잡하고 어수선하며 주석이 많이 달린 코드보다 훨씬 좋다.
+
+## 코드로 의도를 표현하라.
+``` cpp
+// 복지혜택을 받을 자격이있는지 확인한다.
+if((employee.flags &amp; HOURLY_FLAG) &amp;&amp; employee.age &gt; 65)
+```
+위 코드보다 밑의 코드가 깔끔하고 제대로 의도를 전달 하고 있다.
+``` cpp
+if(employee.isEligibleForFullBenefits())
+```
+
+## 좋은 주석
+### 법적인 주석
+각 소스파일 첫 머리에 들어가는 저작권정보와 소유권 정보는 필요하고 타당하다.
+``` cpp
+// Copyright (C) 2003,2004,2005 by Object Mentor, Inc. All rights reserved.
+//GNU General Public License 버전 2 이상을 따르는 조건으로 배포한다.
+```
+
+### 정보를 제공하는 주석
+기본적인 정보를 주석으로 제공하면 편리하다.
+``` cpp
+// 테스트 중인 Responder인스턴스를 반환한다.
+virtual Responder responderInstance();
+```
+하지만 위 같은 경우 메소드를 responderBeingTested로 바꾸면 주석이 필요 없어진다.
+
+``` cpp
+// kk:mm:ss: EEE, MMM dd, yyyy 형식이다.
+Pattern timeMatcher = Pattern.compile(&quot;¥¥d:¥¥d:¥¥d ¥¥w, ¥¥w ¥¥d, ¥¥d&quot;);
+```
+위 코드에서 사용한 정규표현식이 시각과 날짜를 뜻한다고 설명한다.
+하지만 이 주석도 따로 시각과 날짜를 변환하는 클래스를 만들어 코드를 옮겨주면 더 좋고 더 깔끔하다.
+
+### 의미를 명료하게 밝히는 주석
+인수나 반환값이 표준 라이브러리나 변경하지 못하는 코드에 속한다면, 의미를 명료하게 밝히는 주석이 유용하다.
+
+``` cpp
+assertTrue(a.compareTo(a) == 0);        // a == a
+assertTrue(a.compareTo(b) != 0);        // a != b
+assertTrue(aa.compareTo(ab) == -1);     // aa &lt; ab
+```
+하지만 주석이 올바른지 아닌지 검증하기가 쉽지않기 때문에 위험하기도 하다.
+
+### 결과를 경고하는 주석
+다른 프로그래머에게 결과를 경고할 목저긍로 주석을 사용한다.
+``` cpp
+// 여유 시간이 충분하지 않다면 실행하지 마십시오.
+void _testWithReallyBigFile()
+{
+    ...
+}
+```
+
+### TODO주석
+앞으로 할 일을 TODO주석으로 남겨두면 편하다.
+필요하지만 당장 구현하기 어려운 업무나, 더 이상 필요 없는 기능을 삭제하라는 알림, 누군가에게 문제를 봐달라는 요청, 더 좋은 이름을 떠올려달라는 부탁, 앞으로 발생 할 이벤트에 맞춰 코드를 고치라는 주의 등에 유용하다.
+하지만 주기적으로 TODO주석을 점검할 필요가 있다.
+
+### 중요성을 강조하는 주석
+대수럽지 않다고 여길 수 있는 부분의 중요성을 강조하기 위해 사용한다.
+``` cpp
+string listItemContent = match.group(3).trim();
+// 여기서 trim은 정말 중요하다. trim 함수는 문자열에서 시작 공백을 제거한다.
+// 문자열에 시작 공백이 있으면 다른 문자열로 인식되기 때문이다.
+```
+
+## 나쁜 주석
+대다수의 주석이 이에 해당하며, 허술한 코드를 지탱하거나, 엉성한 코드를 변명하거나 미숙한 결정을 합리화 하는 주석이다.
+
+### 주절거리는 주석
+특별한 이유없이 의무감으로 혹은 프로세스에서 하라고 하니까 마지못해 주석을 단다면 전적으로 시간낭비다. 달기로 했다면 최고의 주석을 달도록 노력한다.
+
+### 같은 이야기를 중복하는 주석
+코드로부터 얻을 수 있는 정보보다 더 많은 정보를 제공하지 못하는 주석은 필요하지 않다.
+
+### 의무적으로 다는 주석
+모든 변수에 주석을 달아야한다는 규칙은 어리석기 그지없다. 이런 주석은 코드를 복잡하게 만들며, 혼동과 무질서를 초래한다.
+
+### 이력을 기록하는 주석
+소스코드 관리 시스템이 없었을 때에 모든 모듈 첫 머리에 변경이력을 기록하고, 관리하는 관례가 바람직 했지만, 이제는 혼란만 가중할 뿐이다. 완전히 제거하는 것이 좋다.
+
+### 있으나 마나 한 주석
+기본생성자를 알리는 코드나 코드로 알 수 있는 내용을 중복하는 주석을 사용하면,
+개발자가 주석을 무시하는 습관에 빠질 수 있다. 정작 필요한 주석을 못볼 수 있다.
+
+### 무서운 잡음
+Doxygen형식을 사용하는 것도 잡음이다. 이를 사용하는 목적은 문서를 제공해야 한다는 잘못된 욕심으로 탄생한 잡음일 뿐이다.
+``` cpp
+/** The name. */
+string name;
+/** The version. */
+string version
+```
+위 주석에서 아무런 이익을 얻을 수 없다.
+
+### 함수나 변수로 표현 할 수 있다면, 주석을 달지 마라
+``` cpp
+// 전역 목록&lt;smodule&gt;에 속하는 모듈이 우리가 속한 하위 시스템에 의존하는가?
+if(smodule.getDependSubSystems().contains(subSysMod.getSubSystem()))
+```
+위 코드에서 주석을 없애면 아래와 같이 표현 할 수 있다.
+``` cpp
+Array&lt;Module&gt; moduleDependees = smodule.getDependSubSystems();
+string ourSubsystem = subSysMod.getSubsystem();
+if(moduleDependees.contains(ourSubSystem))
+```
+변수를 따로 생성하여 주석을 없앴다.
+
+### 위치를 표시하는 주석
+``` cpp
+// Actions ////////////////////////////////
+```
+위와 같은 배너아래에 특정 기능을 모아 놓으면 유용한 경우도 있지만, 일반적으로 가독성만 낮추므로 제거해야한다.
+반드시 필요할 때만 아주 드물게 사용하는 편이 좋다.
+
+### 닫는 괄호에 다는 주석
+``` cpp
+try{
+    while((line = in.readLine() != null){
+        ...
+    }// while
+    ...
+}// try
+```
+위와 같이 닫는 괄호에 주석을 달아 놓는 경우가 있는데, 중첩이 심하고 장황한 함수라면 의미가 있을지도 모르지만, 애초에 그렇게 설계된 것이 문제이다.
+닫는 괄호에 주석을 달지말고 함수를 줄이려고 시도하자.
+
+### 공로를 돌리거나 저자를 표시하는 주석
+소스 관리 시스템을 사용하면 이러한 주석은 필요없다.
+
+### 주석으로 처리한 코드
+주석을 처리된 코드는 다른 사람들이 봤을때, 이유가 있어 남겨놓았다고 생각해 지우면 안된다고 생각하게 만든다.
+소스 관리 시스템으로 확인 가능하니, 코드를 삭제하도록 하자.
+
+### 전역 정보
+시스템 전반적인 정보를 기술하지말고, 근처에 있는 코드만 기술해야 한다.
+
+### 너무 많은 정보
+주석에다 흥미로운 역사나 관련 없는 정보를 장황하게 늘어 놓지 말아야 한다.
+
+### 함수 헤더
+짦은 함수는 긴 설명이 필요없다. 짧고 한가지만 수행하며 이름을 잘 붙인 함수가 주석으로 헤더를 추가한 함수보다 훨씬 좋다.
+
+### 비공개 코드에서 Doxygen형식 사용
+비공개 API라면 Doxygen을 사용할 이유가 없다. 유용하지 않을 뿐더러 코드만 보기싫고 산만해질 뿐이다.</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">주석은 실패를 만회하기위해 사용한다. 주석이 필요하다면 코드로 표현할 수 있는 방법이 없을 지 생각해보아야한다. 코드는 변화하고 진화하기 때문에 주석이 이를 따라가지 못하는 상황이 많다. 부정확한 주석은 없는 것 보다 훨씬 나쁘다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">TIL - 2021/03/01 토들러8(〜할때/하기전에/하고나서/할때까지))</title>
+      <link href="http://localhost:4000/toddler8" rel="alternate" type="text/html" title="TIL - 2021/03/01 토들러8(〜할때/하기전에/하고나서/할때까지))" />
+      <published>2021-03-01T09:30:00+09:00</published>
+      <updated>2021-03-01T09:30:00+09:00</updated>
+      <id>http://localhost:4000/toddler8</id>
+      <content type="html" xml:base="http://localhost:4000/toddler8">## 도착하면 전화할게.
+I'll call you when I arrive
+
+## 내가 그 전화를 받았을 때는 이미 버스를 탄 상태였어.
+I was already on the bus when I got the phone call
+
+## 도착하자말자
+as soon as I arrive.
+
+## 일끝나고 영화보러 갈거야.
+I'm going to go the movies after (I get off) work.
+
+## 너 퇴근 몇시에 해?
+What time do you get off work.
+
+## 미팅끝나고 시간이 있어요
+I have some time after the meeting (ends)
+## 자기전에 샤워할거에요
+I'm going to take a shower before (I go to) bed.
+
+## 일하러가기전에 달리기는 해요.
+I'm going to go for a run before go to work.
+
+## 산책(조깅)하러 가다
+go for a walk
+## 드라이브 하러 가다
+go for a drive
+
+## 아침에 나가기전에 항상 날씨체크를 해요.
+I always check the weather forecast before I leave in the morning.
+
+## 어제까지 기다렸어.
+I waited until yesterday
+## 누군가가 갈때까지 기다려야돼
+We have to wait until someone leaves
+
+## 아무것도 하는 것이 좋겠어(가만히 있는게 더 좋겠어.) 어떻게하라는 얘기가 더 있을때까지
+We shouldn't do anything until we get further instructions.
+
+## 그냥 계속해야돼 너가 익숙해질때까지.
+You just have to keep doing it until you get used to it.
+
+## 비가 그칠때까지 그냥 여기 있자.
+Let's just stay here until the rain stops</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">도착하면 전화할게. I’ll call you when I arrive</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">TIL - 2021/02/23 객체지향설계 5가지원칙(SOLID)</title>
       <link href="http://localhost:4000/PrinciplesOfOrientedDesign" rel="alternate" type="text/html" title="TIL - 2021/02/23 객체지향설계 5가지원칙(SOLID)" />
       <published>2021-02-24T03:30:00+09:00</published>
       <updated>2021-02-24T03:30:00+09:00</updated>
       <id>http://localhost:4000/PrinciplesOfOrientedDesign</id>
-      <content type="html" xml:base="http://localhost:4000/PrinciplesOfOrientedDesign">&lt;h2 id=&quot;객체지향설계-5원칙&quot;&gt;객체지향설계 5원칙&lt;/h2&gt;
-&lt;p&gt;유지보수성과 확장성을 높이기위한 SOLID라는 이름의 객체지향법칙이 있다. 
-즉, 좋은 객체지향설계를 위해 지켜야한다는 것이다. 이규칙은 Robert C. Martin이 소개하였고 LSP와 OCP는 각각 Barbara Liskov, Bertrand Meyer에 의해 발명되었다.&lt;/p&gt;
+      <content type="html" xml:base="http://localhost:4000/PrinciplesOfOrientedDesign">## 객체지향설계 5원칙
+유지보수성과 확장성을 높이기위한 SOLID라는 이름의 객체지향법칙이 있다. 
+즉, 좋은 객체지향설계를 위해 지켜야한다는 것이다. 이규칙은 Robert C. Martin이 소개하였고 LSP와 OCP는 각각 Barbara Liskov, Bertrand Meyer에 의해 발명되었다.
 
-&lt;h2 id=&quot;1-srpsingle-responsibility-principle&quot;&gt;1. SRP(Single-responsibility principle)&lt;/h2&gt;
-&lt;p&gt;한 클래스는 하나의 책임만 가져야 한다.
-A class should have one, and only one, reason to change.&lt;/p&gt;
-&lt;h2 id=&quot;2-ocpopen-closed-principle&quot;&gt;2. OCP(Open-closed principle)&lt;/h2&gt;
-&lt;p&gt;소프트웨어 요소는 확장에는 열려 있으나 변경에는 닫혀 있어야 한다.
-You should be able to extend a classes behavior, without modifying it.&lt;/p&gt;
+## 1. SRP(Single-responsibility principle)
+한 클래스는 하나의 책임만 가져야 한다.
+A class should have one, and only one, reason to change.
+## 2. OCP(Open-closed principle)
+소프트웨어 요소는 확장에는 열려 있으나 변경에는 닫혀 있어야 한다.
+You should be able to extend a classes behavior, without modifying it.
 
-&lt;h2 id=&quot;3-lspliskov-substitution-principle&quot;&gt;3. LSP(Liskov Substitution Principle)&lt;/h2&gt;
-&lt;p&gt;프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다.
+## 3. LSP(Liskov Substitution Principle)
+프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다.
 Derived classes must be substitutable for their base classes.
-부모클래스에서의 행위는 하위클래스에서도 같은 의미를 가져야한다. (Override해서 의미를 바꾸면 안된다.)&lt;/p&gt;
-&lt;h2 id=&quot;4-ispinterface-segregation-principle&quot;&gt;4. ISP(Interface Segregation Principle)&lt;/h2&gt;
-&lt;p&gt;특정 클라이언트를 위한 인터페이스 여러 개가 범용 인터페이스 하나보다 낫다.
+부모클래스에서의 행위는 하위클래스에서도 같은 의미를 가져야한다. (Override해서 의미를 바꾸면 안된다.)
+## 4. ISP(Interface Segregation Principle)
+특정 클라이언트를 위한 인터페이스 여러 개가 범용 인터페이스 하나보다 낫다.
 Make fine grained interfaces that are client specific.
-클라이언트가 사용하지 않는 기능이 정의되어있는 인터페이스를 사용하지않고, 그 클라이언트 특화 인터페이스를 만들어야한다.&lt;/p&gt;
-&lt;h2 id=&quot;5-dipdependency-inversion-principle&quot;&gt;5. DIP(Dependency Inversion Principle)&lt;/h2&gt;
-&lt;p&gt;프로그래머는 추상화에 의존해야지, 구체화에 의존하면 안된다. 의존성 주입은 이 원칙을 따르는 방법 중 하나다.
+클라이언트가 사용하지 않는 기능이 정의되어있는 인터페이스를 사용하지않고, 그 클라이언트 특화 인터페이스를 만들어야한다.
+## 5. DIP(Dependency Inversion Principle)
+프로그래머는 추상화에 의존해야지, 구체화에 의존하면 안된다. 의존성 주입은 이 원칙을 따르는 방법 중 하나다.
 Depend on abstractions, not on concretions.
-변할 가능성이 큰 것에 의존하지말고, 가능성이 낮은 것에 의존해야한다.&lt;/p&gt;
+변할 가능성이 큰 것에 의존하지말고, 가능성이 낮은 것에 의존해야한다.
 
-&lt;h2 id=&quot;참고&quot;&gt;참고&lt;/h2&gt;
-&lt;p&gt;https://ko.wikipedia.org/wiki/SOLID_(객체_지향_설계)
-http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod&lt;/p&gt;</content>
+## 참고
+https://ko.wikipedia.org/wiki/SOLID_(객체_지향_설계)
+http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod</content>
 
       
       
@@ -97,61 +419,45 @@ http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod&lt;/p&gt;</content>
       <published>2021-02-24T01:30:00+09:00</published>
       <updated>2021-02-24T01:30:00+09:00</updated>
       <id>http://localhost:4000/CleanCode_Function</id>
-      <content type="html" xml:base="http://localhost:4000/CleanCode_Function">&lt;h2 id=&quot;작게-만들어라&quot;&gt;작게 만들어라!&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;20줄도 길다.&lt;/li&gt;
-  &lt;li&gt;짧을 수록 명백해진다.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;if/while문에 들어가는 블록은 한 줄이어야한다.&lt;/dt&gt;
-      &lt;dd&gt;블록안에서 함수 이름을 적절히 짓는다면, 코드를 이해하기 쉬워진다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;함수의 들여쓰기 수준은 1단이나 2단을 넘어서면 안된다.
-    &lt;h2 id=&quot;한가지만해라&quot;&gt;한가지만해라!&lt;/h2&gt;
-  &lt;/li&gt;
-  &lt;li&gt;함수내에서 의미있는 이름으로 다른 함수를 추출할 수 있다면, 그 함수는 여러 작업을 하는셈이다.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;함수 내 모든 문장의 추상화 수준이 동일해야한다.&lt;/dt&gt;
-      &lt;dd&gt;추상화수준이 섞여있으면 읽는 사람이 근본 개념과 세부사항인지 구분하기 어려워 깨어진 창문처럼 함수에 세부사항을 점점 더 추가한다.
-※ 추상화 수준이 높다 : 함축되어있는 내용이 많다. / 추상화 수준이 낮다 : 함축되어있는 내용이 적다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+      <content type="html" xml:base="http://localhost:4000/CleanCode_Function">## 작게 만들어라!
+- 20줄도 길다.
+- 짧을 수록 명백해진다.
+- if/while문에 들어가는 블록은 한 줄이어야한다.
+  : 블록안에서 함수 이름을 적절히 짓는다면, 코드를 이해하기 쉬워진다.
+- 함수의 들여쓰기 수준은 1단이나 2단을 넘어서면 안된다.
+## 한가지만해라!
+- 함수내에서 의미있는 이름으로 다른 함수를 추출할 수 있다면, 그 함수는 여러 작업을 하는셈이다.
+- 함수 내 모든 문장의 추상화 수준이 동일해야한다.
+ : 추상화수준이 섞여있으면 읽는 사람이 근본 개념과 세부사항인지 구분하기 어려워 깨어진 창문처럼 함수에 세부사항을 점점 더 추가한다.
+※ 추상화 수준이 높다 : 함축되어있는 내용이 많다. / 추상화 수준이 낮다 : 함축되어있는 내용이 적다.
 
-&lt;h2 id=&quot;내려가기-규칙&quot;&gt;내려가기 규칙&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;한 함수 다음에는 추상화 수준이 한 단계낮은 함수가 온다.&lt;/dt&gt;
-      &lt;dd&gt;함수 정의, 구현시에 추상화 단계별로 작성해 읽기쉽게한다.
+## 내려가기 규칙
+- 한 함수 다음에는 추상화 수준이 한 단계낮은 함수가 온다.
+ : 함수 정의, 구현시에 추상화 단계별로 작성해 읽기쉽게한다.
 ``` cpp
 void AddPage(PageKind kind)
 {
-  switch(kind)
-  {
-  case PageKind::StartPage:
-  {
-   createStartPage();
-  }
-  break;
-  case PageKind::MainPage:
-  {
-   //…
-  }
-  break;
-  }
-}&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+    switch(kind)
+    {
+    case PageKind::StartPage:
+    {
+        createStartPage();
+    }
+    break;
+    case PageKind::MainPage:
+    {
+        //...
+    }
+    break;
+    }
+}
 
-&lt;p&gt;void createStartPage()
+void createStartPage()
 {
     //StartPage생성
-}&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+}
+```
+
 ## switch문
 - 기본적으로 switch문은 N가지를 처리하며, 이를 피하기는 쉽지않다.
 - 다형성을 이용해 switch문을 저차원클래스에 숨길 수 있다.
@@ -174,282 +480,199 @@ Money caculatePay(Employee e)
         }
     }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;위 코드의 문제
-    &lt;ol&gt;
-      &lt;li&gt;함수가 길다.(직원 추가시 더 길어진다.)&lt;/li&gt;
-      &lt;li&gt;한가지 작업만 수행하지 않는다.&lt;/li&gt;
-      &lt;li&gt;SRP(Single Responsibility Principle)를 위반한다. -&amp;gt; 코드를 변경할 이유가 많다.&lt;/li&gt;
-      &lt;li&gt;OCP(Open Closed Principle)를 위반한다. -&amp;gt; 새직원 유형을 추가할 때마다 코드를 변경하기 때문이다.&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+```
+- 위 코드의 문제
+1. 함수가 길다.(직원 추가시 더 길어진다.)
+2. 한가지 작업만 수행하지 않는다.
+3. SRP(Single Responsibility Principle)를 위반한다. -&gt; 코드를 변경할 이유가 많다.
+4. OCP(Open Closed Principle)를 위반한다. -&gt; 새직원 유형을 추가할 때마다 코드를 변경하기 때문이다.
 
-&lt;p&gt;위와 같은 코드에서 switch문을 추상팩토리에 숨긴 코드가 다음과 같다.&lt;/p&gt;
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;isPayDay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Money&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calculatePay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deliverPay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Money&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+위와 같은 코드에서 switch문을 추상팩토리에 숨긴 코드가 다음과 같다.
+``` cpp
+class Employee{
+    bool isPayDay();
+    Money calculatePay();
+    void deliverPay(Money pay);
+}
 
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EmployeeFactory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Employee&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;makeEmployee&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EmployeeRecord&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+class EmployeeFactory{
+public:
+    virtual Employee makeEmployee(EmployeeRecord r) = 0;
+}
 
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EmployeeFactoryImpl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EmployFactory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Employee&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;makeEmployee&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EmployeeRecord&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;COMMISSIONED&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CommissionedEmployee&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HOURLY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HourlyEmployee&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SALARIED&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SalariedEmployee&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EmployeeType&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;printError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위와 같이 다형성을 이용하여 switch문을 숨기고 보여주지않는다.&lt;/p&gt;
+class EmployeeFactoryImpl : public EmployFactory{
+public:
+    Employee makeEmployee(EmployeeRecord r)
+    {
+        try
+        {
+            switch(r.type)
+            {
+            case COMMISSIONED:
+                return new CommissionedEmployee(r);
+                break;
+            case HOURLY:
+                return new HourlyEmployee(r);
+                break;
+            case SALARIED:
+                return new SalariedEmployee(r);
+                break;
+            default:
+                throw r.type;
+            }
+        }catch(EmployeeType e){
+            printError(e);
+        }
+    }
+}
+```
+위와 같이 다형성을 이용하여 switch문을 숨기고 보여주지않는다.
 
-&lt;h2 id=&quot;서술적인-이름을-사용하라&quot;&gt;서술적인 이름을 사용하라!&lt;/h2&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;코드를 읽으면서 짐작했던 기능을 각 루틴이 그대로 수행한다면 깨끗한 코드이다.&lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;길고 서술적인 이름이 짧고 어려운 이름과 길고 서술적인 주석보다 좋다.&lt;/li&gt;
-    &lt;li&gt;이런저런 이름을 넣어보며 시간을 들여도 괜찮다.&lt;/li&gt;
-    &lt;li&gt;서술적인 이름을 사용하면 설게가 뚜렷해지고 코드를 개선하기 쉬워진다.&lt;/li&gt;
-    &lt;li&gt;
-      &lt;dl&gt;
-        &lt;dt&gt;모듈내에서 함수이름은 일관성을 위해 같은 문구,명사,동사를 사용한다.&lt;/dt&gt;
-        &lt;dd&gt;includeSetup, includeTeardownPages, includeSetupPages등
-          &lt;h2 id=&quot;함수-인수&quot;&gt;함수 인수&lt;/h2&gt;
-        &lt;/dd&gt;
-      &lt;/dl&gt;
-    &lt;/li&gt;
-    &lt;li&gt;이상적인 인수 개수는 0개다. 3개는 피하는 편이 좋고, 4개는 특별한 이유가 있어야 한다.(그 이상은 안됨)&lt;/li&gt;
-    &lt;li&gt;멤버변수로 선언해서 인수를 대체할 수 있다면 그렇게해야한다.&lt;/li&gt;
-    &lt;li&gt;테스트관점에서도 인수가 많으면, 그만큼 확인해야하는 항목이 늘어난다.&lt;/li&gt;
-    &lt;li&gt;출력인수는 입력인수보다 이해하기 어렵고, 독자가 코드를 확인해야할 확률이 높다.&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
+## 서술적인 이름을 사용하라!
+&gt; 코드를 읽으면서 짐작했던 기능을 각 루틴이 그대로 수행한다면 깨끗한 코드이다.
+- 길고 서술적인 이름이 짧고 어려운 이름과 길고 서술적인 주석보다 좋다.
+- 이런저런 이름을 넣어보며 시간을 들여도 괜찮다.
+- 서술적인 이름을 사용하면 설게가 뚜렷해지고 코드를 개선하기 쉬워진다.
+- 모듈내에서 함수이름은 일관성을 위해 같은 문구,명사,동사를 사용한다.
+ : includeSetup, includeTeardownPages, includeSetupPages등
+## 함수 인수
+- 이상적인 인수 개수는 0개다. 3개는 피하는 편이 좋고, 4개는 특별한 이유가 있어야 한다.(그 이상은 안됨)
+- 멤버변수로 선언해서 인수를 대체할 수 있다면 그렇게해야한다.
+- 테스트관점에서도 인수가 많으면, 그만큼 확인해야하는 항목이 늘어난다.
+- 출력인수는 입력인수보다 이해하기 어렵고, 독자가 코드를 확인해야할 확률이 높다.
 
-&lt;h3 id=&quot;많이-쓰는-단항-형식&quot;&gt;많이 쓰는 단항 형식&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;인수를 질문에 던지는 경우&lt;/dt&gt;
-      &lt;dd&gt;bool fileExists(“MyFile”)&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;인수를 뭔가로 변환해 결과로 반환하는 경우&lt;/dt&gt;
-      &lt;dd&gt;InputStream fileOpen(“MyFile”) string형의 파일이름을 InputStream으로 변환&lt;/dd&gt;
-      &lt;dd&gt;입력인수를 변환해야하는 경우 return값을 설정하는 것이 출력인수를 갖는것 보다 낫다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;이벤트 함수(입력인수는 있지만 출력인수는 없음)&lt;/dt&gt;
-      &lt;dd&gt;passwordAttemtFailedNtimes(int attempts) 이벤트함수라는 것이 명확하도록 작성&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+### 많이 쓰는 단항 형식
+- 인수를 질문에 던지는 경우 
+ : bool fileExists(&quot;MyFile&quot;)
+- 인수를 뭔가로 변환해 결과로 반환하는 경우
+ : InputStream fileOpen(&quot;MyFile&quot;) string형의 파일이름을 InputStream으로 변환
+ : 입력인수를 변환해야하는 경우 return값을 설정하는 것이 출력인수를 갖는것 보다 낫다.
+- 이벤트 함수(입력인수는 있지만 출력인수는 없음)
+ : passwordAttemtFailedNtimes(int attempts) 이벤트함수라는 것이 명확하도록 작성
 
-&lt;h3 id=&quot;플래그-인수&quot;&gt;플래그 인수&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;함수로 bool값을 넘기는 것은 대놓고 여러가지 처리를 한다고 공표하는 것이다.&lt;/dt&gt;
-      &lt;dd&gt;render(bool isSuite)함수는 renderForSuite(), renderForSingleTest()로 나눠야 한다.
-        &lt;h3 id=&quot;이항-함수&quot;&gt;이항 함수&lt;/h3&gt;
-      &lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;두 인수값이 하나의 값을 가리키거나(Point(0,0)) 자연적인 순서의 경우 사용한다.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;이항 함수가 무조건 나쁘진 않지만, 위험이 따름을 인식하고 단항함수로 바꾸려는 노력이 필요하다.&lt;/dt&gt;
-      &lt;dd&gt;assertEquals(expected, actual)은 하나의 값도아니며, 자연적 순서도 없다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+### 플래그 인수
+- 함수로 bool값을 넘기는 것은 대놓고 여러가지 처리를 한다고 공표하는 것이다.
+ : render(bool isSuite)함수는 renderForSuite(), renderForSingleTest()로 나눠야 한다.
+### 이항 함수
+- 두 인수값이 하나의 값을 가리키거나(Point(0,0)) 자연적인 순서의 경우 사용한다.
+- 이항 함수가 무조건 나쁘진 않지만, 위험이 따름을 인식하고 단항함수로 바꾸려는 노력이 필요하다.
+ : assertEquals(expected, actual)은 하나의 값도아니며, 자연적 순서도 없다.
 
-&lt;h3 id=&quot;인수-객체&quot;&gt;인수 객체&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;인수가 2-3개 필요하다면 클래스를 만들 것을 고려한다.&lt;/dt&gt;
-      &lt;dd&gt;Circle makeCircle(double x, double y, double radius)&lt;/dd&gt;
-      &lt;dd&gt;Circle makeCircle(Point(center), double radius)&lt;/dd&gt;
-      &lt;dd&gt;이는 표현하는 방식만 바꾼 것이 아니라, 개념적으로 도움이 된다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+### 인수 객체
+- 인수가 2-3개 필요하다면 클래스를 만들 것을 고려한다.
+ : Circle makeCircle(double x, double y, double radius)
+ : Circle makeCircle(Point(center), double radius)
+ : 이는 표현하는 방식만 바꾼 것이 아니라, 개념적으로 도움이 된다.
 
-&lt;h3 id=&quot;인수-목록&quot;&gt;인수 목록&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;가변 인수를 가지는 함수는 단항,이항,삼항 함수로 취급 할 수 있다.&lt;/dt&gt;
-      &lt;dd&gt;string format(string format, Object… args)&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+### 인수 목록
+- 가변 인수를 가지는 함수는 단항,이항,삼항 함수로 취급 할 수 있다.
+ : string format(string format, Object... args)
 
-&lt;h3 id=&quot;동사와-키워드&quot;&gt;동사와 키워드&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;함수의 의도를 명확히 하려면, 인수와 함수의 관계가 잘 표현되는 함수이름이 필요하다.&lt;/li&gt;
-  &lt;li&gt;단항함수의 경우 인수가 동사/명사 쌍을 이뤄야 한다. writeField(name)&lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;순서를 표현하기위해 키워드를 추가해 표현한다.&lt;/dt&gt;
-      &lt;dd&gt;assertEquals -&amp;gt; assertExpectedEqualsActual(expected, actual)&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+### 동사와 키워드
+- 함수의 의도를 명확히 하려면, 인수와 함수의 관계가 잘 표현되는 함수이름이 필요하다.
+- 단항함수의 경우 인수가 동사/명사 쌍을 이뤄야 한다. writeField(name)
+- 순서를 표현하기위해 키워드를 추가해 표현한다. 
+ : assertEquals -&gt; assertExpectedEqualsActual(expected, actual)
 
-&lt;h2 id=&quot;부수-효과를-일으키지-마라&quot;&gt;부수 효과를 일으키지 마라!&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;몰래 클래스 변수를 수정하거나, 함수로 넘어온 인수나 전역변수를 수정하는 일이 없도록 한다.&lt;/dt&gt;
-      &lt;dd&gt;checkPassword라는 함수에서 비밀번호가 틀렸을 경우 Seesion을 초기화하는 작업이 들어 가있다면, 부수적인 작업을 하는 것이다.(이름만 봐서는 부수 효과를 예측할 수 없다.)&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+## 부수 효과를 일으키지 마라!
+- 몰래 클래스 변수를 수정하거나, 함수로 넘어온 인수나 전역변수를 수정하는 일이 없도록 한다. 
+ : checkPassword라는 함수에서 비밀번호가 틀렸을 경우 Seesion을 초기화하는 작업이 들어 가있다면, 부수적인 작업을 하는 것이다.(이름만 봐서는 부수 효과를 예측할 수 없다.)
 
-&lt;h3 id=&quot;출력-인수&quot;&gt;출력 인수&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;일반적으로 인수를 입력인술 해석하기 때문에, 사용하지 않는 것이 좋다.&lt;/dt&gt;
-      &lt;dd&gt;객체지향에서는 출력인수를 사용하지않고, 객체상태를 변경하거나 객체내 변수를 출력하도록 설계해야한다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+### 출력 인수
+- 일반적으로 인수를 입력인술 해석하기 때문에, 사용하지 않는 것이 좋다.
+ : 객체지향에서는 출력인수를 사용하지않고, 객체상태를 변경하거나 객체내 변수를 출력하도록 설계해야한다.
 
-&lt;h2 id=&quot;명령과-조회를-분리하라&quot;&gt;명령과 조회를 분리하라!&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;함수는 객체 정보를 반환하거나, 객체 상태를 변경하거나 둘중하나만 해야한다.&lt;/dt&gt;
-      &lt;dd&gt;bool set(string attribute, string value);&lt;/dd&gt;
-      &lt;dd&gt;이 함수는 속성갑을 찾아 value값을 설정한 후 성공여부를 반환하는 함수이다.&lt;/dd&gt;
-      &lt;dd&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;if(set(&quot;username&quot;, &quot;unclebob&quot;))&lt;/code&gt;으로 표현하면, 의미가 모호해진다.&lt;/dd&gt;
-      &lt;dd&gt;username이unclebob으로 설정되있다는 것을 판단한다고 생각 할 수있다.&lt;/dd&gt;
-      &lt;dd&gt;다음과 같이 분리한다면 의미를 명확하게 표현 할 수 있다.
-        &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attriuteExists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;username&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
- &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;n&quot;&gt;setAttribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;username&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;uncldebob&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
- &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-        &lt;h2 id=&quot;에러코드보다-예외를-사용하라&quot;&gt;에러코드보다 예외를 사용하라!&lt;/h2&gt;
-      &lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;에러코드를 반환하는 방식은 명령/조회규칙을 미묘하게 위반하고, 여러 단계로 중첩되는 코드를 야기한다.
-    &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deletePage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;E_OK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;registry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deleteReference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;E_OK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;configKeys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deleteKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;makeKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;E_OK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;c1&quot;&gt;// Success
-&lt;/span&gt;      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;c1&quot;&gt;// Error처리
-&lt;/span&gt;      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;c1&quot;&gt;// Error처리
-&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// Error처리
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;: 위의 예처럼 에러처리를 곧바로 처리해야하기 때문에, 깊이가 깊어진다.&lt;/p&gt;
-    &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;deletePage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;registry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deleteReference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;configKeys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deleteKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;makeKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// 에러처리
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;: 위 예처럼 예외처리를 넣을 경우 코드가 간단해진다.&lt;/dt&gt;
-      &lt;dd&gt;하지만, try/catch는 한가지의 작업이며, 다른 작업과 섞여있으면 혼란을 줄 수 있다.
-        &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Page&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;deletePageAndAllReferences&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;c1&quot;&gt;// 에러처리
-&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;deletePageAndAllReferences&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Page&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;deletePage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;registry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deleteReference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;configKeys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deleteKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;makeKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/dd&gt;
-      &lt;dd&gt;위의 예외처리를 분리시키는 것이 코드를 이해하기 더 쉽다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+## 명령과 조회를 분리하라!
+- 함수는 객체 정보를 반환하거나, 객체 상태를 변경하거나 둘중하나만 해야한다.
+ : bool set(string attribute, string value);
+ : 이 함수는 속성갑을 찾아 value값을 설정한 후 성공여부를 반환하는 함수이다.
+ : ``` if(set(&quot;username&quot;, &quot;unclebob&quot;))```으로 표현하면, 의미가 모호해진다.
+ : username이unclebob으로 설정되있다는 것을 판단한다고 생각 할 수있다.
+ : 다음과 같이 분리한다면 의미를 명확하게 표현 할 수 있다.
+ ``` cpp
+ if(attriuteExists(&quot;username&quot;))
+ {
+      setAttribute(&quot;username&quot;, &quot;uncldebob&quot;)
+ }
+ ``` 
+## 에러코드보다 예외를 사용하라!
+- 에러코드를 반환하는 방식은 명령/조회규칙을 미묘하게 위반하고, 여러 단계로 중첩되는 코드를 야기한다.
+``` cpp
+if(deletePage(page) == E_OK)
+{
+    if(registry.deleteReference(page.name) == E_OK)
+    {
+        if(configKeys.deleteKey(page.name.makeKey()) == E_OK)
+        {
+            // Success
+        }
+        else
+        {
+            // Error처리
+        }
+    }
+    else
+    {
+        // Error처리
+    }
+}
+else
+{
+    // Error처리
+}
+```
+ : 위의 예처럼 에러처리를 곧바로 처리해야하기 때문에, 깊이가 깊어진다.
+``` cpp
+try{
+    deletePage(page);
+    registry.deleteReference(page.name);
+    configKeys.deleteKey(page.name.makeKey());
+}
+catch(Exception e)
+{
+    // 에러처리
+}
+```   
+ : 위 예처럼 예외처리를 넣을 경우 코드가 간단해진다. 
+ : 하지만, try/catch는 한가지의 작업이며, 다른 작업과 섞여있으면 혼란을 줄 수 있다.
+``` cpp
+void delete(Page page)
+{
+    try{
+        deletePageAndAllReferences(page);
+    }
+    catch(Exception e)
+    {
+        // 에러처리
+    }
+}
+void deletePageAndAllReferences(Page page)
+{
+    deletePage(page);
+    registry.deleteReference(page.name);
+    configKeys.deleteKey(page.name, makeKey());
+}
+```
+: 위의 예외처리를 분리시키는 것이 코드를 이해하기 더 쉽다.
 
-&lt;h3 id=&quot;error-enum&quot;&gt;Error Enum&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Error Enum이 있다면 이를 변경할 때마다 이를 사용하는 클래스의 컴파일, 재배치를 해야하고, 매번 새 에러코드 Enum을 정의하는 것도 번거롭다.&lt;/li&gt;
-  &lt;li&gt;Exception클래스를 계승해 새로 예외클래스를 생성하면 이러한 수고를 거를 수 있다.&lt;/li&gt;
-&lt;/ul&gt;
+### Error Enum
+- Error Enum이 있다면 이를 변경할 때마다 이를 사용하는 클래스의 컴파일, 재배치를 해야하고, 매번 새 에러코드 Enum을 정의하는 것도 번거롭다.
+- Exception클래스를 계승해 새로 예외클래스를 생성하면 이러한 수고를 거를 수 있다.
 
-&lt;h2 id=&quot;반복하지-마라&quot;&gt;반복하지 마라!&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;데이터베이스의 정규형식과 객체지향프로그래밍의 상속, AOP, COP모두 어떤 면에서 중복 제거 전략이다.&lt;/li&gt;
-&lt;/ul&gt;
+## 반복하지 마라!
+- 데이터베이스의 정규형식과 객체지향프로그래밍의 상속, AOP, COP모두 어떤 면에서 중복 제거 전략이다.
 
-&lt;h2 id=&quot;구조적-프로그래밍&quot;&gt;구조적 프로그래밍&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;구조적 프로그래밍은 함수클 경우 상당한 이익을 제공하며, 작을 경우에는 별 이익을 제공하지 못한다.&lt;/li&gt;
-  &lt;li&gt;함수를 작게 만든다면 간혹 return, break, continue를 여러차례 사용해도 괜찮다.&lt;/li&gt;
-&lt;/ul&gt;
+## 구조적 프로그래밍
+- 구조적 프로그래밍은 함수클 경우 상당한 이익을 제공하며, 작을 경우에는 별 이익을 제공하지 못한다.
+- 함수를 작게 만든다면 간혹 return, break, continue를 여러차례 사용해도 괜찮다.
 
-&lt;dl&gt;
-  &lt;dt&gt;※ 단일 입/출구 규칙 : 모든 함수와 함수 내 모든 블록에 입구와 출구가 하나만 존재해야한다.&lt;/dt&gt;
-  &lt;dd&gt;함수는 return문이 하나여야 한다.&lt;/dd&gt;
-  &lt;dd&gt;루프안에서 break나 continue를 사용해선 안되며, goto는 절대로 안된다.&lt;/dd&gt;
-&lt;/dl&gt;
+※ 단일 입/출구 규칙 : 모든 함수와 함수 내 모든 블록에 입구와 출구가 하나만 존재해야한다.
+ : 함수는 return문이 하나여야 한다.
+ : 루프안에서 break나 continue를 사용해선 안되며, goto는 절대로 안된다.
 
-&lt;h2 id=&quot;결론&quot;&gt;결론&lt;/h2&gt;
-&lt;p&gt;대가 프로그래머는 시스템을 구현할 프로그램이아니라 풀어갈 이야기로 여긴다.
-프로그래밍 언어라는 수단을 사용해 좀 더 풍부하고 좀 더 표현력이 강한 함수를 만들어 이야기를 풀어야한다.&lt;/p&gt;</content>
+## 결론
+대가 프로그래머는 시스템을 구현할 프로그램이아니라 풀어갈 이야기로 여긴다.
+프로그래밍 언어라는 수단을 사용해 좀 더 풍부하고 좀 더 표현력이 강한 함수를 만들어 이야기를 풀어야한다.</content>
 
       
       
@@ -791,184 +1014,6 @@ Do they have seafood?</content>
 
       
         <summary type="html">이용하는 사람이 불특정다수(공용) =&amp;gt; There is 특정사람이 소유한것에대해서 얘기할 때 =&amp;gt; Have</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/02/19 토들러2(이유, 결과)</title>
-      <link href="http://localhost:4000/toddler2" rel="alternate" type="text/html" title="TIL - 2021/02/19 토들러2(이유, 결과)" />
-      <published>2021-02-20T08:30:00+09:00</published>
-      <updated>2021-02-20T08:30:00+09:00</updated>
-      <id>http://localhost:4000/toddler2</id>
-      <content type="html" xml:base="http://localhost:4000/toddler2">## 차가 많이 막혀서 늦었어요.
-
-- 이유를 설명하려면 결과를 먼저 얘기하는 방법(이유설명이 목적)
-I was late because there was a lot of traffic
-※ there이나오면 뒤에나오는 내용이 있었다라는 의미.
-
-- 벌어진 일을 순서대로 나열해서 설명하는 방법
-There was a lot of traffic and I was late
-
-## 차가많이 막혀서 내려서 지하철을 탔어
-There was a lot of traffic, so I got off and I took the subway.
-
----
-
-## 배고파서 뭘 먹긴 해야됐는데, 일 끝나고 너무 피곤해서 뭘 만들어 먹고 싶진 않았고 밖에는 비가 와서 나가고 싶지 않아서 그냥 라면 먹었어.
-
-I was hungry so I had to eat something.
-※ 당연한거기때문에 becuase보단 so를
-I was so tired after work and I didn't want to cook anything
-※ 부정문이기 때문에 anything이 어울림
-I didn't want to go out because It was raining outside so I just ate ramen
-※ 전체적으로 중복도 없애고 문맥적으로 왜 나가지않았는지 이유가 필요하기 때문에 because가 어울린다.
-
-## 여행 내내 우리아버지가 운전하셨어.
-My father drove throughout the entire trip
-## 너 운전면허증 있지않아?
-Don't you have a driver's license?
-## 응, 작년에 따서 심지어 차도 샀어.
-Yes. I got it last year and I even bought a car
-## 근데 연습을 안해서 아직도 운전을 잘 못해.
-But I didn't practice so I still can't drive well.
-## 어머니는 시력이 너무 안좋으셔서 운전을 못하셔.
-My mother can't drive because she has bad eye-sight
-※ 증상의 경우 가지고있다는 식으로 얘기해야한다.</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">차가 많이 막혀서 늦었어요.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/02/19 토들러1(기상, 습관)</title>
-      <link href="http://localhost:4000/toddler1" rel="alternate" type="text/html" title="TIL - 2021/02/19 토들러1(기상, 습관)" />
-      <published>2021-02-20T08:00:00+09:00</published>
-      <updated>2021-02-20T08:00:00+09:00</updated>
-      <id>http://localhost:4000/toddler1</id>
-      <content type="html" xml:base="http://localhost:4000/toddler1">## I get up around 7 o'clock every morning
-나는 매일 아침 7시쯤 일어나
-
-## I go jogging for about half an hour 
-30분정도 조깅을해
-
-## Wow! That's amazing!
-와! 장난아니다!
-
-## Just on weekdays,right?
-평일에만 그러는거죠?
-- weekdays 복수형을 쓰는것으로 반복되는 주를 얘기한다
-
-## No. Even On weekends
-아니야 주말에도
-
-## How do you do that
-어떻게 그렇게해?
-
-## I have to work out hard.
-나는 운동 열심히 해야 돼
-
-## I gain weight so easily
-살이너무 잘 찌거든</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">I get up around 7 o’clock every morning 나는 매일 아침 7시쯤 일어나</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/02/17 Happen</title>
-      <link href="http://localhost:4000/happen" rel="alternate" type="text/html" title="TIL - 2021/02/17 Happen" />
-      <published>2021-02-18T08:30:00+09:00</published>
-      <updated>2021-02-18T08:30:00+09:00</updated>
-      <id>http://localhost:4000/happen</id>
-      <content type="html" xml:base="http://localhost:4000/happen">## What happened?
-무슨일이 있었어?
-
-## Another singer committed suicide
-또 가수가 한명 자살했대
-
-## When did that happen?
-언제그랬는데? 
-언제일어났어?
-
-## How did that happen?
-어떻게하다가 그렇게 됐어?
-
-## Why did that happen?
-왜 그렇게 됐어?
-
-## It happened just a fer days age.
-며칠전에 일어났어.
-
-## It's been all over the news. / It's all over the news.(현재에대해서만 얘기할때)
-뉴스에서 다 얘기하고 있어.</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">What happened? 무슨일이 있었어?</summary>
       
 
       
