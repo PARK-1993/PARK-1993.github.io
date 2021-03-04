@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>TIL - 2021/03/03 CleanCode 형식맞추기</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!--[if IE]>
+        <style>
+            p, ol, ul{
+                width: 100%;
+            }
+            blockquote{
+                width: 100%;
+            }
+        </style>
+    <![endif]-->
+    
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="TIL" />
+    <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/favicon.jpg" type="image/png" />
+    <link rel="canonical" href="http://localhost:4000/CleanCode_Rule" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="푸바 프로그래밍" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TIL - 2021/03/03 CleanCode 형식맞추기" />
+    <meta property="og:description" content="형식을 맞추는 목적 코드작성후 오랜시간이 지나도 정해진 규율이 있다면 구현스타일과 가독성, 유지보수성은 유지된다. 적절한 행 길이를 유지하라 한 파일당 200줄 이하로 구축하는 것이 좋다. 신문기사 처럼 작성하라 이름만 보고도 올바른 모듈을 살펴보고 있는지 알수있고, 소스파일의 첫부분은 고차원 개념과 알고리즘을 설명한다. 아래로 내려갈수록 의도를 세세하게 묘사한다. 개념은 빈 행으로 분리하라 일련의" />
+    <meta property="og:url" content="http://localhost:4000/CleanCode_Rule" />
+    <meta property="og:image" content="http://localhost:4000/assets/built/images/python-logo.png" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
+    <meta property="article:published_time" content="2021-03-04T05:30:00+09:00" />
+    <meta property="article:modified_time" content="2021-03-04T05:30:00+09:00" />
+    <meta property="article:tag" content="Til" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TIL - 2021/03/03 CleanCode 형식맞추기" />
+    <meta name="twitter:description" content="형식을 맞추는 목적 코드작성후 오랜시간이 지나도 정해진 규율이 있다면 구현스타일과 가독성, 유지보수성은 유지된다. 적절한 행 길이를 유지하라 한 파일당 200줄 이하로 구축하는 것이 좋다. 신문기사 처럼 작성하라 이름만 보고도 올바른 모듈을 살펴보고 있는지 알수있고, 소스파일의 첫부분은 고차원 개념과 알고리즘을 설명한다. 아래로 내려갈수록 의도를 세세하게 묘사한다. 개념은 빈 행으로 분리하라 일련의" />
+    <meta name="twitter:url" content="http://localhost:4000/" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/built/images/python-logo.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="푸바 프로그래밍" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Til" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "푸바 프로그래밍",
+        "logo": "http://localhost:4000/"
+    },
+    "url": "http://localhost:4000/CleanCode_Rule",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:4000/assets/built/images/python-logo.png",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:4000/CleanCode_Rule"
+    },
+    "description": "형식을 맞추는 목적 코드작성후 오랜시간이 지나도 정해진 규율이 있다면 구현스타일과 가독성, 유지보수성은 유지된다. 적절한 행 길이를 유지하라 한 파일당 200줄 이하로 구축하는 것이 좋다. 신문기사 처럼 작성하라 이름만 보고도 올바른 모듈을 살펴보고 있는지 알수있고, 소스파일의 첫부분은 고차원 개념과 알고리즘을 설명한다. 아래로 내려갈수록 의도를 세세하게 묘사한다. 개념은 빈 행으로 분리하라 일련의"
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="TIL - 2021/03/03 CleanCode 형식맞추기" href="/feed.xml" />
+
+
+</head>
+<body class="post-template">
+
+    <div class="site-wrapper">
+        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+        <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="http://localhost:4000/">푸바 프로그래밍</a>
+            
+        
+        
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+    <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
+    <li class="nav-TIL" role="menuitem"><a href="/tag/TIL/">잡지식</a></li>
+    <li class="nav-Swift_iOS" role="menuitem"><a href="/tag/Swift_iOS/">Swift_iOS</a></li>
+    <li class="nav-DesignPattern" role="menuitem"><a href="/tag/DesignPattern/">DesignPattern</a></li>
+    <li class="nav-archive" role="menuitem">
+        <a href="/archive.html">All Posts</a>
+    </li>
+    <li class="nav-archive" role="menuitem">
+        <a href="/author_archive.html">Tag별 Posts</a>
+    </li>
+</ul>
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+            
+        </div>
+        
+            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full  tag-til post tag-TIL ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime=" 4 March 2021"> 4 March 2021</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/til/'>TIL</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">TIL - 2021/03/03 CleanCode 형식맞추기</h1>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(/assets/built/images/python-logo.png)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <h2 id="형식을-맞추는-목적">형식을 맞추는 목적</h2>
+<p>코드작성후 오랜시간이 지나도 정해진 규율이 있다면 구현스타일과 가독성, 유지보수성은 유지된다.</p>
+
+<h2 id="적절한-행-길이를-유지하라">적절한 행 길이를 유지하라</h2>
+<p>한 파일당 200줄 이하로 구축하는 것이 좋다.</p>
+
+<h3 id="신문기사-처럼-작성하라">신문기사 처럼 작성하라</h3>
+<p>이름만 보고도 올바른 모듈을 살펴보고 있는지 알수있고, 소스파일의 첫부분은 고차원 개념과 알고리즘을 설명한다.
+아래로 내려갈수록 의도를 세세하게 묘사한다.</p>
+
+<h3 id="개념은-빈-행으로-분리하라">개념은 빈 행으로 분리하라</h3>
+<p>일련의 행 묶음은 하나의 개념을 표현한다. 개념사이에는 빈 행을 넣어 분리해야 마땅하다.</p>
+
+<h3 id="세로-밀집도">세로 밀집도</h3>
+<p>서로 밀접한 코드행은 세로로 가까이 놓여야한다.</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">ReporterConfig</span><span class="p">{</span>
+    <span class="cm">/**
+     * Reporter Class Name
+     */</span>
+    <span class="n">string</span> <span class="n">m_className</span><span class="p">;</span>
+
+    <span class="cm">/**
+     * Reporter Property
+     */</span>
+    <span class="n">List</span><span class="o">&lt;</span><span class="n">Property</span><span class="o">&gt;</span> <span class="n">m_properties</span> <span class="o">=</span> <span class="k">new</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Property</span><span class="o">&gt;</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="n">addProperty</span><span class="p">(</span><span class="n">Property</span> <span class="n">property</span><span class="p">){</span>
+        <span class="n">m_properties</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">property</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>위처럼 의미없는 주석으로 밀접한 코드행을 떨어지게하면 가독성이 떨어진다.
+아래와 같이 주석을 없애면, 한눈에 변수1개, 메서드 2개의 클래스라는 것을 알 수 있다.</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">ReporterConfig</span><span class="p">{</span>
+    <span class="n">string</span> <span class="n">m_className</span><span class="p">;</span>
+    <span class="n">List</span><span class="o">&lt;</span><span class="n">Property</span><span class="o">&gt;</span> <span class="n">m_properties</span> <span class="o">=</span> <span class="k">new</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Property</span><span class="o">&gt;</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="n">addProperty</span><span class="p">(</span><span class="n">Property</span> <span class="n">property</span><span class="p">){</span>
+        <span class="n">m_properties</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">property</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="수직거리">수직거리</h3>
+<p>위에서 말했듯이 서로 밀접한 개념은 세로로 가까이 둬야한다. 하지만 두 개념이 서로 다른 파일에 속한다면 규칙이 통하지않는다.
+protected변수를 많이 쓰면 소스파일과 클래스를 여기저기 뒤지게 된다.</p>
+<ul>
+  <li>변수선언
+변수는 사용하는 위치에 최대한 가까이 선언한다.</li>
+  <li>인스턴스변수
+인스턴스 변수는 클래스 맨 처음에 선언한다. 잘 설계한 클래스는 대다수의 메서드에서 인스턴스변수를 사용하기 때문이다.</li>
+  <li>종속함수
+한 함수가 다른 함수를 호출한다면 그 두 함수는 세로로 가까이 배치한다.
+가능하면 호출하는 함수를 먼저 선언하고, 호출되는 함수를 그 다음 선언한다.</li>
+  <li>
+    <p>개념적 유사성
+친화도가 높을 수록 코드를 가까이 배치한다.
+위의 직접적인 종성도 친화도가 높은 것이다.
+``` cpp
+class Assert{
+  static void assertTrue(string message, bool condition){
+      if(!condition)
+          fail(message);
+  }</p>
+
+    <p>static void assertTrue(bool condition){
+      assertTrue(null, condition);
+  }</p>
+
+    <p>static void assertFalse(string message, bool condition){
+      assertTrue(null, !condition);
+  }</p>
+
+    <p>static void assertTrue(string message, bool condition){
+      assertFalse(null, condition);
+  }</p>
+  </li>
+</ul>
+
+<p>}</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>위와 같은 경우 명명법이 같고, 기본기능이 유사하기 때문에 개념적인 친화도가 매우 높다.
+
+### 세로 순서
+호출되는 함수를 호출하는 함수보다 나중에 배치하면, 소스 코드 모듈이 고차원에서 저차원으로 자연스럽게 내려간다.
+
+## 가로 형식 맞추기
+조사결과 20~60자가 40%의 비율을 차지했지만, 100자나 120자에 달해도 나쁘지 않다.
+요즘은 모니터가 크기때문에 한화면에 많이들어간다. 하지만 120자 정도로 행길이를 제한하도록하자.
+
+### 가로 정렬
+필자는 한때 아래와 같이 가로정렬을 통해 코드를 작성하였다
+``` cpp
+class FitNesseExpediter 
+{
+    Socket          socket;
+    InputStream     input;
+    OutputStream    output;
+    Request         request;
+    Response        response;
+    FitNesseContext context;
+    long            requestParsingTimeLimit;
+}
+</code></pre></div></div>
+<p>하지만 이렇게 할 경우 변수유형보다 변수이름에 눈이 가게 되고, 이러한 형식은 보통 코드형식을 자동으로 맞춰주는 툴에서 무시된다.
+또한 이렇게 정렬해야될 필요성이 있다는 것은 클래스를 쪼개야된다는 의미이다.</p>
+
+<h3 id="들여쓰기">들여쓰기</h3>
+<p>때로는 간단한 if문, 짧은 while문, 짧은 함수에서 들여쓰기 규칙을 무시하고 싶어지는데, 필자는 항상 제대로 범위를 표현한 코드를 작성한다.</p>
+
+<h2 id="팀-규칙">팀 규칙</h2>
+<p>프로그래머라면 자기가 선호하는 규칙이 있지만, 팀에 속한다면 그 합의된 한가지의 규칙을 따라야한다.</p>
+
+<h2 id="밥아저씨의-형식-규칙">밥아저씨의 형식 규칙</h2>
+<p>필자의 사용하는 규칙을 표현해주는 코드이다.</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CodeAnalyzer</span> <span class="kd">implements</span> <span class="n">JavaFileAnalysis</span> <span class="o">{</span> 
+	<span class="kd">private</span> <span class="kt">int</span> <span class="n">lineCount</span><span class="o">;</span>
+	<span class="kd">private</span> <span class="kt">int</span> <span class="n">maxLineWidth</span><span class="o">;</span>
+	<span class="kd">private</span> <span class="kt">int</span> <span class="n">widestLineNumber</span><span class="o">;</span>
+	<span class="kd">private</span> <span class="n">LineWidthHistogram</span> <span class="n">lineWidthHistogram</span><span class="o">;</span> 
+	<span class="kd">private</span> <span class="kt">int</span> <span class="n">totalChars</span><span class="o">;</span>
+	
+	<span class="kd">public</span> <span class="nf">CodeAnalyzer</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">lineWidthHistogram</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LineWidthHistogram</span><span class="o">();</span>
+	<span class="o">}</span>
+	
+	<span class="kd">public</span> <span class="kd">static</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">File</span><span class="o">&gt;</span> <span class="nf">findJavaFiles</span><span class="o">(</span><span class="n">File</span> <span class="n">parentDirectory</span><span class="o">)</span> <span class="o">{</span> 
+		<span class="n">List</span><span class="o">&lt;</span><span class="n">File</span><span class="o">&gt;</span> <span class="n">files</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">File</span><span class="o">&gt;();</span> 
+		<span class="n">findJavaFiles</span><span class="o">(</span><span class="n">parentDirectory</span><span class="o">,</span> <span class="n">files</span><span class="o">);</span>
+		<span class="k">return</span> <span class="n">files</span><span class="o">;</span>
+	<span class="o">}</span>
+	
+	<span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">findJavaFiles</span><span class="o">(</span><span class="n">File</span> <span class="n">parentDirectory</span><span class="o">,</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">File</span><span class="o">&gt;</span> <span class="n">files</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">for</span> <span class="o">(</span><span class="n">File</span> <span class="n">file</span> <span class="o">:</span> <span class="n">parentDirectory</span><span class="o">.</span><span class="na">listFiles</span><span class="o">())</span> <span class="o">{</span>
+			<span class="k">if</span> <span class="o">(</span><span class="n">file</span><span class="o">.</span><span class="na">getName</span><span class="o">().</span><span class="na">endsWith</span><span class="o">(</span><span class="s">".java"</span><span class="o">))</span> 
+				<span class="n">files</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">file</span><span class="o">);</span>
+			<span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">file</span><span class="o">.</span><span class="na">isDirectory</span><span class="o">())</span> 
+				<span class="n">findJavaFiles</span><span class="o">(</span><span class="n">file</span><span class="o">,</span> <span class="n">files</span><span class="o">);</span>
+		<span class="o">}</span> 
+	<span class="o">}</span>
+	
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">analyzeFile</span><span class="o">(</span><span class="n">File</span> <span class="n">javaFile</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span> 
+		<span class="n">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="n">FileReader</span><span class="o">(</span><span class="n">javaFile</span><span class="o">));</span> 
+		<span class="n">String</span> <span class="n">line</span><span class="o">;</span>
+		<span class="k">while</span> <span class="o">((</span><span class="n">line</span> <span class="o">=</span> <span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+			<span class="n">measureLine</span><span class="o">(</span><span class="n">line</span><span class="o">);</span> 
+	<span class="o">}</span>
+	
+	<span class="kd">private</span> <span class="kt">void</span> <span class="nf">measureLine</span><span class="o">(</span><span class="n">String</span> <span class="n">line</span><span class="o">)</span> <span class="o">{</span> 
+		<span class="n">lineCount</span><span class="o">++;</span>
+		<span class="kt">int</span> <span class="n">lineSize</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="na">length</span><span class="o">();</span>
+		<span class="n">totalChars</span> <span class="o">+=</span> <span class="n">lineSize</span><span class="o">;</span> 
+		<span class="n">lineWidthHistogram</span><span class="o">.</span><span class="na">addLine</span><span class="o">(</span><span class="n">lineSize</span><span class="o">,</span> <span class="n">lineCount</span><span class="o">);</span>
+		<span class="n">recordWidestLine</span><span class="o">(</span><span class="n">lineSize</span><span class="o">);</span>
+	<span class="o">}</span>
+	
+	<span class="kd">private</span> <span class="kt">void</span> <span class="nf">recordWidestLine</span><span class="o">(</span><span class="kt">int</span> <span class="n">lineSize</span><span class="o">)</span> <span class="o">{</span> 
+		<span class="k">if</span> <span class="o">(</span><span class="n">lineSize</span> <span class="o">&gt;</span> <span class="n">maxLineWidth</span><span class="o">)</span> <span class="o">{</span>
+			<span class="n">maxLineWidth</span> <span class="o">=</span> <span class="n">lineSize</span><span class="o">;</span>
+			<span class="n">widestLineNumber</span> <span class="o">=</span> <span class="n">lineCount</span><span class="o">;</span> 
+		<span class="o">}</span>
+	<span class="o">}</span>
+
+	<span class="kd">public</span> <span class="kt">int</span> <span class="nf">getLineCount</span><span class="o">()</span> <span class="o">{</span> 
+		<span class="k">return</span> <span class="n">lineCount</span><span class="o">;</span>
+	<span class="o">}</span>
+
+	<span class="kd">public</span> <span class="kt">int</span> <span class="nf">getMaxLineWidth</span><span class="o">()</span> <span class="o">{</span> 
+		<span class="k">return</span> <span class="n">maxLineWidth</span><span class="o">;</span>
+	<span class="o">}</span>
+
+	<span class="kd">public</span> <span class="kt">int</span> <span class="nf">getWidestLineNumber</span><span class="o">()</span> <span class="o">{</span> 
+		<span class="k">return</span> <span class="n">widestLineNumber</span><span class="o">;</span>
+	<span class="o">}</span>
+
+	<span class="kd">public</span> <span class="n">LineWidthHistogram</span> <span class="nf">getLineWidthHistogram</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">lineWidthHistogram</span><span class="o">;</span>
+	<span class="o">}</span>
+	
+	<span class="kd">public</span> <span class="kt">double</span> <span class="nf">getMeanLineWidth</span><span class="o">()</span> <span class="o">{</span> 
+		<span class="k">return</span> <span class="o">(</span><span class="kt">double</span><span class="o">)</span><span class="n">totalChars</span><span class="o">/</span><span class="n">lineCount</span><span class="o">;</span>
+	<span class="o">}</span>
+
+	<span class="kd">public</span> <span class="kt">int</span> <span class="nf">getMedianLineWidth</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">Integer</span><span class="o">[]</span> <span class="n">sortedWidths</span> <span class="o">=</span> <span class="n">getSortedWidths</span><span class="o">();</span> 
+		<span class="kt">int</span> <span class="n">cumulativeLineCount</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+		<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">width</span> <span class="o">:</span> <span class="n">sortedWidths</span><span class="o">)</span> <span class="o">{</span>
+			<span class="n">cumulativeLineCount</span> <span class="o">+=</span> <span class="n">lineCountForWidth</span><span class="o">(</span><span class="n">width</span><span class="o">);</span> 
+			<span class="k">if</span> <span class="o">(</span><span class="n">cumulativeLineCount</span> <span class="o">&gt;</span> <span class="n">lineCount</span><span class="o">/</span><span class="mi">2</span><span class="o">)</span>
+				<span class="k">return</span> <span class="n">width</span><span class="o">;</span>
+		<span class="o">}</span>
+		<span class="k">throw</span> <span class="k">new</span> <span class="nf">Error</span><span class="o">(</span><span class="s">"Cannot get here"</span><span class="o">);</span> 
+	<span class="o">}</span>
+	
+	<span class="kd">private</span> <span class="kt">int</span> <span class="nf">lineCountForWidth</span><span class="o">(</span><span class="kt">int</span> <span class="n">width</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">lineWidthHistogram</span><span class="o">.</span><span class="na">getLinesforWidth</span><span class="o">(</span><span class="n">width</span><span class="o">).</span><span class="na">size</span><span class="o">();</span>
+	<span class="o">}</span>
+	
+	<span class="kd">private</span> <span class="n">Integer</span><span class="o">[]</span> <span class="nf">getSortedWidths</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">Set</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">widths</span> <span class="o">=</span> <span class="n">lineWidthHistogram</span><span class="o">.</span><span class="na">getWidths</span><span class="o">();</span> 
+		<span class="n">Integer</span><span class="o">[]</span> <span class="n">sortedWidths</span> <span class="o">=</span> <span class="o">(</span><span class="n">widths</span><span class="o">.</span><span class="na">toArray</span><span class="o">(</span><span class="k">new</span> <span class="n">Integer</span><span class="o">[</span><span class="mi">0</span><span class="o">]));</span> 
+		<span class="n">Arrays</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">sortedWidths</span><span class="o">);</span>
+		<span class="k">return</span> <span class="n">sortedWidths</span><span class="o">;</span>
+	<span class="o">}</span> 
+<span class="o">}</span>
+</code></pre></div></div>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            
+                <section class="subscribe-form">
+                    <h3 class="subscribe-form-title">Subscribe to 푸바 프로그래밍</h3>
+                    <p>Get the latest posts delivered right to your inbox</p>
+                    <form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+
+                </section>
+            
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = 'http://localhost:4000/CleanCode_Rule';
+                            this.page.identifier = '/CleanCode_Rule';
+                            this.page.title = 'TIL - 2021/03/03 CleanCode 형식맞추기';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://xxxxxxxx.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/built/images/blog-cover1.png)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; 푸바 프로그래밍 &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/til/">Til</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/toddler9">TIL - 2021/03/02 토들러8(spend)</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/Toddler7">TIL - 2021/03/01 토들러7(있나요/걸릴까요/나을까요/거예요)</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/CleanCode_Comment">TIL - 2021/03/01 CleanCode - 주석</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/til/">
+                                
+                                    See all 44 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/toddler9">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/python-logo.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/toddler9">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Til</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">TIL - 2021/03/02 토들러8(spend)</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="http://localhost:4000/">
+            
+            <span>푸바 프로그래밍</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">TIL - 2021/03/03 CleanCode 형식맞추기</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=TIL+-+2021%2F03%2F03+CleanCode+%ED%98%95%EC%8B%9D%EB%A7%9E%EC%B6%94%EA%B8%B0&amp;url=https://PARK-1993.github.ioCleanCode_Rule"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://PARK-1993.github.ioCleanCode_Rule"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+        <!-- Previous/next page links - displayed on every page -->
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="http://localhost:4000/">푸바 프로그래밍</a> &copy; 2021</section>
+                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
+                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                <nav class="site-footer-nav">
+                    <a href="/">Latest Posts</a>
+                    
+                    
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+        <div id="subscribe" class="subscribe-overlay">
+            <a class="subscribe-overlay-close" href="#"></a>
+            <div class="subscribe-overlay-content">
+                
+                <h1 class="subscribe-overlay-title">Subscribe to 푸바 프로그래밍</h1>
+                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+                <form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+
+            </div>
+        </div>
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-xxxxxxxx-x', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+</html>
