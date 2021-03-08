@@ -8,6 +8,173 @@
     
       
       <item>
+        <title>TIL - 2021/03/07 CleanCode 객체와 자료구조</title>
+        
+          <description>&lt;h2 id=&quot;자료추상화&quot;&gt;자료추상화&lt;/h2&gt;
+&lt;p&gt;사용자는 제공된 추상인터페이스를 보고 자료의 핵심을 조작할 수 있어야 진정한 의미의 클래스이다.&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 구체적&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Vehicle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getFuelTankCapacityInGallons&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getGallonsOfGasoline&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;위의 경우 단지 변수의 값을 불러오는 메소드여서 멤버변수를 public으로 하는 것과 크게 다르지않다. 하지만 밑의 경우는 단순히 변수를 가져오는것이 아니며, 사용자는 어떻게해서 데이터가 나오는지 알 수 없다.&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 추상적&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Vehicle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getPercentFuelRemaining&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;이렇게 자료를 세세하게 공개하기 보다는 추상적인 개념으로 표현하는 편이 좋다.
+개발자는 객체가 포함하는 자료를 표현할 가장 좋은 방법을 심각하게 고민해야한다.
+아무생각없이 get,set함수를 추가하는것은 의미가없다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 08 Mar 2021 05:30:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/cleanCode_Object</link>
+        <guid isPermaLink="true">http://localhost:4000/cleanCode_Object</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - 2021/03/03 CleanCode 형식맞추기</title>
+        
+          <description>&lt;h2 id=&quot;형식을-맞추는-목적&quot;&gt;형식을 맞추는 목적&lt;/h2&gt;
+&lt;p&gt;코드작성후 오랜시간이 지나도 정해진 규율이 있다면 구현스타일과 가독성, 유지보수성은 유지된다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 04 Mar 2021 05:30:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/CleanCode_Rule</link>
+        <guid isPermaLink="true">http://localhost:4000/CleanCode_Rule</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - 2021/03/02 토들러8(spend)</title>
+        
+          <description>&lt;h1 id=&quot;spend--on--&quot;&gt;spend — on + @&lt;/h1&gt;
+&lt;h2 id=&quot;저는-옷에-돈-쓰는거-안좋아해요&quot;&gt;저는 옷에 돈 쓰는거 안좋아해요&lt;/h2&gt;
+&lt;p&gt;I don’t like to spend money on clothes&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 03 Mar 2021 08:30:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/toddler9</link>
+        <guid isPermaLink="true">http://localhost:4000/toddler9</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - 2021/03/01 토들러7(있나요/걸릴까요/나을까요/거예요)</title>
+        
+          <description>&lt;h2 id=&quot;이-근처에-우체국이-있나요&quot;&gt;이 근처에 우체국이 있나요?&lt;/h2&gt;
+&lt;p&gt;Is there a post office near here/nearby?&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 02 Mar 2021 08:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/Toddler7</link>
+        <guid isPermaLink="true">http://localhost:4000/Toddler7</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - 2021/03/01 CleanCode - 주석</title>
+        
+          <description>&lt;p&gt;주석은 실패를 만회하기위해 사용한다.
+주석이 필요하다면 코드로 표현할 수 있는 방법이 없을 지 생각해보아야한다.
+코드는 변화하고 진화하기 때문에 주석이 이를 따라가지 못하는 상황이 많다.
+부정확한 주석은 없는 것 보다 훨씬 나쁘다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 02 Mar 2021 00:30:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/CleanCode_Comment</link>
+        <guid isPermaLink="true">http://localhost:4000/CleanCode_Comment</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - 2021/03/01 토들러8(〜할때/하기전에/하고나서/할때까지))</title>
+        
+          <description>&lt;h2 id=&quot;도착하면-전화할게&quot;&gt;도착하면 전화할게.&lt;/h2&gt;
+&lt;p&gt;I’ll call you when I arrive&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 01 Mar 2021 09:30:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/toddler8</link>
+        <guid isPermaLink="true">http://localhost:4000/toddler8</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - 2021/02/23 객체지향설계 5가지원칙(SOLID)</title>
+        
+          <description>&lt;h2 id=&quot;객체지향설계-5원칙&quot;&gt;객체지향설계 5원칙&lt;/h2&gt;
+&lt;p&gt;유지보수성과 확장성을 높이기위한 SOLID라는 이름의 객체지향법칙이 있다. 
+즉, 좋은 객체지향설계를 위해 지켜야한다는 것이다. 이규칙은 Robert C. Martin이 소개하였고 LSP와 OCP는 각각 Barbara Liskov, Bertrand Meyer에 의해 발명되었다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 24 Feb 2021 03:30:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/PrinciplesOfOrientedDesign</link>
+        <guid isPermaLink="true">http://localhost:4000/PrinciplesOfOrientedDesign</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - 2021/02/23 CleanCode - 함수</title>
+        
+          <description>&lt;h2 id=&quot;작게-만들어라&quot;&gt;작게 만들어라!&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;20줄도 길다.&lt;/li&gt;
+  &lt;li&gt;짧을 수록 명백해진다.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;if/while문에 들어가는 블록은 한 줄이어야한다.&lt;/dt&gt;
+      &lt;dd&gt;블록안에서 함수 이름을 적절히 짓는다면, 코드를 이해하기 쉬워진다.&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/li&gt;
+  &lt;li&gt;함수의 들여쓰기 수준은 1단이나 2단을 넘어서면 안된다.
+    &lt;h2 id=&quot;한가지만해라&quot;&gt;한가지만해라!&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;함수내에서 의미있는 이름으로 다른 함수를 추출할 수 있다면, 그 함수는 여러 작업을 하는셈이다.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;함수 내 모든 문장의 추상화 수준이 동일해야한다.&lt;/dt&gt;
+      &lt;dd&gt;추상화수준이 섞여있으면 읽는 사람이 근본 개념과 세부사항인지 구분하기 어려워 깨어진 창문처럼 함수에 세부사항을 점점 더 추가한다.
+※ 추상화 수준이 높다 : 함축되어있는 내용이 많다. / 추상화 수준이 낮다 : 함축되어있는 내용이 적다.&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Wed, 24 Feb 2021 01:30:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/CleanCode_Function</link>
+        <guid isPermaLink="true">http://localhost:4000/CleanCode_Function</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>TIL - 2021/02/21 NoPlanTravel1</title>
         
           <description>&lt;h2 id=&quot;앱-이름-후보&quot;&gt;앱 이름 후보&lt;/h2&gt;
