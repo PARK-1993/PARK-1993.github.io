@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/til/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-03-08T23:34:34+09:00</updated>
+  <updated>2021-03-13T23:24:48+09:00</updated>
   <id>http://localhost:4000/tag/til/feed.xml</id>
 
   
@@ -30,6 +30,76 @@
   
   
 
+  
+    <entry>
+      <title type="html">TIL - 2021/03/12 Pod 추가하기</title>
+      <link href="http://localhost:4000/AddingPodFile" rel="alternate" type="text/html" title="TIL - 2021/03/12 Pod 추가하기" />
+      <published>2021-03-13T05:30:00+09:00</published>
+      <updated>2021-03-13T05:30:00+09:00</updated>
+      <id>http://localhost:4000/AddingPodFile</id>
+      <content type="html" xml:base="http://localhost:4000/AddingPodFile">&lt;h2 id=&quot;pod-init&quot;&gt;pod init&lt;/h2&gt;
+&lt;p&gt;이커맨드를 project가있는 폴더에서 실행한다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;내 경우 Xcode업데이트가 되어있지않아서 “Failed to extract git version from &lt;code class=&quot;highlighter-rouge&quot;&gt;git --version&lt;/code&gt;“라는 오류가 떴었다. 아래의 커맨드로 업데이트 시키고 다시 실행해보자
+&lt;code class=&quot;highlighter-rouge&quot;&gt;xcode-select --install&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PodFile이라는 이름의 루비파일이 생기는데 여기에 추가하고싶은 기능의 라이브러리를 기입하면된다.&lt;/p&gt;
+
+&lt;p&gt;use_frameworks!과end사이에 원하는 pod을 기입하면된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cocoapods.org&quot;&gt;cocoaPods&lt;/a&gt;에서 원하는 기능을 찾은 후
+나의 경우 MapBox API를 사용하기 위해
+&lt;code class=&quot;highlighter-rouge&quot;&gt;pod 'MapboxStatic.swift', '~&amp;gt; 0.12'&lt;/code&gt;커맨드를 입력하였다.&lt;/p&gt;
+
+&lt;h2 id=&quot;pod-install&quot;&gt;pod install&lt;/h2&gt;
+&lt;p&gt;프로젝트가 있는 폴더에서 이 커맨드를 실행하면 
+podfile안에 기입된 API를 cocoaPod로부터 다운로드하여 프로젝트에 적용한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;xcworkspace&quot;&gt;.xcworkspace&lt;/h2&gt;
+&lt;p&gt;pod을 다운로드하면 프로젝트폴더에 위의 파일이 생성된다. 이 워크스페이스내에 
+기존에 작성했던 프로젝트내용과 pod API가 들어가있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;podfilelock&quot;&gt;Podfile.lock&lt;/h2&gt;
+&lt;p&gt;이파일도 같이 생성되는데, 어떤 Pod이 추가되어있는지 보여준다.
+그리고 사용중인 pod의 version 정보도 알 수 있다.
+version은 PodFile에서 설정해 줄 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;dependency-were-found-but-they-required-a-higher-minimum-deployment-target&quot;&gt;dependency were found, but they required a higher minimum deployment target&lt;/h2&gt;
+&lt;p&gt;Podfile을 수정하고 pod install을 실행하면 위와같은 에러가 나올 수 있는데,
+minimum deployment target은 Podfile의&lt;code class=&quot;highlighter-rouge&quot;&gt;platform :ios, '9.0'&lt;/code&gt;에서 9.0을 가리킨다. pod버전이 위의 9.0 버전보다 최소 9.0이상의 버전을 필요로 한다는 것이다.&lt;/p&gt;
+
+&lt;p&gt;이 최소 버전은 pod의 github페이지에 들어가서 podspec이란 파일을 찾고 열어보면
+나와있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;왜-일본에-오게되었는지&quot;&gt;왜 일본에 오게되었는지&lt;/h2&gt;
+&lt;h2 id=&quot;왜-it로-전향했는지나한테-맞다고-생각하다-영어로&quot;&gt;왜 IT로 전향했는지,(나한테 맞다고 생각하다 영어로)&lt;/h2&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">pod init 이커맨드를 project가있는 폴더에서 실행한다. 내 경우 Xcode업데이트가 되어있지않아서 “Failed to extract git version from git --version“라는 오류가 떴었다. 아래의 커맨드로 업데이트 시키고 다시 실행해보자 xcode-select --install</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">TIL - 2021/03/07 CleanCode 객체와 자료구조</title>
@@ -1314,87 +1384,6 @@ Money caculatePay(Employee e)
 
       
         <summary type="html">앱 이름 후보 NoPlanTravel TravelRightNow</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/02/21 토들러6(시간이걸리다/돈이들다)</title>
-      <link href="http://localhost:4000/toddler6" rel="alternate" type="text/html" title="TIL - 2021/02/21 토들러6(시간이걸리다/돈이들다)" />
-      <published>2021-02-21T09:30:00+09:00</published>
-      <updated>2021-02-21T09:30:00+09:00</updated>
-      <id>http://localhost:4000/toddler6</id>
-      <content type="html" xml:base="http://localhost:4000/toddler6">&lt;h2 id=&quot;5분-걸려요&quot;&gt;5분 걸려요&lt;/h2&gt;
-&lt;p&gt;It takes 5 minutes.&lt;/p&gt;
-
-&lt;h2 id=&quot;5000원-들어요&quot;&gt;5000원 들어요.&lt;/h2&gt;
-&lt;p&gt;It costs 5000 won
-※ costs발음할 때 ㅆ+ㅌ+ㅆ로 해야된다&lt;/p&gt;
-
-&lt;h2 id=&quot;시간이-많이-걸려요&quot;&gt;시간이 많이 걸려요.&lt;/h2&gt;
-&lt;p&gt;It takes a lot time&lt;/p&gt;
-
-&lt;h2 id=&quot;돈이-많이-들려요&quot;&gt;돈이 많이 들려요&lt;/h2&gt;
-&lt;p&gt;It costs  a lot money&lt;/p&gt;
-
-&lt;h2 id=&quot;시간이-많이-걸렸어요&quot;&gt;시간이 많이 걸렸어요.&lt;/h2&gt;
-&lt;p&gt;It took a lot time.
-It took really(very) long&lt;/p&gt;
-
-&lt;h2 id=&quot;돈이-많이-들었어요&quot;&gt;돈이 많이 들었어요.&lt;/h2&gt;
-&lt;p&gt;It cost a lot money&lt;/p&gt;
-
-&lt;h2 id=&quot;시간이-많이-걸릴거예요&quot;&gt;시간이 많이 걸릴거예요.&lt;/h2&gt;
-&lt;p&gt;It’s going to take a lot of time / a long time / long&lt;/p&gt;
-
-&lt;h2 id=&quot;돈이-많이-들거예요&quot;&gt;돈이 많이 들거예요.&lt;/h2&gt;
-&lt;p&gt;It’s going to cost a lot of money.&lt;/p&gt;
-
-&lt;h2 id=&quot;시간이-많이-안걸려요&quot;&gt;시간이 많이 안걸려요&lt;/h2&gt;
-&lt;p&gt;It doesn’t take a lot of time / long / &lt;strong&gt;very long&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;시간이-많이-안걸렸어요&quot;&gt;시간이 많이 안걸렸어요.&lt;/h2&gt;
-&lt;p&gt;It didn’t take very long.&lt;/p&gt;
-
-&lt;h2 id=&quot;돈이-많이-안들어요&quot;&gt;돈이 많이 안들어요.&lt;/h2&gt;
-&lt;p&gt;It doesn’t cost very much.&lt;/p&gt;
-
-&lt;h2 id=&quot;돈이-많이-안들었어요&quot;&gt;돈이 많이 안들었어요.&lt;/h2&gt;
-&lt;p&gt;It didn’t cost very much&lt;/p&gt;
-
-&lt;h2 id=&quot;돈이-많이-안들거예요&quot;&gt;돈이 많이 안들거예요.&lt;/h2&gt;
-&lt;p&gt;It’s not going to cost very much&lt;/p&gt;
-
-&lt;h2 id=&quot;does-it-take-a-lot-of-time--long&quot;&gt;Does it take a lot of time / long?&lt;/h2&gt;
-&lt;h2 id=&quot;did-it-take-a-lot-of-time--long&quot;&gt;Did it take a lot of time / long?&lt;/h2&gt;
-&lt;h2 id=&quot;is-it-going-to-take-a-lot-of-time--long&quot;&gt;Is it going to take a lot of time / long?&lt;/h2&gt;
-&lt;h2 id=&quot;willwould-it-take-long&quot;&gt;Will/&lt;strong&gt;Would&lt;/strong&gt; it take long?&lt;/h2&gt;
-&lt;h2 id=&quot;how-long-does-it-take&quot;&gt;How long does it take?&lt;/h2&gt;
-&lt;h2 id=&quot;how-long-did-it-take&quot;&gt;How long did it take?&lt;/h2&gt;
-&lt;h2 id=&quot;how-long-would-it-take&quot;&gt;How long would it take?&lt;/h2&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">5분 걸려요 It takes 5 minutes.</summary>
       
 
       
