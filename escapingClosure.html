@@ -11,7 +11,7 @@
 
 
 
-    <title>Facade Pattern</title>
+    <title>Swift_iOS - escaping closure란</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -36,30 +36,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="TIL" />
     <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/favicon.jpg" type="image/png" />
-    <link rel="canonical" href="http://localhost:4000/FacadePattern" />
+    <link rel="canonical" href="http://localhost:4000/escapingClosure" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="푸바 프로그래밍" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Facade Pattern" />
-    <meta property="og:description" content="Facade Pattern이란 어떤 서브시스템의 일련의 인터페이스에 대한 통합된 인터페이스를 제공합니다. 퍼사드에서 고수준의 인터페이스를 정의하기 때문에 서브시스템을 더 쉽게 사용할 수 있습니다. 헤드퍼트스의 정의이다. Facade는 외관이란 뜻으로, 외관을 단순화하거나 쉬운 인터페이스를 만드는데 사용된다. 퍼사드패턴은 클래스하나를 생성하여 거기에 어떠한 일련의 작업을 수행하는데 필요한 클래스들을 구성하고, 작업을 단순화 할 수 있다. 구조 어댑터와" />
-    <meta property="og:url" content="http://localhost:4000/FacadePattern" />
+    <meta property="og:title" content="Swift_iOS - escaping closure란" />
+    <meta property="og:description" content="@escaping closure란 의미대로 탈출가능한 클로저이다. escaping closure를 매개변수로하는 함수에서의 closure는 반환값으로 받을 수 도 있고, 함수내에서 함수밖의 변수에 저장하는 것이 가능하다. 보통 completion closure경우 escaping clousre로 사용하는 경우가 많은 듯하다. (함수내에서 return escapingClosure 이런식으로 사용하기 위해 ) 또한 매개변수로 받은 클로저를 함수내에서 다른 함수의 클로저 매개변수내에서 사용할 경우에도 @escaping선언이 필요하다." />
+    <meta property="og:url" content="http://localhost:4000/escapingClosure" />
     <meta property="og:image" content="http://localhost:4000/assets/built/images/python-logo.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2020-09-10T04:00:00+09:00" />
-    <meta property="article:modified_time" content="2020-09-10T04:00:00+09:00" />
-    <meta property="article:tag" content="Designpattern" />
+    <meta property="article:published_time" content="2021-03-15T06:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-03-15T06:00:00+09:00" />
+    <meta property="article:tag" content="Swift_ios" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Facade Pattern" />
-    <meta name="twitter:description" content="Facade Pattern이란 어떤 서브시스템의 일련의 인터페이스에 대한 통합된 인터페이스를 제공합니다. 퍼사드에서 고수준의 인터페이스를 정의하기 때문에 서브시스템을 더 쉽게 사용할 수 있습니다. 헤드퍼트스의 정의이다. Facade는 외관이란 뜻으로, 외관을 단순화하거나 쉬운 인터페이스를 만드는데 사용된다. 퍼사드패턴은 클래스하나를 생성하여 거기에 어떠한 일련의 작업을 수행하는데 필요한 클래스들을 구성하고, 작업을 단순화 할 수 있다. 구조 어댑터와" />
+    <meta name="twitter:title" content="Swift_iOS - escaping closure란" />
+    <meta name="twitter:description" content="@escaping closure란 의미대로 탈출가능한 클로저이다. escaping closure를 매개변수로하는 함수에서의 closure는 반환값으로 받을 수 도 있고, 함수내에서 함수밖의 변수에 저장하는 것이 가능하다. 보통 completion closure경우 escaping clousre로 사용하는 경우가 많은 듯하다. (함수내에서 return escapingClosure 이런식으로 사용하기 위해 ) 또한 매개변수로 받은 클로저를 함수내에서 다른 함수의 클로저 매개변수내에서 사용할 경우에도 @escaping선언이 필요하다." />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/built/images/python-logo.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="푸바 프로그래밍" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Designpattern" />
+    <meta name="twitter:data2" content="Swift_ios" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="1400" />
@@ -74,7 +74,7 @@
         "name": "푸바 프로그래밍",
         "logo": "http://localhost:4000/"
     },
-    "url": "http://localhost:4000/FacadePattern",
+    "url": "http://localhost:4000/escapingClosure",
     "image": {
         "@type": "ImageObject",
         "url": "http://localhost:4000/assets/built/images/python-logo.png",
@@ -83,9 +83,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/FacadePattern"
+        "@id": "http://localhost:4000/escapingClosure"
     },
-    "description": "Facade Pattern이란 어떤 서브시스템의 일련의 인터페이스에 대한 통합된 인터페이스를 제공합니다. 퍼사드에서 고수준의 인터페이스를 정의하기 때문에 서브시스템을 더 쉽게 사용할 수 있습니다. 헤드퍼트스의 정의이다. Facade는 외관이란 뜻으로, 외관을 단순화하거나 쉬운 인터페이스를 만드는데 사용된다. 퍼사드패턴은 클래스하나를 생성하여 거기에 어떠한 일련의 작업을 수행하는데 필요한 클래스들을 구성하고, 작업을 단순화 할 수 있다. 구조 어댑터와"
+    "description": "@escaping closure란 의미대로 탈출가능한 클로저이다. escaping closure를 매개변수로하는 함수에서의 closure는 반환값으로 받을 수 도 있고, 함수내에서 함수밖의 변수에 저장하는 것이 가능하다. 보통 completion closure경우 escaping clousre로 사용하는 경우가 많은 듯하다. (함수내에서 return escapingClosure 이런식으로 사용하기 위해 ) 또한 매개변수로 받은 클로저를 함수내에서 다른 함수의 클로저 매개변수내에서 사용할 경우에도 @escaping선언이 필요하다."
 }
     </script>
 
@@ -98,7 +98,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Facade Pattern" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Swift_iOS - escaping closure란" href="/feed.xml" />
 
 
 </head>
@@ -156,21 +156,21 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  tag-designpattern post tag-DesignPattern ">
+        <article class="post-full  tag-swift-ios post tag-Swift_iOS ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="10 September 2020">10 September 2020</time>
+                    <time class="post-full-meta-date" datetime="15 March 2021">15 March 2021</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/designpattern/'>DESIGNPATTERN</a>
+                               <a href='/tag/swift-ios/'>SWIFT_IOS</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">Facade Pattern</h1>
+                <h1 class="post-full-title">Swift_iOS - escaping closure란</h1>
             </header>
 
             
@@ -180,18 +180,50 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <h2 id="facade-pattern이란">Facade Pattern이란</h2>
-<p><em>어떤 서브시스템의 일련의 인터페이스에 대한 통합된 인터페이스를 제공합니다. 퍼사드에서 고수준의 인터페이스를 정의하기 때문에 서브시스템을 더 쉽게 사용할 수 있습니다.</em>
-헤드퍼트스의 정의이다. Facade는 외관이란 뜻으로, 외관을 단순화하거나 쉬운 인터페이스를 만드는데 사용된다. 퍼사드패턴은 클래스하나를 생성하여 거기에 어떠한 일련의 작업을 수행하는데 필요한 클래스들을 구성하고, 작업을 단순화 할 수 있다.</p>
+                    <h2 id="escaping-closure란">@escaping closure란</h2>
+<p>의미대로 탈출가능한 클로저이다. 
+escaping closure를 매개변수로하는 함수에서의 closure는
+반환값으로 받을 수 도 있고, 함수내에서 함수밖의 변수에 저장하는 것이 가능하다.
+보통 completion closure경우 escaping clousre로 사용하는 경우가 많은 듯하다.
+(함수내에서 <code class="highlighter-rouge">return escapingClosure</code> 이런식으로 사용하기 위해 )</p>
 
-<h2 id="구조">구조</h2>
+<p>또한 매개변수로 받은 클로저를 함수내에서 다른 함수의 클로저 매개변수내에서 사용할 경우에도 @escaping선언이 필요하다.</p>
 
-<p><img src="/assets/image/post/20200909/FacadePattern.png" alt="FacadePattern" /></p>
+<p>함수 파라미터에 클로저를 선언한 경우 타입앞에 @escaping을 선언하면 사용가능하다.
+기본값은 @noescape이다.</p>
+<h2 id="사용예시">사용예시</h2>
 
-<h2 id="어댑터와-퍼사드패턴">어댑터와 퍼사드패턴</h2>
-<p>어댑터와 퍼사드 둘다 객체를 감싸서 인터페이스를 바꾸는 작업을 하지만, 
-목적이 다르다. 어댑터 패턴은 인터페이스를 바꿔서 다른인터페이스에 적용시키려는 목적이고,
-퍼사드의 경우는 객체를 감싸서 새로운 행동을 추가하기 위한 용도이다.</p>
+<h3 id="클로저-매개변수를-함수내에-있는-또다른-클로저-매개변수를-사용하는함수의-클로저-내에서-사용할-경우">클로저 매개변수를 함수내에 있는 또다른 클로저 매개변수를 사용하는함수의 클로저 내에서 사용할 경우..</h3>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">public</span> <span class="kd">func</span> <span class="nf">findLocation</span><span class="p">(</span><span class="n">with</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(([</span><span class="kt">Location</span><span class="p">])</span><span class="o">-&gt;</span><span class="kt">Void</span> <span class="p">)){</span>
+        <span class="k">let</span> <span class="nv">geoCorder</span> <span class="o">=</span> <span class="kt">CLGeocoder</span><span class="p">()</span>
+        <span class="n">geoCorder</span><span class="o">.</span><span class="nf">geocodeAddressString</span><span class="p">(</span><span class="n">query</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">places</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+            <span class="k">guard</span> <span class="k">let</span> <span class="nv">places</span> <span class="o">=</span> <span class="n">places</span><span class="p">,</span> <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span><span class="p">{</span>
+                <span class="c1">// completion이 다시 다른 함수의 클로저 매개변수내에서 사용되고 있다.</span>
+                <span class="nf">completion</span><span class="p">([])</span>
+                <span class="k">return</span>
+            <span class="p">}</span>
+            
+            <span class="k">let</span> <span class="nv">models</span> <span class="p">:</span> <span class="p">[</span><span class="kt">Location</span><span class="p">]</span> <span class="o">=</span> <span class="n">places</span><span class="o">.</span><span class="nf">compactMap</span><span class="p">({</span> <span class="n">place</span> <span class="k">in</span>
+                <span class="k">var</span> <span class="nv">name</span> <span class="o">=</span> <span class="s">""</span>
+                <span class="k">if</span> <span class="k">let</span> <span class="nv">locationName</span> <span class="o">=</span> <span class="n">place</span><span class="o">.</span><span class="n">name</span><span class="p">{</span>
+                    <span class="n">name</span> <span class="o">+=</span> <span class="n">locationName</span>
+                <span class="p">}</span>
+                
+                <span class="k">if</span> <span class="k">let</span> <span class="nv">adminRegion</span> <span class="o">=</span> <span class="n">place</span><span class="o">.</span><span class="n">administrativeArea</span><span class="p">{</span>
+                    <span class="n">name</span> <span class="o">+=</span> <span class="s">", </span><span class="se">\(</span><span class="n">adminRegion</span><span class="se">)</span><span class="s">"</span>
+                <span class="p">}</span>
+             
+                <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="kt">Location</span><span class="p">(</span>
+                    <span class="nv">title</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+                    <span class="nv">coordinates</span><span class="p">:</span> <span class="n">place</span><span class="o">.</span><span class="n">location</span><span class="p">?</span><span class="o">.</span><span class="n">coordinate</span><span class="p">)</span>
+                
+                <span class="k">return</span> <span class="n">result</span>
+            <span class="p">})</span>   
+            <span class="c1">// completion이 다시 다른 함수의 클로저 매개변수내에서 사용되고 있다.</span>
+            <span class="nf">completion</span><span class="p">(</span><span class="n">models</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div>
 
                 </div>
             </section>
@@ -231,9 +263,9 @@ into the {body} of the default.hbs template -->
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            this.page.url = 'http://localhost:4000/FacadePattern';
-                            this.page.identifier = '/FacadePattern';
-                            this.page.title = 'Facade Pattern';
+                            this.page.url = 'http://localhost:4000/escapingClosure';
+                            this.page.identifier = '/escapingClosure';
+                            this.page.title = 'Swift_iOS - escaping closure란';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -259,273 +291,9 @@ into the {body} of the default.hbs template -->
                 
                 
                 
-                    <article class="read-next-card"
-                        
-                            style="background-image: url(/assets/built/images/blog-cover1.png)"
-                        
-                    >
-                        <header class="read-next-card-header">
-                            <small class="read-next-card-header-sitetitle">&mdash; 푸바 프로그래밍 &mdash;</small>
-                            
-                                <h3 class="read-next-card-header-title"><a href="/tag/designpattern/">Designpattern</a></h3>
-                            
-                        </header>
-                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
-</div>
-                        <div class="read-next-card-content">
-                            <ul>
-                                
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/TemplateMethodPattern">TemplateMethod Pattern</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/TheLawOfDemeter">최소지식원칙 - Principle of Least Knowledge</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/HollywoodPrinciple">헐리우드원칙이란</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                            </ul>
-                        </div>
-                        <footer class="read-next-card-footer">
-                            <a href="/tag/designpattern/">
-                                
-                                    See all 10 posts  →
-                                
-                            </a>
-                        </footer>
-                    </article>
-                
             
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
-            
-                
-
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/HollywoodPrinciple">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/python-logo.png)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/HollywoodPrinciple">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Designpattern</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">헐리우드원칙이란</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p></p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
             
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
@@ -534,22 +302,22 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/CommandPattern">
+            <a class="post-card-image-link" href="/Speaking">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/python-logo.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/CommandPattern">
+            <a class="post-card-content-link" href="/Speaking">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Designpattern</span>
+                                <span class="post-card-tags">Til</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Command Pattern (c++)</h2>
+                    <h2 class="post-card-title">TIL - 2021/03/13 meetup_1 표현하고 싶었던 것</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -586,18 +354,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Facade Pattern</div>
+    <div class="floating-header-title">Swift_iOS - escaping closure란</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Facade+Pattern&amp;url=https://PARK-1993.github.ioFacadePattern"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Swift_iOS+-+escaping+closure%EB%9E%80&amp;url=https://PARK-1993.github.ioescapingClosure"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://PARK-1993.github.ioFacadePattern"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://PARK-1993.github.ioescapingClosure"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

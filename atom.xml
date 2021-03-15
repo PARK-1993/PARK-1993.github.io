@@ -8,6 +8,94 @@
     
       
       <item>
+        <title>Swift_iOS - escaping closure란</title>
+        
+          <description>&lt;h2 id=&quot;escaping-closure란&quot;&gt;@escaping closure란&lt;/h2&gt;
+&lt;p&gt;의미대로 탈출가능한 클로저이다. 
+escaping closure를 매개변수로하는 함수에서의 closure는
+반환값으로 받을 수 도 있고, 함수내에서 함수밖의 변수에 저장하는 것이 가능하다.
+보통 completion closure경우 escaping clousre로 사용하는 경우가 많은 듯하다.
+(함수내에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;return escapingClosure&lt;/code&gt; 이런식으로 사용하기 위해 )&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 15 Mar 2021 06:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/escapingClosure</link>
+        <guid isPermaLink="true">http://localhost:4000/escapingClosure</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - 2021/03/13 meetup_1 표현하고 싶었던 것</title>
+        
+          <description>&lt;h2 id=&quot;왜-일본에-오게되었는지&quot;&gt;왜 일본에 오게되었는지&lt;/h2&gt;
+&lt;p&gt;어릴때부터 자연스럽게 일본애니라던지 보고 자라서 일본에 대한 친근감이 있었고, 
+Since I was young, I’ve watched japanese anime, so I have a sense of closeness. 
+외국에서 일해보고 싶다 라는 생각을 가지고 있었습니다. 
+And I wanted to work abroad.
+한국에서 해외취업목적으로한 여러 프로그램이 있는데, 
+There are several programs aimed at getting a job in japan.
+그 프로그램을 신청해서 연수를 받고 오게되었습니다. 
+I applied for one of them and I get training and I got a job in japan now.&lt;/p&gt;
+&lt;h2 id=&quot;왜-it로-전향했는지나한테-맞다고-생각하다-영어로&quot;&gt;왜 IT로 전향했는지,(나한테 맞다고 생각하다 영어로)&lt;/h2&gt;
+&lt;p&gt;원래는 전공이 항공우주시스템공학과 였는데, 
+My major was aero space engineering. but
+3, 4학년이 되었을때, 대학생활 열심히 하면서 이런저런 자격증도 따고 연수도받고 했지만, 
+I studied hard and I earned certicates but　when I became 4th year student in university.
+실제로 내가 이 분야에 관련해서 잘할 수 있다?라고 생각되어지는게 없었습니다.
+There was nothing I could confidently say I could do well.
+그리고 막 되게 잘해지고 싶다라는 마음도 별로 없었구요.
+And there wasn’t much of a feeling that I just wanted to get better.
+그러던중에 학교에서 운영하는 4차산업관련한 추가수업?같은게 있었는데
+there were additional classes related to the 4th industry.
+그 수업을 듣고, 이분야에 대해 흥미를 가지게 되었습니다. 
+After taking that class, I became interested in this field.
+그때 이쪽으로 공부를 해보고싶다고 생각해 그뒤로 추가수업을 더듣고 졸업후에 제대로 공부하자
+생각하고 전향하게 되었습니다.
+After graduation, I started to study IT&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 14 Mar 2021 05:30:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/Speaking</link>
+        <guid isPermaLink="true">http://localhost:4000/Speaking</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL - 2021/03/13 I think대신에 쓸 수 있는 표현</title>
+        
+          <description>&lt;ol&gt;
+  &lt;li&gt;I guess
+약한 추측&lt;/li&gt;
+  &lt;li&gt;I suppose
+guess와 의미는 같지만 formal&lt;/li&gt;
+  &lt;li&gt;I believe
+확신이 있는 표현&lt;/li&gt;
+  &lt;li&gt;In my opinion
+I think와 거의 비슷&lt;/li&gt;
+  &lt;li&gt;In my knowledge
+내가 알기로는&lt;/li&gt;
+  &lt;li&gt;In my experience
+내 경험에 의하면&lt;/li&gt;
+  &lt;li&gt;From my point of view
+formal한 표현, 제생각에는&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        
+        <pubDate>Sun, 14 Mar 2021 04:30:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/insteadOfThink</link>
+        <guid isPermaLink="true">http://localhost:4000/insteadOfThink</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>TIL - 2021/03/12 Pod 추가하기</title>
         
           <description>&lt;h2 id=&quot;pod-init&quot;&gt;pod init&lt;/h2&gt;
@@ -745,12 +833,16 @@ Pleased to meet you. (Very formal)&lt;/p&gt;
     
       
       <item>
-        <title>Network용어</title>
+        <title>Network - 네트워크용어</title>
         
-          <description>
+          <description>&lt;h2 id=&quot;napt-network-address-port-translation&quot;&gt;NAPT (Network Address Port Translation)&lt;/h2&gt;
+&lt;p&gt;NAT(Network Address Translation)의 기능과 같이 OSI 3계층 네트워크 계층에서 사설 IP 주소를 공인 IP 주소로 변환하는 기능을 가진다.
+하지만 NAPT의경우 공인IP를 이용하여 다수의 사설IP로 변환가능하다. 이름에서 알 수 있듯이 포트번호를 이용하여 가능케한다.
+ICMP와같은 패킷들은 port정보를 포함하지않지만 TCP/UDP의경우 port정보를 포함하기때문에 사용이 가능하다.&lt;/p&gt;
+
 </description>
         
-        <pubDate>Mon, 25 Jan 2021 00:00:00 +0900</pubDate>
+        <pubDate>Tue, 26 Jan 2021 06:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/Network%EC%9A%A9%EC%96%B4</link>
         <guid isPermaLink="true">http://localhost:4000/Network%EC%9A%A9%EC%96%B4</guid>
@@ -858,7 +950,7 @@ Pleased to meet you. (Very formal)&lt;/p&gt;
     
       
       <item>
-        <title>TIL - IP Address</title>
+        <title>Network - IP Address</title>
         
           <description>&lt;h2 id=&quot;ip-address&quot;&gt;IP Address&lt;/h2&gt;
 &lt;p&gt;IP(Internet Protocol)은 상호간에 접속된 네트워크에서 데이터를 중계해 전송하는 네트워크층의 프로토콜이다.&lt;/p&gt;
