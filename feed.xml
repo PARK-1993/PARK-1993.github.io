@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-15T23:20:36+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">Swift_iOS - escaping closure란</title><link href="http://localhost:4000/escapingClosure" rel="alternate" type="text/html" title="Swift_iOS - escaping closure란" /><published>2021-03-15T06:00:00+09:00</published><updated>2021-03-15T06:00:00+09:00</updated><id>http://localhost:4000/escapingClosure</id><content type="html" xml:base="http://localhost:4000/escapingClosure">&lt;h2 id=&quot;escaping-closure란&quot;&gt;@escaping closure란&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-18T23:53:52+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - 2021/03/17 toddler ~년전에 / ~한지 ~년 됐다 / 그 기간동안</title><link href="http://localhost:4000/Toddler10" rel="alternate" type="text/html" title="TIL - 2021/03/17 toddler ~년전에 / ~한지 ~년 됐다 / 그 기간동안" /><published>2021-03-18T05:00:00+09:00</published><updated>2021-03-18T05:00:00+09:00</updated><id>http://localhost:4000/Toddler10</id><content type="html" xml:base="http://localhost:4000/Toddler10">&lt;h2 id=&quot;저는-운전-면허증을-2005년에-취득했습니다&quot;&gt;저는 운전 면허증을 2005년에 취득했습니다.&lt;/h2&gt;
+&lt;p&gt;I got my driver’s license in 2005&lt;/p&gt;
+&lt;h2 id=&quot;저는-운전-면허증을-16년전에-취득했습니다&quot;&gt;저는 운전 면허증을 16년전에 취득했습니다.&lt;/h2&gt;
+&lt;p&gt;I got my driver’s license 16 years ago&lt;/p&gt;
+&lt;h2 id=&quot;운전면허증을-취득한지-16년-됐어요&quot;&gt;운전면허증을 취득한지 16년 됐어요.&lt;/h2&gt;
+&lt;p&gt;It has been 16 years since I got my drivier’s license.&lt;/p&gt;
+
+&lt;h2 id=&quot;16년째동안-운전하고-있습니다&quot;&gt;16년째(동안) 운전하고 있습니다.&lt;/h2&gt;
+&lt;p&gt;I’ve been driving for 16years.&lt;/p&gt;
+
+&lt;h2 id=&quot;그-기간동안에-사고는-딱-한번-있었어요&quot;&gt;그 기간동안에 사고는 딱 한번 있었어요.&lt;/h2&gt;
+&lt;p&gt;During that time(During those 16 years), I’ve had only one accident&lt;/p&gt;
+
+&lt;h2 id=&quot;저는-2008년에-영어를-가르치기-시작했어요&quot;&gt;저는 2008년에 영어를 가르치기 시작했어요.&lt;/h2&gt;
+&lt;p&gt;I started teaching English in 2008&lt;/p&gt;
+
+&lt;h2 id=&quot;저는-13년전에-영어를-가르치기-시작했어요&quot;&gt;저는 13년전에 영어를 가르치기 시작했어요.&lt;/h2&gt;
+&lt;p&gt;I started teaching English 13 years ago&lt;/p&gt;
+
+&lt;h2 id=&quot;영어를-가르치기-시작한지-13년이-되었어요&quot;&gt;영어를 가르치기 시작한지 13년이 되었어요.&lt;/h2&gt;
+&lt;p&gt;It has been 13 years since I started teaching English.&lt;/p&gt;
+
+&lt;h2 id=&quot;13년째-영어를-가르치고-있습니다&quot;&gt;13년째 영어를 가르치고 있습니다.&lt;/h2&gt;
+&lt;p&gt;I’ve been teaching English for 13 years.&lt;/p&gt;
+
+&lt;h2 id=&quot;그-기간동안-많은-흥미로운-사람들을-만났어요&quot;&gt;그 기간동안, 많은 흥미로운 사람들을 만났어요.&lt;/h2&gt;
+&lt;p&gt;During that time, I’ve met a lot of (very) interesting people.&lt;/p&gt;
+
+&lt;h2 id=&quot;저는-제-아내를-2011년에-만났습니다&quot;&gt;저는 제 아내를 2011년에 만났습니다.&lt;/h2&gt;
+&lt;p&gt;I met my wift in 2011.&lt;/p&gt;
+
+&lt;h2 id=&quot;저는-제-아내를-10년전에-만났습니다&quot;&gt;저는 제 아내를 10년전에 만났습니다.&lt;/h2&gt;
+&lt;p&gt;I met my wife 10 years ago&lt;/p&gt;
+
+&lt;h2 id=&quot;제-아내를-만난지-10년이-됐습니다&quot;&gt;제 아내를 만난지 10년이 됐습니다.&lt;/h2&gt;
+&lt;p&gt;It has been 10 years since I (first) met my wife&lt;/p&gt;
+
+&lt;h2 id=&quot;제-아내를-10년동안-알고-지내-왔습니다&quot;&gt;제 아내를 10년동안 알고 지내 왔습니다.&lt;/h2&gt;
+&lt;p&gt;I’ve known my wife for 10 years&lt;/p&gt;
+
+&lt;h2 id=&quot;그-기간동안-우리는-심각하게-다툰일이-없었어요&quot;&gt;그 기간동안 우리는 심각하게 다툰일이 없었어요.&lt;/h2&gt;
+&lt;p&gt;During that time, we’ve never had any serious arguments.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">저는 운전 면허증을 2005년에 취득했습니다. I got my driver’s license in 2005 저는 운전 면허증을 16년전에 취득했습니다. I got my driver’s license 16 years ago 운전면허증을 취득한지 16년 됐어요. It has been 16 years since I got my drivier’s license.</summary></entry><entry><title type="html">Swift_iOS - escaping closure란</title><link href="http://localhost:4000/escapingClosure" rel="alternate" type="text/html" title="Swift_iOS - escaping closure란" /><published>2021-03-15T06:00:00+09:00</published><updated>2021-03-15T06:00:00+09:00</updated><id>http://localhost:4000/escapingClosure</id><content type="html" xml:base="http://localhost:4000/escapingClosure">&lt;h2 id=&quot;escaping-closure란&quot;&gt;@escaping closure란&lt;/h2&gt;
 &lt;p&gt;의미대로 탈출가능한 클로저이다. 
 escaping closure를 매개변수로하는 함수에서의 closure는
 반환값으로 받을 수 도 있고, 함수내에서 함수밖의 변수에 저장하는 것이 가능하다.
@@ -648,47 +689,4 @@ How much does it cost?(X) 이는 정확히 얼마나오는지 묻는 느낌&lt;/
 &lt;p&gt;짦은 함수는 긴 설명이 필요없다. 짧고 한가지만 수행하며 이름을 잘 붙인 함수가 주석으로 헤더를 추가한 함수보다 훨씬 좋다.&lt;/p&gt;
 
 &lt;h3 id=&quot;비공개-코드에서-doxygen형식-사용&quot;&gt;비공개 코드에서 Doxygen형식 사용&lt;/h3&gt;
-&lt;p&gt;비공개 API라면 Doxygen을 사용할 이유가 없다. 유용하지 않을 뿐더러 코드만 보기싫고 산만해질 뿐이다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">주석은 실패를 만회하기위해 사용한다. 주석이 필요하다면 코드로 표현할 수 있는 방법이 없을 지 생각해보아야한다. 코드는 변화하고 진화하기 때문에 주석이 이를 따라가지 못하는 상황이 많다. 부정확한 주석은 없는 것 보다 훨씬 나쁘다.</summary></entry><entry><title type="html">TIL - 2021/03/01 토들러8(〜할때/하기전에/하고나서/할때까지))</title><link href="http://localhost:4000/toddler8" rel="alternate" type="text/html" title="TIL - 2021/03/01 토들러8(〜할때/하기전에/하고나서/할때까지))" /><published>2021-03-01T09:30:00+09:00</published><updated>2021-03-01T09:30:00+09:00</updated><id>http://localhost:4000/toddler8</id><content type="html" xml:base="http://localhost:4000/toddler8">&lt;h2 id=&quot;도착하면-전화할게&quot;&gt;도착하면 전화할게.&lt;/h2&gt;
-&lt;p&gt;I’ll call you when I arrive&lt;/p&gt;
-
-&lt;h2 id=&quot;내가-그-전화를-받았을-때는-이미-버스를-탄-상태였어&quot;&gt;내가 그 전화를 받았을 때는 이미 버스를 탄 상태였어.&lt;/h2&gt;
-&lt;p&gt;I was already on the bus when I got the phone call&lt;/p&gt;
-
-&lt;h2 id=&quot;도착하자말자&quot;&gt;도착하자말자&lt;/h2&gt;
-&lt;p&gt;as soon as I arrive.&lt;/p&gt;
-
-&lt;h2 id=&quot;일끝나고-영화보러-갈거야&quot;&gt;일끝나고 영화보러 갈거야.&lt;/h2&gt;
-&lt;p&gt;I’m going to go the movies after (I get off) work.&lt;/p&gt;
-
-&lt;h2 id=&quot;너-퇴근-몇시에-해&quot;&gt;너 퇴근 몇시에 해?&lt;/h2&gt;
-&lt;p&gt;What time do you get off work.&lt;/p&gt;
-
-&lt;h2 id=&quot;미팅끝나고-시간이-있어요&quot;&gt;미팅끝나고 시간이 있어요&lt;/h2&gt;
-&lt;p&gt;I have some time after the meeting (ends)&lt;/p&gt;
-&lt;h2 id=&quot;자기전에-샤워할거에요&quot;&gt;자기전에 샤워할거에요&lt;/h2&gt;
-&lt;p&gt;I’m going to take a shower before (I go to) bed.&lt;/p&gt;
-
-&lt;h2 id=&quot;일하러가기전에-달리기는-해요&quot;&gt;일하러가기전에 달리기는 해요.&lt;/h2&gt;
-&lt;p&gt;I’m going to go for a run before go to work.&lt;/p&gt;
-
-&lt;h2 id=&quot;산책조깅하러-가다&quot;&gt;산책(조깅)하러 가다&lt;/h2&gt;
-&lt;p&gt;go for a walk&lt;/p&gt;
-&lt;h2 id=&quot;드라이브-하러-가다&quot;&gt;드라이브 하러 가다&lt;/h2&gt;
-&lt;p&gt;go for a drive&lt;/p&gt;
-
-&lt;h2 id=&quot;아침에-나가기전에-항상-날씨체크를-해요&quot;&gt;아침에 나가기전에 항상 날씨체크를 해요.&lt;/h2&gt;
-&lt;p&gt;I always check the weather forecast before I leave in the morning.&lt;/p&gt;
-
-&lt;h2 id=&quot;어제까지-기다렸어&quot;&gt;어제까지 기다렸어.&lt;/h2&gt;
-&lt;p&gt;I waited until yesterday&lt;/p&gt;
-&lt;h2 id=&quot;누군가가-갈때까지-기다려야돼&quot;&gt;누군가가 갈때까지 기다려야돼&lt;/h2&gt;
-&lt;p&gt;We have to wait until someone leaves&lt;/p&gt;
-
-&lt;h2 id=&quot;아무것도-하는-것이-좋겠어가만히-있는게-더-좋겠어-어떻게하라는-얘기가-더-있을때까지&quot;&gt;아무것도 하는 것이 좋겠어(가만히 있는게 더 좋겠어.) 어떻게하라는 얘기가 더 있을때까지&lt;/h2&gt;
-&lt;p&gt;We shouldn’t do anything until we get further instructions.&lt;/p&gt;
-
-&lt;h2 id=&quot;그냥-계속해야돼-너가-익숙해질때까지&quot;&gt;그냥 계속해야돼 너가 익숙해질때까지.&lt;/h2&gt;
-&lt;p&gt;You just have to keep doing it until you get used to it.&lt;/p&gt;
-
-&lt;h2 id=&quot;비가-그칠때까지-그냥-여기-있자&quot;&gt;비가 그칠때까지 그냥 여기 있자.&lt;/h2&gt;
-&lt;p&gt;Let’s just stay here until the rain stops&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">도착하면 전화할게. I’ll call you when I arrive</summary></entry></feed>
+&lt;p&gt;비공개 API라면 Doxygen을 사용할 이유가 없다. 유용하지 않을 뿐더러 코드만 보기싫고 산만해질 뿐이다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">주석은 실패를 만회하기위해 사용한다. 주석이 필요하다면 코드로 표현할 수 있는 방법이 없을 지 생각해보아야한다. 코드는 변화하고 진화하기 때문에 주석이 이를 따라가지 못하는 상황이 많다. 부정확한 주석은 없는 것 보다 훨씬 나쁘다.</summary></entry></feed>

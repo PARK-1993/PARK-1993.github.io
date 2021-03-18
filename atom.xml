@@ -8,6 +8,26 @@
     
       
       <item>
+        <title>TIL - 2021/03/17 toddler ~년전에 / ~한지 ~년 됐다 / 그 기간동안</title>
+        
+          <description>&lt;h2 id=&quot;저는-운전-면허증을-2005년에-취득했습니다&quot;&gt;저는 운전 면허증을 2005년에 취득했습니다.&lt;/h2&gt;
+&lt;p&gt;I got my driver’s license in 2005&lt;/p&gt;
+&lt;h2 id=&quot;저는-운전-면허증을-16년전에-취득했습니다&quot;&gt;저는 운전 면허증을 16년전에 취득했습니다.&lt;/h2&gt;
+&lt;p&gt;I got my driver’s license 16 years ago&lt;/p&gt;
+&lt;h2 id=&quot;운전면허증을-취득한지-16년-됐어요&quot;&gt;운전면허증을 취득한지 16년 됐어요.&lt;/h2&gt;
+&lt;p&gt;It has been 16 years since I got my drivier’s license.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 18 Mar 2021 05:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/Toddler10</link>
+        <guid isPermaLink="true">http://localhost:4000/Toddler10</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Swift_iOS - escaping closure란</title>
         
           <description>&lt;h2 id=&quot;escaping-closure란&quot;&gt;@escaping closure란&lt;/h2&gt;
