@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/til/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-03-18T23:53:52+09:00</updated>
+  <updated>2021-04-04T23:22:38+09:00</updated>
   <id>http://localhost:4000/tag/til/feed.xml</id>
 
   
@@ -30,6 +30,57 @@
   
   
 
+  
+    <entry>
+      <title type="html">TIL - 2021/04/02 toddler 무슨이유인지, 혹시모르니까</title>
+      <link href="http://localhost:4000/toddler11" rel="alternate" type="text/html" title="TIL - 2021/04/02 toddler 무슨이유인지, 혹시모르니까" />
+      <published>2021-04-02T11:00:00+09:00</published>
+      <updated>2021-04-02T11:00:00+09:00</updated>
+      <id>http://localhost:4000/toddler11</id>
+      <content type="html" xml:base="http://localhost:4000/toddler11">&lt;h2 id=&quot;무슨-이유에서인지&quot;&gt;무슨 이유에서인지&lt;/h2&gt;
+&lt;p&gt;for some reason&lt;/p&gt;
+
+&lt;h2 id=&quot;무슨이유인지-통화를-거절했어&quot;&gt;무슨이유인지 통화를 거절했어&lt;/h2&gt;
+&lt;p&gt;He declined my call for some reason&lt;/p&gt;
+
+&lt;h2 id=&quot;아마-거절-버튼을-실수로-누른걸거야&quot;&gt;아마 거절 버튼을 실수로 누른걸거야&lt;/h2&gt;
+&lt;p&gt;He probably hit the decline button by accident
+push도 쓸 수 있지만, 캐쥬얼하게 hit으로 많이쓴다.&lt;/p&gt;
+
+&lt;h2 id=&quot;혹시-바쁜가&quot;&gt;혹시 바쁜가?&lt;/h2&gt;
+&lt;p&gt;Maybe he’s busy..&lt;/p&gt;
+
+&lt;h2 id=&quot;그럴-수도-있겠다&quot;&gt;그럴 수도 있겠다.&lt;/h2&gt;
+&lt;p&gt;Could be.&lt;/p&gt;
+
+&lt;h2 id=&quot;혹시-모르니까-문자를-남겨놓고-전화를-기다려봐&quot;&gt;혹시 모르니까 문자를 남겨놓고 전화를 기다려봐.&lt;/h2&gt;
+&lt;p&gt;Why don’t you leave him a message just in case and wait for him to call you back.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">무슨 이유에서인지 for some reason</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">TIL - 2021/03/17 toddler ~년전에 / ~한지 ~년 됐다 / 그 기간동안</title>
@@ -979,83 +1030,6 @@ How much does it cost?(X) 이는 정확히 얼마나오는지 묻는 느낌&lt;/
 
       
         <summary type="html">주석은 실패를 만회하기위해 사용한다. 주석이 필요하다면 코드로 표현할 수 있는 방법이 없을 지 생각해보아야한다. 코드는 변화하고 진화하기 때문에 주석이 이를 따라가지 못하는 상황이 많다. 부정확한 주석은 없는 것 보다 훨씬 나쁘다.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/03/01 토들러8(〜할때/하기전에/하고나서/할때까지))</title>
-      <link href="http://localhost:4000/toddler8" rel="alternate" type="text/html" title="TIL - 2021/03/01 토들러8(〜할때/하기전에/하고나서/할때까지))" />
-      <published>2021-03-01T09:30:00+09:00</published>
-      <updated>2021-03-01T09:30:00+09:00</updated>
-      <id>http://localhost:4000/toddler8</id>
-      <content type="html" xml:base="http://localhost:4000/toddler8">&lt;h2 id=&quot;도착하면-전화할게&quot;&gt;도착하면 전화할게.&lt;/h2&gt;
-&lt;p&gt;I’ll call you when I arrive&lt;/p&gt;
-
-&lt;h2 id=&quot;내가-그-전화를-받았을-때는-이미-버스를-탄-상태였어&quot;&gt;내가 그 전화를 받았을 때는 이미 버스를 탄 상태였어.&lt;/h2&gt;
-&lt;p&gt;I was already on the bus when I got the phone call&lt;/p&gt;
-
-&lt;h2 id=&quot;도착하자말자&quot;&gt;도착하자말자&lt;/h2&gt;
-&lt;p&gt;as soon as I arrive.&lt;/p&gt;
-
-&lt;h2 id=&quot;일끝나고-영화보러-갈거야&quot;&gt;일끝나고 영화보러 갈거야.&lt;/h2&gt;
-&lt;p&gt;I’m going to go the movies after (I get off) work.&lt;/p&gt;
-
-&lt;h2 id=&quot;너-퇴근-몇시에-해&quot;&gt;너 퇴근 몇시에 해?&lt;/h2&gt;
-&lt;p&gt;What time do you get off work.&lt;/p&gt;
-
-&lt;h2 id=&quot;미팅끝나고-시간이-있어요&quot;&gt;미팅끝나고 시간이 있어요&lt;/h2&gt;
-&lt;p&gt;I have some time after the meeting (ends)&lt;/p&gt;
-&lt;h2 id=&quot;자기전에-샤워할거에요&quot;&gt;자기전에 샤워할거에요&lt;/h2&gt;
-&lt;p&gt;I’m going to take a shower before (I go to) bed.&lt;/p&gt;
-
-&lt;h2 id=&quot;일하러가기전에-달리기는-해요&quot;&gt;일하러가기전에 달리기는 해요.&lt;/h2&gt;
-&lt;p&gt;I’m going to go for a run before go to work.&lt;/p&gt;
-
-&lt;h2 id=&quot;산책조깅하러-가다&quot;&gt;산책(조깅)하러 가다&lt;/h2&gt;
-&lt;p&gt;go for a walk&lt;/p&gt;
-&lt;h2 id=&quot;드라이브-하러-가다&quot;&gt;드라이브 하러 가다&lt;/h2&gt;
-&lt;p&gt;go for a drive&lt;/p&gt;
-
-&lt;h2 id=&quot;아침에-나가기전에-항상-날씨체크를-해요&quot;&gt;아침에 나가기전에 항상 날씨체크를 해요.&lt;/h2&gt;
-&lt;p&gt;I always check the weather forecast before I leave in the morning.&lt;/p&gt;
-
-&lt;h2 id=&quot;어제까지-기다렸어&quot;&gt;어제까지 기다렸어.&lt;/h2&gt;
-&lt;p&gt;I waited until yesterday&lt;/p&gt;
-&lt;h2 id=&quot;누군가가-갈때까지-기다려야돼&quot;&gt;누군가가 갈때까지 기다려야돼&lt;/h2&gt;
-&lt;p&gt;We have to wait until someone leaves&lt;/p&gt;
-
-&lt;h2 id=&quot;아무것도-하는-것이-좋겠어가만히-있는게-더-좋겠어-어떻게하라는-얘기가-더-있을때까지&quot;&gt;아무것도 하는 것이 좋겠어(가만히 있는게 더 좋겠어.) 어떻게하라는 얘기가 더 있을때까지&lt;/h2&gt;
-&lt;p&gt;We shouldn’t do anything until we get further instructions.&lt;/p&gt;
-
-&lt;h2 id=&quot;그냥-계속해야돼-너가-익숙해질때까지&quot;&gt;그냥 계속해야돼 너가 익숙해질때까지.&lt;/h2&gt;
-&lt;p&gt;You just have to keep doing it until you get used to it.&lt;/p&gt;
-
-&lt;h2 id=&quot;비가-그칠때까지-그냥-여기-있자&quot;&gt;비가 그칠때까지 그냥 여기 있자.&lt;/h2&gt;
-&lt;p&gt;Let’s just stay here until the rain stops&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">도착하면 전화할게. I’ll call you when I arrive</summary>
       
 
       
