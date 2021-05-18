@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="http://localhost:4000/tag/english/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2021-05-18T23:32:46+09:00</updated>
+  <id>http://localhost:4000/tag/english/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">푸바 프로그래밍 | </title>
+  
+
+  
+    <subtitle>TIL</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">English - 2021/01/27 Practical English</title>
+      <link href="http://localhost:4000/PracticalConversation2" rel="alternate" type="text/html" title="English - 2021/01/27 Practical English" />
+      <published>2021-01-28T08:00:00+09:00</published>
+      <updated>2021-01-28T08:00:00+09:00</updated>
+      <id>http://localhost:4000/PracticalConversation2</id>
+      <content type="html" xml:base="http://localhost:4000/PracticalConversation2">&lt;h3 id=&quot;어떻게-이친구를-알게되었는지-물어볼-때&quot;&gt;어떻게 이친구를 알게되었는지 물어볼 때&lt;/h3&gt;
+&lt;p&gt;How do you know her?&lt;/p&gt;
+
+&lt;h3 id=&quot;어디-출신인지-물어볼-때formal&quot;&gt;어디 출신인지 물어볼 때(formal)&lt;/h3&gt;
+&lt;p&gt;May I ask you where you`re from?&lt;/p&gt;
+
+&lt;h3 id=&quot;그나라의-정확히-어디서-왔는지-물어볼-때&quot;&gt;그나라의 정확히 어디서 왔는지 물어볼 때&lt;/h3&gt;
+&lt;p&gt;Where in Australia?
+Which park of Australia?
+Which city of Australia?&lt;/p&gt;
+
+&lt;h3 id=&quot;왜-일본에-왔는지-물어볼-때&quot;&gt;왜 일본에 왔는지 물어볼 때&lt;/h3&gt;
+&lt;p&gt;What brought you to Japan
+May I ask you why you come here in Japan&lt;/p&gt;
+
+&lt;h3 id=&quot;살짝웃다&quot;&gt;살짝웃다&lt;/h3&gt;
+&lt;p&gt;smirking&lt;/p&gt;
+
+&lt;h3 id=&quot;알고있지만-써먹지-못한-단어들&quot;&gt;알고있지만 써먹지 못한 단어들&lt;/h3&gt;
+&lt;p&gt;guest : 손님
+glass : 잔
+Wear a necklace : 목걸이를 하다&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="English" />
+      
+
+      
+        <summary type="html">어떻게 이친구를 알게되었는지 물어볼 때 How do you know her?</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

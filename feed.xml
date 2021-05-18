@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-04T23:22:38+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - 2021/04/02 toddler 무슨이유인지, 혹시모르니까</title><link href="http://localhost:4000/toddler11" rel="alternate" type="text/html" title="TIL - 2021/04/02 toddler 무슨이유인지, 혹시모르니까" /><published>2021-04-02T11:00:00+09:00</published><updated>2021-04-02T11:00:00+09:00</updated><id>http://localhost:4000/toddler11</id><content type="html" xml:base="http://localhost:4000/toddler11">&lt;h2 id=&quot;무슨-이유에서인지&quot;&gt;무슨 이유에서인지&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-05-18T23:32:46+09:00</updated><id>http://localhost:4000/</id><title type="html">푸바 프로그래밍</title><subtitle>TIL</subtitle><entry><title type="html">TIL - 2021/05/01 메타버스</title><link href="http://localhost:4000/Metaverse" rel="alternate" type="text/html" title="TIL - 2021/05/01 메타버스" /><published>2021-05-02T05:30:00+09:00</published><updated>2021-05-02T05:30:00+09:00</updated><id>http://localhost:4000/Metaverse</id><content type="html" xml:base="http://localhost:4000/Metaverse">&lt;h1 id=&quot;메타버스란&quot;&gt;메타버스란?&lt;/h1&gt;
+&lt;h2 id=&quot;종류&quot;&gt;종류&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;ZEPETOR&lt;/li&gt;
+  &lt;li&gt;포트나이트&lt;/li&gt;
+  &lt;li&gt;동물의 숲&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;메타버스내에서-아이템제작을-어떻게하나&quot;&gt;메타버스내에서 아이템제작을 어떻게하나&lt;/h1&gt;
+&lt;p&gt;2D, 3D툴을 이용해서 옷을 디자인해야한다..&lt;/p&gt;
+
+&lt;h2 id=&quot;사용가능-편집툴&quot;&gt;사용가능 편집툴&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;GIMP(무료) - 2D용/강좌 : 지아이에듀테크(유투브)&lt;/li&gt;
+  &lt;li&gt;블렌더(무료) - 3D용/강좌 : ZPT_태영(유투브)&lt;/li&gt;
+  &lt;li&gt;포토샵(유료)&lt;/li&gt;
+  &lt;li&gt;마야(유료)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;편집-용어&quot;&gt;편집 용어&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;텍스쳐링 : 외부 이미지를 이용해 물체에 질감을 표현하는 것&lt;/li&gt;
+  &lt;li&gt;리깅 : 3D모델링에 조인트(뼈)를 설계하고, 모션을 제어하는 기능을 추가하는 것&lt;/li&gt;
+  &lt;li&gt;UV맵 : 텍스쳐링을 위한 3D모델의 표면(전개도0)&lt;/li&gt;
+  &lt;li&gt;UV언랩/매핑 : 언랩은 전개도를 만드는과정, 매핑은 전개도를 3D모델에 포장하는 과정&lt;/li&gt;
+  &lt;li&gt;베이크 : 베이크 기술은 이런 명암이나 그림자를 물체 표면에 그대로 입혀 그림으로 박아 넣는 것
+    &lt;h2 id=&quot;편집순서&quot;&gt;편집순서&lt;/h2&gt;
+    &lt;h3 id=&quot;3d&quot;&gt;3D&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;모델링&lt;/li&gt;
+  &lt;li&gt;UV맵 만들기&lt;/li&gt;
+  &lt;li&gt;베이크&lt;/li&gt;
+  &lt;li&gt;리깅&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">메타버스란? 종류 ZEPETOR 포트나이트 동물의 숲</summary></entry><entry><title type="html">TIL - 2021/04/09 What I Wanted To Say</title><link href="http://localhost:4000/WhatIWantedToSay02" rel="alternate" type="text/html" title="TIL - 2021/04/09 What I Wanted To Say" /><published>2021-04-09T11:00:00+09:00</published><updated>2021-04-09T11:00:00+09:00</updated><id>http://localhost:4000/WhatIWantedToSay02</id><content type="html" xml:base="http://localhost:4000/WhatIWantedToSay02">&lt;h2 id=&quot;건강해지려면-최소-2식은-먹어야죠&quot;&gt;건강해지려면 최소 2식은 먹어야죠&lt;/h2&gt;
+
+&lt;h2 id=&quot;강의-조금만들으면-__씨도-할-수-있어요&quot;&gt;강의 조금만들으면 __씨도 할 수 있어요.&lt;/h2&gt;
+
+&lt;h2 id=&quot;뚱뚱한거-보다-아픈게-더-안좋죠날씬한-것-보다-건강한게-좋죠&quot;&gt;뚱뚱한거 보다 아픈게 더 안좋죠(날씬한 것 보다 건강한게 좋죠!)&lt;/h2&gt;
+
+&lt;h2 id=&quot;보통-클라이밍하고난-후에-샤워를해요자기전에-사워를-해요&quot;&gt;보통 클라이밍하고난 후에 샤워를해요(자기전에 사워를 해요)&lt;/h2&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">건강해지려면 최소 2식은 먹어야죠</summary></entry><entry><title type="html">TIL - 2021/04/02 toddler 무슨이유인지, 혹시모르니까</title><link href="http://localhost:4000/toddler11" rel="alternate" type="text/html" title="TIL - 2021/04/02 toddler 무슨이유인지, 혹시모르니까" /><published>2021-04-02T11:00:00+09:00</published><updated>2021-04-02T11:00:00+09:00</updated><id>http://localhost:4000/toddler11</id><content type="html" xml:base="http://localhost:4000/toddler11">&lt;h2 id=&quot;무슨-이유에서인지&quot;&gt;무슨 이유에서인지&lt;/h2&gt;
 &lt;p&gt;for some reason&lt;/p&gt;
 
 &lt;h2 id=&quot;무슨이유인지-통화를-거절했어&quot;&gt;무슨이유인지 통화를 거절했어&lt;/h2&gt;
@@ -529,41 +568,4 @@ class FitNesseExpediter
 		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sortedWidths&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">형식을 맞추는 목적 코드작성후 오랜시간이 지나도 정해진 규율이 있다면 구현스타일과 가독성, 유지보수성은 유지된다.</summary></entry><entry><title type="html">TIL - 2021/03/02 토들러8(spend)</title><link href="http://localhost:4000/toddler9" rel="alternate" type="text/html" title="TIL - 2021/03/02 토들러8(spend)" /><published>2021-03-03T08:30:00+09:00</published><updated>2021-03-03T08:30:00+09:00</updated><id>http://localhost:4000/toddler9</id><content type="html" xml:base="http://localhost:4000/toddler9">&lt;h1 id=&quot;spend--on--&quot;&gt;spend — on + @&lt;/h1&gt;
-&lt;h2 id=&quot;저는-옷에-돈-쓰는거-안좋아해요&quot;&gt;저는 옷에 돈 쓰는거 안좋아해요&lt;/h2&gt;
-&lt;p&gt;I don’t like to spend money on clothes&lt;/p&gt;
-
-&lt;h2 id=&quot;우리는-이-프로젝트에-시간을-너무-많이-쓰고-있어&quot;&gt;우리는 이 프로젝트에 시간을 너무 많이 쓰고 있어.&lt;/h2&gt;
-&lt;p&gt;We’re spending too much time on this project.&lt;/p&gt;
-
-&lt;h1 id=&quot;spend---ing&quot;&gt;spend — + ing&lt;/h1&gt;
-&lt;h2 id=&quot;우리는-그-행사를-준비하는데-돈을-이미-많이-썼어&quot;&gt;우리는 그 행사를 준비하는데 돈을 이미 많이 썼어.&lt;/h2&gt;
-&lt;p&gt;We already spent a lot of money preparing for the event.
-※ 스빼-널라러-머니&lt;/p&gt;
-&lt;h2 id=&quot;이거-걱정하느라고-시간-너무-버리지-마&quot;&gt;이거 걱정하느라고 시간 너무 버리지 마&lt;/h2&gt;
-&lt;p&gt;Don’t spend too much time worrying about this.
-※ 낭비의 경우 waste로 바꿔 쓸 수 있다.&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">spend — on + @ 저는 옷에 돈 쓰는거 안좋아해요 I don’t like to spend money on clothes</summary></entry><entry><title type="html">TIL - 2021/03/01 토들러7(있나요/걸릴까요/나을까요/거예요)</title><link href="http://localhost:4000/Toddler7" rel="alternate" type="text/html" title="TIL - 2021/03/01 토들러7(있나요/걸릴까요/나을까요/거예요)" /><published>2021-03-02T08:00:00+09:00</published><updated>2021-03-02T08:00:00+09:00</updated><id>http://localhost:4000/Toddler7</id><content type="html" xml:base="http://localhost:4000/Toddler7">&lt;h2 id=&quot;이-근처에-우체국이-있나요&quot;&gt;이 근처에 우체국이 있나요?&lt;/h2&gt;
-&lt;p&gt;Is there a post office near here/nearby?&lt;/p&gt;
-
-&lt;h2 id=&quot;지하철역-근처에-하나-있어요&quot;&gt;지하철역 근처에 하나 있어요.&lt;/h2&gt;
-&lt;p&gt;There is one near the subway station.&lt;/p&gt;
-
-&lt;h2 id=&quot;멀어요-여기서-얼마나-걸릴까요&quot;&gt;멀어요? 여기서 얼마나 걸릴까요?&lt;/h2&gt;
-&lt;p&gt;Is it far? How long would it take from here?&lt;/p&gt;
-
-&lt;h2 id=&quot;걸어서-20분-정도-걸릴거예요&quot;&gt;걸어서 20분 정도 걸릴거예요.&lt;/h2&gt;
-&lt;p&gt;It’s going to take about 20 minutes on foot.
-If you walk, It’s going to take about 20 minutes&lt;/p&gt;
-
-&lt;h2 id=&quot;아그냥-택시-타는게-나을까요&quot;&gt;아,(그냥) 택시 타는게 나을까요?&lt;/h2&gt;
-&lt;p&gt;Oh, Should I (just) take a taxi?&lt;/p&gt;
-&lt;h2 id=&quot;네요금이-얼마-안나올거예요&quot;&gt;네,(요금이) 얼마 안나올거예요.&lt;/h2&gt;
-&lt;p&gt;yes, It won’t cost a lot.&lt;/p&gt;
-
-&lt;h2 id=&quot;얼마정도-나올까요&quot;&gt;얼마정도 나올까요?&lt;/h2&gt;
-&lt;p&gt;How much would it cost?
-How much does it cost?(X) 이는 정확히 얼마나오는지 묻는 느낌&lt;/p&gt;
-
-&lt;h2 id=&quot;많이-나와야-5달러-밖에-안나올거예요&quot;&gt;많이 나와야 5달러 밖에 안나올거예요.&lt;/h2&gt;
-&lt;p&gt;It’s going to cost only about 5 five dollars at most.
-※ 많이나와야 : at most&lt;/p&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">이 근처에 우체국이 있나요? Is there a post office near here/nearby?</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>JoonHyun Park</name></author><category term="TIL" /><summary type="html">형식을 맞추는 목적 코드작성후 오랜시간이 지나도 정해진 규율이 있다면 구현스타일과 가독성, 유지보수성은 유지된다.</summary></entry></feed>
