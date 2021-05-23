@@ -35,7 +35,7 @@
     
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="TIL" />
-    <link rel="shortcut icon" href="http://localhost:4000/assets/images/IMG_1815.JPG" type="image/png" />
+    <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/IMG_1815.JPG" type="image/png" />
     <link rel="canonical" href="http://localhost:4000/Database%EC%BF%BC%EB%A6%AC%EA%B8%B0%EB%B3%B8" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -45,7 +45,7 @@
     <meta property="og:title" content="TIL - 2021/01/28 Database 쿼리 기본" />
     <meta property="og:description" content="UNION ALL UNION과 동일하게 표를 통합해서 하나의결과를 만들지만, 중복도 포함한다. DISTINCT 열의 값에서 중복하는 행을 뽑아서 정리해 하나의 행으로 표시한다. AS 별명 AS문은 필드명이나 테이블명에 별도의 이름을 붙인다. EXISTS (검사대상) SELECT문에의한 검사결과의 조합이 존재하는지아닌지를 검사하는 기능을 갖는다. 조건을 만족하는 레코드가 있으면 참이다. CASE SQL문에서 조건분기를 수행한다. CASE 식 WHEN 조건식1" />
     <meta property="og:url" content="http://localhost:4000/Database%EC%BF%BC%EB%A6%AC%EA%B8%B0%EB%B3%B8" />
-    <meta property="og:image" content="http://localhost:4000/assets/images/Tag_TIL.jpg" />
+    <meta property="og:image" content="http://localhost:4000/assets/built/images/Tag_TIL.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
     <meta property="article:published_time" content="2021-01-29T08:00:00+09:00" />
@@ -55,7 +55,7 @@
     <meta name="twitter:title" content="TIL - 2021/01/28 Database 쿼리 기본" />
     <meta name="twitter:description" content="UNION ALL UNION과 동일하게 표를 통합해서 하나의결과를 만들지만, 중복도 포함한다. DISTINCT 열의 값에서 중복하는 행을 뽑아서 정리해 하나의 행으로 표시한다. AS 별명 AS문은 필드명이나 테이블명에 별도의 이름을 붙인다. EXISTS (검사대상) SELECT문에의한 검사결과의 조합이 존재하는지아닌지를 검사하는 기능을 갖는다. 조건을 만족하는 레코드가 있으면 참이다. CASE SQL문에서 조건분기를 수행한다. CASE 식 WHEN 조건식1" />
     <meta name="twitter:url" content="http://localhost:4000/" />
-    <meta name="twitter:image" content="http://localhost:4000/assets/images/Tag_TIL.jpg" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/built/images/Tag_TIL.jpg" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="푸바 프로그래밍" />
     <meta name="twitter:label2" content="Filed under" />
@@ -77,7 +77,7 @@
     "url": "http://localhost:4000/Database%EC%BF%BC%EB%A6%AC%EA%B8%B0%EB%B3%B8",
     "image": {
         "@type": "ImageObject",
-        "url": "http://localhost:4000/assets/images/Tag_TIL.jpg",
+        "url": "http://localhost:4000/assets/built/images/Tag_TIL.jpg",
         "width": 2000,
         "height": 666
     },
@@ -124,13 +124,13 @@ into the {body} of the default.hbs template -->
             <ul class="nav" role="menu">
     <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
     <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
-    <li class="nav-TIL" role="menuitem"><a href="/tag/TIL/">잡지식</a></li>
-    <li class="nav-Swift_iOS" role="menuitem"><a href="/tag/Swift_iOS/">Swift_iOS</a></li>
-    <li class="nav-DesignPattern" role="menuitem"><a href="/tag/DesignPattern/">DesignPattern</a></li>
-    <li class="nav-Network" role="menuitem"><a href="/tag/Network/">Network</a></li>
-    <li class="nav-Algorithm" role="menuitem"><a href="/tag/Algorithm/">Algorithm</a></li>
-    <li class="nav-Git" role="menuitem"><a href="/tag/Git/">Git</a></li>
-    <li class="nav-English" role="menuitem"><a href="/tag/English/">English</a></li>
+    <li class="nav-TIL" role="menuitem"><a href="/tag/til/">잡지식</a></li>
+    <li class="nav-Swift_iOS" role="menuitem"><a href="/tag/swift-ios/">Swift_iOS</a></li>
+    <li class="nav-DesignPattern" role="menuitem"><a href="/tag/designpattern/">DesignPattern</a></li>
+    <li class="nav-Network" role="menuitem"><a href="/tag/network/">Network</a></li>
+    <li class="nav-Algorithm" role="menuitem"><a href="/tag/algorithm/">Algorithm</a></li>
+    <li class="nav-Git" role="menuitem"><a href="/tag/git/">Git</a></li>
+    <li class="nav-English" role="menuitem"><a href="/tag/english/">English</a></li>
     <li class="nav-archive" role="menuitem">
         <a href="/archive.html">All Posts</a>
     </li>
@@ -177,10 +177,10 @@ into the {body} of the default.hbs template -->
                 <h1 class="post-full-title">TIL - 2021/01/28 Database 쿼리 기본</h1>
             </header>
 
-            
-            <figure class="post-full-image" style="background-image: url(/assets/images/Tag_TIL.jpg)">
+            <!-- 
+            <figure class="post-full-image" style="background-image: url(/assets/built/images/Tag_TIL.jpg)">
             </figure>
-            
+             -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
@@ -245,7 +245,7 @@ ex) ID INT CHECK (ID &gt;= 0 AND ID &lt;= 1000)</p>
             </section>
 
             <!-- Email subscribe form at the bottom of the page -->
-            
+            <!-- 
                 <section class="subscribe-form">
                     <h3 class="subscribe-form-title">Subscribe to 푸바 프로그래밍</h3>
                     <p>Get the latest posts delivered right to your inbox</p>
@@ -260,7 +260,7 @@ ex) ID INT CHECK (ID &gt;= 0 AND ID &lt;= 1000)</p>
 </form>
 
                 </section>
-            
+             -->
 
             <footer class="post-full-footer">
                 <!-- Everything inside the #author tags pulls data from the author -->
@@ -309,7 +309,7 @@ ex) ID INT CHECK (ID &gt;= 0 AND ID &lt;= 1000)</p>
                 
                     <article class="read-next-card"
                         
-                            style="background-image: url(/assets/images/IMG_1814.JPG)"
+                            style="background-image: url(/assets/built/images/IMG_1814.JPG)"
                         
                     >
                         <header class="read-next-card-header">
@@ -348,13 +348,6 @@ ex) ID INT CHECK (ID &gt;= 0 AND ID &lt;= 1000)</p>
                                   
                                 
                                   
-                                    
-                                        
-                                        
-                                            <li><a href="/AddingPodFile">TIL - 2021/03/12 Pod 추가하기</a></li>
-                                        
-                                    
-                                  
                                 
                                   
                                     
@@ -369,7 +362,11 @@ ex) ID INT CHECK (ID &gt;= 0 AND ID &lt;= 1000)</p>
                                     
                                         
                                         
+                                            <li><a href="/CleanCode_Rule">TIL - 2021/03/03 CleanCode 형식맞추기</a></li>
+                                        
                                     
+                                  
+                                
                                   
                                 
                                   
@@ -381,46 +378,6 @@ ex) ID INT CHECK (ID &gt;= 0 AND ID &lt;= 1000)</p>
                                     
                                   
                                 
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
                                   
                                 
                                   
@@ -465,10 +422,9 @@ ex) ID INT CHECK (ID &gt;= 0 AND ID &lt;= 1000)</p>
                                   
                                 
                                   
-                                    
-                                        
-                                        
-                                    
+                                
+                                  
+                                
                                   
                                 
                                   
@@ -653,7 +609,7 @@ ex) ID INT CHECK (ID &gt;= 0 AND ID &lt;= 1000)</p>
                         <footer class="read-next-card-footer">
                             <a href="/tag/til/">
                                 
-                                    See all 34 posts  →
+                                    See all 26 posts  →
                                 
                             </a>
                         </footer>
@@ -668,7 +624,7 @@ ex) ID INT CHECK (ID &gt;= 0 AND ID &lt;= 1000)</p>
     <article class="post-card post-template">
         
             <a class="post-card-image-link" href="/PracticalEnglish3">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/python-logo.png)"></div>
+                <div class="post-card-image" style="background-image: url(/assets/built/images/Tag_English.jpg)"></div>
             </a>
         
         <div class="post-card-content">
@@ -713,7 +669,7 @@ ex) ID INT CHECK (ID &gt;= 0 AND ID &lt;= 1000)</p>
     <article class="post-card post-template">
         
             <a class="post-card-image-link" href="/PracticalConversation2">
-                <div class="post-card-image" style="background-image: url(/assets/images/Tag_English.jpg)"></div>
+                <div class="post-card-image" style="background-image: url(/assets/built/images/Tag_English.jpg)"></div>
             </a>
         
         <div class="post-card-content">

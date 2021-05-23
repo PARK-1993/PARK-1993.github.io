@@ -232,7 +232,7 @@
     
       
       <item>
-        <title>Swift_iOS - escaping closure란</title>
+        <title>Swift-iOS - escaping closure란</title>
         
           <description>&lt;h2 id=&quot;escaping-closure란&quot;&gt;@escaping closure란&lt;/h2&gt;
 &lt;p&gt;의미대로 탈출가능한 클로저이다. 
@@ -320,7 +320,7 @@ formal한 표현, 제생각에는&lt;/li&gt;
     
       
       <item>
-        <title>TIL - 2021/03/12 Pod 추가하기</title>
+        <title>Swift-iOS - 2021/03/12 Pod 추가하기</title>
         
           <description>&lt;h2 id=&quot;pod-init&quot;&gt;pod init&lt;/h2&gt;
 &lt;p&gt;이커맨드를 project가있는 폴더에서 실행한다.&lt;/p&gt;
@@ -404,7 +404,7 @@ formal한 표현, 제생각에는&lt;/li&gt;
     
       
       <item>
-        <title>TIL - 2021/03/01 토들러7(있나요/걸릴까요/나을까요/거예요)</title>
+        <title>English - 2021/03/01 토들러7(있나요/걸릴까요/나을까요/거예요)</title>
         
           <description>&lt;h2 id=&quot;이-근처에-우체국이-있나요&quot;&gt;이 근처에 우체국이 있나요?&lt;/h2&gt;
 &lt;p&gt;Is there a post office near here/nearby?&lt;/p&gt;
@@ -438,7 +438,7 @@ formal한 표현, 제생각에는&lt;/li&gt;
     
       
       <item>
-        <title>TIL - 2021/03/01 토들러8(〜할때/하기전에/하고나서/할때까지))</title>
+        <title>English - 2021/03/01 토들러8(〜할때/하기전에/하고나서/할때까지))</title>
         
           <description>&lt;h2 id=&quot;도착하면-전화할게&quot;&gt;도착하면 전화할게.&lt;/h2&gt;
 &lt;p&gt;I’ll call you when I arrive&lt;/p&gt;
@@ -526,7 +526,7 @@ formal한 표현, 제생각에는&lt;/li&gt;
     
       
       <item>
-        <title>TIL - 2021/02/21 토들러6(시간이걸리다/돈이들다)</title>
+        <title>English - 2021/02/21 토들러6(시간이걸리다/돈이들다)</title>
         
           <description>&lt;h2 id=&quot;5분-걸려요&quot;&gt;5분 걸려요&lt;/h2&gt;
 &lt;p&gt;It takes 5 minutes.&lt;/p&gt;
@@ -542,7 +542,7 @@ formal한 표현, 제생각에는&lt;/li&gt;
     
       
       <item>
-        <title>TIL - 2021/02/20 토들러5(something/somewhere/someone)</title>
+        <title>English - 2021/02/20 토들러5(something/somewhere/someone)</title>
         
           <description>&lt;h2 id=&quot;나-뭐-좀-필요해&quot;&gt;나 뭐 좀 필요해&lt;/h2&gt;
 &lt;p&gt;I need something&lt;/p&gt;
@@ -558,7 +558,7 @@ formal한 표현, 제생각에는&lt;/li&gt;
     
       
       <item>
-        <title>TIL - 2021/02/20 토들러4(It's)</title>
+        <title>English - 2021/02/20 토들러4(It's)</title>
         
           <description>&lt;h2 id=&quot;잊어버리기-쉬어요&quot;&gt;잊어버리기 쉬어요.&lt;/h2&gt;
 &lt;p&gt;It’s easy to forget&lt;/p&gt;
@@ -574,7 +574,7 @@ formal한 표현, 제생각에는&lt;/li&gt;
     
       
       <item>
-        <title>TIL - 2021/02/20 토들러3(There is, Have)</title>
+        <title>English - 2021/02/20 토들러3(There is, Have)</title>
         
           <description>&lt;h1 id=&quot;이용하는-사람이-불특정다수공용--there-is&quot;&gt;이용하는 사람이 불특정다수(공용) =&amp;gt; There is&lt;/h1&gt;
 &lt;h1 id=&quot;특정사람이-소유한것에대해서-얘기할-때--have&quot;&gt;특정사람이 소유한것에대해서 얘기할 때 =&amp;gt; Have&lt;/h1&gt;
@@ -766,7 +766,7 @@ O(C^n) – 지수 시간 : 문제를 해결하기 위한 단계의 수는 주어
     
       
       <item>
-        <title>TIL - 2021/02/05 Git</title>
+        <title>Git - 2021/02/05 Git</title>
         
           <description>&lt;h2 id=&quot;git이란&quot;&gt;Git이란&lt;/h2&gt;
 &lt;ul&gt;
@@ -789,153 +789,6 @@ O(C^n) – 지수 시간 : 문제를 해결하기 위한 단계의 수는 주어
         <link>
         http://localhost:4000/git</link>
         <guid isPermaLink="true">http://localhost:4000/git</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Kmp</title>
-        
-          <description>&lt;h1 id=&quot;kmp&quot;&gt;KMP??????&lt;/h1&gt;
-&lt;p&gt;Knuth, Morris, Prett? ??? ??? ?? ??????.
-Boyer-Moore????? ??? ???? ???? ??? ??? ??? ????.&lt;/p&gt;
-
-&lt;h2 id=&quot;pi&quot;&gt;pi????&lt;/h2&gt;
-&lt;p&gt;pi???? ???? ???? ????? ???? ???? ???? ???? ???? ?? ??? ??? ??? ????.&lt;/p&gt;
-&lt;h3 id=&quot;-&quot;&gt;??? ???&lt;/h3&gt;
-&lt;p&gt;ABCAB?? ???? ???
-???? 
-A
-AB
-ABC
-ABCA
-ABCAB
-??&lt;/p&gt;
-
-&lt;p&gt;???? 
-B
-AB
-CAB
-BCAB
-ABCAB
-???.&lt;/p&gt;
-
-&lt;h3 id=&quot;pi-&quot;&gt;pi??? ??????&lt;/h3&gt;
-&lt;p&gt;pi[i]? ??? ABCAB? 
-pi[0] = 0
- A
- A
-pi[1] = 1
- A AB
- A AB
-pi[2] = 0
- A AB ABC
- C BC ABC
-pi[3] = 1
- A AB ABC ABCA
- A CA BCA ABCA
-pi[4] = 2
- A AB ABC ABCA ABCAB
- B AB CAB BCAB ABCAB&lt;/p&gt;
-
-&lt;p&gt;pi = [0, 1, 0 , 1 , 2]? ?? ? ??.&lt;/p&gt;
-
-&lt;h2 id=&quot;kmp-1&quot;&gt;KMP????&lt;/h2&gt;
-&lt;p&gt;????(T) = AABBCABABCA
-????(P) = ABCAB&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
-A A B B C A B A B C A B
-A B C A B 
--&amp;gt; ??? 4? C B ???
--&amp;gt; ??? 0 ?? ??
--&amp;gt; pi[0]? 0????? ??? ????&lt;/li&gt;
-  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
-A A B B C A B A B C A B
-  A B C A B
--&amp;gt; ??? 5? A B ???
--&amp;gt; ??? 1,2 ??
--&amp;gt; pi[1]? 1????? ??? 2???&lt;/li&gt;
-  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
-A A B B C A B A B C A B
-  A B C A B
--&amp;gt; ??? 7? A B ???
--&amp;gt; ??? ?? ???
--&amp;gt; ??? ????&lt;/li&gt;
-  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
-A A B B C A B A B C A B
-    A B C A B
--&amp;gt; ??? 8? B B ??
--&amp;gt; ??? 7?? ???
--&amp;gt; pi[0]? 0????? ??? ????&lt;/li&gt;
-  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
-A A B B C A B A B C A B
-      A B C A B
--&amp;gt; ??? 9? C B ???
--&amp;gt; ??? 5,6 ??
--&amp;gt; pi[2]? 1????? ??? 2???&lt;/li&gt;
-  &lt;li&gt;0 1 2 3 4 5 6 7 8 9 10 11
-A A B B C A B A B C A B
-          A B C A B
--&amp;gt;??&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        
-        <pubDate>Fri, 05 Feb 2021 00:00:00 +0900</pubDate>
-        <link>
-        http://localhost:4000/KMP</link>
-        <guid isPermaLink="true">http://localhost:4000/KMP</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Boyer Moore</title>
-        
-          <description>&lt;h1 id=&quot;boyer-moore-horspool&quot;&gt;Boyer-Moore-Horspool???????&lt;/h1&gt;
-&lt;p&gt;??? ?? ??????, ???? ?? ?? ???? ???? ????? ??.
-???? ??? ????? ???? ??? ???? ????? ???? ???? ?????,
-? ????? ?? ???? ??? ???? ???? ????.
-�� ????? : O(N), ??O(MN)
-�� M? ??? ?? good??? 3&lt;/p&gt;
-&lt;h2&gt;??&lt;/h2&gt;
-&lt;h3 id=&quot;bad-character-method&quot;&gt;Bad Character Method&lt;/h3&gt;
-&lt;p&gt;: ????? ?? ??????? ???? ?????? ??? ??, ? ??? ???? ???? ?? ???? ?? ????. 
-�� ??? ???? ?? ?? :&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;????? ??? ????? ???? ?????? ??? ???.
-   ex) gentleman 
-   g e n t l e m a n
-   8 7 6 5 4 3 2 1 0&lt;/li&gt;
-  &lt;li&gt;??? ??? ???? ??? ????, ?? ??? ???? ????? ????.
-   g e n t l e m a n
-   8 7 9 5 4 3 2 1 9&lt;/li&gt;
-  &lt;li&gt;?? ???? ?? ??? ???? ??? ????.
-   ex) z x y? ?? ?? 9? ??&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;--&quot;&gt;?? ???? ?&lt;/h4&gt;
-&lt;p&gt;aodgoodfndjx? ????? good???? ??? ??&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;good? ???? 
-g o o d
-3 1 1 4&lt;/li&gt;
-  &lt;li&gt;a o d g o o d f n d j x
-g o o d
-????? ?? ????? d? g? ???? ????? g? ???? ??? 3?? ?? ??&lt;/li&gt;
-  &lt;li&gt;a o d g o o d f n d j x
-      g o o d
-??
-    &lt;h3 id=&quot;good-suffix-method&quot;&gt;Good Suffix Method&lt;/h3&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        
-        <pubDate>Fri, 05 Feb 2021 00:00:00 +0900</pubDate>
-        <link>
-        http://localhost:4000/Boyer-Moore</link>
-        <guid isPermaLink="true">http://localhost:4000/Boyer-Moore</guid>
       </item>
       
     

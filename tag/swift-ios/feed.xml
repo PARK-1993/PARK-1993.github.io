@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/swift-ios/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-05-20T23:12:46+09:00</updated>
+  <updated>2021-05-21T01:50:22+09:00</updated>
   <id>http://localhost:4000/tag/swift-ios/feed.xml</id>
 
   
@@ -32,8 +32,8 @@
 
   
     <entry>
-      <title type="html">Swift_iOS - escaping closure란</title>
-      <link href="http://localhost:4000/escapingClosure" rel="alternate" type="text/html" title="Swift_iOS - escaping closure란" />
+      <title type="html">Swift-iOS - escaping closure란</title>
+      <link href="http://localhost:4000/escapingClosure" rel="alternate" type="text/html" title="Swift-iOS - escaping closure란" />
       <published>2021-03-15T06:00:00+09:00</published>
       <updated>2021-03-15T06:00:00+09:00</updated>
       <id>http://localhost:4000/escapingClosure</id>
@@ -97,11 +97,78 @@ escaping closure를 매개변수로하는 함수에서의 closure는
       
 
       
-        <category term="Swift_iOS" />
+        <category term="Swift-iOS" />
       
 
       
         <summary type="html">@escaping closure란 의미대로 탈출가능한 클로저이다. escaping closure를 매개변수로하는 함수에서의 closure는 반환값으로 받을 수 도 있고, 함수내에서 함수밖의 변수에 저장하는 것이 가능하다. 보통 completion closure경우 escaping clousre로 사용하는 경우가 많은 듯하다. (함수내에서 return escapingClosure 이런식으로 사용하기 위해 )</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Swift-iOS - 2021/03/12 Pod 추가하기</title>
+      <link href="http://localhost:4000/AddingPodFile" rel="alternate" type="text/html" title="Swift-iOS - 2021/03/12 Pod 추가하기" />
+      <published>2021-03-13T05:30:00+09:00</published>
+      <updated>2021-03-13T05:30:00+09:00</updated>
+      <id>http://localhost:4000/AddingPodFile</id>
+      <content type="html" xml:base="http://localhost:4000/AddingPodFile">&lt;h2 id=&quot;pod-init&quot;&gt;pod init&lt;/h2&gt;
+&lt;p&gt;이커맨드를 project가있는 폴더에서 실행한다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;내 경우 Xcode업데이트가 되어있지않아서 “Failed to extract git version from &lt;code class=&quot;highlighter-rouge&quot;&gt;git --version&lt;/code&gt;“라는 오류가 떴었다. 아래의 커맨드로 업데이트 시키고 다시 실행해보자
+&lt;code class=&quot;highlighter-rouge&quot;&gt;xcode-select --install&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PodFile이라는 이름의 루비파일이 생기는데 여기에 추가하고싶은 기능의 라이브러리를 기입하면된다.&lt;/p&gt;
+
+&lt;p&gt;use_frameworks!과end사이에 원하는 pod을 기입하면된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cocoapods.org&quot;&gt;cocoaPods&lt;/a&gt;에서 원하는 기능을 찾은 후
+나의 경우 MapBox API를 사용하기 위해
+&lt;code class=&quot;highlighter-rouge&quot;&gt;pod 'MapboxStatic.swift', '~&amp;gt; 0.12'&lt;/code&gt;커맨드를 입력하였다.&lt;/p&gt;
+
+&lt;h2 id=&quot;pod-install&quot;&gt;pod install&lt;/h2&gt;
+&lt;p&gt;프로젝트가 있는 폴더에서 이 커맨드를 실행하면 
+podfile안에 기입된 API를 cocoaPod로부터 다운로드하여 프로젝트에 적용한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;xcworkspace&quot;&gt;.xcworkspace&lt;/h2&gt;
+&lt;p&gt;pod을 다운로드하면 프로젝트폴더에 위의 파일이 생성된다. 이 워크스페이스내에 
+기존에 작성했던 프로젝트내용과 pod API가 들어가있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;podfilelock&quot;&gt;Podfile.lock&lt;/h2&gt;
+&lt;p&gt;이파일도 같이 생성되는데, 어떤 Pod이 추가되어있는지 보여준다.
+그리고 사용중인 pod의 version 정보도 알 수 있다.
+version은 PodFile에서 설정해 줄 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;dependency-were-found-but-they-required-a-higher-minimum-deployment-target&quot;&gt;dependency were found, but they required a higher minimum deployment target&lt;/h2&gt;
+&lt;p&gt;Podfile을 수정하고 pod install을 실행하면 위와같은 에러가 나올 수 있는데,
+minimum deployment target은 Podfile의&lt;code class=&quot;highlighter-rouge&quot;&gt;platform :ios, '9.0'&lt;/code&gt;에서 9.0을 가리킨다. pod버전이 위의 9.0 버전보다 최소 9.0이상의 버전을 필요로 한다는 것이다.&lt;/p&gt;
+
+&lt;p&gt;이 최소 버전은 pod의 github페이지에 들어가서 podspec이란 파일을 찾고 열어보면
+나와있다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Swift-iOS" />
+      
+
+      
+        <summary type="html">pod init 이커맨드를 project가있는 폴더에서 실행한다. 내 경우 Xcode업데이트가 되어있지않아서 “Failed to extract git version from git --version“라는 오류가 떴었다. 아래의 커맨드로 업데이트 시키고 다시 실행해보자 xcode-select --install</summary>
       
 
       

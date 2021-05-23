@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/til/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-05-20T23:12:46+09:00</updated>
+  <updated>2021-05-21T01:50:22+09:00</updated>
   <id>http://localhost:4000/tag/til/feed.xml</id>
 
   
@@ -92,73 +92,6 @@
 
       
         <summary type="html">메타버스란? 종류 ZEPETOR 포트나이트 동물의 숲</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/03/12 Pod 추가하기</title>
-      <link href="http://localhost:4000/AddingPodFile" rel="alternate" type="text/html" title="TIL - 2021/03/12 Pod 추가하기" />
-      <published>2021-03-13T05:30:00+09:00</published>
-      <updated>2021-03-13T05:30:00+09:00</updated>
-      <id>http://localhost:4000/AddingPodFile</id>
-      <content type="html" xml:base="http://localhost:4000/AddingPodFile">&lt;h2 id=&quot;pod-init&quot;&gt;pod init&lt;/h2&gt;
-&lt;p&gt;이커맨드를 project가있는 폴더에서 실행한다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;내 경우 Xcode업데이트가 되어있지않아서 “Failed to extract git version from &lt;code class=&quot;highlighter-rouge&quot;&gt;git --version&lt;/code&gt;“라는 오류가 떴었다. 아래의 커맨드로 업데이트 시키고 다시 실행해보자
-&lt;code class=&quot;highlighter-rouge&quot;&gt;xcode-select --install&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;PodFile이라는 이름의 루비파일이 생기는데 여기에 추가하고싶은 기능의 라이브러리를 기입하면된다.&lt;/p&gt;
-
-&lt;p&gt;use_frameworks!과end사이에 원하는 pod을 기입하면된다.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://cocoapods.org&quot;&gt;cocoaPods&lt;/a&gt;에서 원하는 기능을 찾은 후
-나의 경우 MapBox API를 사용하기 위해
-&lt;code class=&quot;highlighter-rouge&quot;&gt;pod 'MapboxStatic.swift', '~&amp;gt; 0.12'&lt;/code&gt;커맨드를 입력하였다.&lt;/p&gt;
-
-&lt;h2 id=&quot;pod-install&quot;&gt;pod install&lt;/h2&gt;
-&lt;p&gt;프로젝트가 있는 폴더에서 이 커맨드를 실행하면 
-podfile안에 기입된 API를 cocoaPod로부터 다운로드하여 프로젝트에 적용한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;xcworkspace&quot;&gt;.xcworkspace&lt;/h2&gt;
-&lt;p&gt;pod을 다운로드하면 프로젝트폴더에 위의 파일이 생성된다. 이 워크스페이스내에 
-기존에 작성했던 프로젝트내용과 pod API가 들어가있다.&lt;/p&gt;
-
-&lt;h2 id=&quot;podfilelock&quot;&gt;Podfile.lock&lt;/h2&gt;
-&lt;p&gt;이파일도 같이 생성되는데, 어떤 Pod이 추가되어있는지 보여준다.
-그리고 사용중인 pod의 version 정보도 알 수 있다.
-version은 PodFile에서 설정해 줄 수 있다.&lt;/p&gt;
-
-&lt;h2 id=&quot;dependency-were-found-but-they-required-a-higher-minimum-deployment-target&quot;&gt;dependency were found, but they required a higher minimum deployment target&lt;/h2&gt;
-&lt;p&gt;Podfile을 수정하고 pod install을 실행하면 위와같은 에러가 나올 수 있는데,
-minimum deployment target은 Podfile의&lt;code class=&quot;highlighter-rouge&quot;&gt;platform :ios, '9.0'&lt;/code&gt;에서 9.0을 가리킨다. pod버전이 위의 9.0 버전보다 최소 9.0이상의 버전을 필요로 한다는 것이다.&lt;/p&gt;
-
-&lt;p&gt;이 최소 버전은 pod의 github페이지에 들어가서 podspec이란 파일을 찾고 열어보면
-나와있다.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">pod init 이커맨드를 project가있는 폴더에서 실행한다. 내 경우 Xcode업데이트가 되어있지않아서 “Failed to extract git version from git --version“라는 오류가 떴었다. 아래의 커맨드로 업데이트 시키고 다시 실행해보자 xcode-select --install</summary>
       
 
       
@@ -586,64 +519,6 @@ class FitNesseExpediter
     </entry>
   
     <entry>
-      <title type="html">TIL - 2021/03/01 토들러7(있나요/걸릴까요/나을까요/거예요)</title>
-      <link href="http://localhost:4000/Toddler7" rel="alternate" type="text/html" title="TIL - 2021/03/01 토들러7(있나요/걸릴까요/나을까요/거예요)" />
-      <published>2021-03-02T08:00:00+09:00</published>
-      <updated>2021-03-02T08:00:00+09:00</updated>
-      <id>http://localhost:4000/Toddler7</id>
-      <content type="html" xml:base="http://localhost:4000/Toddler7">&lt;h2 id=&quot;이-근처에-우체국이-있나요&quot;&gt;이 근처에 우체국이 있나요?&lt;/h2&gt;
-&lt;p&gt;Is there a post office near here/nearby?&lt;/p&gt;
-
-&lt;h2 id=&quot;지하철역-근처에-하나-있어요&quot;&gt;지하철역 근처에 하나 있어요.&lt;/h2&gt;
-&lt;p&gt;There is one near the subway station.&lt;/p&gt;
-
-&lt;h2 id=&quot;멀어요-여기서-얼마나-걸릴까요&quot;&gt;멀어요? 여기서 얼마나 걸릴까요?&lt;/h2&gt;
-&lt;p&gt;Is it far? How long would it take from here?&lt;/p&gt;
-
-&lt;h2 id=&quot;걸어서-20분-정도-걸릴거예요&quot;&gt;걸어서 20분 정도 걸릴거예요.&lt;/h2&gt;
-&lt;p&gt;It’s going to take about 20 minutes on foot.
-If you walk, It’s going to take about 20 minutes&lt;/p&gt;
-
-&lt;h2 id=&quot;아그냥-택시-타는게-나을까요&quot;&gt;아,(그냥) 택시 타는게 나을까요?&lt;/h2&gt;
-&lt;p&gt;Oh, Should I (just) take a taxi?&lt;/p&gt;
-&lt;h2 id=&quot;네요금이-얼마-안나올거예요&quot;&gt;네,(요금이) 얼마 안나올거예요.&lt;/h2&gt;
-&lt;p&gt;yes, It won’t cost a lot.&lt;/p&gt;
-
-&lt;h2 id=&quot;얼마정도-나올까요&quot;&gt;얼마정도 나올까요?&lt;/h2&gt;
-&lt;p&gt;How much would it cost?
-How much does it cost?(X) 이는 정확히 얼마나오는지 묻는 느낌&lt;/p&gt;
-
-&lt;h2 id=&quot;많이-나와야-5달러-밖에-안나올거예요&quot;&gt;많이 나와야 5달러 밖에 안나올거예요.&lt;/h2&gt;
-&lt;p&gt;It’s going to cost only about 5 five dollars at most.
-※ 많이나와야 : at most&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">이 근처에 우체국이 있나요? Is there a post office near here/nearby?</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
       <title type="html">TIL - 2021/03/01 CleanCode - 주석</title>
       <link href="http://localhost:4000/CleanCode_Comment" rel="alternate" type="text/html" title="TIL - 2021/03/01 CleanCode - 주석" />
       <published>2021-03-02T00:30:00+09:00</published>
@@ -811,83 +686,6 @@ How much does it cost?(X) 이는 정확히 얼마나오는지 묻는 느낌&lt;/
 
       
         <summary type="html">주석은 실패를 만회하기위해 사용한다. 주석이 필요하다면 코드로 표현할 수 있는 방법이 없을 지 생각해보아야한다. 코드는 변화하고 진화하기 때문에 주석이 이를 따라가지 못하는 상황이 많다. 부정확한 주석은 없는 것 보다 훨씬 나쁘다.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/03/01 토들러8(〜할때/하기전에/하고나서/할때까지))</title>
-      <link href="http://localhost:4000/toddler8" rel="alternate" type="text/html" title="TIL - 2021/03/01 토들러8(〜할때/하기전에/하고나서/할때까지))" />
-      <published>2021-03-01T09:30:00+09:00</published>
-      <updated>2021-03-01T09:30:00+09:00</updated>
-      <id>http://localhost:4000/toddler8</id>
-      <content type="html" xml:base="http://localhost:4000/toddler8">&lt;h2 id=&quot;도착하면-전화할게&quot;&gt;도착하면 전화할게.&lt;/h2&gt;
-&lt;p&gt;I’ll call you when I arrive&lt;/p&gt;
-
-&lt;h2 id=&quot;내가-그-전화를-받았을-때는-이미-버스를-탄-상태였어&quot;&gt;내가 그 전화를 받았을 때는 이미 버스를 탄 상태였어.&lt;/h2&gt;
-&lt;p&gt;I was already on the bus when I got the phone call&lt;/p&gt;
-
-&lt;h2 id=&quot;도착하자말자&quot;&gt;도착하자말자&lt;/h2&gt;
-&lt;p&gt;as soon as I arrive.&lt;/p&gt;
-
-&lt;h2 id=&quot;일끝나고-영화보러-갈거야&quot;&gt;일끝나고 영화보러 갈거야.&lt;/h2&gt;
-&lt;p&gt;I’m going to go the movies after (I get off) work.&lt;/p&gt;
-
-&lt;h2 id=&quot;너-퇴근-몇시에-해&quot;&gt;너 퇴근 몇시에 해?&lt;/h2&gt;
-&lt;p&gt;What time do you get off work.&lt;/p&gt;
-
-&lt;h2 id=&quot;미팅끝나고-시간이-있어요&quot;&gt;미팅끝나고 시간이 있어요&lt;/h2&gt;
-&lt;p&gt;I have some time after the meeting (ends)&lt;/p&gt;
-&lt;h2 id=&quot;자기전에-샤워할거에요&quot;&gt;자기전에 샤워할거에요&lt;/h2&gt;
-&lt;p&gt;I’m going to take a shower before (I go to) bed.&lt;/p&gt;
-
-&lt;h2 id=&quot;일하러가기전에-달리기는-해요&quot;&gt;일하러가기전에 달리기는 해요.&lt;/h2&gt;
-&lt;p&gt;I’m going to go for a run before go to work.&lt;/p&gt;
-
-&lt;h2 id=&quot;산책조깅하러-가다&quot;&gt;산책(조깅)하러 가다&lt;/h2&gt;
-&lt;p&gt;go for a walk&lt;/p&gt;
-&lt;h2 id=&quot;드라이브-하러-가다&quot;&gt;드라이브 하러 가다&lt;/h2&gt;
-&lt;p&gt;go for a drive&lt;/p&gt;
-
-&lt;h2 id=&quot;아침에-나가기전에-항상-날씨체크를-해요&quot;&gt;아침에 나가기전에 항상 날씨체크를 해요.&lt;/h2&gt;
-&lt;p&gt;I always check the weather forecast before I leave in the morning.&lt;/p&gt;
-
-&lt;h2 id=&quot;어제까지-기다렸어&quot;&gt;어제까지 기다렸어.&lt;/h2&gt;
-&lt;p&gt;I waited until yesterday&lt;/p&gt;
-&lt;h2 id=&quot;누군가가-갈때까지-기다려야돼&quot;&gt;누군가가 갈때까지 기다려야돼&lt;/h2&gt;
-&lt;p&gt;We have to wait until someone leaves&lt;/p&gt;
-
-&lt;h2 id=&quot;아무것도-하는-것이-좋겠어가만히-있는게-더-좋겠어-어떻게하라는-얘기가-더-있을때까지&quot;&gt;아무것도 하는 것이 좋겠어(가만히 있는게 더 좋겠어.) 어떻게하라는 얘기가 더 있을때까지&lt;/h2&gt;
-&lt;p&gt;We shouldn’t do anything until we get further instructions.&lt;/p&gt;
-
-&lt;h2 id=&quot;그냥-계속해야돼-너가-익숙해질때까지&quot;&gt;그냥 계속해야돼 너가 익숙해질때까지.&lt;/h2&gt;
-&lt;p&gt;You just have to keep doing it until you get used to it.&lt;/p&gt;
-
-&lt;h2 id=&quot;비가-그칠때까지-그냥-여기-있자&quot;&gt;비가 그칠때까지 그냥 여기 있자.&lt;/h2&gt;
-&lt;p&gt;Let’s just stay here until the rain stops&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">도착하면 전화할게. I’ll call you when I arrive</summary>
       
 
       
@@ -1401,6 +1199,256 @@ Money caculatePay(Employee e)
 
       
         <summary type="html">앱 이름 후보 NoPlanTravel TravelRightNow</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">TIL - 2021/02/03 Security</title>
+      <link href="http://localhost:4000/Security" rel="alternate" type="text/html" title="TIL - 2021/02/03 Security" />
+      <published>2021-02-04T04:30:00+09:00</published>
+      <updated>2021-02-04T04:30:00+09:00</updated>
+      <id>http://localhost:4000/Security</id>
+      <content type="html" xml:base="http://localhost:4000/Security">&lt;h1 id=&quot;captchacompletely-automated-public-turing-test-to-tell-computers-and-humans-apart&quot;&gt;CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apart)&lt;/h1&gt;
+&lt;p&gt;웹페이지의 입력폼등의에서 부정이용을 방지하기위해 사용되는 인증기술이다. 흐릿하게하거나 살짝가린 사진으로부터 인간이 읽을수 있는 문자를 판독시켜 수동으로 입력시킨다.
+이것으로 인해 응답자가 인간인것을 판단한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;malware분석방법&quot;&gt;Malware분석방법&lt;/h2&gt;
+&lt;p&gt;악성코드를 분석하는 방법이며 상세,동적,정적,자동화분석이 있다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;상세분석 : 디스어셈블을 통해 어셈블리어로 바꿔 상세분석한다.&lt;/li&gt;
+  &lt;li&gt;동적분석 : 해당파일을 직접 실행하여 나타나는 변화를 모니터링하며 악성코드를 판별하는 방법이다. 가상환경에서 독립된 네트워크를 형성하여 분석도구등을 통해 분석한다.&lt;/li&gt;
+  &lt;li&gt;정적분석 : 파일을 실행하지않고 그 파일자체가 가지고 있는 내용들로 악성코드를 판별하는 방법이다. 파일의 해시나, 사용되는 API,문자열등으로 확인한다.&lt;/li&gt;
+  &lt;li&gt;자동화분석 : 말그대로 자동으로 분석해주는 방법이다. 빠르지만 완벽하지않다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;암호화&quot;&gt;암호화&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;대칭형 암호화
+암호화에 사용하는 키가 복호화에 사용하는 키와 같으면 대칭형이다. 통상적으로 비공개키 암호화방식에 사용된다.&lt;/li&gt;
+  &lt;li&gt;비대칭형 암호화
+암호화에 사용하는 키가 복호화에 사용하는 키가 다르면 비대칭형이다. 통상적으로 공개키암호화방식에 사용된다.
+암호화는 하면 하나의 키 쌍이 생기고 이 두개의 키는 수학적으로 밀접한 관계를 가지고 있다. 두개의 키를 A,B로 봤을때, A로 암호환 암호문은 B로만 복호화 할 수 있다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;흐름&quot;&gt;흐름&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;내가 공개키 개인키 한쌍을 생성&lt;/li&gt;
+  &lt;li&gt;상대방에게 공개키 전송&lt;/li&gt;
+  &lt;li&gt;상대방은 받은 공개키를 이용해 메세지를 암호화&lt;/li&gt;
+  &lt;li&gt;상대방은 암호문을 나에게 전송&lt;/li&gt;
+  &lt;li&gt;나는 암호문을 개인키로 복호화&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;공개키-암호화방식&quot;&gt;공개키 암호화방식&lt;/h2&gt;
+&lt;p&gt;공개키와 개인키를 이용하여 암호화하는 방식.
+공개키는 암호화하는데 사용되며, 개인키는 복호화하는데 사용된다.
+디지털서명에 이 방식이 사용된다.
+개인키가 노출되거나 잃어버릴 경우 암호화된 메세지가 위험에 노출되며, 
+암호화 및 해독에관련된 복잡한 수학적 계산때문에 대량의 데이터를 처리해야할 경우
+매우 느려지게됩니다.
+SSL(Secure Sockets Layer) 프로토콜도 비대칭 암호화 기능을 사용한다.
+공개 키 암호 방식은 또한 블록체인 및 암호 화폐 기술에서도 사용된다.&lt;/p&gt;
+
+&lt;h2 id=&quot;디지털서명&quot;&gt;디지털서명&lt;/h2&gt;
+&lt;p&gt;디지털 서명은 디지털 데이터의 진위성과 무결성을 검증하는 데 사용되는 암호 메커니즘입니다. 
+해싱, 서명, 검증 세 가지 기본 단계로 이뤄지는 경우가 많습니다.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;해싱 : 해싱 알고리즘을 통해 데이터를 제출하여 해시값이 생성(예를 들면 메시지 다이제스트)&lt;/li&gt;
+  &lt;li&gt;서명 : 메시지 발신자의 개인키를 이용하여 서명&lt;/li&gt;
+  &lt;li&gt;검증 : 수신자가 공개키를 받아 그 공개키를 이용하여 유효성을 검증
+데이터 무결성, 진위성, 부인 방지&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;디피-헬만-키-교환diffiehellman-key-exchange&quot;&gt;디피-헬만 키 교환(Diffie–Hellman key exchange)&lt;/h3&gt;
+&lt;p&gt;비밀키를 주고받을 경우 이산대수의 난해함에 안정성을 둔 키교환 방식이다.
+엘가말(ElGamal) 방식이 디피-헬만 키 교환을 참고해 만들어졌다.
+통신 전체가 악의적인 스니퍼에 의해서 도청되고 있더라도 키 값을 정할 수 있게 해주는 원리는 바로, 키 값을 전달하는 것이 아니라 키 값을 만드는 방법을 전달하기 때문이다.&lt;/p&gt;
+
+&lt;h1 id=&quot;하이브리드-암호화시스템&quot;&gt;하이브리드 암호화시스템&lt;/h1&gt;
+&lt;p&gt;대칭키와 공개키 암호화를 섞은 암호화 시스템이다.
+대칭키 암호화시스템은 기밀성을 유지한 통신이 가능한데, 키 배송시 보안상 문제가 있다.
+공개키의 경우는 복호화에 사용할 키를 배송할 필요가 없기때문에, 배송상 문제는 없지만, 대칭키암호화방식에 비해 매우 느리고, 중간자 공격(MITM:Man In the Middle attack)에 약하다.
+※ 중간자 공격 : 해커가 중간에서 통신을 가로채어 수신자에게는 송신자인 척하고 송신자에게는 수신자인 척 해서 양쪽의 공개키와 실제 암호화에 사용되는 대칭키를 모두 얻어내는 기법.&lt;/p&gt;
+
+&lt;h1 id=&quot;aesadvanced-encryption-statndard&quot;&gt;AES(Advanced Encryption Statndard)&lt;/h1&gt;
+&lt;p&gt;암호화 알고리즘이며 대칭형 암호화에 사용된다. 현재 공모전에서 채택된 레인달(Rijindael)이라는 알고리즘에 해당한다.
+레인달알고리즘에서도 암호화 키의 길이가 128, 192, 256비트인 세 가지 종류가 AES 표준으로 지정되었다. 각각 AES-128, AES-192, AES-256으로 불린다.&lt;/p&gt;
+
+&lt;h3 id=&quot;rsa&quot;&gt;RSA&lt;/h3&gt;
+&lt;p&gt;현재 SSL/TLS에 가장 많이 사용되는 공개키 암호화 알고리즘이다. 현재 나무위키도 HTTPS에 RSA-2048 인증서를 사용하고 있으며, 전세계 대부분의 인터넷 뱅킹(대한민국 포함)이 이 RSA-2048 암호화를 사용한다. 지금 GPG는 RSA-4096으로 키를 암호화 하지만…암호화할 때에는 마음대로였겠지만 해독할 때에는 아니란다를 기본 모토로 한 공개키 암호체계 중 하나이다. 공개키와 개인키가 한 쌍을 이루며, 공개키로 암호화한 내용은 개인키로만, 개인키로 암호화한 내용은 공개키로만 해독할 수 있다. 엄청 큰 숫자는 소인수분해하기가 힘들다는 것을 이용한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;메시지-인증-코드message-authentication-code-mac&quot;&gt;메시지 인증 코드(Message Authentication Code, MAC)&lt;/h2&gt;
+&lt;p&gt;해시알고리즘을 사용하여 수정또는 변경사항이 있는지 검출 할 수 있다. 거짓행세는 알 수 없으니 비밀키와 같이 사용해야한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;타원곡선-암호&quot;&gt;타원곡선 암호&lt;/h2&gt;
+&lt;p&gt;타원곡선 암호(楕圓曲線暗號, Elliptic curve cryptography)는 타원곡선 이론에 기반한 공개 키 암호 방식이다. 줄여서 ECC라고 쓰기도 한다.
+이산대수의 난해함에 안정성을 둔 키교환방식이며, RSA에 비교하여 암호화는 더 빠르고, 짧은 암호키사이즈로 같은수준의 안정성을 제공한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;siemsecurity-information-and-event-management-세큐리티정보이벤트관리&quot;&gt;SIEM(Security Information and Event Management, 세큐리티정보이벤트관리)&lt;/h2&gt;
+&lt;p&gt;세큐리티분석소프트의 하나이며, 다양한 네트워크기기나 소프트웨어의 동작상황의 기록을 수집하여 관리를 수행하고, 상관분석의 수법을 이용하여 세큐리티상의 위협을 검출,분석한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;봇넷botnet&quot;&gt;봇넷(BotNet)&lt;/h2&gt;
+&lt;p&gt;로봇과 네트워크를 결합한 단어로, 악성코드에 감염되어 중앙통제장치로부터 지시를 받는 디바이스로 구성된 네트워크이다.
+봇마스터에 의해 원격조종되며, C&amp;amp;C서버 방식을 사용한다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apart) 웹페이지의 입력폼등의에서 부정이용을 방지하기위해 사용되는 인증기술이다. 흐릿하게하거나 살짝가린 사진으로부터 인간이 읽을수 있는 문자를 판독시켜 수동으로 입력시킨다. 이것으로 인해 응답자가 인간인것을 판단한다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">TIL - 2021/01/28 Database 쿼리 기본</title>
+      <link href="http://localhost:4000/Database%EC%BF%BC%EB%A6%AC%EA%B8%B0%EB%B3%B8" rel="alternate" type="text/html" title="TIL - 2021/01/28 Database 쿼리 기본" />
+      <published>2021-01-29T08:00:00+09:00</published>
+      <updated>2021-01-29T08:00:00+09:00</updated>
+      <id>http://localhost:4000/Database%EC%BF%BC%EB%A6%AC%EA%B8%B0%EB%B3%B8</id>
+      <content type="html" xml:base="http://localhost:4000/Database%EC%BF%BC%EB%A6%AC%EA%B8%B0%EB%B3%B8">&lt;h3 id=&quot;union-all&quot;&gt;UNION ALL&lt;/h3&gt;
+&lt;p&gt;UNION과 동일하게 표를 통합해서 하나의결과를 만들지만, 중복도 포함한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;distinct&quot;&gt;DISTINCT&lt;/h3&gt;
+&lt;p&gt;열의 값에서 중복하는 행을 뽑아서 정리해 하나의 행으로 표시한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;as-별명&quot;&gt;AS 별명&lt;/h3&gt;
+&lt;p&gt;AS문은 필드명이나 테이블명에 별도의 이름을 붙인다.&lt;/p&gt;
+
+&lt;h3 id=&quot;exists-검사대상&quot;&gt;EXISTS (검사대상)&lt;/h3&gt;
+&lt;p&gt;SELECT문에의한 검사결과의 조합이 존재하는지아닌지를 검사하는 기능을 갖는다. 조건을 만족하는 레코드가 있으면 참이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;case&quot;&gt;CASE&lt;/h3&gt;
+&lt;p&gt;SQL문에서 조건분기를 수행한다.&lt;/p&gt;
+
+&lt;p&gt;CASE 식  WHEN 조건식1 THEN 리턴값1
+CASE 식  WHEN 조건식2 THEN 리턴값2 ELSE 어떤조건에도 일치하지않는 경우의 리턴값&lt;/p&gt;
+
+&lt;h3 id=&quot;group-by&quot;&gt;GROUP BY&lt;/h3&gt;
+&lt;p&gt;지정한열의 값과 같은것들을 그릅화해서 집계한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;having&quot;&gt;HAVING&lt;/h3&gt;
+&lt;p&gt;GROUP BY 문에의해 그룹화된 결과에 대해 한층 검색조건을 지정한경우에는 WHRER을 쓸 수 없고 HAVING을 써서 표현한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;between연산자&quot;&gt;BETWEEN연산자&lt;/h3&gt;
+&lt;p&gt;값의 범위를 지정한다.
+SELECT 이름, 연령 FROM 명부 WHERE 연령 BETWEEN 18 AND 22&lt;/p&gt;
+
+&lt;h3 id=&quot;count&quot;&gt;COUNT(*)&lt;/h3&gt;
+&lt;p&gt;데이터의 건수를 센다
+SELECT COUNT(*) FROM 상품표&lt;/p&gt;
+
+&lt;h3 id=&quot;right-outer-join--오른쪽외부결합&quot;&gt;RIGHT OUTER JOIN : 오른쪽외부결합&lt;/h3&gt;
+&lt;p&gt;SELECT 컬럼명 FROM 표1 RIGHT OUTER JOIN 표2 ON 조건식
+조건에 맞는 데이터를 표2로 가져온다.&lt;/p&gt;
+
+&lt;h2 id=&quot;제약조건&quot;&gt;제약조건&lt;/h2&gt;
+&lt;h3 id=&quot;기본키&quot;&gt;기본키&lt;/h3&gt;
+&lt;p&gt;값은 중복될 수 없으며 NULL사용이 불가능하다.
+ex) Name CHAR(10) PRIMARY KEYa&lt;/p&gt;
+
+&lt;h3 id=&quot;외래키&quot;&gt;외래키&lt;/h3&gt;
+&lt;p&gt;외래키가 참조하는 테이블의 열은 반드시 기본키이거나 unique제약조건이 걸려있어야한다.
+ex) FOREIGN KEY(ID) REFERENCES 다른테이블(ID)&lt;/p&gt;
+
+&lt;h3 id=&quot;unique&quot;&gt;Unique&lt;/h3&gt;
+&lt;p&gt;값은 중복될 수 없으며, NULL사용은 가능하다.
+ex) mail CHAR(30)
+    Constraint UQ_mail UNIQUE(mail)&lt;/p&gt;
+
+&lt;h3 id=&quot;check&quot;&gt;Check&lt;/h3&gt;
+&lt;p&gt;입력되는 데이터에 조건을 부여하는 제약조건이다. 양수값만 입력가능하게 하거나 음수값만 입력가능하게하거나 할 수 있다.
+ex) ID INT CHECK (ID &amp;gt;= 0 AND ID &amp;lt;= 1000)&lt;/p&gt;
+
+&lt;h3 id=&quot;default&quot;&gt;DEFAULT&lt;/h3&gt;
+&lt;p&gt;어떤 값도 입력하지 않았을 경우 설정되는 기본 값이다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">UNION ALL UNION과 동일하게 표를 통합해서 하나의결과를 만들지만, 중복도 포함한다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">TIL - 스키마란(schema)</title>
+      <link href="http://localhost:4000/schema" rel="alternate" type="text/html" title="TIL - 스키마란(schema)" />
+      <published>2021-01-20T10:00:00+09:00</published>
+      <updated>2021-01-20T10:00:00+09:00</updated>
+      <id>http://localhost:4000/schema</id>
+      <content type="html" xml:base="http://localhost:4000/schema">&lt;h1 id=&quot;스키마schema&quot;&gt;스키마(schema)&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터의 내용, 데이터의논리구조, 기억형식이나 편성등의 데이터베이스의 구조를 명세한 것이다.&lt;/li&gt;
+  &lt;li&gt;개체(Entity), 속성(Attribute), 관계(Relationship), 제약조건에 관해 정의한다.&lt;/li&gt;
+  &lt;li&gt;스키마는 데이터사전(Data Dictionary)에 저장되며, 메타데이터라고도 한다.&lt;/li&gt;
+  &lt;li&gt;스키마는 사용자 관점에따라 내부스키마, 외부스키마, 개념스키마 세 계층으로 나눠진다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;내부스키마 : 물리적 저장장치의 관점에서본 스키마이며, 데이터베이스의 물리적구조를 나타낸다.&lt;/li&gt;
+  &lt;li&gt;외부스키마 : 응용프로그래머나 각 개인의 관점에서 본 스키마이며, 데이터베이스의 논리적 구조를 나타낸다. 서브스키마로도 불리며 여러개의 서브스키마가 존재할 수 있다.&lt;/li&gt;
+  &lt;li&gt;개념스키마 : 모든 사용자의 관점에서 본 스키마이며, 전체적인 논리적구조를 나타낸다. 스키마라고하면 개념스키마를 말하는 경우가 많으며, 모든 개체들간의 제약조건등이 기술 되어있따. 하나의 스키마밖에 존재 할 수 없다.&lt;/li&gt;
+&lt;/ol&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="TIL" />
+      
+
+      
+        <summary type="html">스키마(schema) 데이터의 내용, 데이터의논리구조, 기억형식이나 편성등의 데이터베이스의 구조를 명세한 것이다. 개체(Entity), 속성(Attribute), 관계(Relationship), 제약조건에 관해 정의한다. 스키마는 데이터사전(Data Dictionary)에 저장되며, 메타데이터라고도 한다. 스키마는 사용자 관점에따라 내부스키마, 외부스키마, 개념스키마 세 계층으로 나눠진다.</summary>
       
 
       

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="http://localhost:4000/tag/git/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2021-05-21T01:50:22+09:00</updated>
+  <id>http://localhost:4000/tag/git/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">푸바 프로그래밍 | </title>
+  
+
+  
+    <subtitle>TIL</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Git - 2021/02/05 Git</title>
+      <link href="http://localhost:4000/git" rel="alternate" type="text/html" title="Git - 2021/02/05 Git" />
+      <published>2021-02-06T06:30:00+09:00</published>
+      <updated>2021-02-06T06:30:00+09:00</updated>
+      <id>http://localhost:4000/git</id>
+      <content type="html" xml:base="http://localhost:4000/git">&lt;h2 id=&quot;git이란&quot;&gt;Git이란&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;다른 VCS와다르게 시간순으로 스냅샷을 저장하는 버전관리시스템이다.&lt;/li&gt;
+  &lt;li&gt;명령을 로컬에서 실행하므로 빠르다.&lt;/li&gt;
+  &lt;li&gt;네트워크에 연결되어 있지않아도 Commit이 가능하여 작업이 가능하다.&lt;/li&gt;
+  &lt;li&gt;SHA-1해시를 사용하여 만든 체크섬으로 데이터를 관리한다.&lt;/li&gt;
+  &lt;li&gt;Git으로 뭘하든 Git DB에 데이터가 추가된다. 되돌리거나 데이터를 삭제할 방법이 없다. 스냅샷을 커밋하고나면 데이터를 잃어버리기 어렵다.&lt;/li&gt;
+  &lt;li&gt;Committed : 데이터가 로컬DB에 안전하게 저장됐다는 것을 의미&lt;/li&gt;
+  &lt;li&gt;Modified : 수정한 파일을 아직 로컬 DB에 커밋하지 않은것을 의미&lt;/li&gt;
+  &lt;li&gt;Staged : 현재 수정한 파일을 곧 커밋할 것이라고 표시한 상태를 의미&lt;/li&gt;
+  &lt;li&gt;Git Directory : Git이 프로젝트의 메타데이터와 객체 DB를 저장하는곳&lt;/li&gt;
+  &lt;li&gt;Working Tree : 프로젝트의 특정 버전을 CheckOut한것&lt;/li&gt;
+  &lt;li&gt;Staging Area : Git디렉토리에 있고, 단순한파일이고 곧 커밋할 파일에 대한 정보를 저장함.&lt;/li&gt;
+  &lt;li&gt;Git으로 하는일 : 워킹트리에서 파일수정 -&amp;gt; StagingArea에 파일을 Stage해서 커밋할 스냅샷을 만듬 -&amp;gt; StagingArea에서 Git디렉토리에 영구적인스냅샷으로&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Git" />
+      
+
+      
+        <summary type="html">Git이란 다른 VCS와다르게 시간순으로 스냅샷을 저장하는 버전관리시스템이다. 명령을 로컬에서 실행하므로 빠르다. 네트워크에 연결되어 있지않아도 Commit이 가능하여 작업이 가능하다. SHA-1해시를 사용하여 만든 체크섬으로 데이터를 관리한다. Git으로 뭘하든 Git DB에 데이터가 추가된다. 되돌리거나 데이터를 삭제할 방법이 없다. 스냅샷을 커밋하고나면 데이터를 잃어버리기 어렵다. Committed : 데이터가 로컬DB에 안전하게 저장됐다는 것을 의미 Modified : 수정한 파일을 아직 로컬 DB에 커밋하지 않은것을 의미 Staged : 현재 수정한 파일을 곧 커밋할 것이라고 표시한 상태를 의미 Git Directory : Git이 프로젝트의 메타데이터와 객체 DB를 저장하는곳 Working Tree : 프로젝트의 특정 버전을 CheckOut한것 Staging Area : Git디렉토리에 있고, 단순한파일이고 곧 커밋할 파일에 대한 정보를 저장함. Git으로 하는일 : 워킹트리에서 파일수정 -&amp;gt; StagingArea에 파일을 Stage해서 커밋할 스냅샷을 만듬 -&amp;gt; StagingArea에서 Git디렉토리에 영구적인스냅샷으로</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

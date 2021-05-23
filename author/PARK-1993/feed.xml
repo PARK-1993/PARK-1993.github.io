@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/author/PARK-1993/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-05-20T23:12:46+09:00</updated>
+  <updated>2021-05-21T01:50:22+09:00</updated>
   <id>http://localhost:4000/author/PARK-1993/feed.xml</id>
 
   
@@ -437,8 +437,8 @@ push도 쓸 수 있지만, 캐쥬얼하게 hit으로 많이쓴다.&lt;/p&gt;
     </entry>
   
     <entry>
-      <title type="html">Swift_iOS - escaping closure란</title>
-      <link href="http://localhost:4000/escapingClosure" rel="alternate" type="text/html" title="Swift_iOS - escaping closure란" />
+      <title type="html">Swift-iOS - escaping closure란</title>
+      <link href="http://localhost:4000/escapingClosure" rel="alternate" type="text/html" title="Swift-iOS - escaping closure란" />
       <published>2021-03-15T06:00:00+09:00</published>
       <updated>2021-03-15T06:00:00+09:00</updated>
       <id>http://localhost:4000/escapingClosure</id>
@@ -502,7 +502,7 @@ escaping closure를 매개변수로하는 함수에서의 closure는
       
 
       
-        <category term="Swift_iOS" />
+        <category term="Swift-iOS" />
       
 
       
@@ -627,8 +627,8 @@ formal한 표현, 제생각에는&lt;/li&gt;
     </entry>
   
     <entry>
-      <title type="html">TIL - 2021/03/12 Pod 추가하기</title>
-      <link href="http://localhost:4000/AddingPodFile" rel="alternate" type="text/html" title="TIL - 2021/03/12 Pod 추가하기" />
+      <title type="html">Swift-iOS - 2021/03/12 Pod 추가하기</title>
+      <link href="http://localhost:4000/AddingPodFile" rel="alternate" type="text/html" title="Swift-iOS - 2021/03/12 Pod 추가하기" />
       <published>2021-03-13T05:30:00+09:00</published>
       <updated>2021-03-13T05:30:00+09:00</updated>
       <id>http://localhost:4000/AddingPodFile</id>
@@ -682,7 +682,7 @@ minimum deployment target은 Podfile의&lt;code class=&quot;highlighter-rouge&qu
       
 
       
-        <category term="TIL" />
+        <category term="Swift-iOS" />
       
 
       
