@@ -477,23 +477,7 @@ formal한 표현, 제생각에는&lt;/li&gt;
 &lt;ul&gt;
   &lt;li&gt;20줄도 길다.&lt;/li&gt;
   &lt;li&gt;짧을 수록 명백해진다.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;if/while문에 들어가는 블록은 한 줄이어야한다.&lt;/dt&gt;
-      &lt;dd&gt;블록안에서 함수 이름을 적절히 짓는다면, 코드를 이해하기 쉬워진다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;함수의 들여쓰기 수준은 1단이나 2단을 넘어서면 안된다.
-    &lt;h2 id=&quot;한가지만해라&quot;&gt;한가지만해라!&lt;/h2&gt;
-  &lt;/li&gt;
-  &lt;li&gt;함수내에서 의미있는 이름으로 다른 함수를 추출할 수 있다면, 그 함수는 여러 작업을 하는셈이다.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;함수 내 모든 문장의 추상화 수준이 동일해야한다.&lt;/dt&gt;
-      &lt;dd&gt;추상화수준이 섞여있으면 읽는 사람이 근본 개념과 세부사항인지 구분하기 어려워 깨어진 창문처럼 함수에 세부사항을 점점 더 추가한다.
-※ 추상화 수준이 높다 : 함축되어있는 내용이 많다. / 추상화 수준이 낮다 : 함축되어있는 내용이 적다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
+  &lt;li&gt;if/while문에 들어가는 블록은 한 줄이어야한다.&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>

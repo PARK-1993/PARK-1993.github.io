@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/til/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-05-21T01:50:22+09:00</updated>
+  <updated>2021-05-25T02:07:15+09:00</updated>
   <id>http://localhost:4000/tag/til/feed.xml</id>
 
   
@@ -763,80 +763,77 @@ http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod&lt;/p&gt;</content>
   &lt;li&gt;20줄도 길다.&lt;/li&gt;
   &lt;li&gt;짧을 수록 명백해진다.&lt;/li&gt;
   &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;if/while문에 들어가는 블록은 한 줄이어야한다.&lt;/dt&gt;
-      &lt;dd&gt;블록안에서 함수 이름을 적절히 짓는다면, 코드를 이해하기 쉬워진다.&lt;/dd&gt;
-    &lt;/dl&gt;
+    &lt;p&gt;if/while문에 들어가는 블록은 한 줄이어야한다.&lt;/p&gt;
+
+    &lt;p&gt;-&amp;gt;블록안에서 함수 이름을 적절히 짓는다면, 코드를 이해하기 쉬워진다.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;함수의 들여쓰기 수준은 1단이나 2단을 넘어서면 안된다.
-    &lt;h2 id=&quot;한가지만해라&quot;&gt;한가지만해라!&lt;/h2&gt;
-  &lt;/li&gt;
+  &lt;li&gt;함수의 들여쓰기 수준은 1단이나 2단을 넘어서면 안된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;한가지만해라&quot;&gt;한가지만해라!&lt;/h2&gt;
+&lt;ul&gt;
   &lt;li&gt;함수내에서 의미있는 이름으로 다른 함수를 추출할 수 있다면, 그 함수는 여러 작업을 하는셈이다.&lt;/li&gt;
   &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;함수 내 모든 문장의 추상화 수준이 동일해야한다.&lt;/dt&gt;
-      &lt;dd&gt;추상화수준이 섞여있으면 읽는 사람이 근본 개념과 세부사항인지 구분하기 어려워 깨어진 창문처럼 함수에 세부사항을 점점 더 추가한다.
-※ 추상화 수준이 높다 : 함축되어있는 내용이 많다. / 추상화 수준이 낮다 : 함축되어있는 내용이 적다.&lt;/dd&gt;
-    &lt;/dl&gt;
+    &lt;p&gt;함수 내 모든 문장의 추상화 수준이 동일해야한다.&lt;/p&gt;
+
+    &lt;p&gt;-&amp;gt;추상화수준이 섞여있으면 읽는 사람이 근본 개념과 세부사항인지 구분하기 어려워 깨어진 창문처럼 함수에 세부사항을 점점 더 추가한다.
+※ 추상화 수준이 높다 : 함축되어있는 내용이 많다. / 추상화 수준이 낮다 : 함축되어있는 내용이 적다.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;내려가기-규칙&quot;&gt;내려가기 규칙&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;한 함수 다음에는 추상화 수준이 한 단계낮은 함수가 온다.&lt;/dt&gt;
-      &lt;dd&gt;함수 정의, 구현시에 추상화 단계별로 작성해 읽기쉽게한다.
-``` cpp
-void AddPage(PageKind kind)
-{
-  switch(kind)
-  {
-  case PageKind::StartPage:
-  {
-   createStartPage();
-  }
-  break;
-  case PageKind::MainPage:
-  {
-   //…
-  }
-  break;
-  }
-}&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
+  &lt;li&gt;한 함수 다음에는 추상화 수준이 한 단계낮은 함수가 온다. &lt;br /&gt;
+-&amp;gt; 함수 정의, 구현시에 추상화 단계별로 작성해 읽기쉽게한다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;void createStartPage()
-{
-    //StartPage생성
-}&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-## switch문
-- 기본적으로 switch문은 N가지를 처리하며, 이를 피하기는 쉽지않다.
-- 다형성을 이용해 switch문을 저차원클래스에 숨길 수 있다.
-``` cpp
-Money caculatePay(Employee e)
-{
-    try{
-        switch(e.type)
-        {
-        case COMMISSIONED:
-            return calculateCommissionedPay(e);
-        case HOURLY:
-            return calculateHourlyPay(e);
-        case SALARIED:
-            return calculateSalariedPay(e):
-        default:
-            throw (e.type);
-        }catch(EmployeeType e){
-            printError(e);
-        }
-    }
-}
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;AddPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PageKind&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PageKind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;StartPage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;createStartPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PageKind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MainPage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//...
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;createStartPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//StartPage생성
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;switch문&quot;&gt;switch문&lt;/h2&gt;
 &lt;ul&gt;
+  &lt;li&gt;기본적으로 switch문은 N가지를 처리하며, 이를 피하기는 쉽지않다.&lt;/li&gt;
+  &lt;li&gt;다형성을 이용해 switch문을 저차원클래스에 숨길 수 있다.
+    &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Money&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;caculatePay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Employee&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;COMMISSIONED&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calculateCommissionedPay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HOURLY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calculateHourlyPay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SALARIED&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calculateSalariedPay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;default:&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EmployeeType&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;printError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
   &lt;li&gt;위 코드의 문제
     &lt;ol&gt;
       &lt;li&gt;함수가 길다.(직원 추가시 더 길어진다.)&lt;/li&gt;
@@ -894,135 +891,91 @@ Money caculatePay(Employee e)
     &lt;li&gt;길고 서술적인 이름이 짧고 어려운 이름과 길고 서술적인 주석보다 좋다.&lt;/li&gt;
     &lt;li&gt;이런저런 이름을 넣어보며 시간을 들여도 괜찮다.&lt;/li&gt;
     &lt;li&gt;서술적인 이름을 사용하면 설게가 뚜렷해지고 코드를 개선하기 쉬워진다.&lt;/li&gt;
-    &lt;li&gt;
-      &lt;dl&gt;
-        &lt;dt&gt;모듈내에서 함수이름은 일관성을 위해 같은 문구,명사,동사를 사용한다.&lt;/dt&gt;
-        &lt;dd&gt;includeSetup, includeTeardownPages, includeSetupPages등
-          &lt;h2 id=&quot;함수-인수&quot;&gt;함수 인수&lt;/h2&gt;
-        &lt;/dd&gt;
-      &lt;/dl&gt;
-    &lt;/li&gt;
-    &lt;li&gt;이상적인 인수 개수는 0개다. 3개는 피하는 편이 좋고, 4개는 특별한 이유가 있어야 한다.(그 이상은 안됨)&lt;/li&gt;
-    &lt;li&gt;멤버변수로 선언해서 인수를 대체할 수 있다면 그렇게해야한다.&lt;/li&gt;
-    &lt;li&gt;테스트관점에서도 인수가 많으면, 그만큼 확인해야하는 항목이 늘어난다.&lt;/li&gt;
-    &lt;li&gt;출력인수는 입력인수보다 이해하기 어렵고, 독자가 코드를 확인해야할 확률이 높다.&lt;/li&gt;
+    &lt;li&gt;모듈내에서 함수이름은 일관성을 위해 같은 문구,명사,동사를 사용한다.
+ -&amp;gt; includeSetup, includeTeardownPages, includeSetupPages등&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/blockquote&gt;
 
+&lt;h2 id=&quot;함수-인수&quot;&gt;함수 인수&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;이상적인 인수 개수는 0개다. 3개는 피하는 편이 좋고, 4개는 특별한 이유가 있어야 한다.(그 이상은 안됨)&lt;/li&gt;
+  &lt;li&gt;멤버변수로 선언해서 인수를 대체할 수 있다면 그렇게해야한다.&lt;/li&gt;
+  &lt;li&gt;테스트관점에서도 인수가 많으면, 그만큼 확인해야하는 항목이 늘어난다.&lt;/li&gt;
+  &lt;li&gt;출력인수는 입력인수보다 이해하기 어렵고, 독자가 코드를 확인해야할 확률이 높다.&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&quot;많이-쓰는-단항-형식&quot;&gt;많이 쓰는 단항 형식&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;인수를 질문에 던지는 경우&lt;/dt&gt;
-      &lt;dd&gt;bool fileExists(“MyFile”)&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;인수를 뭔가로 변환해 결과로 반환하는 경우&lt;/dt&gt;
-      &lt;dd&gt;InputStream fileOpen(“MyFile”) string형의 파일이름을 InputStream으로 변환&lt;/dd&gt;
-      &lt;dd&gt;입력인수를 변환해야하는 경우 return값을 설정하는 것이 출력인수를 갖는것 보다 낫다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;이벤트 함수(입력인수는 있지만 출력인수는 없음)&lt;/dt&gt;
-      &lt;dd&gt;passwordAttemtFailedNtimes(int attempts) 이벤트함수라는 것이 명확하도록 작성&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
+  &lt;li&gt;인수를 질문에 던지는 경우   &lt;br /&gt;
+ -&amp;gt; bool fileExists(“MyFile”)&lt;/li&gt;
+  &lt;li&gt;인수를 뭔가로 변환해 결과로 반환하는 경우 
+ -&amp;gt; InputStream fileOpen(“MyFile”) string형의 파일이름을 InputStream으로 변환
+ -&amp;gt; 입력인수를 변환해야하는 경우 return값을 설정하는 것이 출력인수를 갖는것 보다 낫다.&lt;/li&gt;
+  &lt;li&gt;이벤트 함수(입력인수는 있지만 출력인수는 없음)  &lt;br /&gt;
+ -&amp;gt; passwordAttemtFailedNtimes(int attempts) 이벤트함수라는 것이 명확하도록 작성&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;플래그-인수&quot;&gt;플래그 인수&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;함수로 bool값을 넘기는 것은 대놓고 여러가지 처리를 한다고 공표하는 것이다.&lt;/dt&gt;
-      &lt;dd&gt;render(bool isSuite)함수는 renderForSuite(), renderForSingleTest()로 나눠야 한다.
-        &lt;h3 id=&quot;이항-함수&quot;&gt;이항 함수&lt;/h3&gt;
-      &lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
+  &lt;li&gt;함수로 bool값을 넘기는 것은 대놓고 여러가지 처리를 한다고 공표하는 것이다.  &lt;br /&gt;
+ -&amp;gt; render(bool isSuite)함수는 renderForSuite(), renderForSingleTest()로 나눠야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;이항-함수&quot;&gt;이항 함수&lt;/h3&gt;
+&lt;ul&gt;
   &lt;li&gt;두 인수값이 하나의 값을 가리키거나(Point(0,0)) 자연적인 순서의 경우 사용한다.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;이항 함수가 무조건 나쁘진 않지만, 위험이 따름을 인식하고 단항함수로 바꾸려는 노력이 필요하다.&lt;/dt&gt;
-      &lt;dd&gt;assertEquals(expected, actual)은 하나의 값도아니며, 자연적 순서도 없다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
+  &lt;li&gt;이항 함수가 무조건 나쁘진 않지만, 위험이 따름을 인식하고 단항함수로 바꾸려는 노력이 필요하다. 
+ -&amp;gt; assertEquals(expected, actual)은 하나의 값도아니며, 자연적 순서도 없다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;인수-객체&quot;&gt;인수 객체&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;인수가 2-3개 필요하다면 클래스를 만들 것을 고려한다.&lt;/dt&gt;
-      &lt;dd&gt;Circle makeCircle(double x, double y, double radius)&lt;/dd&gt;
-      &lt;dd&gt;Circle makeCircle(Point(center), double radius)&lt;/dd&gt;
-      &lt;dd&gt;이는 표현하는 방식만 바꾼 것이 아니라, 개념적으로 도움이 된다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
+  &lt;li&gt;인수가 2-3개 필요하다면 클래스를 만들 것을 고려한다.&lt;br /&gt;
+ -&amp;gt; Circle makeCircle(double x, double y, double radius)  &lt;br /&gt;
+ -&amp;gt; Circle makeCircle(Point(center), double radius) 
+ -&amp;gt; 이는 표현하는 방식만 바꾼 것이 아니라, 개념적으로 도움이 된다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;인수-목록&quot;&gt;인수 목록&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;가변 인수를 가지는 함수는 단항,이항,삼항 함수로 취급 할 수 있다.&lt;/dt&gt;
-      &lt;dd&gt;string format(string format, Object… args)&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
+  &lt;li&gt;가변 인수를 가지는 함수는 단항,이항,삼항 함수로 취급 할 수 있다.&lt;br /&gt;
+ -&amp;gt; string format(string format, Object… args)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;동사와-키워드&quot;&gt;동사와 키워드&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;함수의 의도를 명확히 하려면, 인수와 함수의 관계가 잘 표현되는 함수이름이 필요하다.&lt;/li&gt;
   &lt;li&gt;단항함수의 경우 인수가 동사/명사 쌍을 이뤄야 한다. writeField(name)&lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;순서를 표현하기위해 키워드를 추가해 표현한다.&lt;/dt&gt;
-      &lt;dd&gt;assertEquals -&amp;gt; assertExpectedEqualsActual(expected, actual)&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
+  &lt;li&gt;순서를 표현하기위해 키워드를 추가해 표현한다.       &lt;br /&gt;
+ -&amp;gt; assertEquals → assertExpectedEqualsActual(expected, actual)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;부수-효과를-일으키지-마라&quot;&gt;부수 효과를 일으키지 마라!&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;몰래 클래스 변수를 수정하거나, 함수로 넘어온 인수나 전역변수를 수정하는 일이 없도록 한다.&lt;/dt&gt;
-      &lt;dd&gt;checkPassword라는 함수에서 비밀번호가 틀렸을 경우 Seesion을 초기화하는 작업이 들어 가있다면, 부수적인 작업을 하는 것이다.(이름만 봐서는 부수 효과를 예측할 수 없다.)&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
+  &lt;li&gt;몰래 클래스 변수를 수정하거나, 함수로 넘어온 인수나 전역변수를 수정하는 일이 없도록 한다.   &lt;br /&gt;
+ -&amp;gt; checkPassword라는 함수에서 비밀번호가 틀렸을 경우 Seesion을 초기화하는 작업이 들어 가있다면, 부수적인 작업을 하는 것이다.(이름만 봐서는 부수 효과를 예측할 수 없다.)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;출력-인수&quot;&gt;출력 인수&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;일반적으로 인수를 입력인술 해석하기 때문에, 사용하지 않는 것이 좋다.&lt;/dt&gt;
-      &lt;dd&gt;객체지향에서는 출력인수를 사용하지않고, 객체상태를 변경하거나 객체내 변수를 출력하도록 설계해야한다.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
+  &lt;li&gt;일반적으로 인수를 입력인술 해석하기 때문에, 사용하지 않는 것이 좋다.&lt;br /&gt;
+ -&amp;gt; 객체지향에서는 출력인수를 사용하지않고, 객체상태를 변경하거나 객체내 변수를 출력하도록 설계해야한다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;명령과-조회를-분리하라&quot;&gt;명령과 조회를 분리하라!&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;함수는 객체 정보를 반환하거나, 객체 상태를 변경하거나 둘중하나만 해야한다.&lt;/dt&gt;
-      &lt;dd&gt;bool set(string attribute, string value);&lt;/dd&gt;
-      &lt;dd&gt;이 함수는 속성갑을 찾아 value값을 설정한 후 성공여부를 반환하는 함수이다.&lt;/dd&gt;
-      &lt;dd&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;if(set(&quot;username&quot;, &quot;unclebob&quot;))&lt;/code&gt;으로 표현하면, 의미가 모호해진다.&lt;/dd&gt;
-      &lt;dd&gt;username이unclebob으로 설정되있다는 것을 판단한다고 생각 할 수있다.&lt;/dd&gt;
-      &lt;dd&gt;다음과 같이 분리한다면 의미를 명확하게 표현 할 수 있다.
-        &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attriuteExists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;username&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+  &lt;li&gt;함수는 객체 정보를 반환하거나, 객체 상태를 변경하거나 둘중하나만 해야한다.  &lt;br /&gt;
+ -&amp;gt; bool set(string attribute, string value); &lt;br /&gt;
+ -&amp;gt; 이 함수는 속성갑을 찾아 value값을 설정한 후 성공여부를 반환하는 함수이다. &lt;br /&gt;
+ -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;if(set(&quot;username&quot;, &quot;unclebob&quot;))&lt;/code&gt;으로 표현하면, 의미가 모호해진다.   &lt;br /&gt;
+ -&amp;gt; username이unclebob으로 설정되있다는 것을 판단한다고 생각 할 수있다.   &lt;br /&gt;
+ -&amp;gt; 다음과 같이 분리한다면 의미를 명확하게 표현 할 수 있다.
+    &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attriuteExists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;username&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;n&quot;&gt;setAttribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;username&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;uncldebob&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;setAttribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;username&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;uncldebob&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-        &lt;h2 id=&quot;에러코드보다-예외를-사용하라&quot;&gt;에러코드보다 예외를 사용하라!&lt;/h2&gt;
-      &lt;/dd&gt;
-    &lt;/dl&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;h2 id=&quot;에러코드보다-예외를-사용하라&quot;&gt;에러코드보다 예외를 사용하라!&lt;/h2&gt;
   &lt;/li&gt;
   &lt;li&gt;에러코드를 반환하는 방식은 명령/조회규칙을 미묘하게 위반하고, 여러 단계로 중첩되는 코드를 야기한다.
     &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deletePage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;E_OK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -1048,7 +1001,7 @@ Money caculatePay(Employee e)
   &lt;span class=&quot;c1&quot;&gt;// Error처리
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;: 위의 예처럼 에러처리를 곧바로 처리해야하기 때문에, 깊이가 깊어진다.&lt;/p&gt;
+    &lt;p&gt;-&amp;gt; 위의 예처럼 에러처리를 곧바로 처리해야하기 때문에, 깊이가 깊어진다.&lt;/p&gt;
     &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;deletePage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;registry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deleteReference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -1059,17 +1012,16 @@ Money caculatePay(Employee e)
   &lt;span class=&quot;c1&quot;&gt;// 에러처리
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;: 위 예처럼 예외처리를 넣을 경우 코드가 간단해진다.&lt;/dt&gt;
-      &lt;dd&gt;하지만, try/catch는 한가지의 작업이며, 다른 작업과 섞여있으면 혼란을 줄 수 있다.
-        &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Page&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;p&gt;-&amp;gt; 위 예처럼 예외처리를 넣을 경우 코드가 간단해진다. 
+ -&amp;gt; 하지만, try/catch는 한가지의 작업이며, 다른 작업과 섞여있으면 혼란을 줄 수 있다.&lt;/p&gt;
+    &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Page&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;deletePageAndAllReferences&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;deletePageAndAllReferences&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;c1&quot;&gt;// 에러처리
+      &lt;span class=&quot;c1&quot;&gt;// 에러처리
 &lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;deletePageAndAllReferences&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Page&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -1078,10 +1030,8 @@ Money caculatePay(Employee e)
   &lt;span class=&quot;n&quot;&gt;registry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deleteReference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;configKeys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deleteKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;makeKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/dd&gt;
-      &lt;dd&gt;위의 예외처리를 분리시키는 것이 코드를 이해하기 더 쉽다.&lt;/dd&gt;
-    &lt;/dl&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;-&amp;gt; 위의 예외처리를 분리시키는 것이 코드를 이해하기 더 쉽다.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1102,11 +1052,9 @@ Money caculatePay(Employee e)
   &lt;li&gt;함수를 작게 만든다면 간혹 return, break, continue를 여러차례 사용해도 괜찮다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;dl&gt;
-  &lt;dt&gt;※ 단일 입/출구 규칙 : 모든 함수와 함수 내 모든 블록에 입구와 출구가 하나만 존재해야한다.&lt;/dt&gt;
-  &lt;dd&gt;함수는 return문이 하나여야 한다.&lt;/dd&gt;
-  &lt;dd&gt;루프안에서 break나 continue를 사용해선 안되며, goto는 절대로 안된다.&lt;/dd&gt;
-&lt;/dl&gt;
+&lt;p&gt;※ 단일 입/출구 규칙 : 모든 함수와 함수 내 모든 블록에 입구와 출구가 하나만 존재해야한다.  &lt;br /&gt;
+ -&amp;gt; 함수는 return문이 하나여야 한다.  &lt;br /&gt;
+ -&amp;gt; 루프안에서 break나 continue를 사용해선 안되며, goto는 절대로 안된다.&lt;/p&gt;
 
 &lt;h2 id=&quot;결론&quot;&gt;결론&lt;/h2&gt;
 &lt;p&gt;대가 프로그래머는 시스템을 구현할 프로그램이아니라 풀어갈 이야기로 여긴다.
@@ -1131,7 +1079,7 @@ Money caculatePay(Employee e)
       
 
       
-        <summary type="html">작게 만들어라! 20줄도 길다. 짧을 수록 명백해진다. if/while문에 들어가는 블록은 한 줄이어야한다. 블록안에서 함수 이름을 적절히 짓는다면, 코드를 이해하기 쉬워진다. 함수의 들여쓰기 수준은 1단이나 2단을 넘어서면 안된다. 한가지만해라! 함수내에서 의미있는 이름으로 다른 함수를 추출할 수 있다면, 그 함수는 여러 작업을 하는셈이다. 함수 내 모든 문장의 추상화 수준이 동일해야한다. 추상화수준이 섞여있으면 읽는 사람이 근본 개념과 세부사항인지 구분하기 어려워 깨어진 창문처럼 함수에 세부사항을 점점 더 추가한다. ※ 추상화 수준이 높다 : 함축되어있는 내용이 많다. / 추상화 수준이 낮다 : 함축되어있는 내용이 적다.</summary>
+        <summary type="html">작게 만들어라! 20줄도 길다. 짧을 수록 명백해진다. if/while문에 들어가는 블록은 한 줄이어야한다.</summary>
       
 
       
