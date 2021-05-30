@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/author/PARK-1993/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-05-25T02:07:15+09:00</updated>
+  <updated>2021-05-31T00:58:47+09:00</updated>
   <id>http://localhost:4000/author/PARK-1993/feed.xml</id>
 
   
@@ -30,6 +30,128 @@
   
   
 
+  
+    <entry>
+      <title type="html">Swift-iOS - 2021/05/27 Optional언래핑 방법정리</title>
+      <link href="http://localhost:4000/Optional" rel="alternate" type="text/html" title="Swift-iOS - 2021/05/27 Optional언래핑 방법정리" />
+      <published>2021-05-28T05:30:00+09:00</published>
+      <updated>2021-05-28T05:30:00+09:00</updated>
+      <id>http://localhost:4000/Optional</id>
+      <content type="html" xml:base="http://localhost:4000/Optional">&lt;h1 id=&quot;unwrapping종류&quot;&gt;Unwrapping종류&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;강제 언래핑(Force unwrapping)
+Optional변수에 값이 있는지 없는지 확인하지 않고 강제로 풀어버린다.
+만약 변수가 nil일 경우 런타임에러가 발생된다.
+100% 값이 들어가있다고 확신할 경우에만 사용해야한다.
+    &lt;pre&gt;&lt;code class=&quot;language-Swift&quot;&gt;var name : String? = nil
+print(name!) // runtime Error
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;옵셔널 체이닝(Optional Chaining)
+    &lt;pre&gt;&lt;code class=&quot;language-Swift&quot;&gt;var name : String? = apartment?.room?.person?.name
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;위처럼 객체의 프로퍼티의 값을 가져올때, 확인하고 싶은 객체의 값이 몇단계 아래에 존재하고 각 계층의 객체들이 옵셔널일 경우,
+매번 값이 있는지 없는지 확인하는 것은 어렵다.
+그래서 옵셔널 체이닝이라는 개념이 나왔고, “?”을 사용해 apartment가 존재하면 room이있는지 없는지 확인하고, room이 존재하면 person, name이렇게 값을 확인해 나간다.
+만약 한가지라도 nil일 경우, name에는 nil이 저장된다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;옵셔널 바인딩(Optional Binding)
+    &lt;h3 id=&quot;if-let&quot;&gt;if let&lt;/h3&gt;
+    &lt;pre&gt;&lt;code class=&quot;language-Swift&quot;&gt;if let name = studentName{
+ // name은 이 블록내에서만 사용가능
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;위와 같은 형식으로 studentName이 nil이 아니라면 name에 studentName의 값이 할당되고 블록내의 처리를 수행한다.
+아래와 같이 사용하지는 말자.. 틀린건 아니지만 너무 올드한 느낌이다.&lt;/p&gt;
+    &lt;pre&gt;&lt;code class=&quot;language-Swift&quot;&gt;if studentName != nil{
+ // ...
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;h3 id=&quot;guard-let&quot;&gt;guard let&lt;/h3&gt;
+    &lt;pre&gt;&lt;code class=&quot;language-Swift&quot;&gt;guard let name = studentName else{
+ // Error 처리
+}
+// name을 계속 사용가능
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;if let과 차이가 있다면, 새로 할당된 변수를 계속해서 사용할 수 있다. 
+또한 if let의 경우는 체크대상이 nil일 경우 에러 처리를 하지 않아도 되지만, guard의 경우 반드시 nil이 아닌경우 처리방법에 대해 기술 하여야 한다. 
+그래서 보통 nil이 들어가면 치명적인 부분에서 많이 사용한다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;병합연산자nil-coalescing-operator사용&quot;&gt;병합연산자(Nil-coalescing Operator)사용&lt;/h2&gt;
+&lt;p&gt;coalesce뜻이 합치다말로 한국어로하면 Nil병합연산자 라고불리는 “??”연산자에 대해 알아보자. ??은 옵셔널을 간단하게 언래핑할 수 있게 도와주는 연산자이다. ??연산자를 기준으로 왼쪽에 옵셔널을 오른쪽에는 옵셔널이 nil일 경우 대신해서 들어갈 값을 써주면된다.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Swift&quot;&gt;var name : String? = nil
+print(&quot;My name is &quot; + name ?? &quot;Park&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;이 경우 “My name is Park”이 출력되게 된다.&lt;/p&gt;
+
+&lt;h1 id=&quot;암시적으로-언랩된-옵셔널implicitly-unwrapped-optionals&quot;&gt;암시적으로 언랩된 옵셔널(implicitly unwrapped optionals)&lt;/h1&gt;
+&lt;p&gt;그대로 해석하면 암시적으로 언랩된 옵셔널이라는 것인데,
+옵셔널이긴한데 보기에는 언랩핑된것 처럼 보인다라는 의미로 볼 수 있다.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Swift&quot;&gt;var myName : String! = nil
+var yourName : String? = nil
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;위의 myName이 IUO이다(너무길어서 IUO로 부르겠다..)
+IUO은 Optional처럼 옵셔널체이닝, 옵셔널바인딩, 강제언랩핑등 사용이 가능하다.&lt;/p&gt;
+
+&lt;p&gt;하지만 암시적으로 언랩된 옵셔널이기 때문에, 사용시에 언래핑 처리과정을 거치지 않아도 값에 접근이 가능하다.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Swift&quot;&gt;var lastName : String! = &quot;Park&quot;
+var firstName : String = &quot;JoonHyun&quot;
+print(lastName + firstName)
+var myName = lastName
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;위와 같이 lastName에 대해 언래핑과정을 거치지않아도 사용이 가능하다.
+하지만 만약 lastName이 nil이라면 runtime에러로 프로그램이 다운된다.&lt;/p&gt;
+
+&lt;p&gt;이러한 특징을 보면 어차피 lastName이 nil인지 아닌지 확인해야되기 때문에 Optional과 별 차이 없어보이고 오히려 번갈아 쓸 경우 더 헷갈릴 수 있을거같다.&lt;/p&gt;
+
+&lt;h2 id=&quot;왜-사용하는-것일까&quot;&gt;왜 사용하는 것일까?&lt;/h2&gt;
+&lt;p&gt;가독성과 편리성을 높일 수 있다고 한다.
+프로그램의 구조상 어떤 시점에서 특정 옵셔널에 무조건 값이 들어있다는 것이 명확한 경우, IUO를 사용하면 불필요한 언래핑 과정과 물음표를 사용하지 않아도 된다는 것이다.&lt;/p&gt;
+
+&lt;p&gt;하지만 미숙한 엔지니어가 사용하거나 고급엔지니어도 실수 할 가능성이 있기때문에 안전함을 제1순위로 둔다면 사용하지 않는 것이 좋다. 
+안전함과 편리함, 가독성을 고려하여 사용해야된다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sometimes it is clear from a program’s structure that an optional will always have a value, after the value is first set. In these cases, it is useful to remove the need to check and unwrap the optional’s value every time it is accessed, because it can be safely assumed to have a value all of the time. 
+위 글은 Swift공식문서에서 왜 IUO사용하는지에 대해 기술한 것이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Swift&quot;&gt;class Person{
+    let name : String!
+    init(personName : String){
+        name = personName
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;위와같이 클래스를 정의하면 name은 Person객체가 만들어질때 무조건 정해지기 때문에 name에 nil이 들어갈것이라는 걱정 없이 사용가능하다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JoonHyun Park</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Swift-iOS" />
+      
+
+      
+        <summary type="html">Unwrapping종류 강제 언래핑(Force unwrapping) Optional변수에 값이 있는지 없는지 확인하지 않고 강제로 풀어버린다. 만약 변수가 nil일 경우 런타임에러가 발생된다. 100% 값이 들어가있다고 확신할 경우에만 사용해야한다. var name : String? = nil print(name!) // runtime Error 옵셔널 체이닝(Optional Chaining) var name : String? = apartment?.room?.person?.name 위처럼 객체의 프로퍼티의 값을 가져올때, 확인하고 싶은 객체의 값이 몇단계 아래에 존재하고 각 계층의 객체들이 옵셔널일 경우, 매번 값이 있는지 없는지 확인하는 것은 어렵다. 그래서 옵셔널 체이닝이라는 개념이 나왔고, “?”을 사용해 apartment가 존재하면 room이있는지 없는지 확인하고, room이 존재하면 person, name이렇게 값을 확인해 나간다. 만약 한가지라도 nil일 경우, name에는 nil이 저장된다. 옵셔널 바인딩(Optional Binding) if let if let name = studentName{ // name은 이 블록내에서만 사용가능 } 위와 같은 형식으로 studentName이 nil이 아니라면 name에 studentName의 값이 할당되고 블록내의 처리를 수행한다. 아래와 같이 사용하지는 말자.. 틀린건 아니지만 너무 올드한 느낌이다. if studentName != nil{ // ... } guard let guard let name = studentName else{ // Error 처리 } // name을 계속 사용가능 if let과 차이가 있다면, 새로 할당된 변수를 계속해서 사용할 수 있다. 또한 if let의 경우는 체크대상이 nil일 경우 에러 처리를 하지 않아도 되지만, guard의 경우 반드시 nil이 아닌경우 처리방법에 대해 기술 하여야 한다. 그래서 보통 nil이 들어가면 치명적인 부분에서 많이 사용한다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">English - 2021/05/19 Toeic L-Part3 Vocabulary</title>
@@ -687,190 +809,6 @@ minimum deployment target은 Podfile의&lt;code class=&quot;highlighter-rouge&qu
 
       
         <summary type="html">pod init 이커맨드를 project가있는 폴더에서 실행한다. 내 경우 Xcode업데이트가 되어있지않아서 “Failed to extract git version from git --version“라는 오류가 떴었다. 아래의 커맨드로 업데이트 시키고 다시 실행해보자 xcode-select --install</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">TIL - 2021/03/07 CleanCode 객체와 자료구조</title>
-      <link href="http://localhost:4000/cleanCode_Object" rel="alternate" type="text/html" title="TIL - 2021/03/07 CleanCode 객체와 자료구조" />
-      <published>2021-03-08T05:30:00+09:00</published>
-      <updated>2021-03-08T05:30:00+09:00</updated>
-      <id>http://localhost:4000/cleanCode_Object</id>
-      <content type="html" xml:base="http://localhost:4000/cleanCode_Object">&lt;h2 id=&quot;자료추상화&quot;&gt;자료추상화&lt;/h2&gt;
-&lt;p&gt;사용자는 제공된 추상인터페이스를 보고 자료의 핵심을 조작할 수 있어야 진정한 의미의 클래스이다.&lt;/p&gt;
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 구체적&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Vehicle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getFuelTankCapacityInGallons&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getGallonsOfGasoline&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위의 경우 단지 변수의 값을 불러오는 메소드여서 멤버변수를 public으로 하는 것과 크게 다르지않다. 하지만 밑의 경우는 단순히 변수를 가져오는것이 아니며, 사용자는 어떻게해서 데이터가 나오는지 알 수 없다.&lt;/p&gt;
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 추상적&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Vehicle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getPercentFuelRemaining&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;이렇게 자료를 세세하게 공개하기 보다는 추상적인 개념으로 표현하는 편이 좋다.
-개발자는 객체가 포함하는 자료를 표현할 가장 좋은 방법을 심각하게 고민해야한다.
-아무생각없이 get,set함수를 추가하는것은 의미가없다.&lt;/p&gt;
-
-&lt;h2 id=&quot;자료객체-비대칭&quot;&gt;자료/객체 비대칭&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;자료구조 : 자료를 그대로 공개하며 별다른 함수는 제공하지 않는다.&lt;/li&gt;
-  &lt;li&gt;객체 : 추상화 뒤로 자료를 숨긴 채 자료를 다루는 함수만 공개한다.
-자료구조와 객체의 정의는 본질적으로 상반된다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Square&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topLeft&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;side&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Rectangle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topLeft&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Circle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Geometry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PI&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.141592&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NoSuchShpaeException&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Square&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;Square&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Square&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;side&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;side&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Rectangle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;Rectangle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Rectangle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Circle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PI&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;radius&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;NoSuchShapeException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;위 코드는 객체지향언어인 java를 이용해 절차적인 형식으로 코드를 짠것이다.
-하지만 이방법이 무조건 잘못됐다라고 할 수는 없다.
-만약 둘레길이를 구하는 perimeter()함수를 추가할 경우, 위 코드에서 Geometry에 이 함수만 추가하면 된다. 다른곳은 영향을 받지않는다.
-하지만 다른 도형을 추가하고싶은 경우는 도형을 추가함과 동시에 Geometry클래스도 변경해야만 한다.&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Square&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topLeft&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;side&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;side&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;side&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Rectangle&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topLeft&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Circle&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PI&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.141592&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PI&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;raidus&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위 코드는 전형적인 객체지향 형식의 코드이며, 여기서 perimeter()를 추가하려면 모든 클래스에 추가해야되며, 도형을 하나 추가한다면 다른 클래스에는 영향없이 클래스 하나를 만들면 된다. 
-이처럼 객체와 자료구조는 상호보완적인 특성이있다.&lt;/p&gt;
-
-&lt;p&gt;모든 것이 객체라 생각하지말고, 때로는 단순한 자료구조와 절차적인 코드가 가장 적합한 상황도 있다.&lt;/p&gt;
-
-&lt;h2 id=&quot;디미터-법칙&quot;&gt;디미터 법칙&lt;/h2&gt;
-&lt;p&gt;잘 알려진 휴리스틱으로 모듈은 자신이 조작하는 객체의 속사정을 몰라야 한다는 법칙이다.
-즉 객체는 get함수로 내부 구조를 공개하면 안된다는 의미이다.
-디미터법칙은 “클래스C의 메서드f는 다음과 같은 객체의 메서드만 호출해야한다”고 주장한다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;클래스C&lt;/li&gt;
-  &lt;li&gt;f가 생성한 객체&lt;/li&gt;
-  &lt;li&gt;f인수로 넘어온 객체&lt;/li&gt;
-  &lt;li&gt;C인스턴스 변수에 저장된 객체&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;outputDir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ctxt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getOptions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getScratchDir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getAbsolutePath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위와 같은 코드를 train wreck이라고 부르며, 밑과 같은 코드처럼 나누는편이 낫다.&lt;/p&gt;
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Options&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;opts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ctxt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getOption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scratchDir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;opts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getScratchDir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;outputDir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scratchDir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getAbsolutePath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위 식은 디미터 법칙을 위반할까? 
-ctxt, opts, scratchDIr들이 자료구조라면 위반하지 않지만,
-객체라면 위반한것이다. 객체라면 내부 구조를 숨겨야 하는데, 전혀 숨겨지지않고, 위 코드의 메소드에서 ctxt, opts, scratchDIr의 내부 구조를 알아야만 절대경로를 구할 수 있기때문이다.&lt;/p&gt;
-
-&lt;p&gt;만약 자료구조라면 위의 경우와는 다르게 get을 쓰지않고 공개변수만 포함하게하면 디미터 법칙을 위반안 한다는 것을 바로 알 수 있다.&lt;/p&gt;
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;outputDir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ctxt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;scratchDir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;absolutePath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;잡종구조&quot;&gt;잡종구조&lt;/h3&gt;
-&lt;p&gt;절반은 객체, 절반은 자료구조인 잡종 구조는 피해야 한다.
-이러한 구조가 된 이유는 프로그래머가 함수나 타입은 보호할지 공개할 지 확신하지 못해 어중간하게 내놓은 설계에 불과하다.&lt;/p&gt;
-
-&lt;h3 id=&quot;구조체-감추기&quot;&gt;구조체 감추기&lt;/h3&gt;
-&lt;p&gt;만약 ctxt, options, scratchDir들이 모두 객체라면, 내부구조를 감춰야한다.&lt;/p&gt;
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;ctxt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getAbsoulutePathOfScratchDirectoryOption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;ctxt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getScratchDirectoryOption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getAbsolutePath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;첫번째 방법은 ctxt객체에 공개해야 하는 메서드가 너무 많아진다.
-두번째 방법은 getScratchDirectoryOption()이 자료구조를 반환한다고 가정해야한다.
-두 방법 모두 꺼림찍하다. 이러할 경우 왜 절대경로가 필요한지, 전체적인 흐름을 다시 볼 필요가 있다. 
-다음 코드를 살펴보니 outputDir를 가지고 임시파일을 생성하고 있다. 
-그렇다면 이 임시파일을 생성하는 처리자체를 ctxt가 하도록 한다면?&lt;/p&gt;
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;BufferedOutputStream&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bos&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ctxt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createScratchFileStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classFileName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;깔끔하다! ctxt는 내부구조를 드러내지 않으며, 해당 함수는 자신이 몰라야하는 함수를 탐색할 필요가 없다.&lt;/p&gt;
-
-&lt;h2 id=&quot;자료-전달-객체&quot;&gt;자료 전달 객체&lt;/h2&gt;
-&lt;p&gt;자료 구조체의 전형적인 형태는 공개 변수만 있고 함수가 없는 클래스이다.
-이를 Data Tranfer Object, DTO라고도 한다.
-데이터베이스와 통신하거나 소켓에서 받은 메세지의 구문을 분석할 때 유용하게 사용된다.&lt;/p&gt;
-
-&lt;h3 id=&quot;활성-레코드&quot;&gt;활성 레코드&lt;/h3&gt;
-&lt;p&gt;DTO의 특수한 형태이며, 공개 변수가 있거나 비공개 변수에 get/set함수가 있는 자료 구조지만, 보통 save나 find와 같은 탐색 함수도 제공한다.
-활성 레코드는 데이터베이스 테이블이나 다른 소스에서 자료를 직접 변환한 결과다.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>JoonHyun Park</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="TIL" />
-      
-
-      
-        <summary type="html">자료추상화 사용자는 제공된 추상인터페이스를 보고 자료의 핵심을 조작할 수 있어야 진정한 의미의 클래스이다. // 구체적 public interface Vehicle{ double getFuelTankCapacityInGallons(); double getGallonsOfGasoline(); } 위의 경우 단지 변수의 값을 불러오는 메소드여서 멤버변수를 public으로 하는 것과 크게 다르지않다. 하지만 밑의 경우는 단순히 변수를 가져오는것이 아니며, 사용자는 어떻게해서 데이터가 나오는지 알 수 없다. // 추상적 public interface Vehicle{ double getPercentFuelRemaining(); } 이렇게 자료를 세세하게 공개하기 보다는 추상적인 개념으로 표현하는 편이 좋다. 개발자는 객체가 포함하는 자료를 표현할 가장 좋은 방법을 심각하게 고민해야한다. 아무생각없이 get,set함수를 추가하는것은 의미가없다.</summary>
       
 
       

@@ -8,6 +8,61 @@
     
       
       <item>
+        <title>Swift-iOS - 2021/05/27 Optional언래핑 방법정리</title>
+        
+          <description>&lt;h1 id=&quot;unwrapping종류&quot;&gt;Unwrapping종류&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;강제 언래핑(Force unwrapping)
+Optional변수에 값이 있는지 없는지 확인하지 않고 강제로 풀어버린다.
+만약 변수가 nil일 경우 런타임에러가 발생된다.
+100% 값이 들어가있다고 확신할 경우에만 사용해야한다.
+    &lt;pre&gt;&lt;code class=&quot;language-Swift&quot;&gt;var name : String? = nil
+print(name!) // runtime Error
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;옵셔널 체이닝(Optional Chaining)
+    &lt;pre&gt;&lt;code class=&quot;language-Swift&quot;&gt;var name : String? = apartment?.room?.person?.name
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;위처럼 객체의 프로퍼티의 값을 가져올때, 확인하고 싶은 객체의 값이 몇단계 아래에 존재하고 각 계층의 객체들이 옵셔널일 경우,
+매번 값이 있는지 없는지 확인하는 것은 어렵다.
+그래서 옵셔널 체이닝이라는 개념이 나왔고, “?”을 사용해 apartment가 존재하면 room이있는지 없는지 확인하고, room이 존재하면 person, name이렇게 값을 확인해 나간다.
+만약 한가지라도 nil일 경우, name에는 nil이 저장된다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;옵셔널 바인딩(Optional Binding)
+    &lt;h3 id=&quot;if-let&quot;&gt;if let&lt;/h3&gt;
+    &lt;pre&gt;&lt;code class=&quot;language-Swift&quot;&gt;if let name = studentName{
+ // name은 이 블록내에서만 사용가능
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;위와 같은 형식으로 studentName이 nil이 아니라면 name에 studentName의 값이 할당되고 블록내의 처리를 수행한다.
+아래와 같이 사용하지는 말자.. 틀린건 아니지만 너무 올드한 느낌이다.&lt;/p&gt;
+    &lt;pre&gt;&lt;code class=&quot;language-Swift&quot;&gt;if studentName != nil{
+ // ...
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;h3 id=&quot;guard-let&quot;&gt;guard let&lt;/h3&gt;
+    &lt;pre&gt;&lt;code class=&quot;language-Swift&quot;&gt;guard let name = studentName else{
+ // Error 처리
+}
+// name을 계속 사용가능
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;if let과 차이가 있다면, 새로 할당된 변수를 계속해서 사용할 수 있다. 
+또한 if let의 경우는 체크대상이 nil일 경우 에러 처리를 하지 않아도 되지만, guard의 경우 반드시 nil이 아닌경우 처리방법에 대해 기술 하여야 한다. 
+그래서 보통 nil이 들어가면 치명적인 부분에서 많이 사용한다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        
+        <pubDate>Fri, 28 May 2021 05:30:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/Optional</link>
+        <guid isPermaLink="true">http://localhost:4000/Optional</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>English - 2021/05/19 Toeic L-Part3 Vocabulary</title>
         
           <description>&lt;h2 id=&quot;단어-및-표현&quot;&gt;단어 및 표현&lt;/h2&gt;
