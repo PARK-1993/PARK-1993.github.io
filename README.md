@@ -1,4 +1,4 @@
-# Wedding Landing Page - Daeng Sherly Menikah
+# Wedding Landing Page - PARK ERIKA WEDDING
 
 ![Thumbnail](/image/thumbnail-web-sherly-daeng-menikah.png)
 
