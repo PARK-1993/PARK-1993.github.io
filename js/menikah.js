@@ -60,7 +60,7 @@ $(document).ready(function($) {
       $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
       
-  $.post('https://script.google.com/macros/s/AKfycbyf7VQRleEQyArG4ifOozmQp-tFT-LwyAao2skvqxWsLjRao9EGL7737yElIVvMeTah/exec', data)
+  $.post('https://script.google.com/macros/s/AKfycbxgYC8b-OdFjux-du-pJWdO0HyfVPnVczT-FAKf0Xz5yxw491s1YV3ZSeAFAtU9A75U/exec', data)
     .done(function (data) {
       console.log(data);
       if (data.result === "error") {
