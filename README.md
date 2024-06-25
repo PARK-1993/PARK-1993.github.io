@@ -1,7 +1,5 @@
 # Wedding Landing Page - PARK ERIKA WEDDING
 
-![Thumbnail](/image/thumbnail-web-park-erika-menikah.png)
-
 
 # Section/Feature
 - Main Info
@@ -14,14 +12,11 @@
 # Stack
 - Netlify (https://netlify.com)
 
-     [![Netlify Status](https://api.netlify.com/api/v1/badges/2b185197-f76c-46e4-a0ab-0fe5c2ff8dc1/deploy-status)](https://app.netlify.com/sites/park-erika-menikah/deploys)
+     [![Netlify Status](https://api.netlify.com/api/v1/badges/2b185197-f76c-46e4-a0ab-0fe5c2ff8dc1/deploy-status)](https://app.netlify.com/sites/park-erika-wedding/deploys)
 
 - Bulma CSS (https://bulma.io)
 
 # Info
-- Live version check at: https://park.dae.ng/
-- Or check demo at: https://park-erika-menikah.netlify.app/
-- Check my web at: https://daengdoang.com :)
 
 # Fonts
 - Rouge Script (Google Font)
