@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Invitation Park & Erika</title>
+    <!-- Bulma Version 0.8.x-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/wedding.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.coundown.js"></script>
+    <link rel="icon" type="image/png" href="image/parrot.gif" />
+  </head>
+
+  <body>
+    <!-- Begin Preloader -->
+    <div class="preloader-wrapper">
+      <div class="preloader">
+        <img src="image/parrot.gif" alt="Party Parrot Gif" />
+      </div>
+    </div>
+    <!-- End Preloader-->
+
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#date">
+                  date
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#location">
+                  Location
+                </a>
+              </div>
+              
+              <div class="navbar-item">
+                <a class="navbar-item" href="#about-park-erika">
+                  About Park And Erika
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#rsvp">
+                  RSVP
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="subtitle">Wedding Invitation</h1>
+            <h2 class="title">Park & Erika</h2>
+            <h4 class="subtitle tempatwaktu">
+              
+              Sunday, 13 October 2024 
+              </br>
+              Lumos Garden, Busan
+              </br>
+              South Korea
+              
+            </h4>
+          </div>
+
+          <!-- Start Countdown -->       
+          <div>
+            <ul id="countdown" >
+              <li><span class="days">00</span><p class="days_text">days</p></li>
+              <li class="separator">:</li>
+              <li><span class="hours">00</span><p class="hours_text">hours</p></li>
+              <li class="separator">:</li>
+              <li><span class="minutes">00</span><p class="minutes_text">minutes</p></li>
+              <li class="separator">:</li>
+              <li><span class="seconds">00</span><p class="seconds_text">seconds</p></li>
+            </ul>
+            <div class="space">
+            </div>
+            <script type="text/javascript">
+              var now = new Date();
+              var day = now.getDate();
+              var month = now.getMonth() + 1;
+              var year = now.getFullYear() + 1;
+          
+              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+              var harih = '10/13/2024 11:30:00';
+
+              $('#countdown').countdown({
+                date: harih, // TODO Date format: 07/27/2017 17:00:00
+                offset: +2, // TODO Your Timezone Offset
+                day: 'Day',
+                days: 'Days'
+              }, function () {
+                alert('Done!');
+              });
+            </script>  
+          </div>
+          <!-- End Countdown -->
+        </div>
+        <!-- End Hero Content-->
+
+
+
+
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#date">date</a>
+                  </li>
+                  <li>
+                    <a href="#location">Location</a>
+                  </li>
+                  <li>
+                    <a href="#about-park-erika">About Park & Erika</a>
+                  </li>
+
+                  <li>
+                    <a href="#rsvp">RSVP</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+
+      
+      <!-- Begin regular-section-->
+      <div class="section-light regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+        
+        <p class="bodytext" data-aos="fade-in" data-aos-easing="linear">
+          ?????
+          <br />
+          
+          <br />
+          ?? ???? ???? ?????.
+        </p>
+        <div data-aos="fade-in" data-aos-easing="linear">
+          <div class="fullname" >
+            Park Joonhyun
+          </div>
+           ?? 
+            <div class="ampersand">&</div>
+            <div class="fullname">
+            Erika Kondo
+            </div>
+           ??
+          </div>
+        </div>
+       
+      <!-- End regular-section-->    
+            <!-- Begin date Section -->
+            <div class="section-dark" id="date">
+              <div class="container">
+                <div class="column is-12 regular-section">
+                  <h1 class="title has-text-centered section-title">date</h1>
+                </div>
+                <div class="columns is-multiline">
+                  <div
+                    class="column is-4 has-vertically-aligned-content"
+                    data-aos="fade-right"
+                  >
+                  
+                    <p class="is-larger has-text-centered">
+                        <div class="date tanggal-Day has-text-centered">Sunday</div> 
+                        <div class="date tanggal-angka has-text-centered">13</div>
+                        <div class="date tanggal-bulan has-text-centered">October 2024</div>
+                    </p>
+                  
+                  </div>
+                  <div
+                    class="column is-4 has-vertically-aligned-content"
+                    data-aos="fade-in" data-aos-easing="linear"
+                  >
+                  
+                    <p class="date is-larger has-text-centered">
+                      ??:
+                      <br>
+                      <strong>11:30</strong>
+                    </p>
+                  
+                  </div>
+
+                  <div
+                    class="column is-4 has-vertically-aligned-content"
+                    data-aos="fade-left">
+                    
+                    <h1 class="date is-larger has-text-centered">
+                      ???:
+                      <br>
+                      <strong>12:00 - 13:00</strong>
+                    </h1>
+                    
+                    
+                  </div>
+
+                </div>
+              </div>
+            </div>
+      <!-- End date Content -->
+
+            <!-- Begin Location Section -->
+            <div class="section-light" id="location" data-aos="fade-in" data-aos-easing="linear" >
+              <div class="container">
+                <div class="column is-12 regular-section">
+                  <h1 class="title has-text-centered section-title">Location</h1>
+                  <p class="tempat is-larger has-text-centered">
+                    <strong>Lumos Garden</strong>
+                    <br>
+                    377 Gijanghaean-ro, Gijang-gun
+                    <br>
+                    Busan, South Korea
+                    <br>
+                  </p>
+                </div>
+                <div class="section-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13039.652251072523!2d129.2227599!3d35.2086344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb453e4aae8d%3A0x500dac5b7fab0812!2sLUMOS%20GARDEN!5e0!3m2!1sen!2sjp!4v1719196777660!5m2!1sen!2sjp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="has-text-centered">
+                  <a href="https://www.google.com/maps/dir//LUMOS+GARDEN,+Gijanghaean-ro,+Gijang-gun,+Busan,+South+Korea/@35.2087468,129.1403576,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3568eb453e4aae8d:0x500dac5b7fab0812!2m2!1d129.2227599!2d35.2086344?hl=en&entry=ttu" class="button btn-cta" target="_blank" data-aos="zoom-in">
+                    <i class="far fa-directions"></i>
+                    &nbsp;&nbsp;Google Maps
+                  </a>
+                </div>
+              </div>
+            </div>
+      <!-- End Location Content -->
+
+
+      
+
+      <!-- Begin Foto -->
+      <div class="section-dark foto-foto" id="foto">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12">
+              <h1 class="title has-text-centered section-title">Foto-foto</h1>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=0');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=10');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=20');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=30');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=40');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=50');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=60');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=70');"
+                ></figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Work Content -->
+
+          <!-- Begin PESAN SPONSOR-->
+          <div class="main-content section-cashbac">
+            <div class="container">
+              <div
+                class="columns is-multiline"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <div class="column is-12 regular-section">
+                  <h1 class="title has-text-centered section-title">
+                    Pesan Sponsor <img src="image/cashbac-logo.png" class="cashbac-logo-inline">
+                  </h1>
+                </div>
+                <div class="column is-12 has-text-centered">
+                  <img src="image/cashbac-mobile-app-teaser.svg">
+                  <br /><br />
+                  <h2 class="subtitle">
+                    Cashbac adalah aplikasi mobile gratis yang memberikan kamu reward points untuk setiap transaksi di merchant favorit kamu, membebaskan kamu dari banyak kesulitan untuk mendapatkan promo dan reward.
+                  </h2>
+
+                  <div class="column is-12 regular-section has-text-centered">
+                
+                    <a href="https://cashbac.onelink.me/1sXQ/homepage" target="_blank">
+                      <img class="button-download" type="svg" src="image/download-playstore.svg" />
+                    
+                    </a>
+                
+                
+                    <a href="https://cashbac.onelink.me/1sXQ/homepage" target="_blank">
+                      <img class="button-download" type="svg" src="image/download-appstore.svg" />
+                
+                      
+                    </a >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End PESAN SPONSOR-->
+
+      <!-- Begin About Park and Erika -->
+      <div class="section-light regular-section" id="about-park-erika">
+        <div class="container">
+          <div class="column is-12 prolog">
+            <h1 class="title has-text-centered section-title">About Park and Erika</h1>
+          </div>
+          
+          <div class="columns">
+            <div class="column is-6">
+              Referral Code Park
+            
+                <!-- 1. Define some markup -->
+               
+                <div class="field has-addons">
+                  <input class="voucher-code is-expanded" id="foo" type="text" value="Bandung">
+                  <button class="btn-voucher-code is-expanded" data-clipboard-action="copy" data-clipboard-target="#foo">
+                    <i class="far fa-copy"></i>
+                    Copy
+                  </button>
+                </div>
+              
+            </div>
+            <div class="column is-6">
+              Referral Code Erika
+              <div class="field has-addons">  
+                <input class="voucher-code is-expanded" id="foo1" type="text" value="Jakarta">
+                <button class="btn-voucher-code is-expanded" data-clipboard-action="copy" data-clipboard-target="#foo1">
+                  <i class="far fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <!-- 2. Include library -->
+              <script src="js/clipboard.min.js"></script>
+
+              <!-- 3. Instantiate clipboard -->
+              <script>
+              var clipboard = new ClipboardJS('.btn-voucher-code');
+
+              clipboard.on('success', function(e) {
+                  console.log(e);
+              });
+
+              clipboard.on('error', function(e) {
+                  console.log(e);
+              });
+              </script> 
+            </div>
+          </div>
+        </div>
+
+        
+        
+      </div>
+      <!-- End About Park And Erika -->
+      <section class="rsvp text-center" id="rsvp">
+
+        <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                        </button>
+                        <div class="section-padding">
+                            <h3>Thank you!</h3>
+                            <p>We are glad to see you join us on our big day.</p>
+                            <div id="add-to-cal"></div>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>What are you waiting for?</h3>
+                    <p>We would greatly appreciate if you could RSVP before 1st of September '24</p>
+                    <form id="rsvp-form" class="rsvp-form"
+                          action=""
+                          method="POST">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                                                        placeholder="Your email"
+                                                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-user"></i><input name="name" class=""
+                                                                    placeholder="Your name"
+                                                                    required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
+                                                                      max="4"
+                                                                      placeholder="Husband/Wife or kids"
+                                                                      required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
+                                                                    class="" min="0"
+                                                                    placeholder="Invite code"
+                                                                    required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="alert-wrapper"></div>
+                        </div>
+                        <button class="btn-fill rsvp-btn">
+                            Yes,
+                            that's me!
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Begin RSVP Content -->
+      <!-- <div class="section-dark contact" id="rsvp">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in-up"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12 prolog">
+              <h1 class="title has-text-centered section-title">Konfirmasi Kehadiran</h1>
+            </div>
+            <div class="column is-12 prolog has-text-centered">
+                
+                    <a href="https://api.whatsapp.com/send?phone=6285721876990&text=Halo%20Sherly,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" data-aos="fade-right">
+                      <i class="fab fa-whatsapp"></i>
+                      &nbsp;&nbsp;Kabari Park
+                    </a>
+                
+                
+                    <a href="https://api.whatsapp.com/send?phone=62811880262&text=Halo%20Daeng,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" data-aos="fade-left">
+                      <i class="fab fa-whatsapp"></i>
+                      &nbsp;&nbsp; Kabari Erika
+                    </a >
+            </div>
+ 
+         </div>
+        </div>
+      </div> -->
+      <!-- End RSVP Content -->
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer">
+      <div class="container">
+        <p class="has-vertically-align">2020 &copy Erika Muhammad Feisal</p>
+        <a href="https://bulma.io" class="has-vertically-align">
+          <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma">
+        </a>
+        <a href="https://www.netlify.com">
+          <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg"/>
+        </a>
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/wedding.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
