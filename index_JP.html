@@ -172,7 +172,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="#rsvp">RSVP</a>
+                                    <a href="#rsvp">ご出欠</a>
                                 </li>
                             </ul>
                         </div>
@@ -257,7 +257,7 @@
                         <h1 class="date is-larger has-text-centered">
                             受付時間
                             <br>
-                            <strong>11:00 AM</strong>
+                            <strong>10:30 AM ~ </strong>
                         </h1>
                     </div>
 
@@ -378,8 +378,8 @@
                                 </article>
                             </div>
                         </div>
-                        
-<!--                        <div class="space24px"></div>-->
+
+                        <!--                        <div class="space24px"></div>-->
                         <div class="tile is-ancestor">
                             <div class="tile is-parent">
                                 <article class="tile is-child notification foto7" data-aos="fade-up" data-aos-easing="linear">
@@ -406,7 +406,7 @@
                                 </article>
                             </div>
                         </div>
-                        
+
                         <!-- IMAGES -->
                         <div class="space40px"></div>
                         <div data-aos="fade-up" data-aos-easing="linear">
@@ -441,111 +441,77 @@
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <h3>What are you waiting for?</h3>
-                        <p>We would greatly appreciate if you could RSVP before 1st of September '24</p>
-                        <form id="rsvp-form" class="rsvp-form" action="" method="POST">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-input-group">
-                                        <i class="fa fa-envelope"></i><input type="email" name="email" class="" placeholder="Your email" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-input-group">
-                                        <i class="fa fa-user"></i><input name="name" class="" placeholder="Your name" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-input-group">
-                                        <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="4" placeholder="Husband/Wife or kids" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-input-group">
-                                        <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Invite code" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12" id="alert-wrapper"></div>
-                            </div>
-                            <button class="btn-fill rsvp-btn">
-                                Yes,
-                                that's me!
-                            </button>
-                        </form>
-                    </div>
+            <div class="RSVPtop">
+            </div>
+            <div class="RSVPForm">
+                <div class="RSVPInfo">
+                    <h1>RSVP</h1>
+                    <h2>for the wedding of</h2>
+                    <h1>Park & Erika</h1>
+                    <p class="line">________________________________________</p>
+                    <h2>The Details</h2>
+                    <p>2024年10月13日（日）</p>
+                    <p>11:30 PM</p>
+                    <br>
+                    <h2>Ceremony & Reception</h2>
+                    <p>お手数ですが、出席情報のご登録をお願い申し上げます。</p>
+                    <p>2024.08.31までにご返信をお願いいたします</p>
+                    <p class="line">________________________________________</p>
+                    
+                    <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+                        <div class="form-input-group">
+                            <label for="attendance">結婚式　　　</label>
+                            <select name="attendance" id="attendance" required>
+                                <option value="yes">出席</option>
+                                <option value="no">欠席</option>
+                            </select>
+                        </div>
+                        <div class="form-input-group">
+                            <label for="shuttle-bus">シャトルバス</label>
+                            <select name="shuttle-bus" id="shuttle-bus" required>
+                                <option value="yes">利用する</option>
+                                <option value="no">利用しない</option>
+                            </select>
+                        </div>
+                        <div class="form-input-group">
+                            <label for="dinnerAttendance">ディナー　　</label>
+                            <select name="dinnerAttendance" id="dinnerAttendance" required>
+                                <option value="yes">参加</option>
+                                <option value="no">不参加</option>
+                            </select>
+                        </div>
+
+                        <div class="form-input-group">
+                            <i class="fa fa-envelope"></i><input type="email" name="email" class="" placeholder="Your email" required>
+                        </div>
+                        <div class="form-input-group">
+                            <i class="fa fa-user"></i><input name="name" class="" placeholder="Your name" required>
+                        </div>
+                        <div class="form-input-group">
+                            <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="8" placeholder="同伴ご家族数" required>
+                        </div>
+                        <div class="form-input-group">
+                            <i class="fa fa-postnumber"></i><input type="text" name="postnumber" class="" placeholder="郵便番号">
+                        </div>
+                        <div class="form-input-group">
+                            <i class="fa fa-address"></i><input type="text" name="address" class="" placeholder="ご住所">
+                        </div>
+                        
+                        <div class="form-input-group">
+                            <i class="fa fa-etc"></i><input type="textarea" name="etc"  class="" placeholder="何かお伝えしたいことがあればどうぞ！">
+                        </div>
+                        <!--
+                        <div class="form-input-group">
+                            <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Invite code" required>
+                        </div>
+-->
+                        <button class="btn-fill rsvp-btn">
+                            知らせる
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
-        <!-- Begin RSVP Content -->
-        <!-- <section class="section-dark contact" id="rsvp">
-        <div class="container">
-          <div class="columns is-multiline">          
-            <div class="column is-12 prolog">
-              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Konfirmasi Kehadiran</h1>
-            </div>
-            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-              <p class="h2 subtitle">
-                초대합니다.
-                <br>
-                살랑이는 바람결에
-                <br>
-                사랑이 묻어나는 계절입니다.
-                <br>
-                여기 곱고 예쁜 두 사람이
-                <br>
-                사랑을 맺어 인생의 반려자가 되려 합니다.
-                <br>
-                <br>
-                새 인생을 시작하는 이 자리에 오셔서
-                <br> 
-                축복 해 주시면 감사하겠습니다.
-                <br>
-                <br>
-                참석 가능여부를 알려주세요
-                </p>
-     
-              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20Sherly,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp;Kabari Park
-              </a>
-              
-
-          
-              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20Daeng,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp; Kabari Erika
-              </a >
-              <div class="space40px"></div>
-
-              <div class="space40px"></div>
-              <div data-aos="fade-up" data-aos-easing="linear">
-                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-              </div>
-              <div class="space40px"></div>
-              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
-                Kami yang berbahagia,
-                <br>
-                <a class="instagram":" href="https://instagram.com/" target="_blank" alt="Instagram Park">
-                  <i class="fab fa-instagram"></i> @Park
-                </a>
-                &nbsp
-                <a class="instagram" href="https://instagram.com/" target="_blank" alt="Instagram Erika">
-                  <i class="fab fa-instagram"></i> @Erika
-                </a>
-              </p>
-
-            </div>
- 
-         </div>
-        </div>
-      </section> -->
         <!-- End RSVP Content -->
     </div>
     <!-- End Main Content -->

@@ -684,67 +684,135 @@ body.preloader-site {
 RSVP form
 ========================================================================== */
 .rsvp {
-  padding-bottom: 140px;
-  .rsvp-form {
-    .rsvp-btn {
-      padding: 15px 0;
-      border-radius: 3px;
-      width: 100%;
-      font-size: 13px;
-    }
-    .form-input-group {
-      width: 100%;
-      height: 55px;
-      margin: 0 auto 10px;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      border: solid 1px #E6E9EA;
-      text-align: left;
-      position: relative;
+  padding-bottom: 540px;
+}
 
-      i {
-        color: #e8ca6f;
-        font-size: 14px;
-      }
-      i:after {
-        content: "";
-        height: 30px;
-        width: 1px;
-        border-right: solid 1px #E6E9EA;
-        position: absolute;
-        top: 50%;
-        left: 30px;
-        transform: translateY(-50%);
-      }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key {
-        font-size: 14px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: 20px;
-      }
-      input {
-        padding-left: 68px;
-        width: 100%;
-        height: 100%;
-        -moz-border-radius: 6px;
-        -webkit-border-radius: 6px;
-        border-radius: 6px;
-        border: none;
-      }
-      input::-webkit-input-placeholder {
-        color:#BCC1C3;
-      }
-      input:-moz-placeholder {
-        color: #BCC1C3;
-      }
-      input::-moz-placeholder {
-        color: #BCC1C3;
-      }
-      input:-ms-input-placeholder {
-        color: #BCC1C3;
-      }
-    }
-  }
+
+.RSVPtop {
+  background-color: #564356;
+  height: 600px;
+  margin:0;
+  padding:0;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+}
+
+.RSVPForm {
+
+  height: 1030px;
+  width: 400px;
+  background-color: #fff;
+  margin: -500px auto;
+  border-radius: 10px;
+  color: #666;
+  padding: 0px 0px;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+}
+
+.RSVPInfo {
+  padding: 10px 0px 0px 0px;
+}
+.RSVPInfo h1{
+    font-size: 22px;
+}
+
+.RSVPInfo h1, h2, p {
+    font-size: 20px;
+  text-align: center;
+  padding: 0px;
+  margin: 5px 5px;
+}
+
+.RSVPInfo h2 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 100;
+}
+
+.RSVPInfo p.line {
+  margin: 0px auto 20px auto;
+  color: #999;
+}
+
+.RSVPForm input {
+  font-size: 16px;
+  color: #666;
+  padding: 6px;
+  margin: 25px auto 20px;
+  display: block;
+  width: 75%;  
+}
+
+
+
+.RSVPInfo input:focus {
+  outline: 0;
+}
+
+.RSVPForm .button button {
+  display: inline-block;
+  width: 400px;
+}
+.RSVPForm button {
+  color: #666;
+  background-color: #ffbdc7;
+  border: none;
+  font-family: 'Raleway';
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 32px;
+  width: 400px;
+  margin: 20px auto 0px auto; 
+/*  float:center;*/
+}
+
+.RSVPForm button {
+  border-radius: 0px 0px 10px 10px;
+  border-right: solid 1px #cc919a;
+}
+
+
+.RSVPForm button:hover {
+  background-color: #cc919a;
+  transition: .5s;
+}
+
+.RSVPForm button:focus {
+  outline: 0;
+}
+
+
+.rsvp-form .form-input-group{
+    text-align:center;    
+}
+
+.rsvp-form .form-input-group label{
+
+}
+
+
+/* RSVP Form Select Styling */
+.rsvp-form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #BC8887;
+    border-radius: 5px;
+    padding: 5px;
+    width: 90px;
+    max-width: 300px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* RSVP Form Select Hover State */
+.rsvp-form select:hover {
+    border-color: #8E5C5A;
+}
+
+/* RSVP Form Select Focus State */
+.rsvp-form select:focus {
+    border-color: #BD6D6B;
 }
