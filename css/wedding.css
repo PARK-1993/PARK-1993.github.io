@@ -784,11 +784,6 @@ RSVP form
     text-align:center;    
 }
 
-.rsvp-form .form-input-group label{
-
-}
-
-
 /* RSVP Form Select Styling */
 .rsvp-form select {
     -webkit-appearance: none;
@@ -815,4 +810,11 @@ RSVP form
 /* RSVP Form Select Focus State */
 .rsvp-form select:focus {
     border-color: #BD6D6B;
+}
+
+@media (max-width: 599px) {
+  .RSVPForm {
+
+  height: 1030px;
+  width: 350px;
 }
