@@ -10,7 +10,7 @@
 }
 
 html {
-  font-family: 'Raleway', Tahoma, sans-serif;
+  font-family: "Noto Serif", serif;
   width: 100%;
   min-height: 100%;
 }
@@ -30,20 +30,20 @@ html {
   border-bottom: 2px solid #C0A9BD;
 }
 
-.a.navbar-item{
+/* .a.navbar-item{
   font-color: #C0A9BD;
-}
+} */
 
 
 .hero {
-  background-image: url(https://picsum.photos/id/25/1920/1080);
+/*  background-image: url(https://picsum.photos/id/25/1920/1080);*/
   background: linear-gradient(rgba(192,169,189, 0.65), rgba(192,169,189, 0.65)), rgba(0, 0, 0, 0.55) url("../image/park-erika-main.jpg") no-repeat;
   background-position: right 35% bottom 50%;
   background-attachment: fixed;
   background-size: cover;
   color: white;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Noto Serif", serif;
 }
 
 
@@ -94,6 +94,7 @@ html {
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li {
+    font-family: "Noto Serif", serif;
   display: inline-block;
   padding-right: 15px;
   padding-left: 15px;
@@ -125,7 +126,7 @@ html {
 .main-content {
   padding-top: 2rem;
   color: #000; 
-  font-family: 'Raleway', sans-serif;
+  font-family: "Noto Serif", serif;
 }
 
 .main-content .section-dark {
@@ -286,7 +287,7 @@ html {
 }
 
 .main-content .section-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Noto Serif", serif;
   font-weight: 900;
   color: #C0A9BD;
   text-transform: uppercase;
@@ -296,7 +297,7 @@ html {
 }
 
 .fullname {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   color: #C0A9BD;
   font-size: 3.0rem;
@@ -321,24 +322,24 @@ vertical-align: middle;
 
 .bodytext {
     font-size: 1.4rem;
-    font-family: "Noto Serif JP", serif;
+    font-family: "Noto Serif", serif;
 }
 
 .date {
   font-size: 1.4rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Noto Serif", serif;
 }
 
 .tanggal-angka {
   font-size: 5rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Noto Serif", serif;
   font-weight: 900;
   line-height: 1;
 }
 
 .tempat {
   font-size: 1.4rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Noto Serif", serif;
   margin-bottom: 50px;
 }
 
@@ -653,7 +654,7 @@ body.preloader-site {
 
 .title-foto {
   font-size: 18pt;
-  font-family: 'Lato', sans-serif;
+  font-family: "Noto Serif", serif;
   font-weight: 700;
   text-align: left;
   color: white;
@@ -661,7 +662,7 @@ body.preloader-site {
 
 
 .subtitle-foto {
-  font-family: 'Lato', sans-serif;
+  font-family: "Noto Serif", serif;
   font-weight: 700;
   font-size: 14pt;
   font-weight: 600;
@@ -763,7 +764,7 @@ RSVP form
   color: #666;
   background-color: #ffbdc7;
   border: none;
-  font-family: 'Raleway';
+  font-family: "Noto Serif", serif;
   font-size: 18px;
   font-weight: 600;
   padding: 15px 32px;
@@ -794,6 +795,7 @@ RSVP form
 
 /* RSVP Form Select Styling */
 .rsvp-form select {
+    font-family: "Noto Serif", serif;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
