@@ -57,26 +57,28 @@ $(document).ready(function($) {
       e.preventDefault();
       var data = $(this).serialize();
 
-      $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+      //$('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
       
   $.post('https://script.google.com/macros/s/AKfycbxgYC8b-OdFjux-du-pJWdO0HyfVPnVczT-FAKf0Xz5yxw491s1YV3ZSeAFAtU9A75U/exec', data)
     .done(function (data) {
       console.log(data);
       if (data.result === "error") {
-        $('#alert-wrapper').html(alert_markup('danger', data.message));
+        windows.alert("転送に失敗しました。しばらくしてからもう一度試してください。");
       } else {
-        $('#alert-wrapper').html('');
-        $('#rsvp-modal').modal('show');
+        // $('#alert-wrapper').html('');
+        // $('#alert-wrapper').html(alert_markup('success', '<strong>Thank you!</strong> Your information has been sent to the couple.'));
+        windows.alert("新郎新婦に情報が送られました！");
       }
     })
     .fail(function (data) {
       console.log(data);
-      $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+      // $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server.'));
+      windows.alert("転送に失敗しました。しばらくしてからもう一度試してください。");
     });
   });
-
 });
+
 $(window).load(function() {
   var Body = $("body");
   Body.addClass("preloader-site");
