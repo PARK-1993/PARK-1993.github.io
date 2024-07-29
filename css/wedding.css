@@ -310,7 +310,6 @@ html {
 }
 
 
-
 .ampersand {
 font-size: 3rem;
 font-family: 'Rouge Script', sans-serif;
@@ -401,6 +400,7 @@ vertical-align: middle;
   vertical-align: middle;
 }
 
+/*
 #toTop {
   height: 50px;
   width: 50px;
@@ -426,6 +426,7 @@ vertical-align: middle;
 #toTop:hover {
   background-color: #DCD6F7;
 }
+*/
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -721,14 +722,22 @@ RSVP form
   padding: 10px 0px 0px 0px;
 }
 .RSVPInfo h1{
-    font-size: 22px;
+    font-size: 2rem;
 }
 
-.RSVPInfo h1, h2, p {
-    font-size: 20px;
+.RSVPInfo h1, h2 {
+    font-size: 1.3rem;
+  
   text-align: center;
   padding: 0px;
   margin: 5px 5px;
+}
+
+.RSVPInfo p{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0px;
+    margin: 5px 5px;
 }
 
 .RSVPInfo h2 {
@@ -742,12 +751,12 @@ RSVP form
 }
 
 .RSVPForm input {
-  font-size: 16px;
+  font-size: 1rem;
   color: #666;
   padding: 6px;
-  margin: 25px auto 20px;
+  margin: 10px auto 20px;
   display: block;
-  width: 75%;  
+  width: 85%;  
 }
 
 
@@ -803,9 +812,9 @@ RSVP form
     border: 2px solid #BC8887;
     border-radius: 5px;
     padding: 5px;
-    width: 90px;
+    width: 9rem;
     max-width: 300px;
-    font-size: 16px;
+    font-size: 1rem;
     color: #333;
     cursor: pointer;
     outline: none;
@@ -831,4 +840,29 @@ RSVP form
     .bodytext {
     font-size: 1.1rem;
     }
+}
+
+
+.main-content .about{
+  background-image: linear-gradient(rgba(2, 50, 95, 0.3), rgba(48, 47, 47, 0.6)), url("../image/IMG_9568.JPG");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat:no-repeat;
+  /* background-color: #F4EEFF; */
+  padding: 2rem;
+  color: #F4EEFF;
+    /* margin: 2rem;
+    width: 100%;
+    padding: 1rem; */
+}
+.main-content .about .section-title{
+  color: #F4EEFF;
+}
+.main-content .about p{
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.main-content .about p span{
+  
+  font-size: 1.0rem;
 }

@@ -1,5 +1,6 @@
 // Get that hamburger menu cookin' //
 
+
 document.addEventListener("DOMContentLoaded", function() {
   // Get all "navbar-burger" elements
   var $navbarBurgers = Array.prototype.slice.call(
@@ -34,17 +35,17 @@ $(document).on("click", 'a[href^="#"]', function(event) {
 });
 
 // When the user scrolls down 20px from the top of the document, show the scroll up button
-window.onscroll = function() {
-  scrollFunction();
-};
+//window.onscroll = function() {
+//  scrollFunction();
+//};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("toTop").style.display = "block";
-  } else {
-    document.getElementById("toTop").style.display = "none";
-  }
-}
+//function scrollFunction() {
+//  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//    document.getElementById("toTop").style.display = "block";
+//  } else {
+//    document.getElementById("toTop").style.display = "none";
+//  }
+//}
 
 // Preloader
 $(document).ready(function($) {
@@ -64,17 +65,17 @@ $(document).ready(function($) {
     .done(function (data) {
       console.log(data);
       if (data.result === "error") {
-        windows.alert("転送に失敗しました。しばらくしてからもう一度試してください。");
+        window.alert("転送に失敗しました。¥nしばらくしてからもう一度試してください。");
       } else {
         // $('#alert-wrapper').html('');
         // $('#alert-wrapper').html(alert_markup('success', '<strong>Thank you!</strong> Your information has been sent to the couple.'));
-        windows.alert("新郎新婦に情報が送られました！");
+        window.alert("回答が送信されました。¥n¥nこの度はご回答いただき誠にありがとうございます。¥n当日はぜひ楽しいお時間をお過ごしくださいませ。¥nお会いできることを楽しみにしております。");
       }
     })
     .fail(function (data) {
       console.log(data);
       // $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server.'));
-      windows.alert("転送に失敗しました。しばらくしてからもう一度試してください。");
+      window.alert("転送に失敗しました。¥nしばらくしてからもう一度試してください。");
     });
   });
 });
