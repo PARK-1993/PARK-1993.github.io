@@ -34,19 +34,6 @@ $(document).on("click", 'a[href^="#"]', function(event) {
   );
 });
 
-// When the user scrolls down 20px from the top of the document, show the scroll up button
-//window.onscroll = function() {
-//  scrollFunction();
-//};
-
-//function scrollFunction() {
-//  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//    document.getElementById("toTop").style.display = "block";
-//  } else {
-//    document.getElementById("toTop").style.display = "none";
-//  }
-//}
-
 // Preloader
 $(document).ready(function($) {
   $(".preloader-wrapper").fadeOut();
@@ -78,6 +65,20 @@ $(document).ready(function($) {
       window.alert("転送に失敗しました。¥nしばらくしてからもう一度試してください。");
     });
   });
+});
+
+document.getElementById('attendance').addEventListener('change', function() {
+  var shuttleBusSelect = document.getElementById('shuttle-bus');
+  var dinnerAttendanceSelect = document.getElementById('dinnerAttendance');
+  var isAbsent = this.value === 'no';
+
+  if (isAbsent) {
+      shuttleBusSelect.value = 'four'; // "利用しない" option value
+      dinnerAttendanceSelect.value = 'no'; // "不参加" option value
+  }
+
+  shuttleBusSelect.disabled = isAbsent;
+  dinnerAttendanceSelect.disabled = isAbsent;
 });
 
 $(window).load(function() {

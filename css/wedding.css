@@ -30,11 +30,6 @@ html {
   border-bottom: 2px solid #C0A9BD;
 }
 
-/* .a.navbar-item{
-  font-color: #C0A9BD;
-} */
-
-
 .hero {
 /*  background-image: url(https://picsum.photos/id/25/1920/1080);*/
   background: linear-gradient(rgba(192,169,189, 0.65), rgba(192,169,189, 0.65)), rgba(0, 0, 0, 0.55) url("../image/park-erika-main.jpg") no-repeat;
@@ -75,11 +70,6 @@ html {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
 }
 
-@media (max-width: 599px) {
-  .hero .hero-foot {
-    display: none;
-  }
-}
 
 .hero .hero-foot .hero-foot--wrapper {
   margin: 7px auto;
@@ -124,7 +114,7 @@ html {
 }
 
 .main-content {
-  padding-top: 2rem;
+  padding-top: 1rem;
   color: #000; 
   font-family: "Noto Serif", serif;
 }
@@ -135,7 +125,7 @@ html {
 }
 
 .main-content .section-darker {
-  background-color: #DCD6F7;
+  background-color: #eae2ffff;
   padding: 80px 40px;
 }
 
@@ -289,7 +279,7 @@ html {
 .main-content .section-title {
   font-family: "Noto Serif", serif;
   font-weight: 900;
-  color: #C0A9BD;
+  color: #c38fbc;
   text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: 0px;
@@ -708,7 +698,7 @@ RSVP form
 
 .RSVPForm {
 
-  height: 1030px;
+/*  height: 1030px;*/
   width: 400px;
   background-color: #fff;
   margin: -500px auto;
@@ -770,26 +760,26 @@ RSVP form
   width: 100%;
 }
 .RSVPForm button {
-  color: #666;
-  background-color: #ffbdc7;
+  color: #ffffff;
+  background-color: #C0A9BD;
   border: none;
   font-family: "Noto Serif", serif;
   font-size: 18px;
   font-weight: 600;
   padding: 15px 32px;
   width: 100%;
-  margin: 20px auto 0px auto; 
+  margin: auto: ; 
 /*  float:center;*/
 }
 
 .RSVPForm button {
   border-radius: 0px 0px 10px 10px;
-  border-right: solid 1px #cc919a;
+  border-right: solid 1px #C0A9BD;
 }
 
 
 .RSVPForm button:hover {
-  background-color: #cc919a;
+  background-color: #C0A9BD;
   transition: .5s;
 }
 
@@ -808,17 +798,24 @@ RSVP form
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    text-align-last:center;
     background-color: transparent;
-    border: 2px solid #BC8887;
+    border: 2px solid #C0A9BD;
     border-radius: 5px;
     padding: 5px;
+    margin: 2px;
     width: 9rem;
     max-width: 300px;
     font-size: 1rem;
-    color: #333;
+    color: #000000;
     cursor: pointer;
     outline: none;
     transition: border-color 0.3s ease-in-out;
+}
+
+.rsvp-form select option:yes {
+   border: 2px solid #fd10de;
+
 }
 
 /* RSVP Form Select Hover State */
@@ -831,17 +828,6 @@ RSVP form
     border-color: #BD6D6B;
 }
 
-@media (max-width: 599px) {
-  .RSVPForm {
-
-  height: 1030px;
-  width: 350px;
-}
-    .bodytext {
-    font-size: 1.1rem;
-    }
-}
-
 
 .main-content .about{
   background-image: linear-gradient(rgba(2, 50, 95, 0.3), rgba(48, 47, 47, 0.6)), url("../image/IMG_9568.JPG");
@@ -850,19 +836,74 @@ RSVP form
   background-repeat:no-repeat;
   /* background-color: #F4EEFF; */
   padding: 2rem;
+  padding-top: 4rem;
   color: #F4EEFF;
-    /* margin: 2rem;
-    width: 100%;
-    padding: 1rem; */
 }
 .main-content .about .section-title{
   color: #F4EEFF;
 }
 .main-content .about p{
-  font-weight: 400;
+  font-weight: 900;
   font-size: 1.2rem;
 }
 .main-content .about p span{
   
   font-size: 1.0rem;
+}
+
+.additional{
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 599px) {
+     .RSVPForm {
+      height: 1030px;
+      width: 350px;
+    }
+    .bodytext{
+        font-size: 0.65rem;
+    }
+
+    .hero .title{
+        font-size: 4rem;
+    }
+    
+    .hero .hero-foot {
+        display: none;
+      }
+    .hero .subtitle{
+        font-size: 1.0rem;
+    }
+    .main-content{
+        padding-top: 0rem;
+    }
+    .main-content .about p{
+        font-size: 0.8rem;
+    }
+    
+    .bismillah{
+        margin: 0rem;
+        max-height: 100px;
+    }
+    
+    
+    .section-light {
+      background-image: url(../image/divider-flowers-leaves.png);
+      background-position: bottom -15px center;
+      background-repeat: no-repeat;
+      background-size:50%;
+      
+    }
+    .additional{
+        margin: 1rem;
+        margin-bottom: 4rem; 
+    }
+    .additional h2 {
+        font-size: 1rem;
+    }
+    .additional p {
+        font-size: 0.6rem;
+    }
+
 }
