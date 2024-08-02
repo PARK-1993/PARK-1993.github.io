@@ -390,34 +390,6 @@ vertical-align: middle;
   vertical-align: middle;
 }
 
-/*
-#toTop {
-  height: 50px;
-  width: 50px;
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #C0A9BD;
-  color: white;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 2rem;
-  box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
-}
-
-#toTop a {
-  color: white;
-}
-
-#toTop:hover {
-  background-color: #DCD6F7;
-}
-*/
-
 ::-webkit-scrollbar {
   width: 8px;
   background-color: #F4EEFF;
@@ -613,7 +585,7 @@ body.preloader-site {
 .foto7 {
   background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.5)), url("../image/7_MarriageRegistration.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat:no-repeat;
   min-height: 24rem;
 }
@@ -639,12 +611,8 @@ body.preloader-site {
 }
 
 
-
-
-
-
 .title-foto {
-  font-size: 18pt;
+  font-size: 1.3rem;
   font-family: "Noto Serif", serif;
   font-weight: 700;
   text-align: left;
@@ -653,9 +621,7 @@ body.preloader-site {
 
 
 .subtitle-foto {
-  font-family: "Noto Serif", serif;
-  font-weight: 700;
-  font-size: 14pt;
+
   font-weight: 600;
   margin-top: 15px;
   text-align: left;
@@ -736,7 +702,7 @@ RSVP form
 }
 
 .RSVPInfo h2 {
-  font-family: 'Great Vibes', cursive;
+  /* font-family: 'Great Vibes', cursive; */
   font-weight: 100;
 }
 
@@ -770,8 +736,8 @@ RSVP form
   background-color: #C0A9BD;
   border: none;
   font-family: "Noto Serif", serif;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 500;
   padding: 15px 32px;
   width: 100%;
   margin: auto; 
@@ -844,20 +810,23 @@ RSVP form
   background-position: bottom;
   background-repeat:no-repeat;
   /* background-color: #F4EEFF; */
-  padding: 2rem;
-  padding-top: 4rem;
+  padding: 6rem;
+  padding-top: 8rem;
   color: #F4EEFF;
+}
+.main-content .about div{
+  width: 70%;
 }
 .main-content .about .section-title{
   color: #F4EEFF;
 }
 .main-content .about p{
   font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 .main-content .about p span{
   
-  font-size: 1.0rem;
+  font-size: 1.5rem;
 }
 
 .additional{
@@ -867,11 +836,11 @@ RSVP form
 
 @media (max-width: 599px) {
      .RSVPForm {
-      height: 1030px;
+      /* height: 1030px; */
       width: 350px;
     }
     .bodytext{
-        font-size: 0.65rem;
+        font-size: 0.7rem;
     }
 
     .hero .title{
@@ -915,6 +884,57 @@ RSVP form
         font-size: 0.6rem;
     }
 
+    .main-content .about{
+
+    padding: 2rem;
+    padding-top: 4rem;
+    color: #F4EEFF;
+  }
+  .main-content .about div{
+    width: 100%;
+  }
+  .main-content .about .section-title{
+    color: #F4EEFF;
+  }
+  .main-content .about p{
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+  .main-content .about p span{
+    
+    font-size: 1.0rem;
+  }
+
+  .title-foto {
+    font-size: 1.0rem;
+  }
+
+  .subtitle-foto {
+    font-size: 0.9rem;
+  }
+
+  .RSVPInfo h1{
+  
+      font-size: 2rem;
+  }
+
+  .RSVPInfo h1, h2 {
+      font-size: 1.2rem;
+  }
+
+  .RSVPInfo p{
+      font-size: 0.8rem;
+  }
+  .rsvp-form select {
+    font-size: 0.8rem;
+  }
+  .rsvp-form label{
+    font-size: 0.8rem;
+  }
+  .RSVPForm button {
+
+    font-size: 0.9rem;
+  }
 }
 
 :lang(kr){
