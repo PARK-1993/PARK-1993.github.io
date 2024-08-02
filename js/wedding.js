@@ -52,17 +52,20 @@ $(document).ready(function($) {
     .done(function (data) {
       console.log(data);
       if (data.result === "error") {
-        window.alert("転送に失敗しました。¥nしばらくしてからもう一度試してください。");
+        // window.alert("転送に失敗しました。¥nしばらくしてからもう一度試してください。");
+        window.alert("Transfer failed. Please try again a few moments later.");
       } else {
         // $('#alert-wrapper').html('');
         // $('#alert-wrapper').html(alert_markup('success', '<strong>Thank you!</strong> Your information has been sent to the couple.'));
-        window.alert("回答が送信されました。¥n¥nこの度はご回答いただき誠にありがとうございます。¥n当日はぜひ楽しいお時間をお過ごしくださいませ。¥nお会いできることを楽しみにしております。");
+        // window.alert("回答が送信されました。¥n¥nこの度はご回答いただき誠にありがとうございます。¥n当日はぜひ楽しいお時間をお過ごしくださいませ。¥nお会いできることを楽しみにしております。");
+        window.alert("Your response has been submitted.¥n¥nThank you so much for your response.¥nWe hope you have a fantastic time at our wedding.¥nWe can’t wait to see you there!");
       }
     })
     .fail(function (data) {
       console.log(data);
       // $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server.'));
-      window.alert("転送に失敗しました。¥nしばらくしてからもう一度試してください。");
+      // window.alert("転送に失敗しました。¥nしばらくしてからもう一度試してください。");
+      window.alert("Transfer failed. Please try again a few moments later.");
     });
   });
 });
