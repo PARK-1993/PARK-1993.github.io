@@ -822,11 +822,11 @@ RSVP form
 }
 .main-content .about p{
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .main-content .about p span{
   
-  font-size: 1.5rem;
+  font-size: 1.0rem;
 }
 
 .additional{
@@ -857,7 +857,7 @@ RSVP form
         padding-top: 0rem;
     }
     .main-content .about p{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     
     .bismillah{
@@ -896,13 +896,9 @@ RSVP form
   .main-content .about .section-title{
     color: #F4EEFF;
   }
-  .main-content .about p{
-    font-weight: 900;
-    font-size: 1.2rem;
-  }
   .main-content .about p span{
     
-    font-size: 1.0rem;
+    font-size: 0.6rem;
   }
 
   .title-foto {
