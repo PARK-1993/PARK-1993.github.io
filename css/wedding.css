@@ -954,3 +954,17 @@ RSVP form
   font-weight: 400;
   font-style: normal;
 }
+
+:lang(en){
+  font-family: Calibri, sans-serif;
+}
+
+title:lang(en){
+  font-family: Calibri, sans-serif;
+}
+
+.rsvp:lang(en){
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
