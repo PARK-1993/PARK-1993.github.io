@@ -890,7 +890,8 @@ RSVP form
 
     .main-content .about{
 
-    padding: 2rem;
+    padding: 1rem;
+    padding-right: 0;
     padding-top: 4rem;
     color: #F4EEFF;
   }
