@@ -539,7 +539,7 @@ body.preloader-site {
 .foto1 {
   background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.5)), url("../image/1_FirstMeet.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat:no-repeat;
   min-height: 24rem;
 }
