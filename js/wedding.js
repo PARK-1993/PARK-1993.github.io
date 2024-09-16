@@ -76,7 +76,7 @@ document.getElementById('attendance').addEventListener('change', function() {
   var isAbsent = this.value === 'no';
 
   if (isAbsent) {
-      shuttleBusSelect.value = 'four'; // "利用しない" option value
+      shuttleBusSelect.value = 'one'; // "利用しない" option value
       dinnerAttendanceSelect.value = 'no'; // "不参加" option value
   }
 
